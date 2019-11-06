@@ -1,0 +1,129 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-11-06T18:10:35.195Z",
+        "line": 3,
+        "name": "Find dealer through UCL",
+        "description": "",
+        "id": "find-dealer;find-dealer-through-ucl",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6036873442,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on main Carfax page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 214556896,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I navigate to Find a Used Car page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1329340882,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on Find a Dealer button",
+            "match": {
+              "location": "FindDealerStepDef.i_click_on_Find_a_Dealer_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1249951287,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I choose a car , radius and zipcode to find a dealer and click submit",
+            "match": {
+              "location": "FindDealerStepDef.i_choose_a_car_radius_and_zipcode_to_find_a_dealer_and_click_submit()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-11-06T18:10:44.078Z",
+        "line": 12,
+        "name": "Dealer list",
+        "description": "",
+        "id": "find-dealer;dealer-list",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1792071101,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am able to see dealer list",
+            "match": {
+              "location": "FindDealerStepDef.i_am_able_to_see_dealer_list()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 560425899,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on any dealer page that I want",
+            "match": {
+              "location": "FindDealerStepDef.i_click_on_any_dealer_page_that_I_want()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 835036821,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I able to see cars from specific dealer",
+            "match": {
+              "location": "FindDealerStepDef.i_able_to_see_cars_from_specific_dealer()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Find Dealer",
+    "description": "",
+    "id": "find-dealer",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com/carfax/features/FindDealer.feature",
+    "tags": []
+  }
+]

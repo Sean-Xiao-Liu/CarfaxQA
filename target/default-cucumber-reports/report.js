@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/com/carfax/features/FindDealer.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/com/carfax/features/FollowBtn.feature");
 formatter.feature({
-  "name": "Find Dealer",
+  "name": "Create account through Follow button",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Find dealer through UCL",
+  "name": "Follow button to create account in VDP",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -35,61 +35,41 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on Find a Dealer button",
+  "name": "I fill out \"make\" , \"model\" , \"zipcode\" of the car that I want to search",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on next and show me results button  show me results button",
   "keyword": "When "
 });
 formatter.match({
-  "location": "FindDealerStepDef.i_click_on_Find_a_Dealer_button()"
+  "location": "FollowBtnStepDef.i_click_on_next_and_show_me_results_button_show_me_results_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I choose a car , radius and zipcode to find a dealer and click submit",
+  "name": "I click on follow button to follow car",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "FollowBtnStepDef.i_click_on_follow_button_to_follow_car()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I can create an account",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "FindDealerStepDef.i_choose_a_car_radius_and_zipcode_to_find_a_dealer_and_click_submit()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Dealer list",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@smoke"
-    }
-  ]
-});
-formatter.step({
-  "name": "I am able to see dealer list",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "FindDealerStepDef.i_am_able_to_see_dealer_list()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on any dealer page that I want",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "FindDealerStepDef.i_click_on_any_dealer_page_that_I_want()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I able to see cars from specific dealer",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "FindDealerStepDef.i_able_to_see_cars_from_specific_dealer()"
+  "location": "FollowBtnStepDef.i_can_create_an_account()"
 });
 formatter.result({
   "status": "passed"

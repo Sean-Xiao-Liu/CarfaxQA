@@ -1,5 +1,5 @@
 Feature: Find Dealer
-  @smoke
+
   Scenario: Find dealer through UCL
 
     Given I am on main Carfax page
@@ -7,8 +7,6 @@ Feature: Find Dealer
     When I click on Find a Dealer button
     Then I choose a car , radius and zipcode to find a dealer and click submit
 
-
-  @smoke
   Scenario: Dealer list
       Given I am able to see dealer list
       When I click on any dealer page that I want

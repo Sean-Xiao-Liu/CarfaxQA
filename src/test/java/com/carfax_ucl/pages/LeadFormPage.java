@@ -31,8 +31,17 @@ public class LeadFormPage {
 
     @FindBy(xpath = "(//span[@class='checkbox-list-item--fancyCbx'])[6]")
     public WebElement whatPaymentTermsAreAvailable;
-    @FindBy(xpath = "")
-    public
+
+    @FindBy(xpath = "(//span[@class='checkbox-list-item--fancyCbx'])[7]")
+    public WebElement whenCanITestDriveThisVehicle;
+
+    @FindBy(xpath = "(//a[@class='dealer-contact-add-note' and contains(text(),'Add a personal note(optional)')])[2]")
+    public WebElement personalNote;
+
+    @FindBy(xpath = "(//button[@type='submit'][@class='search-submit button large expanded primary-green'])[2]")
+    public WebElement sendMessage;
+
+
 
 
 

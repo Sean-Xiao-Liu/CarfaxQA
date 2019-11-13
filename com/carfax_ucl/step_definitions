@@ -3,20 +3,20 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-11-06T18:10:35.195Z",
-        "line": 3,
-        "name": "Find dealer through UCL",
+        "start_timestamp": "2019-11-13T14:02:32.917Z",
+        "line": 4,
+        "name": "Follow button to create account in VDP",
         "description": "",
-        "id": "find-dealer;find-dealer-through-ucl",
+        "id": "create-account-through-follow-button;follow-button-to-create-account-in-vdp",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6036873442,
+              "duration": 4030570802,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -25,10 +25,10 @@
           },
           {
             "result": {
-              "duration": 214556896,
+              "duration": 221113190,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -37,77 +37,63 @@
           },
           {
             "result": {
-              "duration": 1329340882,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I click on Find a Dealer button",
-            "match": {
-              "location": "FindDealerStepDef.i_click_on_Find_a_Dealer_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1249951287,
+              "duration": 3445645699,
               "status": "passed"
             },
             "line": 8,
-            "name": "I choose a car , radius and zipcode to find a dealer and click submit",
+            "name": "I fill out \"make\" , \"model\" , \"zipcode\" of the car that I want to search",
             "match": {
-              "location": "FindDealerStepDef.i_choose_a_car_radius_and_zipcode_to_find_a_dealer_and_click_submit()"
+              "arguments": [
+                {
+                  "val": "\"make\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"model\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"zipcode\"",
+                  "offset": 30
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
             },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-11-06T18:10:44.078Z",
-        "line": 12,
-        "name": "Dealer list",
-        "description": "",
-        "id": "find-dealer;dealer-list",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1792071101,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I am able to see dealer list",
-            "match": {
-              "location": "FindDealerStepDef.i_am_able_to_see_dealer_list()"
-            },
-            "keyword": "Given "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 560425899,
+              "duration": 1823842306,
               "status": "passed"
             },
-            "line": 14,
-            "name": "I click on any dealer page that I want",
+            "line": 9,
+            "name": "I click on next and show me results button  show me results button",
             "match": {
-              "location": "FindDealerStepDef.i_click_on_any_dealer_page_that_I_want()"
+              "location": "FollowBtnStepDef.i_click_on_next_and_show_me_results_button_show_me_results_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 835036821,
+              "duration": 1140142219,
               "status": "passed"
             },
-            "line": 15,
-            "name": "I able to see cars from specific dealer",
+            "line": 10,
+            "name": "I click on follow button to follow car",
             "match": {
-              "location": "FindDealerStepDef.i_able_to_see_cars_from_specific_dealer()"
+              "location": "FollowBtnStepDef.i_click_on_follow_button_to_follow_car()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3747275050,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I can create an account",
+            "match": {
+              "location": "FollowBtnStepDef.i_can_create_an_account()"
             },
             "keyword": "Then "
           }
@@ -119,11 +105,11 @@
         ]
       }
     ],
-    "name": "Find Dealer",
+    "name": "Create account through Follow button",
     "description": "",
-    "id": "find-dealer",
+    "id": "create-account-through-follow-button",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/com/carfax/features/FindDealer.feature",
+    "uri": "file:src/test/resources/com/carfax/features/FollowBtn.feature",
     "tags": []
   }
 ]

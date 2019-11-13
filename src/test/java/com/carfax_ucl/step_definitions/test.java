@@ -30,8 +30,8 @@ public class test {
     @Before
     public void beforeTest(){
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        driver.get(ConfigurationReader.get("url"));
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        driver.get(ConfigurationReader.get("url1"));
 
     }
      @Test
@@ -41,13 +41,13 @@ public class test {
          int model=1;
 
          for(int i=1;i<4;i++) {
-             //todo clicking on find a used car button
-         wait.until(ExpectedConditions.elementToBeClickable(vdp.findAUsedCarBtn)).click();
+                 //todo clicking on find a used car button
+                 wait.until(ExpectedConditions.elementToBeClickable(vdp.findAUsedCarBtn)).click();
 
-         // todo clicking on 'Select Make' dropdown
-       driver.findElement(By.xpath("(//select[contains(@class,'form-control')])[1]")).click();
+                 // todo clicking on 'Select Make' dropdown
+                 driver.findElement(By.xpath("(//select[contains(@class,'form-control')])[1]")).click();
 
-         List<WebElement> listOfMakes=driver.findElements(By.xpath("//option[contains(@id,'make_')]"));
+                 List<WebElement> listOfMakes=driver.findElements(By.xpath("//option[contains(@id,'make_')]"));
 
         // List<WebElement> listOfModel=driver.findElements(By.xpath("//optgroup/option[contains(@id,'model_')]"));
          //todo clicking on 'select make' button
@@ -61,7 +61,7 @@ String email=faker.name().name()+"@mail.com";
 email=email.replace(" ","");
 
 //todo clicking on 'Select model' dropdown
-   wait.until(ExpectedConditions.elementToBeClickable(
+   wait.until(ExpectedConditions.visibilityOf(
            driver.findElement(By.cssSelector("select[class='form-control search-model ']")))).click();
     modelOfCar.click();
     actions.doubleClick(modelOfCar).build().perform();
@@ -145,15 +145,18 @@ try {
     followBtnPage.zipCode.click();
     followBtnPage.zipCode.sendKeys("22204");
     followBtnPage.startFollowingBtn.click();
-    wait.until(ExpectedConditions.elementToBeClickable(followBtnPage.password)).click();
+    Thread.sleep(1000);
+    followBtnPage.password.click();
     followBtnPage.password.sendKeys("hdjfdsA1155");
     followBtnPage.savePasswordBtn.click();
-}catch (Exception e){
+}catch (WebDriverException e){
     System.out.println("Exception catch");
 }
 
+
         //todo verifying title of the expected result
 Thread.sleep(1000);
+//driver.findElement(By.cssSelector("button#firstFollowModalBtn")).click();
 //WebElement tableMessage=driver.findElement(By.xpath("//div[@class='cfx-modal-body-splitModal ']"));
 //if(tableMessage.isDisplayed()) {
 //    String expectedMessage="You're now following this car!";
@@ -164,7 +167,7 @@ Thread.sleep(1000);
 //    wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[@class='signout show'][@id='header-logout']")))).click();
 //}
 
-    wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[@class='signout show'][@id='header-logout']")))).click();
+    wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//a[@class='signout show'][@id='header-logout']")))).click();
 
 
         //wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[@class='signout show'][@id='header-logout']")))).click();
@@ -419,6 +422,7 @@ for(int i=1;i<5;i++) {
 
            }
 
+
         }
         driver.quit();
     }
@@ -430,17 +434,17 @@ for(int i=1;i<5;i++) {
 
         FindDealerPage findDealerPage=new FindDealerPage();
         //todo Select make dropdown
-        for (int i =0; i <10 ; i++) {
+        for (int i =0; i <8 ; i++) {
             wait.until(ExpectedConditions.elementToBeClickable(findDealerPage.findAUsedCarBtn)).click();
             wait.until(ExpectedConditions.elementToBeClickable(findDealerPage.findADealerBtn)).click();
             // todo clicking on 'Select Make' dropdown
-            findDealerPage.selectMakeBtn.click();
+            wait.until(ExpectedConditions.visibilityOf(findDealerPage.selectMakeBtn)).click();
             List<WebElement> listOfMakes = driver.findElements(By.xpath("//option[contains(@id,'make_')]"));
 
             //todo clicking on 'select make' button
 
             int make = i;
-            wait.until(ExpectedConditions.elementToBeClickable(listOfMakes.get(make))).click();
+            wait.until(ExpectedConditions.visibilityOf(listOfMakes.get(make))).click();
             ++make;
 
             Select select = new Select(driver.findElement(By.xpath("//select[@class='search-radius'][@name='radius']")));
@@ -603,8 +607,73 @@ List<WebElement> listOfResults=driver.findElements(By.xpath("//article[contains(
     }
 
     @Test
-    public void leadFormTest(){
+    public void leadFormTest() throws InterruptedException {
+
+        FollowBtnPage followBtnPage=new FollowBtnPage();
+        LeadFormPage leadFormPage=new LeadFormPage();
+
+        int model=1;
+        wait.until(ExpectedConditions.elementToBeClickable(followBtnPage.findAUsedCarBtn)).click();
+
+        for(int i=1;i<2;i++) {
+
+            driver.findElement(By.xpath("(//select[contains(@class,'form-control')])[1]")).click();
+            List<WebElement> listOfMakes = driver.findElements(By.xpath("//option[contains(@id,'make_')]"));
+
+            // List<WebElement> listOfModel=driver.findElements(By.xpath("//optgroup/option[contains(@id,'model_')]"));
+            //todo clicking on 'select make' button
+            Thread.sleep(1000);
+            listOfMakes.get(i).click();
+            actions.doubleClick(listOfMakes.get(i)).build().perform();
+
+            WebElement modelOfCar = driver.findElement(By.xpath("(//optgroup/option[contains(@id,'model_')])[" + model + "]"));
+            model++;
+            String email = faker.name().name() + "@mail.com";
+            email = email.replace(" ", "");
+            driver.findElement(By.cssSelector("select[class='form-control search-model ']")).click();
+            modelOfCar.click();
+
+
+            actions.doubleClick(modelOfCar).build().perform();
+
+
+            followBtnPage.zipCodeMainPage.click();
+            followBtnPage.zipCodeMainPage.sendKeys("22204");
+
+            followBtnPage.submitBtn.click();
+            Thread.sleep(1000);
+            wait.until(ExpectedConditions.elementToBeClickable(followBtnPage.showMeBtn)).click();
+            String length=driver.findElement(By.xpath("//div/div/ul/li/a[contains(@tabindex,'') and (contains(@aria-label,'Page'))]")).getAttribute("value");
+            System.out.println(length.length());
+            int numberOfCar = 1;
+            WebElement headerOfCar = driver.findElement(By.xpath("(//span[@class='srp-list-item-basic-info-model'])[" + numberOfCar + "]"));
+            numberOfCar++;
+            headerOfCar.click();
+        }
+
+    JavascriptExecutor jse = (JavascriptExecutor)driver;
+    jse.executeScript("window.scrollBy(25, 1000);");
+        Thread.sleep(2000);
+
+//
+//    System.out.println(call.getAttribute("value"));
+
+
+
+leadFormPage.firstName.click();
+leadFormPage.firstName.sendKeys("anna");
+
+        //actions.moveToElement(leadFormPage.firstName).click().sendKeys(faker.name().firstName()).build().perform();
+
+
+//             Assert.assertTrue(wait.until(ExpectedConditions.visibilityOf(call)).isDisplayed());
+//             Assert.assertTrue(wait.
+//                     until(ExpectedConditions.
+//                             visibilityOf(driver.findElement(By.xpath("(//span[@class='column' and contains(text(),'Send To: ')])[2]")))).isDisplayed());
+
+        driver.quit();
 
     }
+
      }
 

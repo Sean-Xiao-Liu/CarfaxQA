@@ -23,14 +23,15 @@ public class FollowBtnPage extends MainSignUpPage {
     @FindBy(xpath = "//button[@class='button large primary-green']")
     public WebElement showMeBtn;
 
-    @FindBy(xpath = "//button[@type='button'][@class='btn btn-oval btn-following  ']")
+    //@FindBy(xpath = "//button[@type='button'][@class='btn btn-oval btn-following  ']")
+    @FindBy(xpath = "//i[contains(@class,'follow-button__heart fa fa-hear')]")
     public WebElement FollowBtn;
 
 
     @FindBy(xpath = "//button[@type='submit'][@value='Send']")
     public WebElement startFollowingBtn;
 
-    @FindBy(xpath = "(//input[@name='zip'][@placeholder='Zip Code'])[2]")
+    @FindBy(xpath = "(//input[@name='zip'][@placeholder='Zip Code'])[3]")
     public WebElement zipCode;
 
 

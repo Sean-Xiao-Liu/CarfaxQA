@@ -42,7 +42,7 @@ public class vdpSaveThisSearchPage extends MainSignUpPage{
     @FindBy(xpath = "//input[@name='email'][@placeholder='Email Address']")
     public WebElement emailAddress;
 
-    @FindBy(xpath = "(//input[@name='zip'][@placeholder='Zip Code'])[2]")
+    @FindBy(xpath = "(//input[@name='zip'][@placeholder='Zip Code'])[3]")
     public WebElement zipCodeSaveSearchPage;
 
     @FindBy(xpath = "//button[@type='submit'][@value='Send']")

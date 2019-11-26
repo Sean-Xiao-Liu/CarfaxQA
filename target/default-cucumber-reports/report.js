@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/com/carfax/features/FollowBtn.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/com/carfax/features/UCLSignUpBtn.feature");
 formatter.feature({
-  "name": "Create account through Follow button",
+  "name": "Create account",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Follow button to create account in VDP",
+  "name": "Create account through UCL page",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -35,41 +35,31 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I fill out \"make\" , \"model\" , \"zipcode\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on next and show me results button  show me results button",
+  "name": "I click on Sign Up button from UCL",
   "keyword": "When "
 });
 formatter.match({
-  "location": "FollowBtnStepDef.i_click_on_next_and_show_me_results_button_show_me_results_button()"
+  "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on follow button to follow car",
+  "name": "I fill out \"email\" , \"password\" , \"zipcode\" to create a new account",
   "keyword": "And "
 });
 formatter.match({
-  "location": "FollowBtnStepDef.i_click_on_follow_button_to_follow_car()"
+  "location": "UCLSignUpBtnStepDef.i_fill_out_to_create_a_new_account(String,String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I can create an account",
+  "name": "I click on Create account button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "FollowBtnStepDef.i_can_create_an_account()"
+  "location": "UCLSignUpBtnStepDef.i_click_on_Create_account_button()"
 });
 formatter.result({
   "status": "passed"

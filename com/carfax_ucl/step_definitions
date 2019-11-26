@@ -3,20 +3,20 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-11-13T14:02:32.917Z",
-        "line": 4,
-        "name": "Follow button to create account in VDP",
+        "start_timestamp": "2019-11-26T13:59:31.223Z",
+        "line": 6,
+        "name": "Create account through UCL page",
         "description": "",
-        "id": "create-account-through-follow-button;follow-button-to-create-account-in-vdp",
+        "id": "create-account;create-account-through-ucl-page",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4030570802,
+              "duration": 6413987895,
               "status": "passed"
             },
-            "line": 6,
+            "line": 8,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -25,10 +25,10 @@
           },
           {
             "result": {
-              "duration": 221113190,
+              "duration": 191969578,
               "status": "passed"
             },
-            "line": 7,
+            "line": 9,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -37,63 +37,51 @@
           },
           {
             "result": {
-              "duration": 3445645699,
+              "duration": 1260230704,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I fill out \"make\" , \"model\" , \"zipcode\" of the car that I want to search",
+            "line": 10,
+            "name": "I click on Sign Up button from UCL",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"make\"",
-                  "offset": 11
-                },
-                {
-                  "val": "\"model\"",
-                  "offset": 20
-                },
-                {
-                  "val": "\"zipcode\"",
-                  "offset": 30
-                }
-              ],
-              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1823842306,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I click on next and show me results button  show me results button",
-            "match": {
-              "location": "FollowBtnStepDef.i_click_on_next_and_show_me_results_button_show_me_results_button()"
+              "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1140142219,
+              "duration": 1775910439,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I click on follow button to follow car",
+            "line": 11,
+            "name": "I fill out \"email\" , \"password\" , \"zipcode\" to create a new account",
             "match": {
-              "location": "FollowBtnStepDef.i_click_on_follow_button_to_follow_car()"
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"zipcode\"",
+                  "offset": 34
+                }
+              ],
+              "location": "UCLSignUpBtnStepDef.i_fill_out_to_create_a_new_account(String,String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3747275050,
+              "duration": 2725294314,
               "status": "passed"
             },
-            "line": 11,
-            "name": "I can create an account",
+            "line": 12,
+            "name": "I click on Create account button",
             "match": {
-              "location": "FollowBtnStepDef.i_can_create_an_account()"
+              "location": "UCLSignUpBtnStepDef.i_click_on_Create_account_button()"
             },
             "keyword": "Then "
           }
@@ -105,11 +93,11 @@
         ]
       }
     ],
-    "name": "Create account through Follow button",
+    "name": "Create account",
     "description": "",
-    "id": "create-account-through-follow-button",
+    "id": "create-account",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/com/carfax/features/FollowBtn.feature",
+    "uri": "file:src/test/resources/com/carfax/features/UCLSignUpBtn.feature",
     "tags": []
   }
 ]

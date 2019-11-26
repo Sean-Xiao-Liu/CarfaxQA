@@ -11,6 +11,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class UCLSignUpBtnStepDef {
 
 
@@ -37,11 +40,15 @@ public class UCLSignUpBtnStepDef {
         ucl.uclZipcode.click();
         ucl.uclZipcode.sendKeys("22204");
 
+
+
+
     }
 
     @Then("I click on Create account button")
     public void i_click_on_Create_account_button() throws InterruptedException {
         ucl.uclCreateAccount.click();
+
         Thread.sleep(1000);
 
         //todo verifying results
@@ -57,5 +64,7 @@ public class UCLSignUpBtnStepDef {
         driver.findElement(By.xpath("//a[@id='header-logout']")).click();
         //todo clicking on 'Carfax' header-logo
         driver.findElement(By.cssSelector("g#Page-1")).click();
+
+
     }
 }

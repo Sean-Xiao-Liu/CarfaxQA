@@ -3,6 +3,7 @@ package com.carfax_ucl.step_definitions;
 import com.carfax_ucl.pages.*;
 import com.carfax_ucl.utilities.ConfigurationReader;
 import com.carfax_ucl.utilities.Driver;
+import com.carfax_ucl.utilities.TestBase;
 import com.github.javafaker.Faker;
 import org.junit.Assert;
 import org.junit.Before;
@@ -15,12 +16,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class test {
+public class test extends TestBase {
 
-    public WebDriverWait wait=new WebDriverWait(Driver.get(),1);
+    public WebDriverWait wait=new WebDriverWait(Driver.get(),3);
     public  WebDriver driver= Driver.get();
     public Actions actions=new Actions(driver);
     public  Faker faker=new Faker();
+    public TestBase  testBase=new TestBase();
+
 
 
 
@@ -31,7 +34,7 @@ public class test {
     public void beforeTest(){
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-        driver.get(ConfigurationReader.get("url1"));
+        driver.get(ConfigurationReader.get("url"));
 
     }
      @Test
@@ -615,7 +618,7 @@ List<WebElement> listOfResults=driver.findElements(By.xpath("//article[contains(
         int model=1;
         wait.until(ExpectedConditions.elementToBeClickable(followBtnPage.findAUsedCarBtn)).click();
 
-        for(int i=1;i<2;i++) {
+        //for(int i=1;i<2;i++) {
 
             driver.findElement(By.xpath("(//select[contains(@class,'form-control')])[1]")).click();
             List<WebElement> listOfMakes = driver.findElements(By.xpath("//option[contains(@id,'make_')]"));
@@ -623,8 +626,8 @@ List<WebElement> listOfResults=driver.findElements(By.xpath("//article[contains(
             // List<WebElement> listOfModel=driver.findElements(By.xpath("//optgroup/option[contains(@id,'model_')]"));
             //todo clicking on 'select make' button
             Thread.sleep(1000);
-            listOfMakes.get(i).click();
-            actions.doubleClick(listOfMakes.get(i)).build().perform();
+            listOfMakes.get(1).click();
+            actions.doubleClick(listOfMakes.get(1)).build().perform();
 
             WebElement modelOfCar = driver.findElement(By.xpath("(//optgroup/option[contains(@id,'model_')])[" + model + "]"));
             model++;
@@ -642,26 +645,49 @@ List<WebElement> listOfResults=driver.findElements(By.xpath("//article[contains(
 
             followBtnPage.submitBtn.click();
             Thread.sleep(1000);
+
+
             wait.until(ExpectedConditions.elementToBeClickable(followBtnPage.showMeBtn)).click();
-            String length=driver.findElement(By.xpath("//div/div/ul/li/a[contains(@tabindex,'') and (contains(@aria-label,'Page'))]")).getAttribute("value");
-            System.out.println(length.length());
-            int numberOfCar = 1;
-            WebElement headerOfCar = driver.findElement(By.xpath("(//span[@class='srp-list-item-basic-info-model'])[" + numberOfCar + "]"));
+//            WebElement length=driver.findElement(By.xpath("//div/div/ul/li/a[contains(@tabindex,'') and (contains(@aria-label,'Page'))]"));
+//
+//
+//            JavascriptExecutor jse = (JavascriptExecutor)driver;
+//            jse.executeScript("arguments[0].scrollIntoView();",length);
+//
+//            Assert.assertTrue( length.isDisplayed());
+          int numberOfCar = 1;
+          WebElement headerOfCar = driver.findElement(By.xpath("(//span[@class='srp-list-item-basic-info-model'])[" + numberOfCar + "]"));
             numberOfCar++;
             headerOfCar.click();
-        }
+        //}
 
-    JavascriptExecutor jse = (JavascriptExecutor)driver;
-    jse.executeScript("window.scrollBy(25, 1000);");
-        Thread.sleep(2000);
 
+        testBase.sendToMyPhone();
+
+
+//        int numberOfCarusel=1;
 //
-//    System.out.println(call.getAttribute("value"));
+//       // WebElement vdp=driver.findElement(By.xpath("(//img[contains(@src,'')][@tabindex='-1'])[1]"));
+//for(int i=numberOfCarusel;i<4;i++){
+//    List<WebElement> caruselCar=driver.findElements(By.xpath("//div[@id='carousel_listing_item_"+i+"']"));
+//    List<WebElement> caruselPicture=driver.findElements(By.xpath("(//img[@class='carousel__slide-photo'])"+"["+numberOfCarusel+"]"));
+//    System.out.println(caruselPicture.get(i));
+//
+//
+//    Thread.sleep(1000);
+//
+//wait.until(ExpectedConditions.elementToBeClickable(caruselCar.get(0))).click();
+//Thread.sleep(1000);
+        driver.quit();
 
+}
 
-
-leadFormPage.firstName.click();
-leadFormPage.firstName.sendKeys("anna");
+////    System.out.println(call.getAttribute("value"));
+//
+//
+//
+//leadFormPage.firstName.click();
+//leadFormPage.firstName.sendKeys("anna");
 
         //actions.moveToElement(leadFormPage.firstName).click().sendKeys(faker.name().firstName()).build().perform();
 
@@ -671,9 +697,9 @@ leadFormPage.firstName.sendKeys("anna");
 //                     until(ExpectedConditions.
 //                             visibilityOf(driver.findElement(By.xpath("(//span[@class='column' and contains(text(),'Send To: ')])[2]")))).isDisplayed());
 
-        driver.quit();
+
 
     }
 
-     }
+
 

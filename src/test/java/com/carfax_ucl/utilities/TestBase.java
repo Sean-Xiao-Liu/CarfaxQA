@@ -1,32 +1,28 @@
 package com.carfax_ucl.utilities;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+import java.util.NoSuchElementException;
 
 
-public class TestBase {
+public  class TestBase {
 
 
 
 public static WebDriver driver=Driver.get();
 public static Actions actions=new Actions(driver);
+public WebDriverWait wait=new WebDriverWait(Driver.get(),3);
 
 
-public static void main(String[] arg){
-    Map<String,Object> numberofElement=new HashMap<>();
-    numberofElement.put("number",1);
-    numberofElement.put("number",2);
-    numberofElement.put("number",3);
-    numberofElement.put("number",4);
-
-    System.out.println(numberofElement.size());
-    System.out.println(numberofElement);
-}
 public void checkBoxSelection(String numberOfChecking){//1 2 3
 
     numberOfChecking = numberOfChecking.replace(",", "");
@@ -75,7 +71,26 @@ public void checkBoxSelection(String numberOfChecking){//1 2 3
 
 
 
+public void sendToMyPhone() throws NoSuchElementException{
 
+
+
+    WebElement sendToMyPhoneBtn = driver.findElement(By.xpath("(//button[@class='button phone'])[1]"));
+    WebElement enterPhoneNumber = driver.findElement(By.xpath("//input[@name='phone'][@placeholder='Enter your mobile phone #']"));
+
+    WebElement sendBtn = driver.findElement(By.xpath("//button[@type='submit'][@value='Send']"));
+
+
+    // wait.until(ExpectedConditions.elementToBeClickable(sendToMyPhoneBtn)).click();
+    actions.moveToElement(sendToMyPhoneBtn).click();
+    enterPhoneNumber.click();
+    enterPhoneNumber.sendKeys("5555555555");
+    sendBtn.click();
+    wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//p[@class='cfx-modal-complete-title']"))));
+    Assert.assertTrue(driver.findElement(By.xpath("//p[@class='cfx-modal-complete-title']")).isDisplayed());
+
+
+}
 
 
 

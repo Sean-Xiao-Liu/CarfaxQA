@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-11-26T13:59:31.223Z",
+        "start_timestamp": "2019-12-02T13:54:24.267Z",
         "line": 6,
         "name": "Create account through UCL page",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6413987895,
+              "duration": 6026872901,
               "status": "passed"
             },
             "line": 8,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 191969578,
+              "duration": 260181353,
               "status": "passed"
             },
             "line": 9,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 1260230704,
+              "duration": 1768724540,
               "status": "passed"
             },
             "line": 10,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 1775910439,
+              "duration": 1375386125,
               "status": "passed"
             },
             "line": 11,
@@ -75,7 +75,7 @@
           },
           {
             "result": {
-              "duration": 2725294314,
+              "duration": 2994867593,
               "status": "passed"
             },
             "line": 12,

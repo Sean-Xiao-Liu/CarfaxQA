@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70c517bd-004b-4f73-8ac2-9c522f37daed" name="Default Changelist" comment="" />
+    <list default="true" id="70c517bd-004b-4f73-8ac2-9c522f37daed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,7 +98,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/UCLSignUpBtnStepDef.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
+            <state relative-caret-position="415">
               <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
@@ -461,7 +463,8 @@
       <workItem from="1574862689308" duration="15000" />
       <workItem from="1575294127775" duration="1242000" />
       <workItem from="1575400945492" duration="600000" />
-      <workItem from="1575479728748" duration="357000" />
+      <workItem from="1575479728748" duration="1010000" />
+      <workItem from="1575491673977" duration="543000" />
     </task>
     <servers />
   </component>
@@ -498,12 +501,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180333000" />
+    <option name="totallyTimeSpent" value="181529000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="15" y="23" width="1424" height="825" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496063" visible="true" weight="0.39725035" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496063" visible="true" weight="0.40303907" />
       <window_info id="Structure" order="1" sideWeight="0.5053996" side_tool="true" weight="0.26435935" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -932,7 +935,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/UCLSignUpBtnStepDef.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
+        <state relative-caret-position="415">
           <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>

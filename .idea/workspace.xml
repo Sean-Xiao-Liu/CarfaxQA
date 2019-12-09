@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="165eccde-32d3-4ed8-a7a6-7a3177b8431e" name="Default Changelist" comment="" />
+    <list default="true" id="165eccde-32d3-4ed8-a7a6-7a3177b8431e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +20,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
+            <state relative-caret-position="334">
               <caret line="560" column="5" lean-forward="true" selection-start-line="560" selection-start-column="5" selection-end-line="560" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -133,6 +135,9 @@
       <find>(//input[@name='zip'][@placeholder='Zip Code'])[3]</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -173,6 +178,7 @@
     <option name="width" value="1400" />
     <option name="height" value="783" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <hideEmptyPackages ProjectPane="false" />
@@ -299,6 +305,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -371,7 +378,7 @@
       <updated>1575580870692</updated>
       <workItem from="1575580871956" duration="3168000" />
       <workItem from="1575647926659" duration="5042000" />
-      <workItem from="1575899083805" duration="2955000" />
+      <workItem from="1575899083805" duration="4509000" />
     </task>
     <servers />
   </component>
@@ -408,7 +415,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11165000" />
+    <option name="totallyTimeSpent" value="12719000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="783" extended-state="0" />
@@ -422,7 +429,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3299566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3299566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -430,7 +437,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3299566" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -701,7 +708,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
+        <state relative-caret-position="334">
           <caret line="560" column="5" lean-forward="true" selection-start-line="560" selection-start-column="5" selection-end-line="560" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />

@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
                 "rerun:target.rerun.txt"},
         features = "src/test/resources/com/carfax/features/",
         glue = {"com/carfax_ucl/step_definitions"},
-        tags = "@smoke",
+         tags = "@smoke",
         dryRun = false
 )
 public class CukesRunner {

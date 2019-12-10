@@ -15,6 +15,11 @@ public  class TestBase {
     public static WebDriver driver=Driver.get();
     public static Actions actions=new Actions(driver);
     public WebDriverWait wait=new WebDriverWait(Driver.get(),3);
+
+
+
+
+
     public void checkBoxSelection(String numberOfChecking){//1 2 3
         numberOfChecking = numberOfChecking.replace(",", "");
         Map<String,Object> numberofElement=new HashMap<>();
@@ -50,15 +55,18 @@ public  class TestBase {
             driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[4]")).click();
         }
     }
-    public void sendToMyPhone() throws NoSuchElementException{
-        WebElement sendToMyPhoneBtn = driver.findElement(By.xpath("(//button[@class='button phone'])[1]"));
-        WebElement enterPhoneNumber = driver.findElement(By.xpath("//input[@name='phone'][@placeholder='Enter your mobile phone #']"));
-        WebElement sendBtn = driver.findElement(By.xpath("//button[@type='submit'][@value='Send']"));
+    public void sendToMyPhone() throws InterruptedException {
+        //WebElement sendToMyPhoneBtn = driver.findElement(By.xpath("(//button[@class='button phone'])[1]"));
+        //WebElement enterPhoneNumber = driver.findElement(By.xpath("//input[@name='phone'][@placeholder='Enter your mobile phone #']"));
+       // WebElement sendBtn = driver.findElement(By.xpath("//button[@type='submit'][@value='Send']"));
         // wait.until(ExpectedConditions.elementToBeClickable(sendToMyPhoneBtn)).click();
-        actions.moveToElement(sendToMyPhoneBtn).click();
-        enterPhoneNumber.click();
-        enterPhoneNumber.sendKeys("5555555555");
-        sendBtn.click();
+        Thread.sleep(2000);
+        driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@title='Criteo DIS iframe']")));
+
+        driver.findElement(By.xpath("(//button[@class='button phone'])[1]")).click();
+        driver.findElement(By.xpath("//input[@name='phone'][@placeholder='Enter your mobile phone #']")).click();
+        driver.findElement(By.xpath("//input[@name='phone'][@placeholder='Enter your mobile phone #']")).sendKeys("5555555555");
+        driver.findElement(By.xpath("//button[@type='submit'][@value='Send']")).click();
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//p[@class='cfx-modal-complete-title']"))));
         Assert.assertTrue(driver.findElement(By.xpath("//p[@class='cfx-modal-complete-title']")).isDisplayed());
     }

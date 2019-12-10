@@ -475,18 +475,20 @@ public class test extends TestBase {
         //todo clicking on 'select make' button
         Thread.sleep(1000);
         listOfMakes.get(1).click();
-        actions.doubleClick(listOfMakes.get(1)).build().perform();
+        listOfMakes.get(1).click();
         WebElement modelOfCar = driver.findElement(By.xpath("(//optgroup/option[contains(@id,'model_')])[" + model + "]"));
         model++;
         String email = faker.name().name() + "@mail.com";
         email = email.replace(" ", "");
         driver.findElement(By.cssSelector("select[class='form-control search-model ']")).click();
         modelOfCar.click();
-        actions.doubleClick(modelOfCar).build().perform();
+        modelOfCar.click();
         followBtnPage.zipCodeMainPage.click();
         followBtnPage.zipCodeMainPage.sendKeys("22204");
         followBtnPage.submitBtn.click();
         Thread.sleep(1000);
+
+
         wait.until(ExpectedConditions.elementToBeClickable(followBtnPage.showMeBtn)).click();
 //            WebElement length=driver.findElement(By.xpath("//div/div/ul/li/a[contains(@tabindex,'') and (contains(@aria-label,'Page'))]"));
 //
@@ -495,6 +497,7 @@ public class test extends TestBase {
 //            jse.executeScript("arguments[0].scrollIntoView();",length);
 //
 //            Assert.assertTrue( length.isDisplayed());
+        testBase.checkBoxSelection("123");
         int numberOfCar = 1;
         WebElement headerOfCar = driver.findElement(By.xpath("(//span[@class='srp-list-item-basic-info-model'])[" + numberOfCar + "]"));
         numberOfCar++;
@@ -549,13 +552,28 @@ uclSignInPage.email.sendKeys(email);
 uclSignInPage.password.click();
 uclSignInPage.password.sendKeys("Ajad823782");
 uclSignInPage.signInBtn.click();
-String errorMessage=driver.findElement(By.xpath("//span[contains(text(),'Your password and email do not match.')]")).getText();
 
+String errorMessage=driver.findElement(By.xpath("//span[contains(text(),'Your password and email do not match.')]")).getText();
+Thread.sleep(1000);
+
+//todo clicking on Forgot password
 if(errorMessage.contains("password")){
     uclSignInPage.forgotPassword.click();
     uclSignInPage.EnterEmail.click();
     uclSignInPage.EnterEmail.sendKeys(email);
     uclSignInPage.resetPassword.click();
+}
+//todo clicking on create an account
+if(!errorMessage.isEmpty()){
+    uclSignInPage.createAccount.click();
+    uclSignInPage.EnterEmail.click();
+    uclSignInPage.EnterEmail.sendKeys(email);
+    uclSignInPage.EnterPassword.click();
+    uclSignInPage.EnterPassword.sendKeys("Aslfdjs2131");
+    uclSignInPage.zipcode.click();
+    uclSignInPage.zipcode.sendKeys("22201");
+    uclSignInPage.createAccountBtn.click();
+
 }
 
     }

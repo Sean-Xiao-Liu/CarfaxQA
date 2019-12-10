@@ -1,5 +1,5 @@
 Feature: Create account through save this search
-  @smoke
+
 
   Scenario: Create account through Save This Search option
     Given I am on main Carfax page

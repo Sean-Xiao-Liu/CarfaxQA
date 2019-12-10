@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/com/carfax/features/UCLSignUpBtn.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/com/carfax/features/UCLSignInBtn.feature");
 formatter.feature({
-  "name": "Create account",
+  "name": "Forgot Password and Create account trough Sign in feature",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Create account through UCL page",
+  "name": "Create account through SignIn option",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -35,11 +35,41 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on Sign Up button from UCL",
+  "name": "I click on Sign In button",
   "keyword": "When "
 });
 formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
+  "location": "UCLSignInStepDef.i_click_on_Sign_In_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I can fill out email , password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "UCLSignInStepDef.i_can_fill_out_email_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "If i see error message",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "UCLSignInStepDef.if_i_see_error_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on Create account option",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "UCLSignInStepDef.i_click_on_Create_account_option()"
 });
 formatter.result({
   "status": "passed"
@@ -54,12 +84,82 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "Forgot password through SignIn option",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@smoke"
+    }
+  ]
+});
 formatter.step({
-  "name": "I click on Create account button",
+  "name": "I am on main Carfax page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I navigate to Find a Used Car page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on Sign In button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "UCLSignInStepDef.i_click_on_Sign_In_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I can fill out email , password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "UCLSignInStepDef.i_can_fill_out_email_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "If i see error message",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "UCLSignInStepDef.if_i_see_error_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on Forgot Password button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_click_on_Create_account_button()"
+  "location": "UCLSignInStepDef.i_click_on_Forgot_Password_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I fill out email and click on reset password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "UCLSignInStepDef.i_fill_out_email_and_click_on_reset_password()"
 });
 formatter.result({
   "status": "passed"

@@ -35,8 +35,9 @@ public class UCLSignUpBtnStepDef {
     }
     @Then("I click on Create account button")
     public void i_click_on_Create_account_button() throws InterruptedException {
-        ucl.uclCreateAccount.click();
-        Thread.sleep(1000);
+       // Thread.sleep(1000);
+
+        wait.until(ExpectedConditions.elementToBeClickable(ucl.uclCreateAccount)).click();
         //todo verifying results
         String actualResult=driver.findElement(By.xpath("//span[@class='cfx-modal-complete-title']")).getText();
         String expectedResult="Your account has been created!";

@@ -1,5 +1,4 @@
 Feature: Create account
-  @smoke
   Scenario: Create account through UCL page
     Given I am on main Carfax page
     And I navigate to Find a Used Car page

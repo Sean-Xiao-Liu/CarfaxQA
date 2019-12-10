@@ -3,20 +3,20 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-12-10T13:54:58.518Z",
-        "line": 3,
-        "name": "Create account through UCL page",
+        "start_timestamp": "2019-12-10T15:36:09.111Z",
+        "line": 4,
+        "name": "Create account through SignIn option",
         "description": "",
-        "id": "create-account;create-account-through-ucl-page",
+        "id": "forgot-password-and-create-account-trough-sign-in-feature;create-account-through-signin-option",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4163793371,
+              "duration": 4051405434,
               "status": "passed"
             },
-            "line": 4,
+            "line": 6,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -25,10 +25,10 @@
           },
           {
             "result": {
-              "duration": 198614203,
+              "duration": 228488035,
               "status": "passed"
             },
-            "line": 5,
+            "line": 7,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -37,22 +37,58 @@
           },
           {
             "result": {
-              "duration": 2355735350,
+              "duration": 2253342083,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I click on Sign Up button from UCL",
+            "line": 8,
+            "name": "I click on Sign In button",
             "match": {
-              "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
+              "location": "UCLSignInStepDef.i_click_on_Sign_In_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 896219132,
+              "duration": 763092904,
               "status": "passed"
             },
-            "line": 7,
+            "line": 9,
+            "name": "I can fill out email , password",
+            "match": {
+              "location": "UCLSignInStepDef.i_can_fill_out_email_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1002896019,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "If i see error message",
+            "match": {
+              "location": "UCLSignInStepDef.if_i_see_error_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 242512951,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on Create account option",
+            "match": {
+              "location": "UCLSignInStepDef.i_click_on_Create_account_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 689163860,
+              "status": "passed"
+            },
+            "line": 12,
             "name": "I fill out \"email\" , \"password\" , \"zipcode\" to create a new account",
             "match": {
               "arguments": [
@@ -72,18 +108,106 @@
               "location": "UCLSignUpBtnStepDef.i_fill_out_to_create_a_new_account(String,String,String)"
             },
             "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-10T15:36:18.396Z",
+        "line": 15,
+        "name": "Forgot password through SignIn option",
+        "description": "",
+        "id": "forgot-password-and-create-account-trough-sign-in-feature;forgot-password-through-signin-option",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 618022308,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am on main Carfax page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2488503534,
+              "duration": 164937824,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I click on Create account button",
+            "line": 17,
+            "name": "I navigate to Find a Used Car page",
             "match": {
-              "location": "UCLSignUpBtnStepDef.i_click_on_Create_account_button()"
+              "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2159140181,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on Sign In button",
+            "match": {
+              "location": "UCLSignInStepDef.i_click_on_Sign_In_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 523045141,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I can fill out email , password",
+            "match": {
+              "location": "UCLSignInStepDef.i_can_fill_out_email_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1004418575,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "If i see error message",
+            "match": {
+              "location": "UCLSignInStepDef.if_i_see_error_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74075456,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I click on Forgot Password button",
+            "match": {
+              "location": "UCLSignInStepDef.i_click_on_Forgot_Password_button()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 280131332,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I fill out email and click on reset password",
+            "match": {
+              "location": "UCLSignInStepDef.i_fill_out_email_and_click_on_reset_password()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -93,11 +217,11 @@
         ]
       }
     ],
-    "name": "Create account",
+    "name": "Forgot Password and Create account trough Sign in feature",
     "description": "",
-    "id": "create-account",
+    "id": "forgot-password-and-create-account-trough-sign-in-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/com/carfax/features/UCLSignUpBtn.feature",
+    "uri": "file:src/test/resources/com/carfax/features/UCLSignInBtn.feature",
     "tags": []
   }
 ]

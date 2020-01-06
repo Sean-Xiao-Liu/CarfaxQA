@@ -2,15 +2,12 @@ package com.carfax_ucl.utilities;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.NoSuchElementException;
 public  class TestBase {
     public static WebDriver driver=Driver.get();
     public static Actions actions=new Actions(driver);
@@ -63,7 +60,7 @@ public  class TestBase {
         Thread.sleep(2000);
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@title='Criteo DIS iframe']")));
 
-        driver.findElement(By.xpath("(//button[@class='button phone'])[1]")).click();
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//button[@class='button phone'])[1]")))).click();
         driver.findElement(By.xpath("//input[@name='phone'][@placeholder='Enter your mobile phone #']")).click();
         driver.findElement(By.xpath("//input[@name='phone'][@placeholder='Enter your mobile phone #']")).sendKeys("5555555555");
         driver.findElement(By.xpath("//button[@type='submit'][@value='Send']")).click();

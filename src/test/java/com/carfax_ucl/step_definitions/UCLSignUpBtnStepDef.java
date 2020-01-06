@@ -10,8 +10,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import java.util.ArrayList;
-import java.util.Arrays;
 public class UCLSignUpBtnStepDef {
     public UCLSignUpPage ucl=new UCLSignUpPage();
     public WebDriverWait wait=new WebDriverWait(Driver.get(),3);

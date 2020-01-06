@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Create account through Follow button" time="11.692" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="12"/>
+    <property name="webdriver.chrome.driver" value="/Users/annachernyshova/.m2/repository/webdriver/chromedriver/mac64/79.0.3945.36/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/annachernyshova/IdeaProjects/ucl_qa/target/test-classes:/Users/annachernyshova/IdeaProjects/ucl_qa/target/classes:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/annachernyshova/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/annachernyshova/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/annachernyshova/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/annachernyshova/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/annachernyshova/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/annachernyshova/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/annachernyshova/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/annachernyshova/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/annachernyshova/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/annachernyshova/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/annachernyshova/.m2/repository/io/cucumber/cucumber-junit/4.4.0/cucumber-junit-4.4.0.jar:/Users/annachernyshova/.m2/repository/io/cucumber/cucumber-core/4.4.0/cucumber-core-4.4.0.jar:/Users/annachernyshova/.m2/repository/io/cucumber/gherkin/5.1.0/gherkin-5.1.0.jar:/Users/annachernyshova/.m2/repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/Users/annachernyshova/.m2/repository/io/cucumber/cucumber-expressions/7.0.2/cucumber-expressions-7.0.2.jar:/Users/annachernyshova/.m2/repository/io/cucumber/datatable/1.1.14/datatable-1.1.14.jar:/Users/annachernyshova/.m2/repository/io/cucumber/datatable-dependencies/1.1.14/datatable-dependencies-1.1.14.jar:/Users/annachernyshova/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/annachernyshova/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/annachernyshova/.m2/repository/io/cucumber/cucumber-java/4.4.0/cucumber-java-4.4.0.jar:/Users/annachernyshova/.m2/repository/io/github/bonigarcia/webdrivermanager/3.6.1/webdrivermanager-3.6.1.jar:/Users/annachernyshova/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/annachernyshova/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/annachernyshova/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/annachernyshova/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/annachernyshova/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/annachernyshova/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/annachernyshova/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/annachernyshova/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/annachernyshova/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/annachernyshova/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/annachernyshova/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/annachernyshova/.m2/repository/com/github/javafaker/javafaker/0.16/javafaker-0.16.jar:/Users/annachernyshova/.m2/repository/org/yaml/snakeyaml/1.20/snakeyaml-1.20-android.jar:/Users/annachernyshova/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/annachernyshova/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="12"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/annachernyshova/IdeaProjects/ucl_qa/target/surefire/surefirebooter10216120654815611698.jar /Users/annachernyshova/IdeaProjects/ucl_qa/target/surefire 2019-12-22T16-27-04_044-jvmRun1 surefire1035146606500137321tmp surefire_02345320962562927069tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/annachernyshova/IdeaProjects/ucl_qa/target/test-classes:/Users/annachernyshova/IdeaProjects/ucl_qa/target/classes:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/annachernyshova/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/annachernyshova/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/annachernyshova/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/annachernyshova/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/annachernyshova/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/annachernyshova/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/annachernyshova/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/annachernyshova/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/annachernyshova/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/annachernyshova/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/annachernyshova/.m2/repository/io/cucumber/cucumber-junit/4.4.0/cucumber-junit-4.4.0.jar:/Users/annachernyshova/.m2/repository/io/cucumber/cucumber-core/4.4.0/cucumber-core-4.4.0.jar:/Users/annachernyshova/.m2/repository/io/cucumber/gherkin/5.1.0/gherkin-5.1.0.jar:/Users/annachernyshova/.m2/repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/Users/annachernyshova/.m2/repository/io/cucumber/cucumber-expressions/7.0.2/cucumber-expressions-7.0.2.jar:/Users/annachernyshova/.m2/repository/io/cucumber/datatable/1.1.14/datatable-1.1.14.jar:/Users/annachernyshova/.m2/repository/io/cucumber/datatable-dependencies/1.1.14/datatable-dependencies-1.1.14.jar:/Users/annachernyshova/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/annachernyshova/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/annachernyshova/.m2/repository/io/cucumber/cucumber-java/4.4.0/cucumber-java-4.4.0.jar:/Users/annachernyshova/.m2/repository/io/github/bonigarcia/webdrivermanager/3.6.1/webdrivermanager-3.6.1.jar:/Users/annachernyshova/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/annachernyshova/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/annachernyshova/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/annachernyshova/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/annachernyshova/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/annachernyshova/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/annachernyshova/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/annachernyshova/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/annachernyshova/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/annachernyshova/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/annachernyshova/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/annachernyshova/.m2/repository/com/github/javafaker/javafaker/0.16/javafaker-0.16.jar:/Users/annachernyshova/.m2/repository/org/yaml/snakeyaml/1.20/snakeyaml-1.20-android.jar:/Users/annachernyshova/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/annachernyshova/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/annachernyshova"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2019-04-16"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/annachernyshova/IdeaProjects/ucl_qa"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/annachernyshova/IdeaProjects/ucl_qa/target/surefire/surefirebooter10216120654815611698.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="12.0.1+12"/>
+    <property name="user.name" value="annachernyshova"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.15.2"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/annachernyshova/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/x_/jgrkcbmn19s41k5v_9y874qdn_5z29/T/"/>
+    <property name="java.version" value="12.0.1"/>
+    <property name="user.dir" value="/Users/annachernyshova/IdeaProjects/ucl_qa"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="idea.version2019.3.1" value="true"/>
+    <property name="java.library.path" value="/Users/annachernyshova/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="12.0.1+12"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="56.0"/>
+  </properties>
+  <testcase name="Follow button to create account in VDP" classname="Create account through Follow button" time="11.692">
+    <error message="element click intercepted: Element &lt;select class=&quot;form-control search-model &quot; name=&quot;model&quot;&gt;...&lt;/select&gt; is not clickable at point (552, 495). Other element would receive the click: &lt;iframe src=&quot;https://c.datado.me/captcha/?initialCid=AHrlqAAAAAMA0DYrRkso1osAuLks6g==&amp;amp;hash=F41B65A147534F8AA2026D0448DD7E&amp;amp;t=fe&amp;amp;cid=0A_hEcm2uogba0EhcvmwF40QToLjquxwoOUSnn568-_2iJfETFA.-Rp2fc2IbNJXxdW91GrZs3iGQm0M_cOUy5VRwaexiZaSQiAZuwLi2w&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;height:100vh;&quot; frameborder=&quot;0&quot; border=&quot;0&quot; scrolling=&quot;yes&quot;&gt;&lt;/iframe&gt;&#10;  (Session info: chrome=79.0.3945.88)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;A-XF4WBHV29&apos;, ip: &apos;fe80:0:0:0:1444:b5b0:fa0a:4a6e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;12.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/x_/jgrkcbmn19s...}, goog:chromeOptions: {debuggerAddress: localhost:61026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: c63a726899c43a255046fd25e8d0b884" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <select class="form-control search-model " name="model">...</select> is not clickable at point (552, 495). Other element would receive the click: <iframe src="https://c.datado.me/captcha/?initialCid=AHrlqAAAAAMA0DYrRkso1osAuLks6g==&amp;hash=F41B65A147534F8AA2026D0448DD7E&amp;t=fe&amp;cid=0A_hEcm2uogba0EhcvmwF40QToLjquxwoOUSnn568-_2iJfETFA.-Rp2fc2IbNJXxdW91GrZs3iGQm0M_cOUy5VRwaexiZaSQiAZuwLi2w" width="100%" height="100%" style="height:100vh;" frameborder="0" border="0" scrolling="yes"></iframe>
+  (Session info: chrome=79.0.3945.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'A-XF4WBHV29', ip: 'fe80:0:0:0:1444:b5b0:fa0a:4a6e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/x_/jgrkcbmn19s...}, goog:chromeOptions: {debuggerAddress: localhost:61026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c63a726899c43a255046fd25e8d0b884
+]]></error>
+    <system-out><![CDATA[Dec 22, 2019 4:27:05 PM cucumber.runtime.java.ObjectFactoryLoader loadSingleObjectFactory
+WARNING: Use deprecated reflections to load ObjectFactory.
+Feature: Create account through Follow button
+
+  @smoke
+  Scenario: Follow button to create account in VDP                               &amp#27;[90m# src/test/resources/com/carfax/features/FollowBtn.feature:5&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on main Carfax page&amp#27;[0m                                               &amp#27;[90m# SaveThisSearchStepDef.i_am_on_main_Carfax_page()&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI navigate to Find a Used Car page&amp#27;[0m                                       &amp#27;[90m# SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()&amp#27;[0m
+    &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mI fill out &amp#27;[0m&amp#27;[31m&amp#27;[1m"make"&amp#27;[0m&amp#27;[31m , &amp#27;[0m&amp#27;[31m&amp#27;[1m"model"&amp#27;[0m&amp#27;[31m , &amp#27;[0m&amp#27;[31m&amp#27;[1m"zipcode"&amp#27;[0m&amp#27;[31m of the car that I want to search&amp#27;[0m &amp#27;[90m# SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <select class="form-control search-model " name="model">...</select> is not clickable at point (552, 495). Other element would receive the click: <iframe src="https://c.datado.me/captcha/?initialCid=AHrlqAAAAAMA0DYrRkso1osAuLks6g==&amp;hash=F41B65A147534F8AA2026D0448DD7E&amp;t=fe&amp;cid=0A_hEcm2uogba0EhcvmwF40QToLjquxwoOUSnn568-_2iJfETFA.-Rp2fc2IbNJXxdW91GrZs3iGQm0M_cOUy5VRwaexiZaSQiAZuwLi2w" width="100%" height="100%" style="height:100vh;" frameborder="0" border="0" scrolling="yes"></iframe>
+  (Session info: chrome=79.0.3945.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'A-XF4WBHV29', ip: 'fe80:0:0:0:1444:b5b0:fa0a:4a6e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/x_/jgrkcbmn19s...}, goog:chromeOptions: {debuggerAddress: localhost:61026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c63a726899c43a255046fd25e8d0b884
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.carfax_ucl.step_definitions.SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(SaveThisSearchStepDef.java:63)
+	at ✽.I fill out "make" , "model" , "zipcode" of the car that I want to search(file:src/test/resources/com/carfax/features/FollowBtn.feature:8)
+&amp#27;[0m
+    &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI click on next and show me results button  show me results button&amp#27;[0m      &amp#27;[90m# FollowBtnStepDef.i_click_on_next_and_show_me_results_button_show_me_results_button()&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on follow button to follow car&amp#27;[0m                                   &amp#27;[90m# FollowBtnStepDef.i_click_on_follow_button_to_follow_car()&amp#27;[0m
+    &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI can create an account&amp#27;[0m                                                 &amp#27;[90m# FollowBtnStepDef.i_can_create_an_account()&amp#27;[0m
+
+&amp#27;[31mFailed scenarios:&amp#27;[0m
+&amp#27;[31msrc/test/resources/com/carfax/features/FollowBtn.feature:5 &amp#27;[0m# Follow button to create account in VDP
+
+1 Scenarios (&amp#27;[31m1 failed&amp#27;[0m)
+6 Steps (&amp#27;[31m1 failed&amp#27;[0m, &amp#27;[36m3 skipped&amp#27;[0m, &amp#27;[32m2 passed&amp#27;[0m)
+0m11.848s
+
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <select class="form-control search-model " name="model">...</select> is not clickable at point (552, 495). Other element would receive the click: <iframe src="https://c.datado.me/captcha/?initialCid=AHrlqAAAAAMA0DYrRkso1osAuLks6g==&amp;hash=F41B65A147534F8AA2026D0448DD7E&amp;t=fe&amp;cid=0A_hEcm2uogba0EhcvmwF40QToLjquxwoOUSnn568-_2iJfETFA.-Rp2fc2IbNJXxdW91GrZs3iGQm0M_cOUy5VRwaexiZaSQiAZuwLi2w" width="100%" height="100%" style="height:100vh;" frameborder="0" border="0" scrolling="yes"></iframe>
+  (Session info: chrome=79.0.3945.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'A-XF4WBHV29', ip: 'fe80:0:0:0:1444:b5b0:fa0a:4a6e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/x_/jgrkcbmn19s...}, goog:chromeOptions: {debuggerAddress: localhost:61026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c63a726899c43a255046fd25e8d0b884
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.carfax_ucl.step_definitions.SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(SaveThisSearchStepDef.java:63)
+	at ✽.I fill out "make" , "model" , "zipcode" of the car that I want to search(file:src/test/resources/com/carfax/features/FollowBtn.feature:8)
+
+ Setting up before hooks
+Browser name : chrome
+After Hooks
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 39802
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Dec 22, 2019 4:27:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

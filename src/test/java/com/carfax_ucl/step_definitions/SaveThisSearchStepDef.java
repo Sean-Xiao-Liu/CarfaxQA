@@ -48,7 +48,12 @@ public class SaveThisSearchStepDef {
         Thread.sleep(1000);
         int makeNumber=1;
         wait.until(ExpectedConditions.elementToBeClickable(listOfMakes.get(makeNumber))).click();
-        listOfMakes.get(1).click();
+        for(WebElement element : listOfMakes) {
+            if(element.getText().equals("make")){
+                element.click();
+            }
+           // listOfMakes.get(1).click();
+        }
         //actions.doubleClick(listOfMakes.get(makeNumber)).build().perform();
         int model=1;
         WebElement modelOfCar=driver.findElement(By.xpath("(//optgroup/option[contains(@id,'model_')])[" +model+"]"));

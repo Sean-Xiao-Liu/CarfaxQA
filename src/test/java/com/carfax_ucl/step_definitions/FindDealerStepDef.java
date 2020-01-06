@@ -14,9 +14,14 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 public class FindDealerStepDef {
+
+
     public FindDealerPage findDealerPage = new FindDealerPage();
     public WebDriverWait wait = new WebDriverWait(Driver.get(), 1);
     public WebDriver driver = Driver.get();
+
+
+
     @When("I click on Find a Dealer button")
     public void i_click_on_Find_a_Dealer_button() {
         wait.until(ExpectedConditions.elementToBeClickable(findDealerPage.findADealerBtn)).click();

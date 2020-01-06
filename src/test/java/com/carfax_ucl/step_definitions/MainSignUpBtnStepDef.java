@@ -9,9 +9,13 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 public class MainSignUpBtnStepDef {
+
     public MainSignUpPage signUpPage=new MainSignUpPage();
     public Faker faker=new Faker();
     public WebDriver driver= Driver.get();
+
+
+
     @When("I click on Sign Up button")
     public void i_click_on_Sign_Up_button() {
         driver.manage().window().maximize();

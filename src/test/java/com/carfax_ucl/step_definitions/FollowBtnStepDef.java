@@ -5,9 +5,9 @@ import com.carfax_ucl.utilities.Driver;
 import com.github.javafaker.Faker;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.percy.selenium.Percy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 public class FollowBtnStepDef {
@@ -15,11 +15,16 @@ public class FollowBtnStepDef {
     WebDriverWait wait=new WebDriverWait(Driver.get(),1);
     Faker faker=new Faker();
     public WebDriver driver= Driver.get();
+public Percy percy=new Percy(driver);
+
+
     @When("I click on next and show me results button  show me results button")
     public void i_click_on_next_and_show_me_results_button_show_me_results_button() throws InterruptedException {
         followBtnPage.submitBtn.click();
         Thread.sleep(1000);
         wait.until(ExpectedConditions.elementToBeClickable(followBtnPage.showMeBtn)).click();
+        percy.snapshot("Save this Search");
+
     }
     @When("I click on follow button to follow car")
     public void i_click_on_follow_button_to_follow_car() throws InterruptedException{

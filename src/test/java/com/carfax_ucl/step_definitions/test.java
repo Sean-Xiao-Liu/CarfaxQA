@@ -5,6 +5,7 @@ import com.carfax_ucl.utilities.ConfigurationReader;
 import com.carfax_ucl.utilities.Driver;
 import com.carfax_ucl.utilities.TestBase;
 import com.github.javafaker.Faker;
+import io.percy.selenium.Percy;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,6 +14,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Period;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 public class test extends TestBase {
@@ -21,11 +24,14 @@ public class test extends TestBase {
     public Actions actions=new Actions(driver);
     public  Faker faker=new Faker();
     public TestBase  testBase=new TestBase();
+public Percy percy=new Percy(driver);
+
+
     @Before
     public void beforeTest(){
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-        driver.get(ConfigurationReader.get("url"));
+        driver.get(ConfigurationReader.get("url1"));
     }
     @Test
 //todo DONE!!!!!!!
@@ -92,19 +98,20 @@ public class test extends TestBase {
             //todo clicking on 'select make' button
             Thread.sleep(1000);
             listOfMakes.get(i).click();
-            actions.doubleClick(listOfMakes.get(i)).build().perform();
+            listOfMakes.get(i).click();
             WebElement modelOfCar = driver.findElement(By.xpath("(//optgroup/option[contains(@id,'model_')])[" + model + "]"));
             model++;
             String email = faker.name().name() + "@mail.com";
             email = email.replace(" ", "");
             driver.findElement(By.cssSelector("select[class='form-control search-model ']")).click();
             modelOfCar.click();
-            actions.doubleClick(modelOfCar).build().perform();
+            (modelOfCar).click();
             followBtnPage.zipCodeMainPage.click();
             followBtnPage.zipCodeMainPage.sendKeys("22204");
             followBtnPage.submitBtn.click();
             Thread.sleep(1000);
             wait.until(ExpectedConditions.elementToBeClickable(followBtnPage.showMeBtn)).click();
+            percy.snapshot("Save this Search");
             //  int numberOfCar=1;
 //        WebElement headerOfCar=driver.findElement(By.xpath("(//span[@class='srp-list-item-basic-info-model'])["+numberOfCar+"]"));
 //        numberOfCar++;
@@ -537,7 +544,7 @@ public class test extends TestBase {
 
     @Test
     public void uclSignIn() throws InterruptedException{
-UCLSignInPage uclSignInPage=new UCLSignInPage();
+UCLSignInPage uclSignInPage=new  UCLSignInPage();
 
         String email = faker.name().name() + "@mail.com";
         email = email.replace(" ", "");
@@ -577,8 +584,56 @@ if(!errorMessage.isEmpty()){
 }
 
     }
+    @Test
+    public void sendToMyPhoneTest() throws InterruptedException {
+
+        FollowBtnPage followBtnPage = new FollowBtnPage();
+        LeadFormPage leadFormPage = new LeadFormPage();
+        int model = 1;
+        wait.until(ExpectedConditions.elementToBeClickable(followBtnPage.findAUsedCarBtn)).click();
+        //for(int i=1;i<2;i++) {
+        driver.findElement(By.xpath("(//select[contains(@class,'form-control')])[1]")).click();
+        List<WebElement> listOfMakes = driver.findElements(By.xpath("//option[contains(@id,'make_')]"));
+        // List<WebElement> listOfModel=driver.findElements(By.xpath("//optgroup/option[contains(@id,'model_')]"));
+        //todo clicking on 'select make' button
+        Thread.sleep(1000);
+        listOfMakes.get(1).click();
+        listOfMakes.get(1).click();
+        WebElement modelOfCar = driver.findElement(By.xpath("(//optgroup/option[contains(@id,'model_')])[" + model + "]"));
+        model++;
+        String email = faker.name().name() + "@mail.com";
+        email = email.replace(" ", "");
+        driver.findElement(By.cssSelector("select[class='form-control search-model ']")).click();
+        modelOfCar.click();
+        modelOfCar.click();
+        followBtnPage.zipCodeMainPage.click();
+        followBtnPage.zipCodeMainPage.sendKeys("22204");
+        followBtnPage.submitBtn.click();
+        Thread.sleep(1000);
 
 
+        wait.until(ExpectedConditions.elementToBeClickable(followBtnPage.showMeBtn)).click();
+//            WebElement length=driver.findElement(By.xpath("//div/div/ul/li/a[contains(@tabindex,'') and (contains(@aria-label,'Page'))]"));
+//
+//
+//            JavascriptExecutor jse = (JavascriptExecutor)driver;
+//            jse.executeScript("arguments[0].scrollIntoView();",length);
+//
+//            Assert.assertTrue( length.isDisplayed());
+        testBase.checkBoxSelection("123");
+        int numberOfCar = 1;
+        WebElement headerOfCar = driver.findElement(By.xpath("(//span[@class='srp-list-item-basic-info-model'])[" + numberOfCar + "]"));
+        numberOfCar++;
+        headerOfCar.click();
+Thread.sleep(2000);
 
+
+driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@title='CMP Locator']")));
+driver.switchTo().defaultContent();
+//todo gives No Such Element Exception , but element is correct
+        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("(//button[contains(text(),'Send to my Phone ')])[1]")))).click();
+
+
+    }
 
 }

@@ -1,14 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: Create account through Follow button
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.692 s <<< FAILURE! - in Create account through Follow button
-Follow button to create account in VDP(Create account through Follow button)  Time elapsed: 11.692 s  <<< ERROR!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <select class="form-control search-model " name="model">...</select> is not clickable at point (552, 495). Other element would receive the click: <iframe src="https://c.datado.me/captcha/?initialCid=AHrlqAAAAAMA0DYrRkso1osAuLks6g==&amp;hash=F41B65A147534F8AA2026D0448DD7E&amp;t=fe&amp;cid=0A_hEcm2uogba0EhcvmwF40QToLjquxwoOUSnn568-_2iJfETFA.-Rp2fc2IbNJXxdW91GrZs3iGQm0M_cOUy5VRwaexiZaSQiAZuwLi2w" width="100%" height="100%" style="height:100vh;" frameborder="0" border="0" scrolling="yes"></iframe>
-  (Session info: chrome=79.0.3945.88)
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 15.074 s <<< FAILURE! - in Create account through Follow button
+Follow button to create account in VDP(Create account through Follow button)  Time elapsed: 15.074 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on MAC (5f1ce2e9e03a21adb531a1975da1245b)] -> xpath: //button[@class='button large primary-green']] (tried for 1 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'A-XF4WBHV29', ip: 'fe80:0:0:0:1444:b5b0:fa0a:4a6e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '12.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/x_/jgrkcbmn19s...}, goog:chromeOptions: {debuggerAddress: localhost:61026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c63a726899c43a255046fd25e8d0b884
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/x_/jgrkcbmn19s...}, goog:chromeOptions: {debuggerAddress: localhost:62693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5f1ce2e9e03a21adb531a1975da1245b
 

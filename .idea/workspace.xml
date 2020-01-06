@@ -1,49 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="165eccde-32d3-4ed8-a7a6-7a3177b8431e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ucl_qa.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/carfax_ucl/step_definitions" beforeDir="false" afterPath="$PROJECT_DIR$/com/carfax_ucl/step_definitions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/FollowBtnPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/FollowBtnPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/MainSignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/MainSignUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/FindDealerStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/FindDealerStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/FollowBtnStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/FollowBtnStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/MainSignUpBtnStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/MainSignUpBtnStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/UCLSignUpBtnStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/UCLSignUpBtnStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/FindDealer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/FindDealer.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/FollowBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/FollowBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/UCLSignInBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/UCLSignInBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/UCLSignUpBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/UCLSignUpBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/saveSearchBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/saveSearchBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target.rerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target.rerun.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/FindDealer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/FindDealer.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/FollowBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/FollowBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/UCLSignInBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/UCLSignInBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/UCLSignUpBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/UCLSignUpBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/saveSearchBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/saveSearchBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/pages/MainSignUpPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/pages/MainSignUpPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/runners/CukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/runners/CukesRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/FollowBtnStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/FollowBtnStepDef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/Hooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/MainSignUpBtnStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/MainSignUpBtnStepDef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/UCLSignUpBtnStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/UCLSignUpBtnStepDef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/utilities/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/utilities/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/utilities/TestBase.class" afterDir="false" />
-    </list>
+    <list default="true" id="165eccde-32d3-4ed8-a7a6-7a3177b8431e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -460,7 +418,7 @@
       <workItem from="1577124940559" duration="58000" />
       <workItem from="1577141943606" duration="727000" />
       <workItem from="1578059502617" duration="2980000" />
-      <workItem from="1578320337487" duration="2170000" />
+      <workItem from="1578320337487" duration="2403000" />
     </task>
     <servers />
   </component>
@@ -497,7 +455,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31733000" />
+    <option name="totallyTimeSpent" value="31966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1760" y="-1696" width="2144" height="1566" extended-state="0" />

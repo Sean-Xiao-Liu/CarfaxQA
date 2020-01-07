@@ -1,42 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="165eccde-32d3-4ed8-a7a6-7a3177b8431e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/carfax_ucl/step_definitions" beforeDir="false" afterPath="$PROJECT_DIR$/com/carfax_ucl/step_definitions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/vdpSaveThisSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/vdpSaveThisSearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/FindDealerStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/FindDealerStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/FindDealer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/FindDealer.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/FollowBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/FollowBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/MainSignUp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/MainSignUp.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/UCLSignInBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/UCLSignInBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/UCLSignUpBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/UCLSignUpBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/saveSearchBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/saveSearchBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target.rerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target.rerun.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/carfax_qa-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/carfax_qa-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/embedded0.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/embedded0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Create account through Follow button.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Create account through Follow button.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/FindDealer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/FindDealer.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/FollowBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/FollowBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/MainSignUp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/MainSignUp.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/UCLSignUpBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/UCLSignUpBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/saveSearchBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/saveSearchBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/runners/CukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/runners/CukesRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/Hooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/test.class" afterDir="false" />
-    </list>
+    <list default="true" id="165eccde-32d3-4ed8-a7a6-7a3177b8431e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,7 +33,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
+            <state relative-caret-position="930">
               <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
             </state>
           </provider>
@@ -78,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/LeadFormPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="79" />
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -86,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="720">
               <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
             </state>
           </provider>
@@ -183,8 +148,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -487,6 +452,7 @@
       <workItem from="1577141943606" duration="727000" />
       <workItem from="1578059502617" duration="2980000" />
       <workItem from="1578320337487" duration="26032000" />
+      <workItem from="1578436584311" duration="250000" />
     </task>
     <servers />
   </component>
@@ -523,12 +489,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55595000" />
+    <option name="totallyTimeSpent" value="55845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -545,7 +511,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32971507" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32784638" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32784638" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32921812" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -720,9 +686,10 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.6144262295081967" x="1231.4407684098187" y="752.5" />
+          <settings layout="Hierarchic Group" zoom="0.6144262295081967" x="1231.0" y="753.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
           <VISIBILITY>All</VISIBILITY>
         </state>
       </provider>
@@ -737,12 +704,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/surefire-reports/TEST-Create account through Follow button.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/surefire-reports/Create account through Follow button.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/TEST-Create account through Follow button.xml" />
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/Create account through Follow button.txt" />
     <entry file="file://$PROJECT_DIR$/target.rerun.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -765,13 +728,7 @@
     <entry file="file://$PROJECT_DIR$/.idea/ucl_qa.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/settings.xml.xsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/settings.xml.xsl" />
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1003,27 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/LeadFormPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -1031,6 +967,27 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/LeadFormPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
         </state>
       </provider>
     </entry>

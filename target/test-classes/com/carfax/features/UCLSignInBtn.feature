@@ -1,6 +1,5 @@
 Feature: Forgot Password and Create account trough Sign in feature
 
-
   Scenario: Create account through SignIn option
 
     Given I am on main Carfax page

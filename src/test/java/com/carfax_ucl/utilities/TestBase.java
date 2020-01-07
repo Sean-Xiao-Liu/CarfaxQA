@@ -1,8 +1,13 @@
 package com.carfax_ucl.utilities;
 
+import com.carfax_ucl.pages.BasePage;
+import com.carfax_ucl.pages.LeadFormPage;
 import org.junit.Assert;
+import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -53,16 +58,21 @@ public  class TestBase {
         }
     }
     public void sendToMyPhone() throws InterruptedException {
+        BasePage basePage=new BasePage();
         //WebElement sendToMyPhoneBtn = driver.findElement(By.xpath("(//button[@class='button phone'])[1]"));
         //WebElement enterPhoneNumber = driver.findElement(By.xpath("//input[@name='phone'][@placeholder='Enter your mobile phone #']"));
        // WebElement sendBtn = driver.findElement(By.xpath("//button[@type='submit'][@value='Send']"));
         // wait.until(ExpectedConditions.elementToBeClickable(sendToMyPhoneBtn)).click();
-        Thread.sleep(2000);
-        driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@title='Criteo DIS iframe']")));
 
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//button[@class='button phone'])[1]")))).click();
-        driver.findElement(By.xpath("//input[@name='phone'][@placeholder='Enter your mobile phone #']")).click();
-        driver.findElement(By.xpath("//input[@name='phone'][@placeholder='Enter your mobile phone #']")).sendKeys("5555555555");
+        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+
+
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+basePage.getLeadFormPage().firstName.click();
+basePage.getLeadFormPage().firstName.sendKeys("TestQA");
+        //driver.findElement(By.xpath("(//input[@name='firstName'])[2]")).click();
+       // driver.findElement(By.xpath("(//input[@name='firstName'])[2]")).sendKeys("5555555555");
         driver.findElement(By.xpath("//button[@type='submit'][@value='Send']")).click();
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//p[@class='cfx-modal-complete-title']"))));
         Assert.assertTrue(driver.findElement(By.xpath("//p[@class='cfx-modal-complete-title']")).isDisplayed());

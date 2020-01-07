@@ -8,6 +8,7 @@
     <artifactId>carfax_qa</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -50,6 +51,15 @@
             <artifactId>percy-java-selenium</artifactId>
             <version>0.0.3</version>
         </dependency>
+
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>cucumber-reporting</artifactId>
+            <version>4.4.0</version>
+        </dependency>
+
+
+
     </dependencies>
     <build>
         <plugins>
@@ -86,7 +96,7 @@
                             <outputDirectory>${project.build.directory}</outputDirectory>
                             <inputDirectory>${project.build.directory}</inputDirectory>
                             <jsonFiles>
-                                <param>**/parallel-cucumber*.json</param>
+                                <param>**/cucumber*.json</param>
                             </jsonFiles>
                         </configuration>
                     </execution>
@@ -94,4 +104,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

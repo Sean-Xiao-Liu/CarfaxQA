@@ -6,6 +6,7 @@ import com.carfax_ucl.utilities.Driver;
 import com.carfax_ucl.utilities.TestBase;
 import com.github.javafaker.Faker;
 import io.percy.selenium.Percy;
+import org.jsoup.Connection;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,8 +16,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Period;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 public class test extends TestBase {
     public WebDriverWait wait=new WebDriverWait(Driver.get(),3);
@@ -31,7 +32,7 @@ public Percy percy=new Percy(driver);
     public void beforeTest(){
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-        driver.get(ConfigurationReader.get("url1"));
+        driver.get(ConfigurationReader.get("url"));
     }
     @Test
 //todo DONE!!!!!!!
@@ -471,74 +472,60 @@ public Percy percy=new Percy(driver);
     }
     @Test
     public void leadFormTest() throws InterruptedException {
-        FollowBtnPage followBtnPage=new FollowBtnPage();
-        LeadFormPage leadFormPage=new LeadFormPage();
-        int model=1;
-        wait.until(ExpectedConditions.elementToBeClickable(followBtnPage.findAUsedCarBtn)).click();
-        //for(int i=1;i<2;i++) {
-        driver.findElement(By.xpath("(//select[contains(@class,'form-control')])[1]")).click();
-        List<WebElement> listOfMakes = driver.findElements(By.xpath("//option[contains(@id,'make_')]"));
-        // List<WebElement> listOfModel=driver.findElements(By.xpath("//optgroup/option[contains(@id,'model_')]"));
-        //todo clicking on 'select make' button
-        Thread.sleep(1000);
-        listOfMakes.get(1).click();
-        listOfMakes.get(1).click();
-        WebElement modelOfCar = driver.findElement(By.xpath("(//optgroup/option[contains(@id,'model_')])[" + model + "]"));
-        model++;
+
+        BasePage basePage=new BasePage();
+
         String email = faker.name().name() + "@mail.com";
         email = email.replace(" ", "");
-        driver.findElement(By.cssSelector("select[class='form-control search-model ']")).click();
-        modelOfCar.click();
-        modelOfCar.click();
-        followBtnPage.zipCodeMainPage.click();
-        followBtnPage.zipCodeMainPage.sendKeys("22204");
-        followBtnPage.submitBtn.click();
-        Thread.sleep(1000);
+        String model="Q3";
+        String make="Audi";
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage()
+                .findAUsedCarBtn)).click();
+        //for(int i=1;i<2;i++) {
+        Thread.sleep(2000);
+        List <WebElement> makes =driver.findElements(By.xpath("//select[@name='make']/optgroup[@label='Popular Makes']/option"));
+        for(WebElement temp :makes){
+            if(temp.getText().trim().equals(make)){
+                temp.click();
+                break;
+            }
 
+        }
+        Thread.sleep(2000);
+        //wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//select[@name='model']/optgroup[@label='Current Models']"))));
+        List <WebElement> models =driver.findElements(By.xpath("//select[@name='model']/optgroup[@label='Current Models']/option"));
+        System.out.println("models = " + models.size());
+        for(WebElement temp :models){
+            if(temp.getText().trim().equals(model)){
+                temp.click();
+                break;
+            }
 
-        wait.until(ExpectedConditions.elementToBeClickable(followBtnPage.showMeBtn)).click();
-//            WebElement length=driver.findElement(By.xpath("//div/div/ul/li/a[contains(@tabindex,'') and (contains(@aria-label,'Page'))]"));
-//
-//
-//            JavascriptExecutor jse = (JavascriptExecutor)driver;
-//            jse.executeScript("arguments[0].scrollIntoView();",length);
-//
-//            Assert.assertTrue( length.isDisplayed());
+        }
+
+        basePage.getFollowBtnPage().zipCodeMainPage.click();
+        basePage.getFollowBtnPage().zipCodeMainPage.sendKeys("22204");
+        basePage.getFollowBtnPage().submitBtn.click();
+
+Thread.sleep(3000);
+
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().showMeBtn)).click();
         testBase.checkBoxSelection("123");
         int numberOfCar = 1;
         WebElement headerOfCar = driver.findElement(By.xpath("(//span[@class='srp-list-item-basic-info-model'])[" + numberOfCar + "]"));
         numberOfCar++;
         headerOfCar.click();
-        //}
+        Set<String> windows = driver.getWindowHandles();
+        for(String window : windows){
+            if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
+                System.out.println(driver.getTitle());break;}
+        }
+
         testBase.sendToMyPhone();
-//        int numberOfCarusel=1;
-//
-//       // WebElement vdp=driver.findElement(By.xpath("(//img[contains(@src,'')][@tabindex='-1'])[1]"));
-//for(int i=numberOfCarusel;i<4;i++){
-//    List<WebElement> caruselCar=driver.findElements(By.xpath("//div[@id='carousel_listing_item_"+i+"']"));
-//    List<WebElement> caruselPicture=driver.findElements(By.xpath("(//img[@class='carousel__slide-photo'])"+"["+numberOfCarusel+"]"));
-//    System.out.println(caruselPicture.get(i));
-//
-//
-//    Thread.sleep(1000);
-//
-//wait.until(ExpectedConditions.elementToBeClickable(caruselCar.get(0))).click();
-//Thread.sleep(1000);
+
         driver.quit();
     }
-////    System.out.println(call.getAttribute("value"));
-//
-//
-//
-//leadFormPage.firstName.click();
-//leadFormPage.firstName.sendKeys("anna");
-    //actions.moveToElement(leadFormPage.firstName).click().sendKeys(faker.name().firstName()).build().perform();
-//             Assert.assertTrue(wait.until(ExpectedConditions.visibilityOf(call)).isDisplayed());
-//             Assert.assertTrue(wait.
-//                     until(ExpectedConditions.
-//
-//
-//        visibilityOf(driver.findElement(By.xpath("(//span[@class='column' and contains(text(),'Send To: ')])[2]")))).isDisplayed());
+
 
 
 

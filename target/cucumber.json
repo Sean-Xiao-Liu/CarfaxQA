@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-01-07T00:49:13.544Z",
+        "start_timestamp": "2020-01-07T03:49:19.349Z",
         "before": [
           {
             "result": {
-              "duration": 4296638136,
+              "duration": 3918794955,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 6,
+        "line": 5,
         "name": "Create account through UCL page",
         "description": "",
         "id": "create-account;create-account-through-ucl-page",
         "after": [
           {
             "result": {
-              "duration": 174681623,
+              "duration": 193851624,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1227935880,
+              "duration": 373241357,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 252649697,
+              "duration": 1213627647,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -59,10 +59,10 @@
           },
           {
             "result": {
-              "duration": 2700435054,
+              "duration": 2271467935,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "I click on Sign Up button from UCL",
             "match": {
               "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
@@ -71,10 +71,10 @@
           },
           {
             "result": {
-              "duration": 1530399162,
+              "duration": 881566265,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "I fill out \"email\" , \"password\" , \"zipcode\" to create a new account",
             "match": {
               "arguments": [
@@ -97,10 +97,10 @@
           },
           {
             "result": {
-              "duration": 2723679083,
+              "duration": 2998044957,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "I click on Create account button",
             "match": {
               "location": "UCLSignUpBtnStepDef.i_click_on_Create_account_button()"
@@ -110,7 +110,7 @@
         ],
         "tags": [
           {
-            "name": "@smoke"
+            "name": "@tc-2"
           }
         ]
       }

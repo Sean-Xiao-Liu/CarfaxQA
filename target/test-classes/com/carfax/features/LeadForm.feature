@@ -98,7 +98,6 @@ Scenario Outline: Error message for 'Last name is required' is displayed
       | Infiniti | Q50 | 22033   |
       | Toyota     | Camry           | 22304   |
 
-  @tc-2
   Scenario Outline: Error message for 'Zip Code name is required' is displayed
     Given I am on main Carfax page
     And I navigate to Find a Used Car page

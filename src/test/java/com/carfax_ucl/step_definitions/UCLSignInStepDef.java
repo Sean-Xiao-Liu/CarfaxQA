@@ -5,6 +5,7 @@ import com.carfax_ucl.utilities.Driver;
 import com.github.javafaker.Faker;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -65,10 +66,12 @@ public class UCLSignInStepDef {
     }
 
     @Then("I fill out email and click on reset password")
-    public void i_fill_out_email_and_click_on_reset_password() {
+    public void i_fill_out_email_and_click_on_reset_password() throws InterruptedException {
         uclSignInPage.EnterEmail.click();
         uclSignInPage.EnterEmail.sendKeys(email);
         uclSignInPage.resetPassword.click();
+        Thread.sleep(5000);
+        Assert.assertEquals(driver.findElement(By.xpath("//span[@class='form-transaction-msg error']")).getText(),"Oops! We couldn't find that e-mail.");
     }
 
 }

@@ -1,0 +1,292 @@
+package com.carfax_ucl.step_definitions;
+
+import com.carfax_ucl.pages.BasePage;
+import com.carfax_ucl.utilities.Driver;
+import com.github.javafaker.Faker;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.Set;
+
+public class LeadFormStepDef {
+
+    public BasePage basePage=new BasePage();
+public WebDriver driver= Driver.get();
+public Faker faker=new Faker();
+    public WebDriverWait wait=new WebDriverWait(Driver.get(),3);
+
+
+    @When("I click on particular car that I want")
+    public void i_click_on_particular_car_that_I_want() {
+        int numberOfCar = 2;
+        WebElement headerOfCar = driver.findElement(By.xpath("(//span[@class='srp-list-item-basic-info-model'])[" + numberOfCar + "]"));
+        numberOfCar++;
+        headerOfCar.click();
+    }
+
+    @When("I navigate to Lead Form and fill out First Name, Last Name, Zip code and Phone number")
+    public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_Zip_code_and_Phone_number() {
+        Set<String> windows = driver.getWindowHandles();
+        for(String window : windows){
+            if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
+                System.out.println(driver.getTitle());break;}
+        }
+        //todo scrolling down to element
+        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        //todo input for Lead Form
+        //todo Positive scenario :
+        basePage.getLeadFormPage().firstName.click();
+        basePage.getLeadFormPage().firstName.sendKeys("TestQA");
+        basePage.getLeadFormPage().lastName.click();
+        basePage.getLeadFormPage().lastName.sendKeys("test");
+
+        // Thread.sleep(2000);
+        System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
+
+        //Thread.sleep(100);
+        for(int i =0;i<6;i++){
+            // Thread.sleep(1000);
+            basePage.getLeadFormPage().zipCode.click();
+            basePage.getLeadFormPage().zipCode.sendKeys(Keys.BACK_SPACE);
+
+        }
+
+        if(basePage.getLeadFormPage().zipCode.getText().isEmpty()) {
+            basePage.getLeadFormPage().zipCode.click();
+            basePage.getLeadFormPage().zipCode.sendKeys("22001");
+
+        }else if(!basePage.getLeadFormPage().zipCode.getText().isEmpty()){
+            basePage.getLeadFormPage().zipCode.click();
+            basePage.getLeadFormPage().zipCode.clear();
+            basePage.getLeadFormPage().zipCode.sendKeys("22304");
+        }
+        basePage.getLeadFormPage().phoneNumber.sendKeys("5555555555");
+    }
+
+    @When("I navigate to Lead Form and fill out First Name, Last Name, Zip code and email")
+    public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_Zip_code_and_email() {
+        String email = faker.name().name() + "@mail.com";
+        email = email.replace(" ", "");
+        Set<String> windows = driver.getWindowHandles();
+        for(String window : windows){
+            if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
+                System.out.println(driver.getTitle());break;}
+        }
+        //todo scrolling down to element
+        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        //todo input for Lead Form
+        //todo Positive scenario :
+        basePage.getLeadFormPage().firstName.click();
+        basePage.getLeadFormPage().firstName.sendKeys("TestQA");
+        basePage.getLeadFormPage().lastName.click();
+        basePage.getLeadFormPage().lastName.sendKeys("test");
+
+        // Thread.sleep(2000);
+        System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
+
+        //Thread.sleep(100);
+        for(int i =0;i<6;i++){
+            // Thread.sleep(1000);
+            basePage.getLeadFormPage().zipCode.click();
+            basePage.getLeadFormPage().zipCode.sendKeys(Keys.BACK_SPACE);
+
+        }
+
+        if(basePage.getLeadFormPage().zipCode.getText().isEmpty()) {
+            basePage.getLeadFormPage().zipCode.click();
+            basePage.getLeadFormPage().zipCode.sendKeys("22001");
+
+        }else if(!basePage.getLeadFormPage().zipCode.getText().isEmpty()){
+            basePage.getLeadFormPage().zipCode.click();
+            basePage.getLeadFormPage().zipCode.clear();
+            basePage.getLeadFormPage().zipCode.sendKeys("22304");
+        }
+        basePage.getLeadFormPage().email.sendKeys(email);
+    }
+
+
+    @Then("I click on Send Message to that dealer")
+    public void i_click_on_Send_Message_to_that_dealer() throws InterruptedException {
+        basePage.getLeadFormPage().sendMessage.click();
+        Thread.sleep(2000);
+
+        Assert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Thank you for contacting this dealer.')]")).getText()
+                ,"Thank you for contacting this dealer.");
+    }
+
+//TODO SCENARIO #3
+    @When("I navigate to Lead Form and cleaning zipcode which is by default already filled out")
+    public void i_navigate_to_Lead_Form_and_cleaning_zipcode_which_is_by_default_already_filled_out() throws InterruptedException {
+
+        Set<String> windows = driver.getWindowHandles();
+        for(String window : windows){
+            if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
+                System.out.println(driver.getTitle());break;}
+        }
+        //todo scrolling down to element
+        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        for(int i =0;i<6;i++){
+            // Thread.sleep(1000);
+            basePage.getLeadFormPage().zipCode.click();
+            basePage.getLeadFormPage().zipCode.sendKeys(Keys.BACK_SPACE);
+            Thread.sleep(100);
+        }
+    }
+
+    @Then("I click on Send Message to that dealer and should see error messages are displayed")
+    public void i_click_on_Send_Message_to_that_dealer_and_should_see_error_messages_are_displayed() {
+
+        basePage.getLeadFormPage().sendMessage.click();
+        basePage.getLeadFormPage().sendMessage.click();
+
+        //todo ERROR MESSAGE FOR FIRST NAME IS SHOWED
+        Assert.assertTrue(driver.findElement(By.xpath("//li[contains(text(),'First name is required!')]")).isDisplayed());
+
+        //todo ERROR MESSAGE FOR LAST NAME IS SHOWED
+        Assert.assertTrue(driver.findElement(By.xpath("//li[contains(text(),'Last name is required!')]")).isDisplayed());
+
+        //todo ERROR MESSAGE FOR ZIP CODE IS SHOWED
+
+        Assert.assertTrue(driver.findElement(By.xpath("//li[contains(text(),'Zip is required!')]")).isDisplayed());
+
+        //todo ERROR MESSAGE FOR EMAIL OR PHONE IS SHOWED
+
+        Assert.assertTrue(driver.findElement(By.xpath("//li[contains(text(),'Email or Phone is required!')]")).isDisplayed());
+
+    }
+//TODO SCENARIO #4
+    @When("I navigate to Lead Form and fill out First Name,  Zip code and Phone number")
+    public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Zip_code_and_Phone_number() {
+        Set<String> windows = driver.getWindowHandles();
+        for(String window : windows){
+            if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
+                System.out.println(driver.getTitle());break;}
+        }
+        //todo scrolling down to element
+        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        basePage.getLeadFormPage().firstName.click();
+        basePage.getLeadFormPage().firstName.sendKeys("TestQA");
+        System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
+
+        //Thread.sleep(100);
+        for(int i =0;i<6;i++){
+            // Thread.sleep(1000);
+            basePage.getLeadFormPage().zipCode.click();
+            basePage.getLeadFormPage().zipCode.sendKeys(Keys.BACK_SPACE);
+
+        }
+
+        if(basePage.getLeadFormPage().zipCode.getText().isEmpty()) {
+            basePage.getLeadFormPage().zipCode.click();
+            basePage.getLeadFormPage().zipCode.sendKeys("22001");
+
+        }else if(!basePage.getLeadFormPage().zipCode.getText().isEmpty()){
+            basePage.getLeadFormPage().zipCode.click();
+            basePage.getLeadFormPage().zipCode.clear();
+            basePage.getLeadFormPage().zipCode.sendKeys("22304");
+        }
+        basePage.getLeadFormPage().phoneNumber.sendKeys("5555555555");
+    }
+    @Then("I click on Send Message to that dealer and should see Last Name error message are displayed")
+    public void i_click_on_Send_Message_to_that_dealer_and_should_see_Last_Name_error_message_are_displayed() {
+        basePage.getLeadFormPage().sendMessage.click();
+
+        Assert.assertTrue(driver.findElement(By.xpath("//li[contains(text(),'Last name is required!')]")).isDisplayed());
+    }
+
+    //TODO SCENARIO #5
+
+    @When("I navigate to Lead Form and fill out Last Name,  Zip code and Phone number")
+    public void i_navigate_to_Lead_Form_and_fill_out_Last_Name_Zip_code_and_Phone_number() {
+        Set<String> windows = driver.getWindowHandles();
+        for(String window : windows){
+            if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
+                System.out.println(driver.getTitle());break;}
+        }
+        //todo scrolling down to element
+        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        basePage.getLeadFormPage().lastName.click();
+        basePage.getLeadFormPage().lastName.sendKeys("TestQA");
+        System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
+
+        //Thread.sleep(100);
+        for(int i =0;i<6;i++){
+            // Thread.sleep(1000);
+            basePage.getLeadFormPage().zipCode.click();
+            basePage.getLeadFormPage().zipCode.sendKeys(Keys.BACK_SPACE);
+
+        }
+
+        if(basePage.getLeadFormPage().zipCode.getText().isEmpty()) {
+            basePage.getLeadFormPage().zipCode.click();
+            basePage.getLeadFormPage().zipCode.sendKeys("22001");
+
+        }else if(!basePage.getLeadFormPage().zipCode.getText().isEmpty()){
+            basePage.getLeadFormPage().zipCode.click();
+            basePage.getLeadFormPage().zipCode.clear();
+            basePage.getLeadFormPage().zipCode.sendKeys("22304");
+        }
+        basePage.getLeadFormPage().phoneNumber.sendKeys("5555555555");
+    }
+
+    @Then("I click on Send Message to that dealer and should see First Name error message are displayed")
+    public void i_click_on_Send_Message_to_that_dealer_and_should_see_First_Name_error_message_are_displayed() {
+        basePage.getLeadFormPage().sendMessage.click();
+
+        Assert.assertTrue(driver.findElement(By.xpath("//li[contains(text(),'First name is required!')]")).isDisplayed());
+    }
+
+    //TODO SCENARIO #6
+
+    @When("I navigate to Lead Form and fill out First Name,  Last name and Phone number")
+    public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_name_and_Phone_number() {
+        Set<String> windows = driver.getWindowHandles();
+        for(String window : windows){
+            if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
+                System.out.println(driver.getTitle());break;}
+        }
+        //todo scrolling down to element
+        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        basePage.getLeadFormPage().firstName.click();
+        basePage.getLeadFormPage().firstName.sendKeys("TestQA");
+        basePage.getLeadFormPage().lastName.click();
+        basePage.getLeadFormPage().lastName.sendKeys("TestQA");
+        System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
+
+        //Thread.sleep(100);
+        for(int i =0;i<6;i++){
+            // Thread.sleep(1000);
+            basePage.getLeadFormPage().zipCode.click();
+            basePage.getLeadFormPage().zipCode.sendKeys(Keys.BACK_SPACE);
+
+        }
+
+        basePage.getLeadFormPage().phoneNumber.sendKeys("5555555555");
+    }
+
+    @Then("I click on Send Message to that dealer and should see Zip code error message are displayed")
+    public void i_click_on_Send_Message_to_that_dealer_and_should_see_Zip_code_error_message_are_displayed() {
+        basePage.getLeadFormPage().sendMessage.click();
+
+        Assert.assertTrue(driver.findElement(By.xpath("//li[contains(text(),'Zip is required!')]")).isDisplayed());
+    }
+
+
+
+}

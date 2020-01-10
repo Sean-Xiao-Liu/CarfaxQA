@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-01-07T03:49:19.349Z",
+        "start_timestamp": "2020-01-10T19:35:24.304Z",
         "before": [
           {
             "result": {
-              "duration": 3918794955,
+              "duration": 3895432542,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 5,
-        "name": "Create account through UCL page",
+        "line": 115,
+        "name": "Error message for \u0027Zip Code name is required\u0027 is displayed",
         "description": "",
-        "id": "create-account;create-account-through-ucl-page",
+        "id": "lead-form-on-vdp;error-message-for--zip-code-name-is-required--is-displayed;;2",
         "after": [
           {
             "result": {
-              "duration": 193851624,
+              "duration": 211659387,
               "status": "passed"
             },
             "match": {
@@ -31,14 +31,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 373241357,
+              "duration": 484093079,
               "status": "passed"
             },
-            "line": 6,
+            "line": 103,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 1213627647,
+              "duration": 1284455114,
               "status": "passed"
             },
-            "line": 7,
+            "line": 104,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -59,51 +59,483 @@
           },
           {
             "result": {
-              "duration": 2271467935,
+              "duration": 4608777364,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I click on Sign Up button from UCL",
-            "match": {
-              "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 881566265,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I fill out \"email\" , \"password\" , \"zipcode\" to create a new account",
+            "line": 105,
+            "name": "I fill out \"Hyundai\" , \"Sonata\" , \"22201\" of the car that I want to search",
             "match": {
               "arguments": [
                 {
-                  "val": "\"email\"",
+                  "val": "\"Hyundai\"",
                   "offset": 11
                 },
                 {
-                  "val": "\"password\"",
-                  "offset": 21
+                  "val": "\"Sonata\"",
+                  "offset": 23
                 },
                 {
-                  "val": "\"zipcode\"",
+                  "val": "\"22201\"",
                   "offset": 34
                 }
               ],
-              "location": "UCLSignUpBtnStepDef.i_fill_out_to_create_a_new_account(String,String,String)"
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2998044957,
+              "duration": 1599661017,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I click on Create account button",
+            "line": 106,
+            "name": "I click on next and show me results button",
             "match": {
-              "location": "UCLSignUpBtnStepDef.i_click_on_Create_account_button()"
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 388006417,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "I click on particular car that I want",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3100662049,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "I navigate to Lead Form and fill out First Name,  Last name and Phone number",
+            "match": {
+              "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_name_and_Phone_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 259390233,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "I click on Send Message to that dealer and should see Zip code error message are displayed",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Zip_code_error_message_are_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tc-2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-10T19:35:40.235Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2739120290,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 116,
+        "name": "Error message for \u0027Zip Code name is required\u0027 is displayed",
+        "description": "",
+        "id": "lead-form-on-vdp;error-message-for--zip-code-name-is-required--is-displayed;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 236342597,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 128521748,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "I am on main Carfax page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1300486022,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "I navigate to Find a Used Car page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4516946628,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "I fill out \"Honda\" , \"Civic\" , \"75501\" of the car that I want to search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Honda\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Civic\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"75501\"",
+                  "offset": 31
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1633148396,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "I click on next and show me results button",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 693290530,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "I click on particular car that I want",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2985569021,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "I navigate to Lead Form and fill out First Name,  Last name and Phone number",
+            "match": {
+              "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_name_and_Phone_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 250311371,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "I click on Send Message to that dealer and should see Zip code error message are displayed",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Zip_code_error_message_are_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tc-2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-10T19:35:54.727Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2294895938,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 117,
+        "name": "Error message for \u0027Zip Code name is required\u0027 is displayed",
+        "description": "",
+        "id": "lead-form-on-vdp;error-message-for--zip-code-name-is-required--is-displayed;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 199786263,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 112466449,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "I am on main Carfax page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1394174741,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "I navigate to Find a Used Car page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4506702354,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "I fill out \"Infiniti\" , \"Q50\" , \"22033\" of the car that I want to search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Infiniti\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Q50\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"22033\"",
+                  "offset": 32
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1582996796,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "I click on next and show me results button",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 657160579,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "I click on particular car that I want",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2951636379,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "I navigate to Lead Form and fill out First Name,  Last name and Phone number",
+            "match": {
+              "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_name_and_Phone_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 233476889,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "I click on Send Message to that dealer and should see Zip code error message are displayed",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Zip_code_error_message_are_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tc-2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-10T19:36:08.668Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2410449402,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 118,
+        "name": "Error message for \u0027Zip Code name is required\u0027 is displayed",
+        "description": "",
+        "id": "lead-form-on-vdp;error-message-for--zip-code-name-is-required--is-displayed;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 190268983,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 63500029,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "I am on main Carfax page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1427265628,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "I navigate to Find a Used Car page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4722107758,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "I fill out \"Toyota\" , \"Camry\" , \"22304\" of the car that I want to search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Toyota\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Camry\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"22304\"",
+                  "offset": 32
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1648769965,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "I click on next and show me results button",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 679482005,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "I click on particular car that I want",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3106254650,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "I navigate to Lead Form and fill out First Name,  Last name and Phone number",
+            "match": {
+              "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_name_and_Phone_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 244007600,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "I click on Send Message to that dealer and should see Zip code error message are displayed",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Zip_code_error_message_are_displayed()"
             },
             "keyword": "Then "
           }
@@ -115,11 +547,11 @@
         ]
       }
     ],
-    "name": "Create account",
+    "name": "Lead form on VDP",
     "description": "",
-    "id": "create-account",
+    "id": "lead-form-on-vdp",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/com/carfax/features/UCLSignUpBtn.feature",
+    "uri": "file:src/test/resources/com/carfax/features/LeadForm.feature",
     "tags": []
   }
 ]

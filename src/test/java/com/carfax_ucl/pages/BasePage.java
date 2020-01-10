@@ -2,6 +2,7 @@ package com.carfax_ucl.pages;
 
 import com.carfax_ucl.utilities.Driver;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
     WebDriver driver = Driver.get();
@@ -13,6 +14,9 @@ public class BasePage {
     private UCLSignInPage uclSignInPage;
     private UCLSignUpPage uclSignUpPage;
     private vdpSaveThisSearchPage vdp;
+    private SendToMyPhone sendToMyPhone;
+    private ShareHeader shareHeader;
+
 
     public FindDealerPage getFindDealerPage() {
         if(findDealerPage ==null){
@@ -68,5 +72,19 @@ public class BasePage {
             vdp = new vdpSaveThisSearchPage();
         }
         return vdp;
+    }
+
+    public SendToMyPhone getSendToMyPhone(){
+        if(sendToMyPhone==null){
+            sendToMyPhone=new SendToMyPhone();
+        }
+        return sendToMyPhone;
+    }
+
+    public ShareHeader getShareHeader(){
+        if (shareHeader==null) {
+            shareHeader=new ShareHeader();
+        }
+        return shareHeader;
     }
 }

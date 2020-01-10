@@ -1,13 +1,93 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/com/carfax/features/UCLSignUpBtn.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/com/carfax/features/LeadForm.feature");
 formatter.feature({
-  "name": "Create account",
+  "name": "Lead form on VDP",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "name": "Create account through UCL page",
+formatter.scenarioOutline({
+  "name": "Error message for \u0027Zip Code name is required\u0027 is displayed",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tc-2"
+    }
+  ]
+});
+formatter.step({
+  "name": "I am on main Carfax page",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "I navigate to Find a Used Car page",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "I fill out \"\u003cmake\u003e\" , \"\u003cmodel\u003e\" , \"\u003czipcode\u003e\" of the car that I want to search",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "I click on next and show me results button",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "I click on particular car that I want",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "I navigate to Lead Form and fill out First Name,  Last name and Phone number",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "I click on Send Message to that dealer and should see Zip code error message are displayed",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "make",
+        "model",
+        "zipcode"
+      ]
+    },
+    {
+      "cells": [
+        "Hyundai",
+        "Sonata",
+        "22201"
+      ]
+    },
+    {
+      "cells": [
+        "Honda",
+        "Civic",
+        "75501"
+      ]
+    },
+    {
+      "cells": [
+        "Infiniti",
+        "Q50",
+        "22033"
+      ]
+    },
+    {
+      "cells": [
+        "Toyota",
+        "Camry",
+        "22304"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Error message for \u0027Zip Code name is required\u0027 is displayed",
+  "description": "",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@tc-2"
@@ -38,31 +118,309 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on Sign Up button from UCL",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I fill out \"email\" , \"password\" , \"zipcode\" to create a new account",
+  "name": "I fill out \"Hyundai\" , \"Sonata\" , \"22201\" of the car that I want to search",
   "keyword": "And "
 });
 formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_fill_out_to_create_a_new_account(String,String,String)"
+  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on Create account button",
+  "name": "I click on next and show me results button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on particular car that I want",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I navigate to Lead Form and fill out First Name,  Last name and Phone number",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_name_and_Phone_number()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on Send Message to that dealer and should see Zip code error message are displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_click_on_Create_account_button()"
+  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Zip_code_error_message_are_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Error message for \u0027Zip Code name is required\u0027 is displayed",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tc-2"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I am on main Carfax page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I navigate to Find a Used Car page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I fill out \"Honda\" , \"Civic\" , \"75501\" of the car that I want to search",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on next and show me results button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on particular car that I want",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I navigate to Lead Form and fill out First Name,  Last name and Phone number",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_name_and_Phone_number()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on Send Message to that dealer and should see Zip code error message are displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Zip_code_error_message_are_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Error message for \u0027Zip Code name is required\u0027 is displayed",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tc-2"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I am on main Carfax page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I navigate to Find a Used Car page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I fill out \"Infiniti\" , \"Q50\" , \"22033\" of the car that I want to search",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on next and show me results button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on particular car that I want",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I navigate to Lead Form and fill out First Name,  Last name and Phone number",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_name_and_Phone_number()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on Send Message to that dealer and should see Zip code error message are displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Zip_code_error_message_are_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Error message for \u0027Zip Code name is required\u0027 is displayed",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tc-2"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I am on main Carfax page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I navigate to Find a Used Car page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I fill out \"Toyota\" , \"Camry\" , \"22304\" of the car that I want to search",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on next and show me results button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on particular car that I want",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I navigate to Lead Form and fill out First Name,  Last name and Phone number",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_name_and_Phone_number()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on Send Message to that dealer and should see Zip code error message are displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Zip_code_error_message_are_displayed()"
 });
 formatter.result({
   "status": "passed"

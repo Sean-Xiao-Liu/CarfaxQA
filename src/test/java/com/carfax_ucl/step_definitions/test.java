@@ -5,8 +5,7 @@ import com.carfax_ucl.utilities.ConfigurationReader;
 import com.carfax_ucl.utilities.Driver;
 import com.carfax_ucl.utilities.TestBase;
 import com.github.javafaker.Faker;
-import io.percy.selenium.Percy;
-import org.jsoup.Connection;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -25,7 +24,6 @@ public class test extends TestBase {
     public Actions actions=new Actions(driver);
     public  Faker faker=new Faker();
     public TestBase  testBase=new TestBase();
-public Percy percy=new Percy(driver);
 
 
     @Before
@@ -112,7 +110,6 @@ public Percy percy=new Percy(driver);
             followBtnPage.submitBtn.click();
             Thread.sleep(1000);
             wait.until(ExpectedConditions.elementToBeClickable(followBtnPage.showMeBtn)).click();
-            percy.snapshot("Save this Search");
             //  int numberOfCar=1;
 //        WebElement headerOfCar=driver.findElement(By.xpath("(//span[@class='srp-list-item-basic-info-model'])["+numberOfCar+"]"));
 //        numberOfCar++;
@@ -470,61 +467,7 @@ public Percy percy=new Percy(driver);
             }
         }
     }
-    @Test
-    public void leadFormTest() throws InterruptedException {
 
-        BasePage basePage=new BasePage();
-
-        String email = faker.name().name() + "@mail.com";
-        email = email.replace(" ", "");
-        String model="Q3";
-        String make="Audi";
-        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage()
-                .findAUsedCarBtn)).click();
-        //for(int i=1;i<2;i++) {
-        Thread.sleep(2000);
-        List <WebElement> makes =driver.findElements(By.xpath("//select[@name='make']/optgroup[@label='Popular Makes']/option"));
-        for(WebElement temp :makes){
-            if(temp.getText().trim().equals(make)){
-                temp.click();
-                break;
-            }
-
-        }
-        Thread.sleep(2000);
-        //wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//select[@name='model']/optgroup[@label='Current Models']"))));
-        List <WebElement> models =driver.findElements(By.xpath("//select[@name='model']/optgroup[@label='Current Models']/option"));
-        System.out.println("models = " + models.size());
-        for(WebElement temp :models){
-            if(temp.getText().trim().equals(model)){
-                temp.click();
-                break;
-            }
-
-        }
-
-        basePage.getFollowBtnPage().zipCodeMainPage.click();
-        basePage.getFollowBtnPage().zipCodeMainPage.sendKeys("22204");
-        basePage.getFollowBtnPage().submitBtn.click();
-
-Thread.sleep(3000);
-
-        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().showMeBtn)).click();
-        testBase.checkBoxSelection("123");
-        int numberOfCar = 1;
-        WebElement headerOfCar = driver.findElement(By.xpath("(//span[@class='srp-list-item-basic-info-model'])[" + numberOfCar + "]"));
-        numberOfCar++;
-        headerOfCar.click();
-        Set<String> windows = driver.getWindowHandles();
-        for(String window : windows){
-            if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
-                System.out.println(driver.getTitle());break;}
-        }
-
-        testBase.sendToMyPhone();
-
-        driver.quit();
-    }
 
 
 
@@ -621,6 +564,166 @@ driver.switchTo().defaultContent();
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("(//button[contains(text(),'Send to my Phone ')])[1]")))).click();
 
 
+    }
+
+
+
+    //TODO make on Feature file for Gerhkin language DONE !!!!!!!!!
+    @Test
+    public void leadFormTest() throws InterruptedException {
+
+        BasePage basePage=new BasePage();
+
+        String email = faker.name().name() + "@mail.com";
+        email = email.replace(" ", "");
+        String model="Q3";
+        String make="Audi";
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().findAUsedCarBtn)).click();
+        //for(int i=1;i<2;i++) {
+        Thread.sleep(2000);
+
+        //todo Clicking to choose a make
+        List <WebElement> makes =driver.findElements(By.xpath("//select[@name='make']/optgroup[@label='Popular Makes']/option"));
+        for(WebElement temp :makes){
+            if(temp.getText().trim().equals(make)){
+                temp.click();
+                break;
+            }
+
+        }
+        //todo clicking to choose a make
+        Thread.sleep(2000);
+        //wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//select[@name='model']/optgroup[@label='Current Models']"))));
+        List <WebElement> models =driver.findElements(By.xpath("//select[@name='model']/optgroup[@label='Current Models']/option"));
+        System.out.println("models = " + models.size());
+        for(WebElement temp :models){
+            if(temp.getText().trim().equals(model)){
+                temp.click();
+                break;
+            }
+
+        }
+//todo clicking on zipcode
+        basePage.getFollowBtnPage().zipCodeMainPage.click();
+        basePage.getFollowBtnPage().zipCodeMainPage.sendKeys("22204");
+        ///todo clicking onn Next button
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().submitBtn)).click();
+
+      Thread.sleep(3000);
+//todo clicking on 'Show me Result' button
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().showMeBtn)).click();
+        //todo using test base method to select checkboxes
+        //testBase.checkBoxSelection("123");
+
+        //todo manipulations with header of the car on SRP
+        int numberOfCar = 2;
+        WebElement headerOfCar = driver.findElement(By.xpath("(//span[@class='srp-list-item-basic-info-model'])[" + numberOfCar + "]"));
+        numberOfCar++;
+        headerOfCar.click();
+        //todo window handles for VDP
+        Set<String> windows = driver.getWindowHandles();
+        for(String window : windows){
+            if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
+                System.out.println(driver.getTitle());break;}
+        }
+        //todo scrolling down to element
+        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        //todo input for Lead Form
+        //todo Positive scenario :
+        basePage.getLeadFormPage().firstName.click();
+        basePage.getLeadFormPage().firstName.sendKeys("TestQA");
+        basePage.getLeadFormPage().lastName.click();
+        basePage.getLeadFormPage().lastName.sendKeys("test");
+
+       // Thread.sleep(2000);
+        System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
+
+       //Thread.sleep(100);
+for(int i =0;i<6;i++){
+   // Thread.sleep(1000);
+    basePage.getLeadFormPage().zipCode.click();
+    basePage.getLeadFormPage().zipCode.sendKeys(Keys.BACK_SPACE);
+
+}
+
+
+        if(basePage.getLeadFormPage().zipCode.getText().isEmpty()) {
+            basePage.getLeadFormPage().zipCode.click();
+            basePage.getLeadFormPage().zipCode.sendKeys("22001");
+
+        }else if(!basePage.getLeadFormPage().zipCode.getText().isEmpty()){
+            basePage.getLeadFormPage().zipCode.click();
+            basePage.getLeadFormPage().zipCode.clear();
+            basePage.getLeadFormPage().zipCode.sendKeys("22304");
+        }
+        basePage.getLeadFormPage().phoneNumber.sendKeys("5555555555");
+basePage.getLeadFormPage().sendMessage.click();
+Thread.sleep(2000);
+
+Assert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Thank you for contacting this dealer.')]")).getText()
+,"Thank you for contacting this dealer.");
+
+
+
+        driver.quit();
+    }
+
+
+    @Test
+    public void basicTest() throws InterruptedException {
+        BasePage basePage=new BasePage();
+
+        String email = faker.name().name() + "@mail.com";
+        email = email.replace(" ", "");
+        String model="Q3";
+        String make="Audi";
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().findAUsedCarBtn)).click();
+        //for(int i=1;i<2;i++) {
+        Thread.sleep(2000);
+
+        //todo Clicking to choose a make
+        List <WebElement> makes =driver.findElements(By.xpath("//select[@name='make']/optgroup[@label='Popular Makes']/option"));
+        for(WebElement temp :makes){
+            if(temp.getText().trim().equals(make)){
+                temp.click();
+                break;
+            }
+
+        }
+        //todo clicking to choose a make
+        Thread.sleep(1000);
+        //wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//select[@name='model']/optgroup[@label='Current Models']"))));
+        List <WebElement> models =driver.findElements(By.xpath("//select[@name='model']/optgroup[@label='Current Models']/option"));
+        System.out.println("models = " + models.size());
+        for(WebElement temp :models){
+            if(temp.getText().trim().equals(model)){
+                temp.click();
+                break;
+            }
+
+        }
+//todo clicking on zipcode
+        basePage.getFollowBtnPage().zipCodeMainPage.click();
+        basePage.getFollowBtnPage().zipCodeMainPage.sendKeys("22204");
+        ///todo clicking onn Next button
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().submitBtn)).click();
+
+      Thread.sleep(000);
+//todo clicking on 'Show me Result' button
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().showMeBtn)).click();
+        //todo using test base method to select checkboxes
+        //testBase.checkBoxSelection("123");
+
+        //todo manipulations with header of the car on SRP
+        int numberOfCar = 2;
+        WebElement headerOfCar = driver.findElement(By.xpath("(//span[@class='srp-list-item-basic-info-model'])[" + numberOfCar + "]"));
+        numberOfCar++;
+        headerOfCar.click();
+
+     //   testBase.sendToMyPhone();
+        testBase.shareHeader();
     }
 
 }

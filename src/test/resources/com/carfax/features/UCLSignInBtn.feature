@@ -10,7 +10,6 @@ Feature: Forgot Password and Create account trough Sign in feature
     Then I click on Create account option
     And I fill out "email" , "password" , "zipcode" to create a new account
 
-
     Scenario: Forgot password through SignIn option
       Given I am on main Carfax page
       And I navigate to Find a Used Car page

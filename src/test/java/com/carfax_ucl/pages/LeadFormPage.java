@@ -12,7 +12,7 @@ public class LeadFormPage {
     public WebElement firstName;
     @FindBy(xpath = "(//input[@name='lastName'][@placeholder='Last Name'])[2]")
     public WebElement lastName;
-    @FindBy(xpath = "(//input[@name='zip'][@placeholder='Zip Code'])[2]")
+    @FindBy(xpath = "(//input[@name='zip'])[2]")
     public WebElement zipCode;
     @FindBy(xpath = "(//input[@type='email'][@name='email'])[2]")
     public WebElement email;

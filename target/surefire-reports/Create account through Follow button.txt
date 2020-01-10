@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: Create account through Follow button
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 50.429 s <<< FAILURE! - in Create account through Follow button
+Follow button to create account in VDP(Create account through Follow button)  Time elapsed: 9.785 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Used Cars for Sale | with Free CARFAX]> but was:<[]>
+
+Follow button to create account in VDP(Create account through Follow button)  Time elapsed: 9.075 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Used Cars for Sale | with Free CARFAX]> but was:<[]>
+
+Follow button to create account in VDP(Create account through Follow button)  Time elapsed: 8.394 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Used Cars for Sale | with Free CARFAX]> but was:<[]>
+

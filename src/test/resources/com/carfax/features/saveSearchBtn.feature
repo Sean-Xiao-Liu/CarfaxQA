@@ -1,6 +1,4 @@
 Feature: Create account through save this search
-
-
   Scenario Outline: Create account through Save This Search option
     Given I am on main Carfax page
     And I navigate to Find a Used Car page
@@ -11,7 +9,7 @@ Feature: Create account through save this search
 
     Examples:
       | make       | model           | zipcode |
-      | Audi       | Q3              | 22201   |
+      | Subaru       |  Ascent             | 22201   |
       | BMW        | 2 Series        | 75501   |
-      | Land Rover | Discovery Sport | 22033   |
+      | Tesla | Model 3 | 22033   |
       | Toyota     | Camry           | 22304   |

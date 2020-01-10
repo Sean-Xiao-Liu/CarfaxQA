@@ -13,8 +13,11 @@
 /Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/step_definitions/UCLSignUpBtnStepDef.java
 /Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/utilities/ConfigurationReader.java
 /Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/step_definitions/MainSignUpBtnStepDef.java
+/Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/pages/SendToMyPhone.java
 /Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/step_definitions/UCLSignInStepDef.java
 /Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/utilities/Driver.java
+/Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/pages/ShareHeader.java
 /Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/pages/FollowBtnPage.java
+/Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/pages/BasePage.java
 /Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/runners/CukesRunner.java
 /Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/pages/FindDealerPage.java

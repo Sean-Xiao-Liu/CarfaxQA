@@ -5,7 +5,6 @@ import com.carfax_ucl.utilities.Driver;
 import com.github.javafaker.Faker;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import io.percy.selenium.Percy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,7 +14,6 @@ public class FollowBtnStepDef {
     WebDriverWait wait=new WebDriverWait(Driver.get(),1);
     Faker faker=new Faker();
     public WebDriver driver= Driver.get();
-public Percy percy=new Percy(driver);
 
 
     @When("I click on next and show me results button  show me results button")
@@ -23,12 +21,11 @@ public Percy percy=new Percy(driver);
         followBtnPage.submitBtn.click();
         Thread.sleep(1000);
         wait.until(ExpectedConditions.elementToBeClickable(followBtnPage.showMeBtn)).click();
-        percy.snapshot("Save this Search");
 
     }
     @When("I click on follow button to follow car")
     public void i_click_on_follow_button_to_follow_car() throws InterruptedException{
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         wait.until(ExpectedConditions.elementToBeClickable(followBtnPage.FollowBtn)).click();
     }
     @Then("I can create an account")

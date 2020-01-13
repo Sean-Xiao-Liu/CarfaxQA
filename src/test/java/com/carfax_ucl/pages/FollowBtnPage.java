@@ -10,6 +10,7 @@ public class FollowBtnPage extends MainSignUpPage {
     }
 
 
+
     @FindBy(xpath = "//a[@class='hero__button button--green' and contains(text(),'Find a Used')]")
     public WebElement findAUsedCarBtn;
     @FindBy(xpath = "//input[@name='zip']")

@@ -1,10 +1,11 @@
 Feature: Find Dealer
 
-  @tc-1 @smoke @regression
+ @smoke @regression
 
 
 
-  Scenario: Find dealer through UCL
+
+ Scenario: Find dealer through UCL
     Given I am on main Carfax page
     And I navigate to Find a Used Car page
     When I click on Find a Dealer button

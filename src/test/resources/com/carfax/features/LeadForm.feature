@@ -1,5 +1,5 @@
 Feature: Lead form on VDP
-
+  @tc-2
 
   Scenario Outline: Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED
     Given I am on main Carfax page
@@ -17,9 +17,6 @@ Feature: Lead form on VDP
       | Honda        | Civic        | 75501   |
       | Infiniti | Q50 | 22033   |
       | Toyota     | Camry           | 22304   |
-
-
-
 Scenario Outline: Lead form with first name, last name, zip code and email
   Given I am on main Carfax page
   And I navigate to Find a Used Car page
@@ -36,8 +33,6 @@ Scenario Outline: Lead form with first name, last name, zip code and email
     | Honda        | Civic        | 75501   |
     | Infiniti | Q50 | 22033   |
     | Toyota     | Camry           | 22304   |
-
-
 
 
 
@@ -59,8 +54,6 @@ Scenario Outline: Lead form with first name, last name, zip code and email
           | Honda        | Civic        | 75501   |
           | Infiniti | Q50 | 22033   |
           | Toyota     | Camry           | 22304   |
-
-
 
 Scenario Outline: Error message for 'Last name is required' is displayed
   Given I am on main Carfax page
@@ -97,6 +90,9 @@ Scenario Outline: Error message for 'Last name is required' is displayed
       | Honda        | Civic        | 75501   |
       | Infiniti | Q50 | 22033   |
       | Toyota     | Camry           | 22304   |
+
+
+
 
   Scenario Outline: Error message for 'Zip Code name is required' is displayed
     Given I am on main Carfax page

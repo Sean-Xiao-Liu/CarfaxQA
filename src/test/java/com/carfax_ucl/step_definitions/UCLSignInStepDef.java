@@ -1,5 +1,6 @@
 package com.carfax_ucl.step_definitions;
 
+import com.carfax_ucl.pages.BasePage;
 import com.carfax_ucl.pages.UCLSignInPage;
 import com.carfax_ucl.utilities.Driver;
 import com.github.javafaker.Faker;
@@ -13,8 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class UCLSignInStepDef {
 
-
-    public UCLSignInPage uclSignInPage=new UCLSignInPage();
+BasePage basePage=new BasePage();
     Faker faker=new Faker();
     String email = faker.name().name() + "@mail.com";
     WebDriverWait wait=new WebDriverWait(Driver.get(),3);
@@ -25,17 +25,17 @@ public class UCLSignInStepDef {
     @When("I click on Sign In button")
     public void i_click_on_Sign_In_button() throws InterruptedException {
         Thread.sleep(2000);
-        wait.until(ExpectedConditions.visibilityOf(uclSignInPage.UclSignIn)).click();
+        wait.until(ExpectedConditions.visibilityOf(basePage.getUclSignInPage().UclSignIn)).click();
 
     }
     @When("I can fill out email , password")
     public void i_can_fill_out_email_password() {
          email = email.replace(" ", "");
-        uclSignInPage.email.click();
-        uclSignInPage.email.sendKeys(email);
-        uclSignInPage.password.click();
-        uclSignInPage.password.sendKeys("Ajad823782");
-        uclSignInPage.signInBtn.click();
+        basePage.getUclSignInPage().email.click();
+        basePage.getUclSignInPage().email.sendKeys(email);
+        basePage.getUclSignInPage().password.click();
+        basePage.getUclSignInPage().password.sendKeys("Ajad823782");
+        basePage.getUclSignInPage().signInBtn.click();
     }
 
     @When("If i see error message")
@@ -47,13 +47,13 @@ public class UCLSignInStepDef {
     public void i_click_on_Create_account_option() {
         errorMessage=driver.findElement(By.xpath("//span[contains(text(),'Your password and email do not match.')]")).getText();
         if(errorMessage.contains("password")) {
-            uclSignInPage.createAccount.click();
+            basePage.getUclSignInPage().createAccount.click();
             //  uclSignInPage.EnterEmail.click();
             // //uclSignInPage.EnterEmail.sendKeys(email);
 //        //uclSignInPage.EnterPassword.sendKeys("Aslfdjs2131");
             // uclSignInPage.zipcode.click();
             // uclSignInPage.zipcode.sendKeys("22201");
-            uclSignInPage.createAccountBtn.click();
+            basePage.getUclSignInPage().createAccountBtn.click();
         }
     }
 
@@ -61,15 +61,15 @@ public class UCLSignInStepDef {
     public void i_click_on_Forgot_Password_button() {
         errorMessage=driver.findElement(By.xpath("//span[contains(text(),'Your password and email do not match.')]")).getText();
         if(errorMessage.contains("password")) {
-            uclSignInPage.forgotPassword.click();
+            basePage.getUclSignInPage().forgotPassword.click();
         }
     }
 
     @Then("I fill out email and click on reset password")
     public void i_fill_out_email_and_click_on_reset_password() throws InterruptedException {
-        uclSignInPage.EnterEmail.click();
-        uclSignInPage.EnterEmail.sendKeys(email);
-        uclSignInPage.resetPassword.click();
+        basePage.getUclSignInPage().EnterEmail.click();
+        basePage.getUclSignInPage().EnterEmail.sendKeys(email);
+        basePage.getUclSignInPage().resetPassword.click();
         Thread.sleep(5000);
         Assert.assertEquals(driver.findElement(By.xpath("//span[@class='form-transaction-msg error']")).getText(),"Oops! We couldn't find that e-mail.");
     }

@@ -1,5 +1,7 @@
 Feature: Forgot Password and Create account trough Sign in feature
 
+
+
   Scenario: Create account through SignIn option
 
     Given I am on main Carfax page
@@ -9,9 +11,9 @@ Feature: Forgot Password and Create account trough Sign in feature
     And If i see error message
     Then I click on Create account option
     And I fill out "email" , "password" , "zipcode" to create a new account
-  @tc-2
 
-    Scenario: Forgot password through SignIn option
+
+  Scenario: Forgot password through SignIn option
       Given I am on main Carfax page
       And I navigate to Find a Used Car page
       When I click on Sign In button

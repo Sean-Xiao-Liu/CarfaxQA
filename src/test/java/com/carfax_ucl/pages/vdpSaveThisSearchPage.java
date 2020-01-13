@@ -13,7 +13,7 @@ public class vdpSaveThisSearchPage extends MainSignUpPage {
     @FindBy(xpath = "//a[@class='cgh-link-tag' and contains(text(),'Used Cars for')]")
     public WebElement usedCarsForSaleHeader;
     @FindBy(xpath = "//a[@class='hero__button button--green' and contains(text(),'Find a Used')]")
-    public WebElement findAUsedCarBtn;
+    public WebElement  findAUsedCarBtn;
     @FindBy(xpath = "(//select[contains(@class,'form-control')])[1]")
     public WebElement selectMakeOption;
     @FindBy(xpath = "(//select[contains(@class,'form-control search')])[2]")

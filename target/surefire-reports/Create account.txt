@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Create account
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 44.246 s <<< FAILURE! - in Create account
-Create account through UCL page(Create account)  Time elapsed: 8.637 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[Used Cars for Sale | with Free CARFAX]> but was:<[]>
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.905 s - in Create account

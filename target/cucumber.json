@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-01-10T20:37:20.750Z",
+        "start_timestamp": "2020-01-13T18:19:36.869Z",
         "before": [
           {
             "result": {
-              "duration": 3964236568,
+              "duration": 4895024407,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 14,
-        "name": "Forgot password through SignIn option",
+        "name": "Follow button to create account in VDP",
         "description": "",
-        "id": "forgot-password-and-create-account-trough-sign-in-feature;forgot-password-through-signin-option",
+        "id": "create-account-through-follow-button;follow-button-to-create-account-in-vdp;;2",
         "after": [
           {
             "result": {
-              "duration": 148145335,
+              "duration": 3896705628,
               "status": "passed"
             },
             "match": {
@@ -31,14 +31,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 573131156,
+              "duration": 410284096,
               "status": "passed"
             },
-            "line": 15,
+            "line": 6,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 1270015265,
+              "duration": 1113122083,
               "status": "passed"
             },
-            "line": 16,
+            "line": 7,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -59,77 +59,451 @@
           },
           {
             "result": {
-              "duration": 2297755671,
+              "duration": 4942621805,
               "status": "passed"
             },
-            "line": 17,
-            "name": "I click on Sign In button",
+            "line": 8,
+            "name": "I fill out \"Audi\" , \"Q3\" , \"22201\" of the car that I want to search",
             "match": {
-              "location": "UCLSignInStepDef.i_click_on_Sign_In_button()"
+              "arguments": [
+                {
+                  "val": "\"Audi\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Q3\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"22201\"",
+                  "offset": 27
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2052793257,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on next and show me results button  show me results button",
+            "match": {
+              "location": "FollowBtnStepDef.i_click_on_next_and_show_me_results_button_show_me_results_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 655727470,
+              "duration": 2335722974,
               "status": "passed"
             },
-            "line": 18,
-            "name": "I can fill out email , password",
+            "line": 10,
+            "name": "I click on follow button to follow car",
             "match": {
-              "location": "UCLSignInStepDef.i_can_fill_out_email_password()"
+              "location": "FollowBtnStepDef.i_click_on_follow_button_to_follow_car()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1004415490,
+              "duration": 4577717720,
               "status": "passed"
             },
-            "line": 19,
-            "name": "If i see error message",
+            "line": 11,
+            "name": "I can create an account",
             "match": {
-              "location": "UCLSignInStepDef.if_i_see_error_message()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 83439206,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "I click on Forgot Password button",
-            "match": {
-              "location": "UCLSignInStepDef.i_click_on_Forgot_Password_button()"
+              "location": "FollowBtnStepDef.i_can_create_an_account()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5377308421,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "I fill out email and click on reset password",
-            "match": {
-              "location": "UCLSignInStepDef.i_fill_out_email_and_click_on_reset_password()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@tc-2"
+            "name": "@tc-1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-13T18:20:01.154Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4203863431,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Follow button to create account in VDP",
+        "description": "",
+        "id": "create-account-through-follow-button;follow-button-to-create-account-in-vdp;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 3902867345,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 143913971,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on main Carfax page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1638912083,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I navigate to Find a Used Car page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4933337386,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I fill out \"Honda\" , \"Civic\" , \"75501\" of the car that I want to search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Honda\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Civic\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"75501\"",
+                  "offset": 31
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1883825380,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on next and show me results button  show me results button",
+            "match": {
+              "location": "FollowBtnStepDef.i_click_on_next_and_show_me_results_button_show_me_results_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2291624976,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on follow button to follow car",
+            "match": {
+              "location": "FollowBtnStepDef.i_click_on_follow_button_to_follow_car()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4619196441,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I can create an account",
+            "match": {
+              "location": "FollowBtnStepDef.i_can_create_an_account()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tc-1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-13T18:20:24.779Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3690382904,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Follow button to create account in VDP",
+        "description": "",
+        "id": "create-account-through-follow-button;follow-button-to-create-account-in-vdp;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 3864592559,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 104739513,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on main Carfax page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1047354593,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I navigate to Find a Used Car page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4940849653,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I fill out \"Land Rover\" , \"Discovery Sport\" , \"22033\" of the car that I want to search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Land Rover\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Discovery Sport\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"22033\"",
+                  "offset": 46
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2047837316,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on next and show me results button  show me results button",
+            "match": {
+              "location": "FollowBtnStepDef.i_click_on_next_and_show_me_results_button_show_me_results_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2288975048,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on follow button to follow car",
+            "match": {
+              "location": "FollowBtnStepDef.i_click_on_follow_button_to_follow_car()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4545547303,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I can create an account",
+            "match": {
+              "location": "FollowBtnStepDef.i_can_create_an_account()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tc-1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-13T18:20:47.318Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3937059832,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Follow button to create account in VDP",
+        "description": "",
+        "id": "create-account-through-follow-button;follow-button-to-create-account-in-vdp;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 3877275152,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 84239458,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on main Carfax page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1036713380,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I navigate to Find a Used Car page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5032131013,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I fill out \"Toyota\" , \"Camry\" , \"22304\" of the car that I want to search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Toyota\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Camry\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"22304\"",
+                  "offset": 32
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1790320928,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on next and show me results button  show me results button",
+            "match": {
+              "location": "FollowBtnStepDef.i_click_on_next_and_show_me_results_button_show_me_results_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2286428626,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on follow button to follow car",
+            "match": {
+              "location": "FollowBtnStepDef.i_click_on_follow_button_to_follow_car()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4739110593,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I can create an account",
+            "match": {
+              "location": "FollowBtnStepDef.i_can_create_an_account()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tc-1"
           }
         ]
       }
     ],
-    "name": "Forgot Password and Create account trough Sign in feature",
+    "name": "Create account through Follow button",
     "description": "",
-    "id": "forgot-password-and-create-account-trough-sign-in-feature",
+    "id": "create-account-through-follow-button",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/com/carfax/features/UCLSignInBtn.feature",
+    "uri": "file:src/test/resources/com/carfax/features/FollowBtn.feature",
     "tags": []
   }
 ]

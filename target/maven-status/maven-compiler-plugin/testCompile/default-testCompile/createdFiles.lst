@@ -1,4 +1,5 @@
 com/carfax_ucl/step_definitions/UCLSignInStepDef.class
+com/carfax_ucl/step_definitions/LeadFormStepDef.class
 com/carfax_ucl/step_definitions/UCLSignUpBtnStepDef.class
 com/carfax_ucl/pages/MainSignUpPage.class
 com/carfax_ucl/utilities/Driver.class
@@ -15,6 +16,9 @@ com/carfax_ucl/step_definitions/MainSignUpBtnStepDef.class
 com/carfax_ucl/step_definitions/FollowBtnStepDef.class
 com/carfax_ucl/step_definitions/SaveThisSearchStepDef.class
 com/carfax_ucl/step_definitions/test.class
+com/carfax_ucl/pages/SendToMyPhone.class
 com/carfax_ucl/utilities/ConfigurationReader.class
+com/carfax_ucl/pages/BasePage.class
+com/carfax_ucl/pages/ShareHeader.class
 com/carfax_ucl/pages/FindDealerPage.class
 com/carfax_ucl/pages/MainSignInPage.class

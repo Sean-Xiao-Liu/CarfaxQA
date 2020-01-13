@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Create account through Follow button" time="50.429" tests="4" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Create account through Follow button" time="66.169" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="java.specification.version" value="12"/>
+    <property name="webdriver.chrome.driver" value="/Users/annachernyshova/.m2/repository/webdriver/chromedriver/mac64/79.0.3945.36/chromedriver"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.class.path" value="/Users/annachernyshova/IdeaProjects/ucl_qa/target/test-classes:/Users/annachernyshova/IdeaProjects/ucl_qa/target/classes:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/annachernyshova/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/annachernyshova/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/annachernyshova/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/annachernyshova/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/annachernyshova/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/annachernyshova/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/annachernyshova/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/annachernyshova/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/annachernyshova/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/annachernyshova/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/annachernyshova/.m2/repository/io/cucumber/cucumber-junit/4.4.0/cucumber-junit-4.4.0.jar:/Users/annachernyshova/.m2/repository/io/cucumber/cucumber-core/4.4.0/cucumber-core-4.4.0.jar:/Users/annachernyshova/.m2/repository/io/cucumber/gherkin/5.1.0/gherkin-5.1.0.jar:/Users/annachernyshova/.m2/repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/Users/annachernyshova/.m2/repository/io/cucumber/cucumber-expressions/7.0.2/cucumber-expressions-7.0.2.jar:/Users/annachernyshova/.m2/repository/io/cucumber/datatable/1.1.14/datatable-1.1.14.jar:/Users/annachernyshova/.m2/repository/io/cucumber/datatable-dependencies/1.1.14/datatable-dependencies-1.1.14.jar:/Users/annachernyshova/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/annachernyshova/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/annachernyshova/.m2/repository/io/cucumber/cucumber-java/4.4.0/cucumber-java-4.4.0.jar:/Users/annachernyshova/.m2/repository/io/github/bonigarcia/webdrivermanager/3.6.1/webdrivermanager-3.6.1.jar:/Users/annachernyshova/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/annachernyshova/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/annachernyshova/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/annachernyshova/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/annachernyshova/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/annachernyshova/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/annachernyshova/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/annachernyshova/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/annachernyshova/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/annachernyshova/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/annachernyshova/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/annachernyshova/.m2/repository/com/github/javafaker/javafaker/0.16/javafaker-0.16.jar:/Users/annachernyshova/.m2/repository/org/yaml/snakeyaml/1.20/snakeyaml-1.20-android.jar:/Users/annachernyshova/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/annachernyshova/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/annachernyshova/.m2/repository/io/percy/percy-java-selenium/0.0.3/percy-java-selenium-0.0.3.jar:/Users/annachernyshova/.m2/repository/net/masterthought/cucumber-reporting/4.4.0/cucumber-reporting-4.4.0.jar:/Users/annachernyshova/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar:/Users/annachernyshova/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/Users/annachernyshova/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.8/jackson-core-2.9.8.jar:/Users/annachernyshova/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar:/Users/annachernyshova/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/annachernyshova/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/Users/annachernyshova/.m2/repository/velocity-tools/velocity-tools/1.4/velocity-tools-1.4.jar:/Users/annachernyshova/.m2/repository/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar:/Users/annachernyshova/.m2/repository/org/codehaus/plexus/plexus-utils/3.1.1/plexus-utils-3.1.1.jar:/Users/annachernyshova/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20181114.1/owasp-java-html-sanitizer-20181114.1.jar:/Users/annachernyshova/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
@@ -14,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/annachernyshova/IdeaProjects/ucl_qa/target/surefire/surefirebooter8351407667189785615.jar /Users/annachernyshova/IdeaProjects/ucl_qa/target/surefire 2020-01-10T09-31-59_533-jvmRun1 surefire18420153064138453411tmp surefire_02433276013780872539tmp"/>
+    <property name="sun.java.command" value="/Users/annachernyshova/IdeaProjects/ucl_qa/target/surefire/surefirebooter5029427868338167303.jar /Users/annachernyshova/IdeaProjects/ucl_qa/target/surefire 2020-01-13T09-04-54_697-jvmRun1 surefire11262963668823414710tmp surefire_03270375529209365297tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/annachernyshova/IdeaProjects/ucl_qa/target/test-classes:/Users/annachernyshova/IdeaProjects/ucl_qa/target/classes:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/annachernyshova/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/annachernyshova/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/annachernyshova/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/annachernyshova/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/annachernyshova/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/annachernyshova/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/annachernyshova/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/annachernyshova/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/annachernyshova/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/annachernyshova/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/annachernyshova/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/annachernyshova/.m2/repository/io/cucumber/cucumber-junit/4.4.0/cucumber-junit-4.4.0.jar:/Users/annachernyshova/.m2/repository/io/cucumber/cucumber-core/4.4.0/cucumber-core-4.4.0.jar:/Users/annachernyshova/.m2/repository/io/cucumber/gherkin/5.1.0/gherkin-5.1.0.jar:/Users/annachernyshova/.m2/repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/Users/annachernyshova/.m2/repository/io/cucumber/cucumber-expressions/7.0.2/cucumber-expressions-7.0.2.jar:/Users/annachernyshova/.m2/repository/io/cucumber/datatable/1.1.14/datatable-1.1.14.jar:/Users/annachernyshova/.m2/repository/io/cucumber/datatable-dependencies/1.1.14/datatable-dependencies-1.1.14.jar:/Users/annachernyshova/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/annachernyshova/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/annachernyshova/.m2/repository/io/cucumber/cucumber-java/4.4.0/cucumber-java-4.4.0.jar:/Users/annachernyshova/.m2/repository/io/github/bonigarcia/webdrivermanager/3.6.1/webdrivermanager-3.6.1.jar:/Users/annachernyshova/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/annachernyshova/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/annachernyshova/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/annachernyshova/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/annachernyshova/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/annachernyshova/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/annachernyshova/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/annachernyshova/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/annachernyshova/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/annachernyshova/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/annachernyshova/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/annachernyshova/.m2/repository/com/github/javafaker/javafaker/0.16/javafaker-0.16.jar:/Users/annachernyshova/.m2/repository/org/yaml/snakeyaml/1.20/snakeyaml-1.20-android.jar:/Users/annachernyshova/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/annachernyshova/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/annachernyshova/.m2/repository/io/percy/percy-java-selenium/0.0.3/percy-java-selenium-0.0.3.jar:/Users/annachernyshova/.m2/repository/net/masterthought/cucumber-reporting/4.4.0/cucumber-reporting-4.4.0.jar:/Users/annachernyshova/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar:/Users/annachernyshova/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/Users/annachernyshova/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.8/jackson-core-2.9.8.jar:/Users/annachernyshova/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar:/Users/annachernyshova/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/annachernyshova/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/Users/annachernyshova/.m2/repository/velocity-tools/velocity-tools/1.4/velocity-tools-1.4.jar:/Users/annachernyshova/.m2/repository/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar:/Users/annachernyshova/.m2/repository/org/codehaus/plexus/plexus-utils/3.1.1/plexus-utils-3.1.1.jar:/Users/annachernyshova/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20181114.1/owasp-java-html-sanitizer-20181114.1.jar:/Users/annachernyshova/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:"/>
@@ -31,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/annachernyshova/IdeaProjects/ucl_qa/target/surefire/surefirebooter8351407667189785615.jar"/>
+    <property name="surefire.real.class.path" value="/Users/annachernyshova/IdeaProjects/ucl_qa/target/surefire/surefirebooter5029427868338167303.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="12.0.1+12"/>
@@ -47,7 +48,6 @@
     <property name="java.version" value="12.0.1"/>
     <property name="user.dir" value="/Users/annachernyshova/IdeaProjects/ucl_qa"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="webdriver.gecko.driver" value="/Users/annachernyshova/.m2/repository/webdriver/geckodriver/macos/0.26.0/geckodriver"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="idea.version2019.1" value="true"/>
     <property name="java.library.path" value="/Users/annachernyshova/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -58,119 +58,8 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="56.0"/>
   </properties>
-  <testcase name="Follow button to create account in VDP" classname="Create account through Follow button" time="9.785">
-    <failure message="expected:&lt;[Used Cars for Sale | with Free CARFAX]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Used Cars for Sale | with Free CARFAX]> but was:<[]>
-]]></failure>
-    <system-out><![CDATA[Jan 10, 2020 9:32:00 AM cucumber.runtime.java.ObjectFactoryLoader loadSingleObjectFactory
-WARNING: Use deprecated reflections to load ObjectFactory.
-
-&amp#27;[31mFailed scenarios:&amp#27;[0m
-&amp#27;[31msrc/test/resources/com/carfax/features/FollowBtn.feature:14 &amp#27;[0m# Follow button to create account in VDP
-&amp#27;[31msrc/test/resources/com/carfax/features/FollowBtn.feature:15 &amp#27;[0m# Follow button to create account in VDP
-&amp#27;[31msrc/test/resources/com/carfax/features/FollowBtn.feature:17 &amp#27;[0m# Follow button to create account in VDP
-
-4 Scenarios (&amp#27;[31m3 failed&amp#27;[0m, &amp#27;[32m1 passed&amp#27;[0m)
-24 Steps (&amp#27;[31m3 failed&amp#27;[0m, &amp#27;[36m12 skipped&amp#27;[0m, &amp#27;[32m9 passed&amp#27;[0m)
-0m50.599s
-
-org.junit.ComparisonFailure: expected:<[Used Cars for Sale | with Free CARFAX]> but was:<[]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.carfax_ucl.step_definitions.SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page(SaveThisSearchStepDef.java:50)
-	at ✽.I navigate to Find a Used Car page(file:src/test/resources/com/carfax/features/FollowBtn.feature:7)
-
-org.junit.ComparisonFailure: expected:<[Used Cars for Sale | with Free CARFAX]> but was:<[]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.carfax_ucl.step_definitions.SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page(SaveThisSearchStepDef.java:50)
-	at ✽.I navigate to Find a Used Car page(file:src/test/resources/com/carfax/features/FollowBtn.feature:7)
-
-org.junit.ComparisonFailure: expected:<[Used Cars for Sale | with Free CARFAX]> but was:<[]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.carfax_ucl.step_definitions.SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page(SaveThisSearchStepDef.java:50)
-	at ✽.I navigate to Find a Used Car page(file:src/test/resources/com/carfax/features/FollowBtn.feature:7)
-
-Setting up before hooks
-Browser name : firefox
-Hookes ended
-After Hooks
-]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1578666721714	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/x_/jgrkcbmn19s41k5v_9y874qdn_5z29/T/rust_mozprofileKfR5xX"
-1578666722196	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1578666722284	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1578666722284	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1578666722284	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1578666722284	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1578666724048	Marionette	INFO	Listening on port 55844
-1578666724112	Marionette	WARN	TLS certificate errors will be ignored for this session
-Jan 10, 2020 9:32:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-JavaScript warning: https://js.datadome.co/tags.js, line 2: unreachable code after return statement
-JavaScript warning: https://js.datadome.co/tags.js, line 2: unreachable code after return statement
-1578666726863	Marionette	INFO	Stopped listening on port 55844
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-]]></system-err>
-  </testcase>
-  <testcase name="Follow button to create account in VDP" classname="Create account through Follow button" time="9.075">
-    <failure message="expected:&lt;[Used Cars for Sale | with Free CARFAX]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Used Cars for Sale | with Free CARFAX]> but was:<[]>
-]]></failure>
-    <system-out><![CDATA[Setting up before hooks
-Browser name : firefox
-Hookes ended
-After Hooks
-]]></system-out>
-    <system-err><![CDATA[1578666731029	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/x_/jgrkcbmn19s41k5v_9y874qdn_5z29/T/rust_mozprofileNBYmmx"
-1578666731646	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1578666731731	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1578666731731	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1578666731732	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1578666731732	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1578666733399	Marionette	INFO	Listening on port 56245
-1578666733485	Marionette	WARN	TLS certificate errors will be ignored for this session
-Jan 10, 2020 9:32:13 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-JavaScript warning: https://js.datadome.co/tags.js, line 2: unreachable code after return statement
-JavaScript warning: https://js.datadome.co/tags.js, line 2: unreachable code after return statement
-1578666735912	Marionette	INFO	Stopped listening on port 56245
-]]></system-err>
-  </testcase>
-  <testcase name="Follow button to create account in VDP" classname="Create account through Follow button" time="23.171"/>
-  <testcase name="Follow button to create account in VDP" classname="Create account through Follow button" time="8.394">
-    <failure message="expected:&lt;[Used Cars for Sale | with Free CARFAX]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Used Cars for Sale | with Free CARFAX]> but was:<[]>
-]]></failure>
-    <system-out><![CDATA[Setting up before hooks
-Browser name : firefox
-Hookes ended
-After Hooks
-]]></system-out>
-    <system-err><![CDATA[1578666763107	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/x_/jgrkcbmn19s41k5v_9y874qdn_5z29/T/rust_mozprofileLDPI8J"
-1578666763566	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1578666763659	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1578666763660	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1578666763663	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1578666763663	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1578666765324	Marionette	INFO	Listening on port 56818
-1578666765377	Marionette	WARN	TLS certificate errors will be ignored for this session
-Jan 10, 2020 9:32:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-JavaScript warning: https://js.datadome.co/tags.js, line 2: unreachable code after return statement
-JavaScript warning: https://js.datadome.co/tags.js, line 2: unreachable code after return statement
-1578666767583	Marionette	INFO	Stopped listening on port 56818
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-]]></system-err>
-  </testcase>
+  <testcase name="Follow button to create account in VDP" classname="Create account through Follow button" time="16.962"/>
+  <testcase name="Follow button to create account in VDP" classname="Create account through Follow button" time="16.005"/>
+  <testcase name="Follow button to create account in VDP" classname="Create account through Follow button" time="16.22"/>
+  <testcase name="Follow button to create account in VDP" classname="Create account through Follow button" time="16.982"/>
 </testsuite>

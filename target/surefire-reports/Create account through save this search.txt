@@ -1,13 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Create account through save this search
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 47.28 s <<< FAILURE! - in Create account through save this search
-Create account through Save This Search option(Create account through save this search)  Time elapsed: 8.761 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[Used Cars for Sale | with Free CARFAX]> but was:<[]>
-
-Create account through Save This Search option(Create account through save this search)  Time elapsed: 8.488 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[Used Cars for Sale | with Free CARFAX]> but was:<[]>
-
-Create account through Save This Search option(Create account through save this search)  Time elapsed: 8.464 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[Used Cars for Sale | with Free CARFAX]> but was:<[]>
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 66.132 s - in Create account through save this search

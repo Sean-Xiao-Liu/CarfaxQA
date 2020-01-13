@@ -2,8 +2,6 @@ Feature: Create account
 
 
 
-
-
   Scenario: Create account through main Sign Up button
     Given I am on main Carfax page
     When I click on Sign Up button

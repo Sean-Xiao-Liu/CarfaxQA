@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
+import java.util.TreeMap;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -29,7 +30,6 @@ public class SaveThisSearchStepDef {
     public WebDriverWait wait=new WebDriverWait(Driver.get(),5);
     public WebDriver driver=Driver.get();
     public Faker faker=new Faker();
-    public Actions actions=new Actions(driver);
 
 
 
@@ -44,9 +44,11 @@ public class SaveThisSearchStepDef {
 
     }
     @Given("I navigate to Find a Used Car page")
-    public void i_navigate_to_Find_a_Used_Car_page() {
+    public void i_navigate_to_Find_a_Used_Car_page() throws InterruptedException {
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getVdp().findAUsedCarBtn)).click();
         wait.until(ExpectedConditions.urlContains("cars-for-sale"));
+        System.out.println(driver.getTitle());
+        Thread.sleep(200);
         assertEquals("Used Cars for Sale | with Free CARFAX",driver.getTitle());
     }
     @Given("I fill out {string} , {string} , {string} of the car that I want to search")
@@ -76,27 +78,6 @@ public class SaveThisSearchStepDef {
         }
 
 
-//        driver.findElement(By.xpath("(//select[contains(@class,'form-control')])[1]")).click();
-//       List<WebElement> listOfMakes = driver.findElements(By.xpath("//option[contains(@id,'make_')]"));
-//        Thread.sleep(1000);
-//        int makeNumber=1;
-//        wait.until(ExpectedConditions.elementToBeClickable(listOfMakes.get(makeNumber))).click();
-//        for(WebElement element : listOfMakes) {
-//            if(element.getText().equals("make")){
-//                element.click();
-//            }
-           // listOfMakes.get(1).click();
-//        }
-        //actions.doubleClick(listOfMakes.get(makeNumber)).build().perform();
-//        int model=1;
-//        WebElement modelOfCar=driver.findElement(By.xpath("(//optgroup/option[contains(@id,'model_')])[" +model+"]"));
-//        model++;
-//        //todo clicking on 'Select model' dropdown
-//        wait.until(ExpectedConditions.elementToBeClickable(
-//                driver.findElement(By.cssSelector("select[class='form-control search-model ']")))).click();
-//
-//        modelOfCar.click();
-      //  actions.doubleClick(modelOfCar).build().perform();
         //todo clicking on 'Zipcode'
        basePage.getVdp().zipCodeMainPage.click();
         basePage.getVdp().zipCodeMainPage.sendKeys(zipcode);

@@ -1,6 +1,7 @@
 package com.carfax_ucl.step_definitions;
 
 import com.carfax_ucl.pages.BasePage;
+import com.carfax_ucl.utilities.ConfigurationReader;
 import com.carfax_ucl.utilities.Driver;
 import com.github.javafaker.Faker;
 import cucumber.api.java.en.Then;
@@ -41,6 +42,8 @@ public Faker faker=new Faker();
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
         //todo input for Lead Form
         //todo Positive scenario :
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
+
         basePage.getLeadFormPage().firstName.click();
         basePage.getLeadFormPage().firstName.sendKeys("TestQA");
         basePage.getLeadFormPage().lastName.click();
@@ -84,6 +87,8 @@ public Faker faker=new Faker();
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
         //todo input for Lead Form
         //todo Positive scenario :
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
+
         basePage.getLeadFormPage().firstName.click();
         basePage.getLeadFormPage().firstName.sendKeys("TestQA");
         basePage.getLeadFormPage().lastName.click();
@@ -118,10 +123,15 @@ public Faker faker=new Faker();
         basePage.getLeadFormPage().sendMessage.click();
         Thread.sleep(2000);
 
-        Assert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Thank you for contacting this dealer.')]")).getText()
-                ,"Thank you for contacting this dealer.");
+//        if (ConfigurationReader.get("browser").equals("firefox")) {
+////            Assert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Your message was sent!')]")).getText(),"Your message was sent!");
+////            Assert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Thank you for contacting this dealer.')]")).getText()
+////                    , "Thank you for contacting this dealer.");
+//        }else{
+            Assert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Thank you for contacting this dealer.')]")).getText()
+                    , "Thank you for contacting this dealer.");
+      //  }
     }
-
 //TODO SCENARIO #3
     @When("I navigate to Lead Form and cleaning zipcode which is by default already filled out")
     public void i_navigate_to_Lead_Form_and_cleaning_zipcode_which_is_by_default_already_filled_out() throws InterruptedException {
@@ -135,6 +145,8 @@ public Faker faker=new Faker();
         WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
+
         for(int i =0;i<6;i++){
             // Thread.sleep(1000);
             basePage.getLeadFormPage().zipCode.click();
@@ -176,6 +188,8 @@ public Faker faker=new Faker();
         WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
+
         basePage.getLeadFormPage().firstName.click();
         basePage.getLeadFormPage().firstName.sendKeys("TestQA");
         System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
@@ -219,6 +233,8 @@ public Faker faker=new Faker();
         WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
+
         basePage.getLeadFormPage().lastName.click();
         basePage.getLeadFormPage().lastName.sendKeys("TestQA");
         System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
@@ -259,10 +275,14 @@ public Faker faker=new Faker();
             if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
                 System.out.println(driver.getTitle());break;}
         }
+
+
         //todo scrolling down to element
         WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
+
+wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
         basePage.getLeadFormPage().firstName.click();
         basePage.getLeadFormPage().firstName.sendKeys("TestQA");
         basePage.getLeadFormPage().lastName.click();
@@ -283,6 +303,7 @@ public Faker faker=new Faker();
     @Then("I click on Send Message to that dealer and should see Zip code error message are displayed")
     public void i_click_on_Send_Message_to_that_dealer_and_should_see_Zip_code_error_message_are_displayed() {
         basePage.getLeadFormPage().sendMessage.click();
+        System.out.println(driver.findElement(By.cssSelector("span.checkbox-list-item--text")).getAttribute("value"));
 
         Assert.assertTrue(driver.findElement(By.xpath("//li[contains(text(),'Zip is required!')]")).isDisplayed());
     }

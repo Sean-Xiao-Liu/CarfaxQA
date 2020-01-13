@@ -1,7 +1,6 @@
 package com.carfax_ucl.step_definitions;
 
 import com.carfax_ucl.pages.BasePage;
-import com.carfax_ucl.pages.FindDealerPage;
 import com.carfax_ucl.utilities.Driver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

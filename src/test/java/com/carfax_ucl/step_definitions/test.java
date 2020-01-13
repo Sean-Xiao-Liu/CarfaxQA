@@ -18,6 +18,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Pattern;
+
 public class test extends TestBase {
     public WebDriverWait wait=new WebDriverWait(Driver.get(),3);
     public  WebDriver driver= Driver.get();
@@ -710,9 +712,10 @@ Assert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Thank y
         ///todo clicking onn Next button
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().submitBtn)).click();
 
-      Thread.sleep(000);
 //todo clicking on 'Show me Result' button
-        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().showMeBtn)).click();
+wait.until(ExpectedConditions.textMatches((By.xpath("//span[@class='totalRecordsText']")), Pattern.compile("[1-9]")));
+//        //todo clicking on 'Show me  Results'
+   basePage.getVdp().showMeBtn.click();
         //todo using test base method to select checkboxes
         //testBase.checkBoxSelection("123");
 
@@ -726,4 +729,121 @@ Assert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Thank y
         testBase.shareHeader();
     }
 
+
+
+    @Test
+    public void mapsAndDirections() throws InterruptedException {
+        BasePage basePage=new BasePage();
+
+        String model="Q3";
+        String make="Audi";
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().findAUsedCarBtn)).click();
+        //for(int i=1;i<2;i++) {
+        Thread.sleep(2000);
+
+        //todo Clicking to choose a make
+        List <WebElement> makes =driver.findElements(By.xpath("//select[@name='make']/optgroup[@label='Popular Makes']/option"));
+        for(WebElement temp :makes){
+            if(temp.getText().trim().equals(make)){
+                temp.click();
+                break;
+            }
+
+        }
+        //todo clicking to choose a make
+        Thread.sleep(1000);
+        //wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//select[@name='model']/optgroup[@label='Current Models']"))));
+        List <WebElement> models =driver.findElements(By.xpath("//select[@name='model']/optgroup[@label='Current Models']/option"));
+        System.out.println("models = " + models.size());
+        for(WebElement temp :models){
+            if(temp.getText().trim().equals(model)){
+                temp.click();
+                break;
+            }
+
+        }
+//todo clicking on zipcode
+        basePage.getFollowBtnPage().zipCodeMainPage.click();
+        basePage.getFollowBtnPage().zipCodeMainPage.sendKeys("22204");
+        ///todo clicking onn Next button
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().submitBtn)).click();
+
+//todo clicking on 'Show me Result' button
+        wait.until(ExpectedConditions.textMatches((By.xpath("//span[@class='totalRecordsText']")), Pattern.compile("[1-9]")));
+//        //todo clicking on 'Show me  Results'
+        basePage.getFollowBtnPage().showMeBtn.click();
+
+
+        //todo manipulations with header of the car on SRP
+        int numberOfCar = 2;
+        WebElement headerOfCar = driver.findElement(By.xpath("(//span[@class='srp-list-item-basic-info-model'])[" + numberOfCar + "]"));
+        numberOfCar++;
+        headerOfCar.click();
+
+
+
+
+
+
+
+        Set<String> windows = driver.getWindowHandles();
+        for(String window : windows){
+            if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
+                System.out.println(driver.getTitle());break;}
+        }
+        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[2]/div/div/div[1]"));
+
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        basePage.getMapAndDirections().mapAndDirectionVDP.click();
+
+
+        Set<String> mapWindow = driver.getWindowHandles();
+        for(String map : mapWindow){
+            if(driver.switchTo().window(map).getCurrentUrl().contains("map")) {
+                System.out.println(driver.getTitle());break;}
+        }
+
+        WebElement searchForm=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/div[4]/div[1]/div/div/div/div/span"));
+jse.executeScript("arguments[0].scrollIntoView(true);",searchForm);
+
+
+String address=faker.address().streetAddress();
+        System.out.println(address);
+String state1="Arizona";
+        basePage.getMapAndDirections().locationSign.isDisplayed();
+        basePage.getMapAndDirections().phoneNumberSign.isDisplayed();
+        basePage.getMapAndDirections().addressField.click();
+      basePage.getMapAndDirections().addressField.sendKeys(address);
+
+
+
+    List<WebElement> state=driver.findElements(By.xpath("//select[@name='state']/option"));
+        System.out.println("state = " + state.size());
+        for(WebElement statePick :state){
+            if(statePick.getText().trim().equals(state1)){
+                statePick.click();
+                break;
+            }
+
+        }
+
+
+        basePage.getMapAndDirections().zipCode.click();
+        basePage.getMapAndDirections().zipCode.sendKeys("22201");
+        basePage.getMapAndDirections().getDirections.click();
+
+        Assert.assertTrue(driver.findElement(By.cssSelector("div[jstcache='23']")).isDisplayed());
+
+        wait.until(ExpectedConditions.)jse.executeScript("window.scrollBy(0,-600)");
+        wait.until(ExpectedConditions.visibilityOf(basePage.getMapAndDirections().mobileSign));
+     wait.until(ExpectedConditions.visibilityOf(basePage.getSendToMyPhone().sendToMyPhoneHeader)).isSelected();
+        basePage.getSendToMyPhone().enterYourMobilePhone.click();
+        basePage.getSendToMyPhone().enterYourMobilePhone.sendKeys("5555555555");
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getSendToMyPhone().sendBtn)).click();
+        Thread.sleep(2000);
+        Assert.assertTrue(driver.findElement(By.xpath("//p[@class='cfx-modal-complete-title']")).isDisplayed());
+
+
+    }
 }

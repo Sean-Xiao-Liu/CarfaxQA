@@ -103,7 +103,7 @@ public  class TestBase {
         String email = faker.name().name() + "@mail.com";
         email = email.replace(" ", "");
         BasePage basePage=new BasePage();
-
+wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-envelope'])[1]"))));
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getShareHeader().shareHeader)).click();
         basePage.getShareHeader().fromEmail.click();
         basePage.getShareHeader().fromEmail.sendKeys(email);
@@ -115,4 +115,6 @@ public  class TestBase {
         basePage.getShareHeader().sendBtn.click();
 
     }
+
+
 }

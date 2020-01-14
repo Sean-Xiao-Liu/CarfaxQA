@@ -16,16 +16,16 @@ public class ShareHeaderPage {
 
     @FindBy(id = "fromEmail")
     public WebElement fromEmail;
-    @FindBy(xpath = "//input[@name='toEmail'][@placeholder='To: email address']")
+    @FindBy(css = "input[name='toEmail'][placeholder='To: email address']")
     public WebElement toEmail;
 
     @FindBy(xpath = "(//a[contains(text(),'Add a personal note(optional)')])[3]")
     public WebElement addPersonalNote;
 
 
-    @FindBy(xpath = "//textarea[@name='message'][@type='email']")
+    @FindBy(css = "textarea[@name='message'][type='email']")
     public WebElement messageNote;
-    @FindBy(xpath = "//button[@type='submit'][@value='Send']")
+    @FindBy(css = "button[type='submit'][value='Send']")
     public WebElement sendBtn;
 
 

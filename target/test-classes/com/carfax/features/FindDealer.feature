@@ -1,10 +1,10 @@
 Feature: Find Dealer
 
- @smoke @regression
 
 
 
 
+@regression
  Scenario: Find dealer through UCL
     Given I am on main Carfax page
     And I navigate to Find a Used Car page

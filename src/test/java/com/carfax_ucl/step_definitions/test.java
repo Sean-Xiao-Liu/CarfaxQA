@@ -831,18 +831,18 @@ String state1="Arizona";
 
         basePage.getMapAndDirections().zipCode.click();
         basePage.getMapAndDirections().zipCode.sendKeys("22201");
-        basePage.getMapAndDirections().getDirections.click();
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getMapAndDirections().getDirections)).click();
 
         Assert.assertTrue(driver.findElement(By.cssSelector("div[jstcache='23']")).isDisplayed());
 
-        wait.until(ExpectedConditions.)jse.executeScript("window.scrollBy(0,-600)");
+        jse.executeScript("window.scrollBy(0,-600)");
         wait.until(ExpectedConditions.visibilityOf(basePage.getMapAndDirections().mobileSign));
-     wait.until(ExpectedConditions.visibilityOf(basePage.getSendToMyPhone().sendToMyPhoneHeader)).isSelected();
-        basePage.getSendToMyPhone().enterYourMobilePhone.click();
-        basePage.getSendToMyPhone().enterYourMobilePhone.sendKeys("5555555555");
-        wait.until(ExpectedConditions.elementToBeClickable(basePage.getSendToMyPhone().sendBtn)).click();
-        Thread.sleep(2000);
-        Assert.assertTrue(driver.findElement(By.xpath("//p[@class='cfx-modal-complete-title']")).isDisplayed());
+     wait.until(ExpectedConditions.visibilityOf(basePage.getSendToMyPhone().sendToMyPhoneHeader)).isDisplayed();
+     Assert.assertTrue(basePage.getFindDealerPage().dealerLocation.isDisplayed());
+     Assert.assertTrue(basePage.getFindDealerPage().dealerName.isDisplayed());
+     Assert.assertTrue(driver.getCurrentUrl().contains("map"));
+
+
 
 
     }

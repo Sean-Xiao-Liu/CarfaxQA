@@ -17,13 +17,13 @@ public class UCLSignInPage {
     @FindBy(xpath = "//a[@id='header-signin']")
     public WebElement UclSignIn;
 
-    @FindBy(xpath = "//input[@name='email'][@placeholder='Email Address']")
+    @FindBy(css = "input[name='email'][placeholder='Email Address']")
     public WebElement email;
 
-    @FindBy(xpath = "//input[@name='password'][@placeholder='Password']")
+    @FindBy(css = "input[name='password'][placeholder='Password']")
     public WebElement password;
 
-    @FindBy(xpath = "//button[@type='submit'][@value='Login']")
+    @FindBy(css = "button[type='submit'][value='Login']")
     public WebElement signInBtn;
 
     @FindBy(xpath = "//a[contains(text(),'Create an Account')]")
@@ -31,16 +31,16 @@ public class UCLSignInPage {
     @FindBy(xpath = "//a[contains(text(),'Forgot Password?')]")
     public WebElement forgotPassword;
 
-    @FindBy(xpath = "//input[@name='email'][@placeholder='Enter your email address']")
+    @FindBy(css = "input[name='email'][placeholder='Enter your email address']")
     public WebElement EnterEmail;
 
-    @FindBy(xpath = "//input[@name='password'][@placeholder='Enter password']")
+    @FindBy(css = "input[name='password'][placeholder='Enter password']")
     public WebElement EnterPassword;
 
-    @FindBy(xpath = "//input[@name='zip'][@placeholder='Home Zip']")
+    @FindBy(css = "input[name='zip'][placeholder='Home Zip']")
     public WebElement zipcode;
 
-    @FindBy(xpath = "//button[@type='submit'][@value='Send']")
+    @FindBy(css = "button[type='submit'][value='Send']")
     public WebElement createAccountBtn;
     @FindBy(xpath = "//a[contains(text(),'Login Here')]")
     public WebElement loginHereBtn;
@@ -48,7 +48,7 @@ public class UCLSignInPage {
     @FindBy(xpath = "//button[@type='submit' and contains(text(),'Reset Password')]")
     public WebElement resetPassword;
 
-    @FindBy(xpath = "//a[@id='header-logout']")
+    @FindBy(css = "a[id='header-logout']")
     public WebElement logout;
 
 

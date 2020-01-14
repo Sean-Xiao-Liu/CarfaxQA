@@ -20,10 +20,10 @@ public class MainSignUpPage {
     @FindBy(xpath = "//a[contains(text(),'Sign Up')]")
     public WebElement signUpHeader;
 
-    @FindBy(xpath="//input[@type='email'][@name='username']")
+    @FindBy(css="input[type='email'][name='username']")
     public WebElement email;
 
-    @FindBy(xpath = "//input[@type='password'][@name='password']")
+    @FindBy(css = "input[type='password'][name='password']")
     public WebElement password;
 
     @FindBy(xpath = "//button[contains(@class,'button-primary')]")

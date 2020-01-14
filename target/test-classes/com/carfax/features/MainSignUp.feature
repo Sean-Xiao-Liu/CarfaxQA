@@ -1,6 +1,7 @@
 Feature: Create account
 
 
+  @sign-1 @regression
 
   Scenario: Create account through main Sign Up button
     Given I am on main Carfax page

@@ -28,4 +28,6 @@ public class LeadFormPage {
     public WebElement personalNote;
     @FindBy(xpath = "(//button[@type='submit'][@class='search-submit button large expanded primary-green'])[2]")
     public WebElement sendMessage;
+    @FindBy (xpath = "(//textarea[@name='note'][@class='ui-input form-control input-sm dealer-contact-note'])[2]")
+    public WebElement noteField;
 }

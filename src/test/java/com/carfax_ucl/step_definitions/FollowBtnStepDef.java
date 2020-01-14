@@ -36,8 +36,12 @@ public class FollowBtnStepDef {
     public void i_can_create_an_account() throws InterruptedException {
         String email = faker.name().name() + "@mail.com";
         email = email.replace(" ", "");
-       // try {
+
         basePage.getFollowBtnPage().email.click();
+        if(email.substring(0,email.indexOf("@")+2).contains(".")){
+            email=email.substring(0,email.indexOf("@")).replace(".","")+email.substring(email.indexOf("@"),email.length());
+
+        }
         basePage.getFollowBtnPage().email.sendKeys(email);
             Thread.sleep(500);
         basePage.getFollowBtnPage().zipCode.click();
@@ -47,11 +51,7 @@ public class FollowBtnStepDef {
         basePage.getFollowBtnPage().password.click();
         basePage.getFollowBtnPage().password.sendKeys("hdjfdsA1155");
         basePage.getFollowBtnPage().savePasswordBtn.click();
-       // }catch (WebDriverException e){
-            System.out.println("Exception catch");
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-        //}
+
         Thread.sleep(1000);
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//a[@class='signout show'][@id='header-logout']")))).click();
     }

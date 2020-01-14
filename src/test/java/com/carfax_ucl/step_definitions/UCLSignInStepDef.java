@@ -32,6 +32,11 @@ BasePage basePage=new BasePage();
     public void i_can_fill_out_email_password() {
          email = email.replace(" ", "");
         basePage.getUclSignInPage().email.click();
+         if(email.substring(0,email.indexOf("@")-1).contains(".")){
+           email= email.replace(".","");
+//            basePage.getFollowBtnPage().email.sendKeys(email);
+        }
+
         basePage.getUclSignInPage().email.sendKeys(email);
         basePage.getUclSignInPage().password.click();
         basePage.getUclSignInPage().password.sendKeys("Ajad823782");

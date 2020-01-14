@@ -25,13 +25,13 @@ public class UCLSignUpPage {
     public WebElement uclCreateAccount;
     @FindBy(css = "button#signUpModalBtn")
     public WebElement closeBtn;
-    @FindBy(xpath = "//a[@id='header-logout']")
+    @FindBy(css = "a[id='header-logout']")
     public WebElement logout;
     @FindBy(xpath = "//a[contains(text(),'Login Here')]")
     public WebElement loginHereBtm;
     @FindBy(xpath = "//a[contains(text(),'Forgot Password?')]")
     public WebElement forgotPassword;
-    @FindBy(xpath = "//button[@type='submit'][@value='Login']")
+    @FindBy(css = "button[type='submit'][value='Login']")
     public WebElement signInBtn;
     @FindBy(xpath = "//button[@type='submit' and contains(text(),'Reset Password')]")
     public WebElement resetPasswordBtn;

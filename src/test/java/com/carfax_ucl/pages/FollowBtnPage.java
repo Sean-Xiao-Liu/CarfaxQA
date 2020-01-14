@@ -17,18 +17,18 @@ public class FollowBtnPage extends MainSignUpPage {
     public WebElement zipCodeMainPage;
     @FindBy(id ="make-model-form-submit")
     public WebElement submitBtn;
-    @FindBy(xpath = "//button[@class='button large primary-green']")
+    @FindBy(css = "button[class='button large primary-green']")
     public WebElement showMeBtn;
     //@FindBy(xpath = "//button[@type='button'][@class='btn btn-oval btn-following  ']")
     @FindBy(xpath = "//i[contains(@class,'follow-button__heart fa fa-hear')]")
     public WebElement FollowBtn;
-    @FindBy(xpath = "//button[@type='submit'][@value='Send']")
+    @FindBy(css = "button[type='submit'][value='Send']")
     public WebElement startFollowingBtn;
     @FindBy(xpath = "(//input[@name='zip'][@placeholder='Zip Code'])[2]")
     public WebElement zipCode;
     @FindBy(xpath = "//input[@name='email'][contains(@placeholder,'Email Address')]")
     public WebElement email;
-    @FindBy(xpath = "//input[@name='password'][@class='ui-input row input-splitModal']")
+    @FindBy(css = "input[name='password'][class='ui-input row input-splitModal']")
     public WebElement password;
     @FindBy(xpath = "//button[contains(text(),'Save Password')]")
     public WebElement savePasswordBtn;

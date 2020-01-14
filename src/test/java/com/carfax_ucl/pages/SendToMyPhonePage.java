@@ -16,10 +16,10 @@ public class SendToMyPhonePage {
     public WebElement sendToMyPhoneHeader;
 
 
-    @FindBy(xpath = "//input[@name='phone'][@type='tel'][@placeholder='Enter your mobile phone #']")
+    @FindBy(css = "input[name='phone'][type='tel'][placeholder='Enter your mobile phone #']")
     public WebElement enterYourMobilePhone;
 
-    @FindBy(xpath = "//button[@type='submit'][@value='Send']")
+    @FindBy(css = "button[type='submit'][value='Send']")
     public WebElement sendBtn;
 
 

@@ -1,7 +1,6 @@
 package com.carfax_ucl.step_definitions;
 
 import com.carfax_ucl.pages.BasePage;
-import com.carfax_ucl.utilities.ConfigurationReader;
 import com.carfax_ucl.utilities.Driver;
 import com.github.javafaker.Faker;
 import cucumber.api.java.en.Then;
@@ -28,10 +27,11 @@ public Faker faker=new Faker();
         numberOfCar++;
         headerOfCar.click();
     }
+//todo Scenario #1
+    @When("I navigate to Lead Form and fill out First Name, Last Name, {string} and Phone number")
+    public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String zipCode) {
 
-    @When("I navigate to Lead Form and fill out First Name, Last Name, Zip code and Phone number")
-    public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_Zip_code_and_Phone_number() {
-        Set<String> windows = driver.getWindowHandles();
+    Set<String> windows = driver.getWindowHandles();
         for(String window : windows){
             if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
                 System.out.println(driver.getTitle());break;}
@@ -45,7 +45,7 @@ public Faker faker=new Faker();
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
 
         basePage.getLeadFormPage().firstName.click();
-        basePage.getLeadFormPage().firstName.sendKeys("TestQA");
+        basePage.getLeadFormPage().firstName.sendKeys("Test");
         basePage.getLeadFormPage().lastName.click();
         basePage.getLeadFormPage().lastName.sendKeys("test");
 
@@ -60,22 +60,26 @@ public Faker faker=new Faker();
 
         }
 
-        if(basePage.getLeadFormPage().zipCode.getText().isEmpty()) {
-            basePage.getLeadFormPage().zipCode.click();
-            basePage.getLeadFormPage().zipCode.sendKeys("22001");
 
-        }else if(!basePage.getLeadFormPage().zipCode.getText().isEmpty()){
             basePage.getLeadFormPage().zipCode.click();
-            basePage.getLeadFormPage().zipCode.clear();
-            basePage.getLeadFormPage().zipCode.sendKeys("22304");
-        }
+            basePage.getLeadFormPage().zipCode.sendKeys(zipCode);
+
+
+        basePage.getLeadFormPage().isThisVehicleAvailable.click();
+        basePage.getLeadFormPage().whatPaymentTermsAreAvailable.click();
+        basePage.getLeadFormPage().whenCanITestDriveThisVehicle.click();
+        basePage.getLeadFormPage().personalNote.click();
+        basePage.getLeadFormPage().noteField.click();
+        basePage.getLeadFormPage().noteField.sendKeys("Test QA");
         basePage.getLeadFormPage().phoneNumber.sendKeys("5555555555");
     }
+//todo Scenario #2 DONE
+@When("I navigate to Lead Form and fill out First Name, Last Name, {string} , email")
+public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(String zipCode) {
 
-    @When("I navigate to Lead Form and fill out First Name, Last Name, Zip code and email")
-    public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_Zip_code_and_email() {
         String email = faker.name().name() + "@mail.com";
         email = email.replace(" ", "");
+
         Set<String> windows = driver.getWindowHandles();
         for(String window : windows){
             if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
@@ -90,7 +94,7 @@ public Faker faker=new Faker();
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
 
         basePage.getLeadFormPage().firstName.click();
-        basePage.getLeadFormPage().firstName.sendKeys("TestQA");
+        basePage.getLeadFormPage().firstName.sendKeys("Test");
         basePage.getLeadFormPage().lastName.click();
         basePage.getLeadFormPage().lastName.sendKeys("test");
 
@@ -105,15 +109,11 @@ public Faker faker=new Faker();
 
         }
 
-        if(basePage.getLeadFormPage().zipCode.getText().isEmpty()) {
+//        if(basePage.getLeadFormPage().zipCode.getText().isEmpty()) {
             basePage.getLeadFormPage().zipCode.click();
-            basePage.getLeadFormPage().zipCode.sendKeys("22001");
+            basePage.getLeadFormPage().zipCode.sendKeys(zipCode);
 
-        }else if(!basePage.getLeadFormPage().zipCode.getText().isEmpty()){
-            basePage.getLeadFormPage().zipCode.click();
-            basePage.getLeadFormPage().zipCode.clear();
-            basePage.getLeadFormPage().zipCode.sendKeys("22304");
-        }
+
         basePage.getLeadFormPage().email.sendKeys(email);
     }
 
@@ -121,16 +121,11 @@ public Faker faker=new Faker();
     @Then("I click on Send Message to that dealer")
     public void i_click_on_Send_Message_to_that_dealer() throws InterruptedException {
         basePage.getLeadFormPage().sendMessage.click();
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
 
-//        if (ConfigurationReader.get("browser").equals("firefox")) {
-////            Assert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Your message was sent!')]")).getText(),"Your message was sent!");
-////            Assert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Thank you for contacting this dealer.')]")).getText()
-////                    , "Thank you for contacting this dealer.");
-//        }else{
-            Assert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Thank you for contacting this dealer.')]")).getText()
-                    , "Thank you for contacting this dealer.");
-      //  }
+            Assert.assertEquals(driver.findElement(By.xpath("(//span[contains(text(),'Your message was sent!')])[2]")).getText()
+                    , "Your message was sent!");
+      Assert.assertTrue(driver.findElement(By.xpath("(//a[contains(text(),'View Dealer Inventory')])[2]")).isDisplayed());
     }
 //TODO SCENARIO #3
     @When("I navigate to Lead Form and cleaning zipcode which is by default already filled out")
@@ -177,8 +172,9 @@ public Faker faker=new Faker();
 
     }
 //TODO SCENARIO #4
-    @When("I navigate to Lead Form and fill out First Name,  Zip code and Phone number")
-    public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Zip_code_and_Phone_number() {
+@When("I navigate to Lead Form and fill out First Name,  {string} and Phone number")
+public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(String zipCode) {
+
         Set<String> windows = driver.getWindowHandles();
         for(String window : windows){
             if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
@@ -191,7 +187,7 @@ public Faker faker=new Faker();
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
 
         basePage.getLeadFormPage().firstName.click();
-        basePage.getLeadFormPage().firstName.sendKeys("TestQA");
+        basePage.getLeadFormPage().firstName.sendKeys("Test");
         System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
 
         //Thread.sleep(100);
@@ -202,15 +198,11 @@ public Faker faker=new Faker();
 
         }
 
-        if(basePage.getLeadFormPage().zipCode.getText().isEmpty()) {
-            basePage.getLeadFormPage().zipCode.click();
-            basePage.getLeadFormPage().zipCode.sendKeys("22001");
 
-        }else if(!basePage.getLeadFormPage().zipCode.getText().isEmpty()){
             basePage.getLeadFormPage().zipCode.click();
-            basePage.getLeadFormPage().zipCode.clear();
-            basePage.getLeadFormPage().zipCode.sendKeys("22304");
-        }
+            basePage.getLeadFormPage().zipCode.sendKeys(zipCode);
+
+
         basePage.getLeadFormPage().phoneNumber.sendKeys("5555555555");
     }
     @Then("I click on Send Message to that dealer and should see Last Name error message are displayed")
@@ -222,8 +214,9 @@ public Faker faker=new Faker();
 
     //TODO SCENARIO #5
 
-    @When("I navigate to Lead Form and fill out Last Name,  Zip code and Phone number")
-    public void i_navigate_to_Lead_Form_and_fill_out_Last_Name_Zip_code_and_Phone_number() {
+    @When("I navigate to Lead Form and fill out Last Name,  {string} and Phone number")
+    public void i_navigate_to_Lead_Form_and_fill_out_Last_Name_and_Phone_number(String zipCode) {
+
         Set<String> windows = driver.getWindowHandles();
         for(String window : windows){
             if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
@@ -236,7 +229,7 @@ public Faker faker=new Faker();
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
 
         basePage.getLeadFormPage().lastName.click();
-        basePage.getLeadFormPage().lastName.sendKeys("TestQA");
+        basePage.getLeadFormPage().lastName.sendKeys("Test");
         System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
 
         //Thread.sleep(100);
@@ -247,15 +240,11 @@ public Faker faker=new Faker();
 
         }
 
-        if(basePage.getLeadFormPage().zipCode.getText().isEmpty()) {
-            basePage.getLeadFormPage().zipCode.click();
-            basePage.getLeadFormPage().zipCode.sendKeys("22001");
 
-        }else if(!basePage.getLeadFormPage().zipCode.getText().isEmpty()){
             basePage.getLeadFormPage().zipCode.click();
-            basePage.getLeadFormPage().zipCode.clear();
-            basePage.getLeadFormPage().zipCode.sendKeys("22304");
-        }
+            basePage.getLeadFormPage().zipCode.sendKeys(zipCode);
+
+
         basePage.getLeadFormPage().phoneNumber.sendKeys("5555555555");
     }
 
@@ -284,9 +273,9 @@ public Faker faker=new Faker();
 
 wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
         basePage.getLeadFormPage().firstName.click();
-        basePage.getLeadFormPage().firstName.sendKeys("TestQA");
+        basePage.getLeadFormPage().firstName.sendKeys("Test");
         basePage.getLeadFormPage().lastName.click();
-        basePage.getLeadFormPage().lastName.sendKeys("TestQA");
+        basePage.getLeadFormPage().lastName.sendKeys("Test");
         System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
 
         //Thread.sleep(100);
@@ -298,6 +287,7 @@ wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@cl
         }
 
         basePage.getLeadFormPage().phoneNumber.sendKeys("5555555555");
+
     }
 
     @Then("I click on Send Message to that dealer and should see Zip code error message are displayed")

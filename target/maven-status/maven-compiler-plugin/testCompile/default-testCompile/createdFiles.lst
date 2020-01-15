@@ -18,6 +18,7 @@ com/carfax_ucl/step_definitions/MainSignUpBtnStepDef.class
 com/carfax_ucl/pages/MapAndDirectionsPage.class
 com/carfax_ucl/step_definitions/FollowBtnStepDef.class
 com/carfax_ucl/step_definitions/SaveThisSearchStepDef.class
+com/carfax_ucl/pages/BodyTypeOrPricePage.class
 com/carfax_ucl/step_definitions/test.class
 com/carfax_ucl/utilities/ConfigurationReader.class
 com/carfax_ucl/pages/BasePage.class

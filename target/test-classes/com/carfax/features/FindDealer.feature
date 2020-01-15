@@ -4,7 +4,7 @@ Feature: Find Dealer
 
 
 
-@regression
+ @tc-2
  Scenario: Find dealer through UCL
     Given I am on main Carfax page
     And I navigate to Find a Used Car page

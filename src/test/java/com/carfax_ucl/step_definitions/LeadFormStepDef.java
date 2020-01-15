@@ -42,7 +42,6 @@ public Faker faker=new Faker();
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
         //todo input for Lead Form
         //todo Positive scenario :
-      //  wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
         Thread.sleep(2000);
 wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
 
@@ -51,12 +50,9 @@ wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]
         basePage.getLeadFormPage().lastName.click();
         basePage.getLeadFormPage().lastName.sendKeys("test");
 
-        // Thread.sleep(2000);
         System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
 
-        //Thread.sleep(100);
         for(int i =0;i<6;i++){
-            // Thread.sleep(1000);
             basePage.getLeadFormPage().zipCode.click();
             basePage.getLeadFormPage().zipCode.sendKeys(Keys.BACK_SPACE);
 
@@ -72,7 +68,7 @@ wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]
         basePage.getLeadFormPage().whenCanITestDriveThisVehicle.click();
         basePage.getLeadFormPage().personalNote.click();
         basePage.getLeadFormPage().noteField.click();
-        basePage.getLeadFormPage().noteField.sendKeys("Test QA");
+        basePage.getLeadFormPage().noteField.sendKeys("Test");
         basePage.getLeadFormPage().phoneNumber.sendKeys("5555555555");
     }
 //todo Scenario #2 DONE
@@ -237,9 +233,7 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
         basePage.getLeadFormPage().lastName.sendKeys("Test");
         System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
 
-        //Thread.sleep(100);
         for(int i =0;i<6;i++){
-            // Thread.sleep(1000);
             basePage.getLeadFormPage().zipCode.click();
             basePage.getLeadFormPage().zipCode.sendKeys(Keys.BACK_SPACE);
 
@@ -283,9 +277,7 @@ wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]
         basePage.getLeadFormPage().lastName.sendKeys("Test");
         System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
 
-        //Thread.sleep(100);
         for(int i =0;i<6;i++){
-            // Thread.sleep(1000);
             basePage.getLeadFormPage().zipCode.click();
             basePage.getLeadFormPage().zipCode.sendKeys(Keys.BACK_SPACE);
 

@@ -41,7 +41,6 @@ public class MainSignUpBtnStepDef {
         basePage.getMainSignUpPage().signUpBtn.click();
         Thread.sleep(1000);
         String actualResult=driver.findElement(By.xpath("//h1[contains(@class,'sso-header')]")).getText();
-        //wait.until(ExpectedConditions.visibilityOf(actualResult));
         driver.navigate().back();
         String expectedMessage="Success! Please Sign In Below";
         Assert.assertEquals(expectedMessage,actualResult);

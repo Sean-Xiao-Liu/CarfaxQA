@@ -1,7 +1,6 @@
 package com.carfax_ucl.pages;
 
 import com.carfax_ucl.utilities.Driver;
-import cucumber.api.java.en_lol.WEN;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

@@ -1,6 +1,6 @@
 Feature: Create account through Follow button
 
-  @tc-1 @regression
+  @tc-1
 
   Scenario Outline: Follow button to create account in VDP
     Given I am on main Carfax page

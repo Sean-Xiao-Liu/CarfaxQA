@@ -12,6 +12,7 @@
 /Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/utilities/Driver.java
 /Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/pages/FollowBtnPage.java
 /Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/step_definitions/FindDealerStepDef.java
+/Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/pages/BodyTypeOrPricePage.java
 /Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/pages/MainSignInPage.java
 /Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/step_definitions/test.java
 /Users/annachernyshova/IdeaProjects/ucl_qa/src/test/java/com/carfax_ucl/step_definitions/LeadFormStepDef.java

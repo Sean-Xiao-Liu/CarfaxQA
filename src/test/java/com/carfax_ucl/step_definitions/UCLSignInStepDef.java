@@ -1,7 +1,6 @@
 package com.carfax_ucl.step_definitions;
 
 import com.carfax_ucl.pages.BasePage;
-import com.carfax_ucl.pages.UCLSignInPage;
 import com.carfax_ucl.utilities.Driver;
 import com.github.javafaker.Faker;
 import cucumber.api.java.en.Then;
@@ -58,11 +57,6 @@ BasePage basePage=new BasePage();
         errorMessage=driver.findElement(By.xpath("//span[contains(text(),'Your password and email do not match.')]")).getText();
         if(errorMessage.contains("password")) {
             basePage.getUclSignInPage().createAccount.click();
-            //  uclSignInPage.EnterEmail.click();
-            // //uclSignInPage.EnterEmail.sendKeys(email);
-//        //uclSignInPage.EnterPassword.sendKeys("Aslfdjs2131");
-            // uclSignInPage.zipcode.click();
-            // uclSignInPage.zipcode.sendKeys("22201");
             basePage.getUclSignInPage().createAccountBtn.click();
         }
     }

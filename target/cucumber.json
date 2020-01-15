@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-01-15T18:39:40.744Z",
+        "start_timestamp": "2020-01-15T20:57:49.194Z",
         "before": [
           {
             "result": {
-              "duration": 3512243648,
+              "duration": 3487917205,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 47,
-        "name": "",
+        "line": 33,
+        "name": "Save Search button is not enable if you pick only Make",
         "description": "",
-        "id": "create-account-through-save-this-search;;;2",
+        "id": "create-account-through-save-this-search;save-search-button-is-not-enable-if-you-pick-only-make;;2",
         "after": [
           {
             "result": {
-              "duration": 182919492,
+              "duration": 170839244,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 469675025,
+              "duration": 485084097,
               "status": "passed"
             },
-            "line": 38,
+            "line": 25,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 1626100277,
+              "duration": 1667803924,
               "status": "passed"
             },
-            "line": 39,
+            "line": 26,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -59,10 +59,343 @@
           },
           {
             "result": {
-              "duration": 141490356,
+              "duration": 2718166072,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I fill out \"Subaru\" ,  \"22201\" of the car that I want to search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Subaru\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"22201\"",
+                  "offset": 23
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1676718259,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click on next and show me results button",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 402313099,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I can see that Save Search button is not able to click",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_can_see_that_Save_Search_button_is_not_able_to_click()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@tc-3"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-15T20:57:59.857Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2516056952,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Save Search button is not enable if you pick only Make",
+        "description": "",
+        "id": "create-account-through-save-this-search;save-search-button-is-not-enable-if-you-pick-only-make;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 176128620,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 165183942,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I am on main Carfax page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1673300993,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I navigate to Find a Used Car page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2370457458,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I fill out \"BMW\" ,  \"22304\" of the car that I want to search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BMW\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"22304\"",
+                  "offset": 20
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1607644783,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click on next and show me results button",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 723243980,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I can see that Save Search button is not able to click",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_can_see_that_Save_Search_button_is_not_able_to_click()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@tc-3"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-15T20:58:09.096Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2489012508,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Save Search button is not enable if you pick only Make",
+        "description": "",
+        "id": "create-account-through-save-this-search;save-search-button-is-not-enable-if-you-pick-only-make;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 134367606,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 84922292,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I am on main Carfax page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1578531082,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I navigate to Find a Used Car page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2317715717,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I fill out \"Audi\" ,  \"75501\" of the car that I want to search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Audi\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"75501\"",
+                  "offset": 21
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1642187986,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click on next and show me results button",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 131439267,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I can see that Save Search button is not able to click",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_can_see_that_Save_Search_button_is_not_able_to_click()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@tc-3"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-15T20:58:17.480Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2631177234,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 48,
+        "name": "",
+        "description": "",
+        "id": "create-account-through-save-this-search;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 194305293,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 113591533,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I am on main Carfax page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1699734768,
               "status": "passed"
             },
             "line": 40,
+            "name": "I navigate to Find a Used Car page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 203745272,
+              "status": "passed"
+            },
+            "line": 41,
             "name": "I click on Body Type or Price filter",
             "match": {
               "location": "SaveThisSearchStepDef.i_click_on_Body_Type_or_Price_filter()"
@@ -71,10 +404,10 @@
           },
           {
             "result": {
-              "duration": 1232697830,
+              "duration": 902609654,
               "status": "passed"
             },
-            "line": 41,
+            "line": 42,
             "name": "I fill out \"Chassis\" , \"Less than $5,000\"  , \"22204\" of the car I want to search",
             "match": {
               "arguments": [
@@ -97,10 +430,10 @@
           },
           {
             "result": {
-              "duration": 1511276047,
+              "duration": 1497507338,
               "status": "passed"
             },
-            "line": 42,
+            "line": 43,
             "name": "I click on next and show me results button from Body type side",
             "match": {
               "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button_from_Body_type_side()"
@@ -109,10 +442,10 @@
           },
           {
             "result": {
-              "duration": 139793624,
+              "duration": 557233816,
               "status": "passed"
             },
-            "line": 43,
+            "line": 44,
             "name": "I can see that Save Search button is not able to click",
             "match": {
               "location": "SaveThisSearchStepDef.i_can_see_that_Save_Search_button_is_not_able_to_click()"
@@ -122,16 +455,16 @@
         ],
         "tags": [
           {
-            "name": "@tc-2"
+            "name": "@tc-3"
           }
         ]
       },
       {
-        "start_timestamp": "2020-01-15T18:39:49.679Z",
+        "start_timestamp": "2020-01-15T20:58:25.295Z",
         "before": [
           {
             "result": {
-              "duration": 2607847772,
+              "duration": 2482086460,
               "status": "passed"
             },
             "match": {
@@ -139,14 +472,14 @@
             }
           }
         ],
-        "line": 48,
+        "line": 49,
         "name": "",
         "description": "",
         "id": "create-account-through-save-this-search;;;3",
         "after": [
           {
             "result": {
-              "duration": 167692803,
+              "duration": 198093753,
               "status": "passed"
             },
             "match": {
@@ -159,10 +492,10 @@
         "steps": [
           {
             "result": {
-              "duration": 185923911,
+              "duration": 95066628,
               "status": "passed"
             },
-            "line": 38,
+            "line": 39,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -171,10 +504,10 @@
           },
           {
             "result": {
-              "duration": 1697267956,
+              "duration": 1592753605,
               "status": "passed"
             },
-            "line": 39,
+            "line": 40,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -183,10 +516,10 @@
           },
           {
             "result": {
-              "duration": 160694991,
+              "duration": 100470426,
               "status": "passed"
             },
-            "line": 40,
+            "line": 41,
             "name": "I click on Body Type or Price filter",
             "match": {
               "location": "SaveThisSearchStepDef.i_click_on_Body_Type_or_Price_filter()"
@@ -195,10 +528,10 @@
           },
           {
             "result": {
-              "duration": 1023088961,
+              "duration": 1042782776,
               "status": "passed"
             },
-            "line": 41,
+            "line": 42,
             "name": "I fill out \"Minivan\" , \"Less than $15,000\"  , \"75501\" of the car I want to search",
             "match": {
               "arguments": [
@@ -221,10 +554,10 @@
           },
           {
             "result": {
-              "duration": 1704400153,
+              "duration": 1636875696,
               "status": "passed"
             },
-            "line": 42,
+            "line": 43,
             "name": "I click on next and show me results button from Body type side",
             "match": {
               "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button_from_Body_type_side()"
@@ -233,10 +566,10 @@
           },
           {
             "result": {
-              "duration": 621890480,
+              "duration": 176608034,
               "status": "passed"
             },
-            "line": 43,
+            "line": 44,
             "name": "I can see that Save Search button is not able to click",
             "match": {
               "location": "SaveThisSearchStepDef.i_can_see_that_Save_Search_button_is_not_able_to_click()"
@@ -246,16 +579,16 @@
         ],
         "tags": [
           {
-            "name": "@tc-2"
+            "name": "@tc-3"
           }
         ]
       },
       {
-        "start_timestamp": "2020-01-15T18:39:57.855Z",
+        "start_timestamp": "2020-01-15T20:58:32.626Z",
         "before": [
           {
             "result": {
-              "duration": 2506144029,
+              "duration": 2449773059,
               "status": "passed"
             },
             "match": {
@@ -263,14 +596,14 @@
             }
           }
         ],
-        "line": 49,
+        "line": 50,
         "name": "",
         "description": "",
         "id": "create-account-through-save-this-search;;;4",
         "after": [
           {
             "result": {
-              "duration": 182452896,
+              "duration": 191200490,
               "status": "passed"
             },
             "match": {
@@ -283,10 +616,10 @@
         "steps": [
           {
             "result": {
-              "duration": 92953144,
+              "duration": 120280410,
               "status": "passed"
             },
-            "line": 38,
+            "line": 39,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -295,10 +628,10 @@
           },
           {
             "result": {
-              "duration": 1577229425,
+              "duration": 1666409989,
               "status": "passed"
             },
-            "line": 39,
+            "line": 40,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -307,10 +640,10 @@
           },
           {
             "result": {
-              "duration": 128932449,
+              "duration": 110523381,
               "status": "passed"
             },
-            "line": 40,
+            "line": 41,
             "name": "I click on Body Type or Price filter",
             "match": {
               "location": "SaveThisSearchStepDef.i_click_on_Body_Type_or_Price_filter()"
@@ -319,10 +652,10 @@
           },
           {
             "result": {
-              "duration": 1151263443,
+              "duration": 1053725200,
               "status": "passed"
             },
-            "line": 41,
+            "line": 42,
             "name": "I fill out \"Sedan\" , \"Less than $5,000\"  , \"22304\" of the car I want to search",
             "match": {
               "arguments": [
@@ -345,10 +678,10 @@
           },
           {
             "result": {
-              "duration": 1738277951,
+              "duration": 1670761785,
               "status": "passed"
             },
-            "line": 42,
+            "line": 43,
             "name": "I click on next and show me results button from Body type side",
             "match": {
               "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button_from_Body_type_side()"
@@ -357,10 +690,10 @@
           },
           {
             "result": {
-              "duration": 400080309,
+              "duration": 175143739,
               "status": "passed"
             },
-            "line": 43,
+            "line": 44,
             "name": "I can see that Save Search button is not able to click",
             "match": {
               "location": "SaveThisSearchStepDef.i_can_see_that_Save_Search_button_is_not_able_to_click()"
@@ -370,7 +703,7 @@
         ],
         "tags": [
           {
-            "name": "@tc-2"
+            "name": "@tc-3"
           }
         ]
       }

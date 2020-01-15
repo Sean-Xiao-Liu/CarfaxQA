@@ -10,14 +10,10 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
-import java.util.TreeMap;
 import java.util.concurrent.TimeUnit;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static org.junit.Assert.*;
@@ -27,7 +23,7 @@ public class SaveThisSearchStepDef {
 
 
     BasePage basePage = new BasePage();
-    public WebDriverWait wait=new WebDriverWait(Driver.get(),5);
+    public WebDriverWait wait=new WebDriverWait(Driver.get(),3);
     public WebDriver driver=Driver.get();
     public Faker faker=new Faker();
 

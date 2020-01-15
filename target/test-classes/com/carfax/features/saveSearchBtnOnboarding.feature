@@ -18,8 +18,9 @@ Feature: Create account through save this search
       | Tesla | Model 3 | 22033   |
       | Toyota     | Camry           | 22304   |
 
+@regression   @tc-3
 
-    Scenario Outline: Save Search button is not enable if you pick only Make
+Scenario Outline: Save Search button is not enable if you pick only Make
 
       Given I am on main Carfax page
       And I navigate to Find a Used Car page
@@ -33,7 +34,7 @@ Feature: Create account through save this search
       |BMW    |22304       |
       |Audi    |75501       |
 
-@tc-2
+  @tc-3
     Scenario Outline:
       Given I am on main Carfax page
       And I navigate to Find a Used Car page

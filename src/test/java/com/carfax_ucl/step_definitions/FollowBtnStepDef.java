@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.regex.Pattern;
 
 public class FollowBtnStepDef {
-    WebDriverWait wait=new WebDriverWait(Driver.get(),2);
+    WebDriverWait wait=new WebDriverWait(Driver.get(),3);
     Faker faker=new Faker();
     public WebDriver driver= Driver.get();
     BasePage basePage=new BasePage();
@@ -44,7 +44,7 @@ public class FollowBtnStepDef {
         }
         basePage.getFollowBtnPage().email.sendKeys(email);
             Thread.sleep(500);
-        basePage.getFollowBtnPage().zipCode.click();
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().zipCode)).click();
         basePage.getFollowBtnPage().zipCode.sendKeys("22204");
         basePage.getFollowBtnPage().startFollowingBtn.click();
             Thread.sleep(1000);

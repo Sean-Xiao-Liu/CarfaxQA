@@ -26,7 +26,12 @@ public class MainSignUpBtnStepDef {
     public void i_can_fill_out(String email, String password)  {
         String emails=faker.name().name()+"@gmail.com";
         emails=emails.replace(" ","");
+
         basePage.getMainSignUpPage().email.click();
+        if(emails.substring(0,emails.indexOf("@")+2).contains(".")){
+            emails=emails.substring(0,emails.indexOf("@")).replace(".","")+emails.substring(emails.indexOf("@"),emails.length());
+
+        }
         basePage.getMainSignUpPage().email.sendKeys(emails);
         basePage.getMainSignUpPage().password.click();
         basePage.getMainSignUpPage().password.sendKeys("Anna123333");

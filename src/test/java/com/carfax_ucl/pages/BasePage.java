@@ -16,6 +16,7 @@ public class BasePage {
     private SendToMyPhonePage sendToMyPhone;
     private ShareHeaderPage shareHeader;
     private MapAndDirectionsPage mapAndDirectionsPage;
+    private BodyTypeOrPricePage bodyTypeOrPricePage;
 
 
     public FindDealerPage getFindDealerPage() {
@@ -94,4 +95,12 @@ public class BasePage {
         }
         return mapAndDirectionsPage;
     }
+
+    public BodyTypeOrPricePage getBodyTypeOrPricePage(){
+        if (bodyTypeOrPricePage==null){
+            bodyTypeOrPricePage=new BodyTypeOrPricePage();
+        }
+        return bodyTypeOrPricePage;
+    }
+
 }

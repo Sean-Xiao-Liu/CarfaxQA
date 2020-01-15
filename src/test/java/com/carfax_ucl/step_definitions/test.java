@@ -573,6 +573,7 @@ driver.switchTo().defaultContent();
     //TODO make on Feature file for Gerhkin language DONE !!!!!!!!!
     @Test
     public void leadFormTest() throws InterruptedException {
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
 
         BasePage basePage=new BasePage();
 
@@ -614,58 +615,64 @@ driver.switchTo().defaultContent();
       Thread.sleep(3000);
 //todo clicking on 'Show me Result' button
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().showMeBtn)).click();
-        //todo using test base method to select checkboxes
-        //testBase.checkBoxSelection("123");
+
+Thread.sleep(5000);
+
+       jse.executeScript("arguments[0].scrollIntoView(true);",driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/div[3]/div[1]/span")));
 
         //todo manipulations with header of the car on SRP
-        int numberOfCar = 2;
-        WebElement headerOfCar = driver.findElement(By.xpath("(//span[@class='srp-list-item-basic-info-model'])[" + numberOfCar + "]"));
-        numberOfCar++;
-        headerOfCar.click();
-        //todo window handles for VDP
-        Set<String> windows = driver.getWindowHandles();
-        for(String window : windows){
-            if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
-                System.out.println(driver.getTitle());break;}
-        }
-        //todo scrolling down to element
-        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
-        JavascriptExecutor jse = (JavascriptExecutor)driver;
-        jse.executeScript("arguments[0].scrollIntoView(true);",length);
-        //todo input for Lead Form
-        //todo Positive scenario :
-        basePage.getLeadFormPage().firstName.click();
-        basePage.getLeadFormPage().firstName.sendKeys("TestQA");
-        basePage.getLeadFormPage().lastName.click();
-        basePage.getLeadFormPage().lastName.sendKeys("test");
-
-       // Thread.sleep(2000);
-        System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
-
-       //Thread.sleep(100);
-for(int i =0;i<6;i++){
-   // Thread.sleep(1000);
-    basePage.getLeadFormPage().zipCode.click();
-    basePage.getLeadFormPage().zipCode.sendKeys(Keys.BACK_SPACE);
-
-}
+        //int numberOfCar = 2;
 
 
-        if(basePage.getLeadFormPage().zipCode.getText().isEmpty()) {
-            basePage.getLeadFormPage().zipCode.click();
-            basePage.getLeadFormPage().zipCode.sendKeys("22001");
+        //TODO TEST FOR SCROLLING DOWN
+//        WebElement headerOfCar = driver.findElement(By.xpath("(//span[@class='srp-list-item-basic-info-model'])[" + numberOfCar + "]"));
+//        numberOfCar++;
+//        headerOfCar.click();
+//        //todo window handles for VDP
+//        Set<String> windows = driver.getWindowHandles();
+//        for(String window : windows){
+//            if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
+//                System.out.println(driver.getTitle());break;}
+//        }
+//        //todo scrolling down to element
+//        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+//        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+//        //todo input for Lead Form
+//        //todo Positive scenario :
+//        basePage.getLeadFormPage().firstName.click();
+//        basePage.getLeadFormPage().firstName.sendKeys("TestQA");
+//        basePage.getLeadFormPage().lastName.click();
+//        basePage.getLeadFormPage().lastName.sendKeys("test");
+//
+//       // Thread.sleep(2000);
+//        System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
+//
+//       //Thread.sleep(100);
+//for(int i =0;i<6;i++){
+//   // Thread.sleep(1000);
+//    basePage.getLeadFormPage().zipCode.click();
+//    basePage.getLeadFormPage().zipCode.sendKeys(Keys.BACK_SPACE);
+//
+//}
+//
+//
+//        if(basePage.getLeadFormPage().zipCode.getText().isEmpty()) {
+//            basePage.getLeadFormPage().zipCode.click();
+//            basePage.getLeadFormPage().zipCode.sendKeys("22001");
+//
+//        }else if(!basePage.getLeadFormPage().zipCode.getText().isEmpty()){
+//            basePage.getLeadFormPage().zipCode.click();
+//            basePage.getLeadFormPage().zipCode.clear();
+//            basePage.getLeadFormPage().zipCode.sendKeys("22304");
+//        }
+//        basePage.getLeadFormPage().phoneNumber.sendKeys("5555555555");
+//basePage.getLeadFormPage().sendMessage.click();
+//Thread.sleep(2000);
+//
+//Assert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Thank you for contacting this dealer.')]")).getText()
+//,"Thank you for contacting this dealer.");
+//
 
-        }else if(!basePage.getLeadFormPage().zipCode.getText().isEmpty()){
-            basePage.getLeadFormPage().zipCode.click();
-            basePage.getLeadFormPage().zipCode.clear();
-            basePage.getLeadFormPage().zipCode.sendKeys("22304");
-        }
-        basePage.getLeadFormPage().phoneNumber.sendKeys("5555555555");
-basePage.getLeadFormPage().sendMessage.click();
-Thread.sleep(2000);
-
-Assert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Thank you for contacting this dealer.')]")).getText()
-,"Thank you for contacting this dealer.");
 
 
 
@@ -731,6 +738,8 @@ wait.until(ExpectedConditions.textMatches((By.xpath("//span[@class='totalRecords
 
 
 
+
+    //todo DONE READY FOR FEATURE FILE
     @Test
     public void mapsAndDirections() throws InterruptedException {
         BasePage basePage=new BasePage();

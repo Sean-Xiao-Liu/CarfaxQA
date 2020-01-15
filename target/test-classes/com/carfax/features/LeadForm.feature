@@ -1,7 +1,7 @@
 Feature: Lead form on VDP
 
 
- @regression @tc-2
+ @regression
   Scenario Outline: Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED
     Given I am on main Carfax page
     And I navigate to Find a Used Car page
@@ -59,7 +59,7 @@ Scenario Outline: Lead form with first name, last name, zip code and email
           | Infiniti | Q50 | 22033   |
           | Toyota     | Camry           | 22304   |
 
-  @regression @tc-2
+  @regression
 Scenario Outline: Error message for 'Last name is required' is displayed
   Given I am on main Carfax page
   And I navigate to Find a Used Car page
@@ -78,7 +78,7 @@ Scenario Outline: Error message for 'Last name is required' is displayed
     | Infiniti | Q50 | 22033   |20142                                |
     | Toyota     | Camry           | 22304   |22304                      |
 
-  @regression @tc-2
+  @regression
   Scenario Outline: Error message for 'First name is required' is displayed
     Given I am on main Carfax page
     And I navigate to Find a Used Car page

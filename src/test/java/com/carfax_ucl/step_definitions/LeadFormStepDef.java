@@ -17,7 +17,7 @@ public class LeadFormStepDef {
     public BasePage basePage=new BasePage();
 public WebDriver driver= Driver.get();
 public Faker faker=new Faker();
-    public WebDriverWait wait=new WebDriverWait(Driver.get(),3);
+    public WebDriverWait wait=new WebDriverWait(Driver.get(),4);
 
 
     @When("I click on particular car that I want")
@@ -29,7 +29,7 @@ public Faker faker=new Faker();
     }
 //todo Scenario #1
     @When("I navigate to Lead Form and fill out First Name, Last Name, {string} and Phone number")
-    public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String zipCode) {
+    public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String zipCode) throws InterruptedException {
 
     Set<String> windows = driver.getWindowHandles();
         for(String window : windows){
@@ -42,7 +42,9 @@ public Faker faker=new Faker();
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
         //todo input for Lead Form
         //todo Positive scenario :
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
+      //  wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
+        Thread.sleep(2000);
+wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
 
         basePage.getLeadFormPage().firstName.click();
         basePage.getLeadFormPage().firstName.sendKeys("Test");
@@ -91,7 +93,7 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(Stri
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
         //todo input for Lead Form
         //todo Positive scenario :
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
 
         basePage.getLeadFormPage().firstName.click();
         basePage.getLeadFormPage().firstName.sendKeys("Test");
@@ -113,7 +115,10 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(Stri
             basePage.getLeadFormPage().zipCode.click();
             basePage.getLeadFormPage().zipCode.sendKeys(zipCode);
 
+    if(email.substring(0,email.indexOf("@")+2).contains(".")){
+        email=email.substring(0,email.indexOf("@")).replace(".","")+email.substring(email.indexOf("@"),email.length());
 
+    }
         basePage.getLeadFormPage().email.sendKeys(email);
     }
 
@@ -140,7 +145,7 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(Stri
         WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
 
         for(int i =0;i<6;i++){
             // Thread.sleep(1000);
@@ -184,7 +189,7 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
         WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
 
         basePage.getLeadFormPage().firstName.click();
         basePage.getLeadFormPage().firstName.sendKeys("Test");
@@ -226,7 +231,7 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
         WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
 
         basePage.getLeadFormPage().lastName.click();
         basePage.getLeadFormPage().lastName.sendKeys("Test");
@@ -271,7 +276,7 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
 
-wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@class='fa fa-mobile'])[4]"))));
+wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
         basePage.getLeadFormPage().firstName.click();
         basePage.getLeadFormPage().firstName.sendKeys("Test");
         basePage.getLeadFormPage().lastName.click();

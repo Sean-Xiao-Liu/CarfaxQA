@@ -12,7 +12,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class UCLSignInStepDef {
+public class
+
+
+
+
+UCLSignInStepDef {
 
 BasePage basePage=new BasePage();
     Faker faker=new Faker();
@@ -32,9 +37,9 @@ BasePage basePage=new BasePage();
     public void i_can_fill_out_email_password() {
          email = email.replace(" ", "");
         basePage.getUclSignInPage().email.click();
-         if(email.substring(0,email.indexOf("@")-1).contains(".")){
-           email= email.replace(".","");
-//            basePage.getFollowBtnPage().email.sendKeys(email);
+        if(email.substring(0,email.indexOf("@")+2).contains(".")){
+            email=email.substring(0,email.indexOf("@")).replace(".","")+email.substring(email.indexOf("@"),email.length());
+
         }
 
         basePage.getUclSignInPage().email.sendKeys(email);

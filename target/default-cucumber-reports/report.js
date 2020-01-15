@@ -1,17 +1,14 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/com/carfax/features/LeadForm.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/com/carfax/features/saveSearchBtnOnboarding.feature");
 formatter.feature({
-  "name": "Lead form on VDP",
+  "name": "Create account through save this search",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
+  "name": "",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
-    {
-      "name": "@regression"
-    },
     {
       "name": "@tc-2"
     }
@@ -26,23 +23,19 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "I fill out \"\u003cmake\u003e\" , \"\u003cmodel\u003e\" , \"\u003czipcode\u003e\" of the car that I want to search",
+  "name": "I click on Body Type or Price filter",
   "keyword": "And "
 });
 formatter.step({
-  "name": "I click on next and show me results button",
+  "name": "I fill out \"\u003cbody type\u003e\" , \"\u003cprice range\u003e\"  , \"\u003czipcode\u003e\" of the car I want to search",
   "keyword": "When "
 });
 formatter.step({
-  "name": "I click on particular car that I want",
+  "name": "I click on next and show me results button from Body type side",
   "keyword": "And "
 });
 formatter.step({
-  "name": "I navigate to Lead Form and fill out First Name, Last Name, \"\u003czip code\u003e\" and Phone number",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I click on Send Message to that dealer",
+  "name": "I can see that Save Search button is not able to click",
   "keyword": "Then "
 });
 formatter.examples({
@@ -52,942 +45,39 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "make",
-        "model",
-        "zipcode",
-        "zip code"
+        "body type",
+        "price range",
+        "zipcode"
       ]
     },
     {
       "cells": [
-        "Hyundai",
-        "Sonata",
-        "22201",
-        "22201"
-      ]
-    },
-    {
-      "cells": [
-        "Honda",
-        "Civic",
-        "75501",
+        "Chassis",
+        "Less than $5,000",
         "22204"
       ]
     },
     {
       "cells": [
-        "Infiniti",
-        "Q50",
-        "22033",
+        "Minivan",
+        "Less than $15,000",
         "75501"
       ]
     },
     {
       "cells": [
-        "Toyota",
-        "Camry",
-        "22304",
-        "20148"
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@regression"
-    },
-    {
-      "name": "@tc-2"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am on main Carfax page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Find a Used Car page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I fill out \"Hyundai\" , \"Sonata\" , \"22201\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on next and show me results button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on particular car that I want",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Lead Form and fill out First Name, Last Name, \"22201\" and Phone number",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on Send Message to that dealer",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@regression"
-    },
-    {
-      "name": "@tc-2"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am on main Carfax page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Find a Used Car page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I fill out \"Honda\" , \"Civic\" , \"75501\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on next and show me results button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on particular car that I want",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Lead Form and fill out First Name, Last Name, \"22204\" and Phone number",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on Send Message to that dealer",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@regression"
-    },
-    {
-      "name": "@tc-2"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am on main Carfax page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Find a Used Car page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I fill out \"Infiniti\" , \"Q50\" , \"22033\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on next and show me results button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on particular car that I want",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Lead Form and fill out First Name, Last Name, \"75501\" and Phone number",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on Send Message to that dealer",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@regression"
-    },
-    {
-      "name": "@tc-2"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am on main Carfax page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Find a Used Car page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I fill out \"Toyota\" , \"Camry\" , \"22304\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on next and show me results button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on particular car that I want",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Lead Form and fill out First Name, Last Name, \"20148\" and Phone number",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on Send Message to that dealer",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "name": "Error message for \u0027Last name is required\u0027 is displayed",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@regression"
-    },
-    {
-      "name": "@tc-2"
-    }
-  ]
-});
-formatter.step({
-  "name": "I am on main Carfax page",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "I navigate to Find a Used Car page",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I fill out \"\u003cmake\u003e\" , \"\u003cmodel\u003e\" , \"\u003czipcode\u003e\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I click on next and show me results button",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "I click on particular car that I want",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I navigate to Lead Form and fill out First Name,  \"\u003czip code\u003e\" and Phone number",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I click on Send Message to that dealer and should see Last Name error message are displayed",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "make",
-        "model",
-        "zipcode",
-        "zip code"
-      ]
-    },
-    {
-      "cells": [
-        "Hyundai",
-        "Sonata",
-        "22201",
-        "22204"
-      ]
-    },
-    {
-      "cells": [
-        "Honda",
-        "Civic",
-        "75501",
-        "20148"
-      ]
-    },
-    {
-      "cells": [
-        "Infiniti",
-        "Q50",
-        "22033",
-        "20142"
-      ]
-    },
-    {
-      "cells": [
-        "Toyota",
-        "Camry",
-        "22304",
+        "Sedan",
+        "Less than $5,000",
         "22304"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Error message for \u0027Last name is required\u0027 is displayed",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@regression"
-    },
-    {
-      "name": "@tc-2"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am on main Carfax page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Find a Used Car page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I fill out \"Hyundai\" , \"Sonata\" , \"22201\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on next and show me results button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on particular car that I want",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Lead Form and fill out First Name,  \"22204\" and Phone number",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on Send Message to that dealer and should see Last Name error message are displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Last_Name_error_message_are_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Error message for \u0027Last name is required\u0027 is displayed",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@regression"
-    },
-    {
-      "name": "@tc-2"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am on main Carfax page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Find a Used Car page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I fill out \"Honda\" , \"Civic\" , \"75501\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on next and show me results button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on particular car that I want",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Lead Form and fill out First Name,  \"20148\" and Phone number",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on Send Message to that dealer and should see Last Name error message are displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Last_Name_error_message_are_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Error message for \u0027Last name is required\u0027 is displayed",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@regression"
-    },
-    {
-      "name": "@tc-2"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am on main Carfax page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Find a Used Car page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I fill out \"Infiniti\" , \"Q50\" , \"22033\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on next and show me results button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on particular car that I want",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Lead Form and fill out First Name,  \"20142\" and Phone number",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on Send Message to that dealer and should see Last Name error message are displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Last_Name_error_message_are_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Error message for \u0027Last name is required\u0027 is displayed",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@regression"
-    },
-    {
-      "name": "@tc-2"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am on main Carfax page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Find a Used Car page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I fill out \"Toyota\" , \"Camry\" , \"22304\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on next and show me results button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on particular car that I want",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Lead Form and fill out First Name,  \"22304\" and Phone number",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on Send Message to that dealer and should see Last Name error message are displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Last_Name_error_message_are_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "name": "Error message for \u0027First name is required\u0027 is displayed",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@regression"
-    },
-    {
-      "name": "@tc-2"
-    }
-  ]
-});
-formatter.step({
-  "name": "I am on main Carfax page",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "I navigate to Find a Used Car page",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I fill out \"\u003cmake\u003e\" , \"\u003cmodel\u003e\" , \"\u003czipcode\u003e\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I click on next and show me results button",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "I click on particular car that I want",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I navigate to Lead Form and fill out Last Name,  \"\u003czip code\u003e\" and Phone number",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I click on Send Message to that dealer and should see First Name error message are displayed",
-  "keyword": "Then "
-});
-formatter.examples({
   "name": "",
   "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "make",
-        "model",
-        "zipcode",
-        "zip code"
-      ]
-    },
-    {
-      "cells": [
-        "Hyundai",
-        "Sonata",
-        "22201",
-        "22304"
-      ]
-    },
-    {
-      "cells": [
-        "Honda",
-        "Civic",
-        "75501",
-        "22204"
-      ]
-    },
-    {
-      "cells": [
-        "Infiniti",
-        "Q50",
-        "22033",
-        "22201"
-      ]
-    },
-    {
-      "cells": [
-        "Toyota",
-        "Camry",
-        "22304",
-        "75501"
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Error message for \u0027First name is required\u0027 is displayed",
-  "description": "",
   "keyword": "Scenario Outline",
   "tags": [
-    {
-      "name": "@regression"
-    },
     {
       "name": "@tc-2"
     }
@@ -1017,51 +107,41 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I fill out \"Hyundai\" , \"Sonata\" , \"22201\" of the car that I want to search",
+  "name": "I click on Body Type or Price filter",
   "keyword": "And "
 });
 formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+  "location": "SaveThisSearchStepDef.i_click_on_Body_Type_or_Price_filter()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on next and show me results button",
+  "name": "I fill out \"Chassis\" , \"Less than $5,000\"  , \"22204\" of the car I want to search",
   "keyword": "When "
 });
 formatter.match({
-  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_I_want_to_search(String,String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on particular car that I want",
+  "name": "I click on next and show me results button from Body type side",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button_from_Body_type_side()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I navigate to Lead Form and fill out Last Name,  \"22304\" and Phone number",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_Last_Name_and_Phone_number(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on Send Message to that dealer and should see First Name error message are displayed",
+  "name": "I can see that Save Search button is not able to click",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_First_Name_error_message_are_displayed()"
+  "location": "SaveThisSearchStepDef.i_can_see_that_Save_Search_button_is_not_able_to_click()"
 });
 formatter.result({
   "status": "passed"
@@ -1070,13 +150,10 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Error message for \u0027First name is required\u0027 is displayed",
+  "name": "",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
-    {
-      "name": "@regression"
-    },
     {
       "name": "@tc-2"
     }
@@ -1106,51 +183,41 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I fill out \"Honda\" , \"Civic\" , \"75501\" of the car that I want to search",
+  "name": "I click on Body Type or Price filter",
   "keyword": "And "
 });
 formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+  "location": "SaveThisSearchStepDef.i_click_on_Body_Type_or_Price_filter()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on next and show me results button",
+  "name": "I fill out \"Minivan\" , \"Less than $15,000\"  , \"75501\" of the car I want to search",
   "keyword": "When "
 });
 formatter.match({
-  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_I_want_to_search(String,String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on particular car that I want",
+  "name": "I click on next and show me results button from Body type side",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button_from_Body_type_side()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I navigate to Lead Form and fill out Last Name,  \"22204\" and Phone number",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_Last_Name_and_Phone_number(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on Send Message to that dealer and should see First Name error message are displayed",
+  "name": "I can see that Save Search button is not able to click",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_First_Name_error_message_are_displayed()"
+  "location": "SaveThisSearchStepDef.i_can_see_that_Save_Search_button_is_not_able_to_click()"
 });
 formatter.result({
   "status": "passed"
@@ -1159,13 +226,10 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Error message for \u0027First name is required\u0027 is displayed",
+  "name": "",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
-    {
-      "name": "@regression"
-    },
     {
       "name": "@tc-2"
     }
@@ -1195,140 +259,41 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I fill out \"Infiniti\" , \"Q50\" , \"22033\" of the car that I want to search",
+  "name": "I click on Body Type or Price filter",
   "keyword": "And "
 });
 formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+  "location": "SaveThisSearchStepDef.i_click_on_Body_Type_or_Price_filter()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on next and show me results button",
+  "name": "I fill out \"Sedan\" , \"Less than $5,000\"  , \"22304\" of the car I want to search",
   "keyword": "When "
 });
 formatter.match({
-  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_I_want_to_search(String,String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on particular car that I want",
+  "name": "I click on next and show me results button from Body type side",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button_from_Body_type_side()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I navigate to Lead Form and fill out Last Name,  \"22201\" and Phone number",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_Last_Name_and_Phone_number(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on Send Message to that dealer and should see First Name error message are displayed",
+  "name": "I can see that Save Search button is not able to click",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_First_Name_error_message_are_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Error message for \u0027First name is required\u0027 is displayed",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@regression"
-    },
-    {
-      "name": "@tc-2"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am on main Carfax page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Find a Used Car page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I fill out \"Toyota\" , \"Camry\" , \"22304\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on next and show me results button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on particular car that I want",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to Lead Form and fill out Last Name,  \"75501\" and Phone number",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_Last_Name_and_Phone_number(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on Send Message to that dealer and should see First Name error message are displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_First_Name_error_message_are_displayed()"
+  "location": "SaveThisSearchStepDef.i_can_see_that_Save_Search_button_is_not_able_to_click()"
 });
 formatter.result({
   "status": "passed"

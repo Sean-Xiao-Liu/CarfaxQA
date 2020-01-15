@@ -37,9 +37,7 @@ public class SaveThisSearchStepDef {
 
     @Given("I am on main Carfax page")
     public void i_am_on_main_Carfax_page() {
-//        driver.manage().window().maximize();
  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-       // driver.get(ConfigurationReader.get("url"));
       assertEquals("CARFAX™ - Shop, Buy, Own, & Sell Used Cars",driver.getTitle());
 
     }
@@ -99,7 +97,12 @@ public class SaveThisSearchStepDef {
     public void i_am_able_to_fill_out_email_zip_code_and_click_on_save_This_Search_button()  throws InterruptedException {
         String email=faker.name().name()+"@mail.com";
         email=email.replace(" ","");
+
         wait.until(ExpectedConditions.visibilityOf(basePage.getVdp().emailAddress)).click();
+        if(email.substring(0,email.indexOf("@")+2).contains(".")){
+            email=email.substring(0,email.indexOf("@")).replace(".","")+email.substring(email.indexOf("@"),email.length());
+
+        }
         basePage.getVdp().emailAddress.sendKeys(email);
         wait.until(ExpectedConditions.visibilityOf( basePage.getVdp().zipCodeSaveSearchPage)).click();
         basePage.getVdp().zipCodeSaveSearchPage.sendKeys("22012");
@@ -115,4 +118,84 @@ public class SaveThisSearchStepDef {
         //driver.findElement(By.cssSelector("g[id='Page-1']")).click();
         driver.quit();
     }
+
+
+    //TODO SCENARIO #2
+
+    @Given("I fill out {string} ,  {string} of the car that I want to search")
+    public void i_fill_out_of_the_car_that_I_want_to_search(String make, String zipcode) throws InterruptedException {
+        Thread.sleep(2000);
+        List <WebElement> makes =driver.findElements(By.xpath("//select[@name='make']/optgroup[@label='Popular Makes']/option"));
+        for(WebElement temp :makes){
+            if(temp.getText().trim().equals(make)){
+                temp.click();
+                break;
+            }
+
+        }
+
+        basePage.getVdp().zipCodeMainPage.click();
+        basePage.getVdp().zipCodeMainPage.sendKeys(zipcode);
+
+
+
+
+
+
+
+    }
+
+    @Then("I can see that Save Search button is not able to click")
+    public void i_can_see_that_Save_Search_button_is_not_able_to_click() {
+
+wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("srpHeading")))).isDisplayed();
+        Assert.assertTrue(!basePage.getVdp().saveThisSearchMainPage.isEnabled());
+        System.out.println(!basePage.getVdp().saveThisSearchMainPage.isEnabled());
+
+    }
+
+
+    //TODO SCENARIO #3 WITH BODY TYPE OR PRICE RANGE
+
+    @Given("I click on Body Type or Price filter")
+    public void i_click_on_Body_Type_or_Price_filter() {
+basePage.getBodyTypeOrPricePage().bodyTypeOrPrice.click();
+
+
+
+    }
+
+    @When("I fill out {string} , {string}  , {string} of the car I want to search")
+    public void i_fill_out_of_the_car_I_want_to_search(String bodyType, String priceRange, String zipcode) {
+        List <WebElement> bodyTypeDropDown =driver.findElements(By.xpath("//select[@class='form-control search-bodystyle']/option"));
+        for(WebElement temp :bodyTypeDropDown){
+            if(temp.getText().trim().equals(bodyType)){
+                temp.click();
+                break;
+            }
+
+        }
+
+        List <WebElement> priceRangeDropDown =driver.findElements(By.xpath("//select[@class='form-control search-price']/option"));
+        for(WebElement temp :priceRangeDropDown){
+            if(temp.getText().trim().equals(priceRange)){
+                temp.click();
+                break;
+            }
+
+        }
+
+        basePage.getBodyTypeOrPricePage().zipCode.click();
+        basePage.getBodyTypeOrPricePage().zipCode.sendKeys(zipcode);
+
+    }
+
+    @When("I click on next and show me results button from Body type side")
+    public void i_click_on_next_and_show_me_results_button_from_Body_type_side() {
+        basePage.getBodyTypeOrPricePage().nextBtn.click();
+        wait.until(ExpectedConditions.textMatches((By.xpath("//span[@class='totalRecordsText']")), Pattern.compile("[1-9]")));
+
+        basePage.getBodyTypeOrPricePage().showMeBtn.click();
+    }
+
 }

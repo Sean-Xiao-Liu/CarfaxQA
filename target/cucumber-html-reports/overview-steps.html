@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+              <td>1</td>
+            <td>15 Jan 2020, 10:33</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">Hooks.setUp()</td>
+              <td>24</td>
+              <td class="duration" data-value="2714944963">2.714</td>
+              <td class="duration" data-value="2714944963">5.269</td>
+              <td class="duration" data-value="65158679134">1:5.158</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.tearDown(Scenario)</td>
+              <td>24</td>
+              <td class="duration" data-value="254621447">0.254</td>
+              <td class="duration" data-value="254621447">0.344</td>
+              <td class="duration" data-value="6110914738">6.110</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()</td>
+              <td>8</td>
+              <td class="duration" data-value="302417692">0.302</td>
+              <td class="duration" data-value="302417692">0.371</td>
+              <td class="duration" data-value="2419341538">2.419</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_First_Name_error_message_are_displayed()</td>
+              <td>4</td>
+              <td class="duration" data-value="263488186">0.263</td>
+              <td class="duration" data-value="263488186">0.281</td>
+              <td class="duration" data-value="1053952746">1.053</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Last_Name_error_message_are_displayed()</td>
+              <td>4</td>
+              <td class="duration" data-value="289387199">0.289</td>
+              <td class="duration" data-value="289387199">0.325</td>
+              <td class="duration" data-value="1157548796">1.157</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Zip_code_error_message_are_displayed()</td>
+              <td>4</td>
+              <td class="duration" data-value="275229965">0.275</td>
+              <td class="duration" data-value="275229965">0.285</td>
+              <td class="duration" data-value="1100919863">1.100</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_error_messages_are_displayed()</td>
+              <td>4</td>
+              <td class="duration" data-value="480563260">0.480</td>
+              <td class="duration" data-value="480563260">0.511</td>
+              <td class="duration" data-value="1922253042">1.922</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LeadFormStepDef.i_click_on_particular_car_that_I_want()</td>
+              <td>24</td>
+              <td class="duration" data-value="695096056">0.695</td>
+              <td class="duration" data-value="695096056">0.949</td>
+              <td class="duration" data-value="16682305344">16.682</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LeadFormStepDef.i_navigate_to_Lead_Form_and_cleaning_zipcode_which_is_by_default_already_filled_out()</td>
+              <td>4</td>
+              <td class="duration" data-value="3760877324">3.760</td>
+              <td class="duration" data-value="3760877324">4.013</td>
+              <td class="duration" data-value="15043509298">15.043</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="4984113936">4.984</td>
+              <td class="duration" data-value="4984113936">5.110</td>
+              <td class="duration" data-value="19936455745">19.936</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="3313091246">3.313</td>
+              <td class="duration" data-value="3313091246">3.353</td>
+              <td class="duration" data-value="13252364985">13.252</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_name_and_Phone_number()</td>
+              <td>4</td>
+              <td class="duration" data-value="3360927465">3.360</td>
+              <td class="duration" data-value="3360927465">3.501</td>
+              <td class="duration" data-value="13443709860">13.443</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="3409922458">3.409</td>
+              <td class="duration" data-value="3409922458">3.600</td>
+              <td class="duration" data-value="13639689835">13.639</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_Last_Name_and_Phone_number(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="3519313372">3.519</td>
+              <td class="duration" data-value="3519313372">4.170</td>
+              <td class="duration" data-value="14077253490">14.077</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SaveThisSearchStepDef.i_am_on_main_Carfax_page()</td>
+              <td>24</td>
+              <td class="duration" data-value="112754582">0.112</td>
+              <td class="duration" data-value="112754582">0.515</td>
+              <td class="duration" data-value="2706109968">2.706</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()</td>
+              <td>24</td>
+              <td class="duration" data-value="1733140959">1.733</td>
+              <td class="duration" data-value="1733140959">2.287</td>
+              <td class="duration" data-value="41595383024">41.595</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)</td>
+              <td>24</td>
+              <td class="duration" data-value="4619405935">4.619</td>
+              <td class="duration" data-value="4619405935">4.884</td>
+              <td class="duration" data-value="110865742443">1:50.865</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()</td>
+              <td>24</td>
+              <td class="duration" data-value="1600773566">1.600</td>
+              <td class="duration" data-value="1600773566">2.376</td>
+              <td class="duration" data-value="38418565598">38.418</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>18</td>
+            <td>216</td>
+            <td class="duration">1.752</td>
+            <td class="duration">1:50.865</td>
+            <td class="duration">6:18.584</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

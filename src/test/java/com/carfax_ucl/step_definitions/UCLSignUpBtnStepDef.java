@@ -26,6 +26,10 @@ public class UCLSignUpBtnStepDef {
         String emails = faker.name().name() + "@gmail.com";
         emails = emails.replace(" ", "");
         basePage.getUclSignUpPage().uclEmail.click();
+        if(emails.substring(0,emails.indexOf("@")+2).contains(".")){
+            emails=emails.substring(0,emails.indexOf("@")).replace(".","")+emails.substring(emails.indexOf("@"),emails.length());
+
+        }
         basePage.getUclSignUpPage().uclEmail.sendKeys(emails);
         basePage.getUclSignUpPage().uclPassword.click();
         basePage.getUclSignUpPage().uclPassword.sendKeys("Ajskdsh1880");

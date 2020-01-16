@@ -504,14 +504,11 @@
       <workItem from="1579010779341" duration="17660000" />
       <workItem from="1579096744468" duration="19601000" />
       <workItem from="1579183440108" duration="4747000" />
-      <workItem from="1579201137280" duration="1393000" />
+      <workItem from="1579201137280" duration="1737000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CukesRunner_(1) - 2020.01.15 at 15h 30m 01s.xml">
-      <configuration name="CukesRunner (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CukesRunner_(1) - 2020.01.15 at 15h 38m 19s.xml">
       <configuration name="CukesRunner (1)" configurationId="JUnit" />
     </history-entry>
@@ -539,15 +536,17 @@
     <history-entry file="CukesRunner_(1) - 2020.01.16 at 14h 18m 51s.xml">
       <configuration name="CukesRunner (1)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CukesRunner_(1) - 2020.01.16 at 14h 25m 22s.xml">
+      <configuration name="CukesRunner (1)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131824000" />
+    <option name="totallyTimeSpent" value="132168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="822" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -556,7 +555,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.40547946" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40547946" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3178082" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -564,7 +563,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32739726" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32739726" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32831737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />

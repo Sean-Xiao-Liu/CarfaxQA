@@ -33,7 +33,7 @@ public class SaveThisSearchStepDef {
 
     @Given("I am on main Carfax page")
     public void i_am_on_main_Carfax_page() {
- driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+ driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
       assertEquals("CARFAX™ - Shop, Buy, Own, & Sell Used Cars",driver.getTitle());
 
     }
@@ -154,15 +154,17 @@ wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("srpHeading"
     //TODO SCENARIO #3 WITH BODY TYPE OR PRICE RANGE
 
     @Given("I click on Body Type or Price filter")
-    public void i_click_on_Body_Type_or_Price_filter() {
-basePage.getBodyTypeOrPricePage().bodyTypeOrPrice.click();
+    public void i_click_on_Body_Type_or_Price_filter() throws InterruptedException {
+        Thread.sleep(1000);
+
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getBodyTypeOrPricePage().bodyTypeOrPrice)).click();
 
 
 
     }
 
     @When("I fill out {string} , {string}  , {string} of the car I want to search")
-    public void i_fill_out_of_the_car_I_want_to_search(String bodyType, String priceRange, String zipcode) {
+    public void i_fill_out_of_the_car_I_want_to_search(String bodyType, String priceRange, String zipcode)  {
         List <WebElement> bodyTypeDropDown =driver.findElements(By.xpath("//select[@class='form-control search-bodystyle']/option"));
         for(WebElement temp :bodyTypeDropDown){
             if(temp.getText().trim().equals(bodyType)){
@@ -187,8 +189,8 @@ basePage.getBodyTypeOrPricePage().bodyTypeOrPrice.click();
     }
 
     @When("I click on next and show me results button from Body type side")
-    public void i_click_on_next_and_show_me_results_button_from_Body_type_side() {
-        basePage.getBodyTypeOrPricePage().nextBtn.click();
+    public void i_click_on_next_and_show_me_results_button_from_Body_type_side()  {
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getBodyTypeOrPricePage().nextBtn)).click();
         wait.until(ExpectedConditions.textMatches((By.xpath("//span[@class='totalRecordsText']")), Pattern.compile("[1-9]")));
 
         basePage.getBodyTypeOrPricePage().showMeBtn.click();

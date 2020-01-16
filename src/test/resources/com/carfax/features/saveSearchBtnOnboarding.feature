@@ -2,7 +2,7 @@ Feature: Create account through save this search
 
 
 
-  @regression
+  @regression @smoke @ff
   Scenario Outline: Create account through Save This Search option
     Given I am on main Carfax page
     And I navigate to Find a Used Car page
@@ -18,7 +18,7 @@ Feature: Create account through save this search
       | Tesla | Model 3 | 22033   |
       | Toyota     | Camry           | 22304   |
 
-@regression   @tc-3
+@regression   @tc-3 @smoke @ff
 
 Scenario Outline: Save Search button is not enable if you pick only Make
 
@@ -34,7 +34,7 @@ Scenario Outline: Save Search button is not enable if you pick only Make
       |BMW    |22304       |
       |Audi    |75501       |
 
-  @tc-3
+  @tc-3 @smoke @tc-4 @ff @save
     Scenario Outline:
       Given I am on main Carfax page
       And I navigate to Find a Used Car page

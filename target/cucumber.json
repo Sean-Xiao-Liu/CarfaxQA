@@ -1,13 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-01-16T19:24:58.648Z",
+        "start_timestamp": "2020-01-16T20:39:29.424Z",
         "before": [
           {
             "result": {
-              "duration": 3581659303,
+              "duration": 3631273693,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 48,
-        "name": "",
+        "line": 19,
+        "name": "Map and Directions page from VDP",
         "description": "",
-        "id": "create-account-through-save-this-search;;;2",
+        "id": "map-and-directions-page;map-and-directions-page-from-vdp;;2",
         "after": [
           {
             "result": {
-              "duration": 177581897,
+              "duration": 201599785,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 393236824,
+              "duration": 412789618,
               "status": "passed"
             },
-            "line": 39,
+            "line": 8,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 1481968664,
+              "duration": 1514940740,
               "status": "passed"
             },
-            "line": 40,
+            "line": 9,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -59,91 +59,113 @@
           },
           {
             "result": {
-              "duration": 1241956436,
+              "duration": 4456244500,
               "status": "passed"
             },
-            "line": 41,
-            "name": "I click on Body Type or Price filter",
+            "line": 10,
+            "name": "I fill out \"Audi\" , \"Q3\" , \"22201\" of the car that I want to search",
             "match": {
-              "location": "SaveThisSearchStepDef.i_click_on_Body_Type_or_Price_filter()"
+              "arguments": [
+                {
+                  "val": "\"Audi\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Q3\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"22201\"",
+                  "offset": 27
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 432052283,
+              "duration": 1131910230,
               "status": "passed"
             },
-            "line": 42,
-            "name": "I fill out \"Chassis\" , \"Less than $5,000\"  , \"22204\" of the car I want to search",
+            "line": 11,
+            "name": "I click on next and show me results button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Chassis\"",
-                  "offset": 11
-                },
-                {
-                  "val": "\"Less than $5,000\"",
-                  "offset": 23
-                },
-                {
-                  "val": "\"22204\"",
-                  "offset": 45
-                }
-              ],
-              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_I_want_to_search(String,String,String)"
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1029124712,
+              "duration": 434504409,
               "status": "passed"
             },
-            "line": 43,
-            "name": "I click on next and show me results button from Body type side",
+            "line": 12,
+            "name": "I click on particular car that I want",
             "match": {
-              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button_from_Body_type_side()"
+              "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 369989520,
+              "duration": 1694147510,
               "status": "passed"
             },
-            "line": 44,
-            "name": "I can see that Save Search button is not able to click",
+            "line": 13,
+            "name": "I click on map\u0026directions link from dealer info window",
             "match": {
-              "location": "SaveThisSearchStepDef.i_can_see_that_Save_Search_button_is_not_able_to_click()"
+              "location": "MapAndDirectionsStepDef.i_click_on_map_directions_link_from_dealer_info_window()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3677065356,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I fill out address , \"Arizona\", \"22201\" to get direction",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Arizona\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"22201\"",
+                  "offset": 32
+                }
+              ],
+              "location": "MapAndDirectionsStepDef.i_fill_out_address_to_get_direction(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 292916252,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I see map\u0026directions window",
+            "match": {
+              "location": "MapAndDirectionsStepDef.i_see_map_directions_window()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@tc-3"
-          },
-          {
-            "name": "@smoke"
-          },
-          {
-            "name": "@tc-4"
-          },
-          {
-            "name": "@ff"
-          },
-          {
-            "name": "@save"
+            "name": "@m\u0026d-1"
           }
         ]
       },
       {
-        "start_timestamp": "2020-01-16T19:25:07.477Z",
+        "start_timestamp": "2020-01-16T20:39:46.953Z",
         "before": [
           {
             "result": {
-              "duration": 2359499530,
+              "duration": 2645662388,
               "status": "passed"
             },
             "match": {
@@ -151,14 +173,14 @@
             }
           }
         ],
-        "line": 49,
-        "name": "",
+        "line": 20,
+        "name": "Map and Directions page from VDP",
         "description": "",
-        "id": "create-account-through-save-this-search;;;3",
+        "id": "map-and-directions-page;map-and-directions-page-from-vdp;;3",
         "after": [
           {
             "result": {
-              "duration": 150144683,
+              "duration": 221726902,
               "status": "passed"
             },
             "match": {
@@ -171,10 +193,10 @@
         "steps": [
           {
             "result": {
-              "duration": 167003161,
+              "duration": 150677066,
               "status": "passed"
             },
-            "line": 39,
+            "line": 8,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -183,10 +205,10 @@
           },
           {
             "result": {
-              "duration": 1655784871,
+              "duration": 1069396487,
               "status": "passed"
             },
-            "line": 40,
+            "line": 9,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -195,91 +217,113 @@
           },
           {
             "result": {
-              "duration": 1220185317,
+              "duration": 4535964020,
               "status": "passed"
             },
-            "line": 41,
-            "name": "I click on Body Type or Price filter",
-            "match": {
-              "location": "SaveThisSearchStepDef.i_click_on_Body_Type_or_Price_filter()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 503018124,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "I fill out \"Minivan\" , \"Less than $15,000\"  , \"75501\" of the car I want to search",
+            "line": 10,
+            "name": "I fill out \"Honda\" , \"Civic\" , \"75501\" of the car that I want to search",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Minivan\"",
+                  "val": "\"Honda\"",
                   "offset": 11
                 },
                 {
-                  "val": "\"Less than $15,000\"",
-                  "offset": 23
+                  "val": "\"Civic\"",
+                  "offset": 21
                 },
                 {
                   "val": "\"75501\"",
-                  "offset": 46
+                  "offset": 31
                 }
               ],
-              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_I_want_to_search(String,String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1134862777,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "I click on next and show me results button from Body type side",
-            "match": {
-              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button_from_Body_type_side()"
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 483389044,
+              "duration": 1099961510,
               "status": "passed"
             },
-            "line": 44,
-            "name": "I can see that Save Search button is not able to click",
+            "line": 11,
+            "name": "I click on next and show me results button",
             "match": {
-              "location": "SaveThisSearchStepDef.i_can_see_that_Save_Search_button_is_not_able_to_click()"
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 497524387,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on particular car that I want",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1630055257,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on map\u0026directions link from dealer info window",
+            "match": {
+              "location": "MapAndDirectionsStepDef.i_click_on_map_directions_link_from_dealer_info_window()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3307338380,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I fill out address , \"Florida\", \"75501\" to get direction",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Florida\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"75501\"",
+                  "offset": 32
+                }
+              ],
+              "location": "MapAndDirectionsStepDef.i_fill_out_address_to_get_direction(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 252395440,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I see map\u0026directions window",
+            "match": {
+              "location": "MapAndDirectionsStepDef.i_see_map_directions_window()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@tc-3"
-          },
-          {
-            "name": "@smoke"
-          },
-          {
-            "name": "@tc-4"
-          },
-          {
-            "name": "@ff"
-          },
-          {
-            "name": "@save"
+            "name": "@m\u0026d-1"
           }
         ]
       },
       {
-        "start_timestamp": "2020-01-16T19:25:15.159Z",
+        "start_timestamp": "2020-01-16T20:40:02.371Z",
         "before": [
           {
             "result": {
-              "duration": 2168025273,
+              "duration": 2380430334,
               "status": "passed"
             },
             "match": {
@@ -287,14 +331,14 @@
             }
           }
         ],
-        "line": 50,
-        "name": "",
+        "line": 21,
+        "name": "Map and Directions page from VDP",
         "description": "",
-        "id": "create-account-through-save-this-search;;;4",
+        "id": "map-and-directions-page;map-and-directions-page-from-vdp;;4",
         "after": [
           {
             "result": {
-              "duration": 176781380,
+              "duration": 229286646,
               "status": "passed"
             },
             "match": {
@@ -307,10 +351,10 @@
         "steps": [
           {
             "result": {
-              "duration": 149942040,
+              "duration": 67258771,
               "status": "passed"
             },
-            "line": 39,
+            "line": 8,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -319,10 +363,10 @@
           },
           {
             "result": {
-              "duration": 1173334021,
+              "duration": 1593155634,
               "status": "passed"
             },
-            "line": 40,
+            "line": 9,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -331,91 +375,271 @@
           },
           {
             "result": {
-              "duration": 1185363079,
+              "duration": 4503304287,
               "status": "passed"
             },
-            "line": 41,
-            "name": "I click on Body Type or Price filter",
+            "line": 10,
+            "name": "I fill out \"Land Rover\" , \"Discovery Sport\" , \"22033\" of the car that I want to search",
             "match": {
-              "location": "SaveThisSearchStepDef.i_click_on_Body_Type_or_Price_filter()"
+              "arguments": [
+                {
+                  "val": "\"Land Rover\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Discovery Sport\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"22033\"",
+                  "offset": 46
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 530947825,
+              "duration": 1086341927,
               "status": "passed"
             },
-            "line": 42,
-            "name": "I fill out \"Sedan\" , \"Less than $5,000\"  , \"22304\" of the car I want to search",
+            "line": 11,
+            "name": "I click on next and show me results button",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 552824947,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on particular car that I want",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1554399816,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on map\u0026directions link from dealer info window",
+            "match": {
+              "location": "MapAndDirectionsStepDef.i_click_on_map_directions_link_from_dealer_info_window()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3541619708,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I fill out address , \"Georgia\", \"22033\" to get direction",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Sedan\"",
+                  "val": "\"Georgia\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"22033\"",
+                  "offset": 32
+                }
+              ],
+              "location": "MapAndDirectionsStepDef.i_fill_out_address_to_get_direction(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 209917516,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I see map\u0026directions window",
+            "match": {
+              "location": "MapAndDirectionsStepDef.i_see_map_directions_window()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@m\u0026d-1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-16T20:40:18.099Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2349404001,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Map and Directions page from VDP",
+        "description": "",
+        "id": "map-and-directions-page;map-and-directions-page-from-vdp;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 190310890,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 85110125,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on main Carfax page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1114435738,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I navigate to Find a Used Car page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4809220151,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I fill out \"Toyota\" , \"Camry\" , \"22304\" of the car that I want to search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Toyota\"",
                   "offset": 11
                 },
                 {
-                  "val": "\"Less than $5,000\"",
+                  "val": "\"Camry\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"22304\"",
+                  "offset": 32
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1089303197,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on next and show me results button",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 560746495,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on particular car that I want",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1819063941,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on map\u0026directions link from dealer info window",
+            "match": {
+              "location": "MapAndDirectionsStepDef.i_click_on_map_directions_link_from_dealer_info_window()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3575458848,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I fill out address , \"Missouri\", \"22304\" to get direction",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Missouri\"",
                   "offset": 21
                 },
                 {
                   "val": "\"22304\"",
-                  "offset": 43
+                  "offset": 33
                 }
               ],
-              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_I_want_to_search(String,String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1330632266,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "I click on next and show me results button from Body type side",
-            "match": {
-              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button_from_Body_type_side()"
+              "location": "MapAndDirectionsStepDef.i_fill_out_address_to_get_direction(String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 299455976,
+              "duration": 360379854,
               "status": "passed"
             },
-            "line": 44,
-            "name": "I can see that Save Search button is not able to click",
+            "line": 15,
+            "name": "I see map\u0026directions window",
             "match": {
-              "location": "SaveThisSearchStepDef.i_can_see_that_Save_Search_button_is_not_able_to_click()"
+              "location": "MapAndDirectionsStepDef.i_see_map_directions_window()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@tc-3"
-          },
-          {
-            "name": "@smoke"
-          },
-          {
-            "name": "@tc-4"
-          },
-          {
-            "name": "@ff"
-          },
-          {
-            "name": "@save"
+            "name": "@m\u0026d-1"
           }
         ]
       }
     ],
-    "name": "Create account through save this search",
+    "name": "Map and Directions page",
     "description": "",
-    "id": "create-account-through-save-this-search",
+    "id": "map-and-directions-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/com/carfax/features/saveSearchBtnOnboarding.feature",
+    "uri": "file:src/test/resources/com/carfax/features/MapAndDirections.feature",
     "tags": []
   }
 ]

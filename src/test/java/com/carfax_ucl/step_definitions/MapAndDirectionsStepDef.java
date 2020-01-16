@@ -23,7 +23,7 @@ public class MapAndDirectionsStepDef {
 
    public WebDriverWait wait=new WebDriverWait(Driver.get(),3);
    public JavascriptExecutor jse = (JavascriptExecutor)driver;
-Faker faker=new Faker();
+   public Faker faker=new Faker();
 
     @When("I click on map&directions link from dealer info window")
     public void i_click_on_map_directions_link_from_dealer_info_window() {
@@ -42,8 +42,11 @@ Faker faker=new Faker();
 
     }
 
-    @Then("I see map&directions window")
-    public void i_see_map_directions_window() {
+
+
+    @When("I fill out address , {string}, {string} to get direction")
+    public void i_fill_out_address_to_get_direction(String state1, String zipcode) {
+
         Set<String> mapWindow = driver.getWindowHandles();
         for(String map : mapWindow){
             if(driver.switchTo().window(map).getCurrentUrl().contains("map")) {
@@ -56,7 +59,7 @@ Faker faker=new Faker();
 
         String address=faker.address().streetAddress();
         System.out.println(address);
-        String state1="Arizona";
+
         basePage.getMapAndDirections().locationSign.isDisplayed();
         basePage.getMapAndDirections().phoneNumberSign.isDisplayed();
         basePage.getMapAndDirections().addressField.click();
@@ -76,11 +79,14 @@ Faker faker=new Faker();
 
 
         basePage.getMapAndDirections().zipCode.click();
-        basePage.getMapAndDirections().zipCode.sendKeys("22201");
+        basePage.getMapAndDirections().zipCode.sendKeys(zipcode);
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getMapAndDirections().getDirections)).click();
 
         Assert.assertTrue(driver.findElement(By.cssSelector("div[jstcache='23']")).isDisplayed());
 
+    }
+    @Then("I see map&directions window")
+    public void i_see_map_directions_window()  {
         jse.executeScript("window.scrollBy(0,-600)");
         wait.until(ExpectedConditions.visibilityOf(basePage.getMapAndDirections().mobileSign));
         wait.until(ExpectedConditions.visibilityOf(basePage.getSendToMyPhone().sendToMyPhoneHeader)).isDisplayed();
@@ -89,6 +95,6 @@ Faker faker=new Faker();
         Assert.assertTrue(driver.getCurrentUrl().contains("map"));
 
 
-
     }
+
 }

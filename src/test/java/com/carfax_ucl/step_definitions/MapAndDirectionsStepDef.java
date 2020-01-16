@@ -18,12 +18,12 @@ import java.util.Set;
 
 public class MapAndDirectionsStepDef {
 
-  public  WebDriver driver= Driver.get();
-   public BasePage basePage=new BasePage();
+    public  WebDriver driver= Driver.get();
+    public BasePage basePage=new BasePage();
 
-   public WebDriverWait wait=new WebDriverWait(Driver.get(),3);
-   public JavascriptExecutor jse = (JavascriptExecutor)driver;
-   public Faker faker=new Faker();
+    public WebDriverWait wait=new WebDriverWait(Driver.get(),3);
+    public JavascriptExecutor jse = (JavascriptExecutor)driver;
+    public Faker faker=new Faker();
 
     @When("I click on map&directions link from dealer info window")
     public void i_click_on_map_directions_link_from_dealer_info_window() {

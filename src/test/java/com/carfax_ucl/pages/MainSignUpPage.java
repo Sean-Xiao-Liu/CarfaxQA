@@ -7,21 +7,23 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 public class MainSignUpPage {
 
     public MainSignUpPage(){
         PageFactory.initElements(Driver.get(),this);
-    }
 
+
+    }
 
 
     @FindBy(xpath = "//a[contains(text(),'Sign Up')]")
     public WebElement signUpHeader;
 
-    @FindBy(xpath="//input[@type='email'][@name='username']")
+    @FindBy(css="input[type='email'][name='username']")
     public WebElement email;
 
-    @FindBy(xpath = "//input[@type='password'][@name='password']")
+    @FindBy(css = "input[type='password'][name='password']")
     public WebElement password;
 
     @FindBy(xpath = "//button[contains(@class,'button-primary')]")
@@ -36,15 +38,12 @@ public class MainSignUpPage {
 
 
 
-    public void logIn(String emailStr,String passwordStr){
 
+    public void logIn(String emailStr,String passwordStr){
         email.sendKeys(emailStr);
         password.sendKeys(passwordStr);
         signUpBtn.click();
-
         WebDriverWait wait=new WebDriverWait(Driver.get(),4);
         wait.until(ExpectedConditions.titleIs("CARFAX™ - Single Sign On"));
-
-
     }
 }

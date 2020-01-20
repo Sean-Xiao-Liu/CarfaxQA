@@ -2,5 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+<<<<<<< HEAD
+=======
+    <mapping directory="$PROJECT_DIR$/carfax_ucl_qa" vcs="Git" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
   </component>
 </project>

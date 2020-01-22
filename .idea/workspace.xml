@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="165eccde-32d3-4ed8-a7a6-7a3177b8431e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/TestBase.java" afterDir="false" />
-    </list>
+    <list default="true" id="165eccde-32d3-4ed8-a7a6-7a3177b8431e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -461,7 +457,7 @@
       <workItem from="1579532178095" duration="170000" />
       <workItem from="1579614950005" duration="7090000" />
       <workItem from="1579635440721" duration="988000" />
-      <workItem from="1579727347092" duration="4606000" />
+      <workItem from="1579727347092" duration="4885000" />
     </task>
     <task id="LOCAL-00001" summary="map and direction step def">
       <created>1579212999454</created>
@@ -520,7 +516,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147801000" />
+    <option name="totallyTimeSpent" value="148080000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

@@ -162,14 +162,13 @@ wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@cl
      * Perform a pause
      * @param seconds
      */
-    public void waitFor(int seconds){
-        try{
-            Thread.sleep(seconds*1000);
-        }catch (InterruptedException e){
+    public void waitFor(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
-}
 
 
-
+    }
 }

@@ -2,6 +2,7 @@ package com.carfax_ucl.step_definitions;
 
 import com.carfax_ucl.pages.BasePage;
 import com.carfax_ucl.utilities.Driver;
+import com.carfax_ucl.utilities.TestBase;
 import com.github.javafaker.Faker;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -18,7 +19,7 @@ public class LeadFormStepDef {
 public WebDriver driver= Driver.get();
 public Faker faker=new Faker();
     public WebDriverWait wait=new WebDriverWait(Driver.get(),4);
-
+public TestBase testBase=new TestBase();
 
     @When("I click on particular car that I want")
     public void i_click_on_particular_car_that_I_want() {
@@ -29,7 +30,7 @@ public Faker faker=new Faker();
     }
 //todo Scenario #1
     @When("I navigate to Lead Form and fill out First Name, Last Name, {string} and Phone number")
-    public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String zipCode) throws InterruptedException {
+    public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String zipCode)  {
 
     Set<String> windows = driver.getWindowHandles();
         for(String window : windows){
@@ -40,9 +41,7 @@ public Faker faker=new Faker();
         WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
-        //todo input for Lead Form
-        //todo Positive scenario :
-        Thread.sleep(2000);
+        testBase.waitFor(2);
 wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
 
         basePage.getLeadFormPage().firstName.click();
@@ -71,7 +70,10 @@ wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]
         basePage.getLeadFormPage().noteField.sendKeys("Test");
         basePage.getLeadFormPage().phoneNumber.sendKeys("5555555555");
     }
-//todo Scenario #2 DONE
+
+
+
+    //todo Scenario #2 DONE
 @When("I navigate to Lead Form and fill out First Name, Last Name, {string} , email")
 public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(String zipCode) {
 
@@ -96,10 +98,8 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(Stri
         basePage.getLeadFormPage().lastName.click();
         basePage.getLeadFormPage().lastName.sendKeys("test");
 
-        // Thread.sleep(2000);
         System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
 
-        //Thread.sleep(100);
         for(int i =0;i<6;i++){
             // Thread.sleep(1000);
             basePage.getLeadFormPage().zipCode.click();
@@ -107,7 +107,6 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(Stri
 
         }
 
-//        if(basePage.getLeadFormPage().zipCode.getText().isEmpty()) {
             basePage.getLeadFormPage().zipCode.click();
             basePage.getLeadFormPage().zipCode.sendKeys(zipCode);
 
@@ -120,9 +119,8 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(Stri
 
 
     @Then("I click on Send Message to that dealer")
-    public void i_click_on_Send_Message_to_that_dealer() throws InterruptedException {
+    public void i_click_on_Send_Message_to_that_dealer()  {
         basePage.getLeadFormPage().sendMessage.click();
-        //Thread.sleep(2000);
 
             Assert.assertEquals(driver.findElement(By.xpath("(//span[contains(text(),'Your message was sent!')])[2]")).getText()
                     , "Your message was sent!");
@@ -144,7 +142,6 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(Stri
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
 
         for(int i =0;i<6;i++){
-            // Thread.sleep(1000);
             basePage.getLeadFormPage().zipCode.click();
             basePage.getLeadFormPage().zipCode.sendKeys(Keys.BACK_SPACE);
             Thread.sleep(100);
@@ -191,9 +188,7 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
         basePage.getLeadFormPage().firstName.sendKeys("Test");
         System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
 
-        //Thread.sleep(100);
         for(int i =0;i<6;i++){
-            // Thread.sleep(1000);
             basePage.getLeadFormPage().zipCode.click();
             basePage.getLeadFormPage().zipCode.sendKeys(Keys.BACK_SPACE);
 

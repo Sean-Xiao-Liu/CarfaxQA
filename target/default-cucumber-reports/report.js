@@ -11,6 +11,9 @@ formatter.scenarioOutline({
   "tags": [
     {
       "name": "@m\u0026d-1"
+    },
+    {
+      "name": "@smoke"
     }
   ]
 });
@@ -65,7 +68,7 @@ formatter.examples({
         "Audi",
         "Q3",
         "22201",
-        "22201",
+        "85006",
         "Arizona"
       ]
     },
@@ -74,7 +77,7 @@ formatter.examples({
         "Honda",
         "Civic",
         "75501",
-        "75501",
+        "32003",
         "Florida"
       ]
     },
@@ -83,7 +86,7 @@ formatter.examples({
         "Land Rover",
         "Discovery Sport",
         "22033",
-        "22033",
+        "30002",
         "Georgia"
       ]
     },
@@ -92,7 +95,7 @@ formatter.examples({
         "Toyota",
         "Camry",
         "22304",
-        "22304",
+        "63101",
         "Missouri"
       ]
     }
@@ -105,6 +108,9 @@ formatter.scenario({
   "tags": [
     {
       "name": "@m\u0026d-1"
+    },
+    {
+      "name": "@smoke"
     }
   ]
 });
@@ -172,7 +178,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I fill out address , \"Arizona\", \"22201\" to get direction",
+  "name": "I fill out address , \"Arizona\", \"85006\" to get direction",
   "keyword": "And "
 });
 formatter.match({
@@ -201,6 +207,9 @@ formatter.scenario({
   "tags": [
     {
       "name": "@m\u0026d-1"
+    },
+    {
+      "name": "@smoke"
     }
   ]
 });
@@ -268,7 +277,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I fill out address , \"Florida\", \"75501\" to get direction",
+  "name": "I fill out address , \"Florida\", \"32003\" to get direction",
   "keyword": "And "
 });
 formatter.match({
@@ -297,6 +306,9 @@ formatter.scenario({
   "tags": [
     {
       "name": "@m\u0026d-1"
+    },
+    {
+      "name": "@smoke"
     }
   ]
 });
@@ -364,7 +376,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I fill out address , \"Georgia\", \"22033\" to get direction",
+  "name": "I fill out address , \"Georgia\", \"30002\" to get direction",
   "keyword": "And "
 });
 formatter.match({
@@ -393,6 +405,9 @@ formatter.scenario({
   "tags": [
     {
       "name": "@m\u0026d-1"
+    },
+    {
+      "name": "@smoke"
     }
   ]
 });
@@ -460,7 +475,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I fill out address , \"Missouri\", \"22304\" to get direction",
+  "name": "I fill out address , \"Missouri\", \"63101\" to get direction",
   "keyword": "And "
 });
 formatter.match({

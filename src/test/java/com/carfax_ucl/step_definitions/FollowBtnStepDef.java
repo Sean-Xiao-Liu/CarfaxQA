@@ -2,6 +2,7 @@ package com.carfax_ucl.step_definitions;
 
 import com.carfax_ucl.pages.BasePage;
 import com.carfax_ucl.utilities.Driver;
+import com.carfax_ucl.utilities.TestBase;
 import com.github.javafaker.Faker;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -17,6 +18,7 @@ public class FollowBtnStepDef {
     Faker faker=new Faker();
     public WebDriver driver= Driver.get();
     BasePage basePage=new BasePage();
+    public TestBase testBase=new TestBase();
 
 
     @When("I click on next and show me results button  show me results button")
@@ -28,8 +30,9 @@ public class FollowBtnStepDef {
 
     }
     @When("I click on follow button to follow car")
-    public void i_click_on_follow_button_to_follow_car() throws InterruptedException{
-        Thread.sleep(2000);
+    public void i_click_on_follow_button_to_follow_car(){
+        testBase.waitFor(2);
+
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().FollowBtn)).click();
     }
     @Then("I can create an account")
@@ -43,16 +46,15 @@ public class FollowBtnStepDef {
 
         }
         basePage.getFollowBtnPage().email.sendKeys(email);
-            Thread.sleep(500);
+            testBase.waitFor(1);
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().zipCode)).click();
         basePage.getFollowBtnPage().zipCode.sendKeys("22204");
         basePage.getFollowBtnPage().startFollowingBtn.click();
-            Thread.sleep(1000);
+        testBase.waitFor(1);
         basePage.getFollowBtnPage().password.click();
         basePage.getFollowBtnPage().password.sendKeys("hdjfdsA1155");
         basePage.getFollowBtnPage().savePasswordBtn.click();
-
-        Thread.sleep(1000);
+testBase.waitFor(1);
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//a[@class='signout show'][@id='header-logout']")))).click();
     }
 

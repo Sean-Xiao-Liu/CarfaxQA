@@ -2,6 +2,7 @@ package com.carfax_ucl.step_definitions;
 
 import com.carfax_ucl.pages.BasePage;
 import com.carfax_ucl.utilities.Driver;
+import com.carfax_ucl.utilities.TestBase;
 import com.github.javafaker.Faker;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -26,7 +27,7 @@ public class SaveThisSearchStepDef {
     public WebDriverWait wait=new WebDriverWait(Driver.get(),3);
     public WebDriver driver=Driver.get();
     public Faker faker=new Faker();
-
+public TestBase testBase=new TestBase();
 
 
 
@@ -46,11 +47,9 @@ public class SaveThisSearchStepDef {
         assertEquals("Used Cars for Sale | with Free CARFAX",driver.getTitle());
     }
     @Given("I fill out {string} , {string} , {string} of the car that I want to search")
-    public void i_fill_out_of_the_car_that_I_want_to_search(String make, String model, String zipcode) throws InterruptedException {
+    public void i_fill_out_of_the_car_that_I_want_to_search(String make, String model, String zipcode)  {
         // todo clicking on 'Select Make' dropdown
-
-        //driver.findElement(By.xpath("(//select[contains(@class,'form-control')])[1]")).click();
-        Thread.sleep(2000);
+testBase.waitFor(2);
        List <WebElement> makes =driver.findElements(By.xpath("//select[@name='make']/optgroup[@label='Popular Makes']/option"));
        for(WebElement temp :makes){
            if(temp.getText().trim().equals(make)){
@@ -59,8 +58,9 @@ public class SaveThisSearchStepDef {
            }
 
         }
-       Thread.sleep(2000);
-       //wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//select[@name='model']/optgroup[@label='Current Models']"))));
+        testBase.waitFor(2);
+
+
         List <WebElement> models =driver.findElements(By.xpath("//select[@name='model']/optgroup[@label='Current Models']/option"));
         System.out.println("models = " + models.size());
         for(WebElement temp :models){
@@ -77,7 +77,7 @@ public class SaveThisSearchStepDef {
         basePage.getVdp().zipCodeMainPage.sendKeys(zipcode);
     }
     @When("I click on next and show me results button")
-    public void i_click_on_next_and_show_me_results_button() throws InterruptedException {
+    public void i_click_on_next_and_show_me_results_button()  {
         basePage.getVdp().submitBtn.click();
 
         wait.until(ExpectedConditions.textMatches((By.xpath("//span[@class='totalRecordsText']")), Pattern.compile("[1-9]")));
@@ -85,8 +85,9 @@ public class SaveThisSearchStepDef {
         basePage.getVdp().showMeBtn.click();
     }
     @When("I click on  Save This Search button")
-    public void i_click_on_Save_This_Search_button() throws InterruptedException {
-        Thread.sleep(2000);
+    public void i_click_on_Save_This_Search_button()  {
+        testBase.waitFor(2);
+
         basePage.getVdp().saveThisSearchMainPage.click();
     }
     @Then("I am able to fill out email , zip code and click on save This Search button")
@@ -107,11 +108,11 @@ public class SaveThisSearchStepDef {
         basePage.getVdp().password.sendKeys("Anna12399");
         basePage.getVdp().savePasswordBtn.click();
         //todo logging out from account
-        Thread.sleep(1000);
+        testBase.waitFor(1);
+
         driver.findElement(By.xpath("//a[@id='header-logout']")).click();
         //todo clicking on carfax header on upper left side
         driver.findElement(By.xpath("//span[contains(text(),'Home')]")).click();
-        //driver.findElement(By.cssSelector("g[id='Page-1']")).click();
         driver.quit();
     }
 
@@ -119,8 +120,9 @@ public class SaveThisSearchStepDef {
     //TODO SCENARIO #2
 
     @Given("I fill out {string} ,  {string} of the car that I want to search")
-    public void i_fill_out_of_the_car_that_I_want_to_search(String make, String zipcode) throws InterruptedException {
-        Thread.sleep(2000);
+    public void i_fill_out_of_the_car_that_I_want_to_search(String make, String zipcode){
+        testBase.waitFor(2);
+
         List <WebElement> makes =driver.findElements(By.xpath("//select[@name='make']/optgroup[@label='Popular Makes']/option"));
         for(WebElement temp :makes){
             if(temp.getText().trim().equals(make)){
@@ -154,9 +156,8 @@ wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("srpHeading"
     //TODO SCENARIO #3 WITH BODY TYPE OR PRICE RANGE
 
     @Given("I click on Body Type or Price filter")
-    public void i_click_on_Body_Type_or_Price_filter() throws InterruptedException {
-        Thread.sleep(1000);
-
+    public void i_click_on_Body_Type_or_Price_filter() {
+        testBase.waitFor(1);
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getBodyTypeOrPricePage().bodyTypeOrPrice)).click();
 
 
@@ -168,7 +169,7 @@ wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("srpHeading"
         List <WebElement> bodyTypeDropDown =driver.findElements(By.xpath("//select[@class='form-control search-bodystyle']/option"));
         for(WebElement temp :bodyTypeDropDown){
             if(temp.getText().trim().equals(bodyType)){
-                temp.click();
+                wait.until(ExpectedConditions.elementToBeClickable(temp)).click();
                 break;
             }
 
@@ -177,13 +178,13 @@ wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("srpHeading"
         List <WebElement> priceRangeDropDown =driver.findElements(By.xpath("//select[@class='form-control search-price']/option"));
         for(WebElement temp :priceRangeDropDown){
             if(temp.getText().trim().equals(priceRange)){
-                temp.click();
+                wait.until(ExpectedConditions.elementToBeClickable(temp)).click();
                 break;
             }
 
         }
 
-        basePage.getBodyTypeOrPricePage().zipCode.click();
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getBodyTypeOrPricePage().zipCode)).click();
         basePage.getBodyTypeOrPricePage().zipCode.sendKeys(zipcode);
 
     }

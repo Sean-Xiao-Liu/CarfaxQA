@@ -2,7 +2,7 @@
 Feature: Map and Directions page
 
 
-  @m&d-1
+  @m&d-1 @smoke
   Scenario Outline: Map and Directions page from VDP
 
     Given I am on main Carfax page
@@ -16,10 +16,10 @@ Feature: Map and Directions page
 
     Examples:
       | make       | model           | zipcode |zip code|state|
-      | Audi       | Q3              | 22201   |22201        |Arizona|
-      | Honda        | Civic        | 75501   |75501         |Florida|
-      | Land Rover | Discovery Sport | 22033   |22033        |Georgia|
-      | Toyota     | Camry           | 22304   |22304        |Missouri|
+      | Audi       | Q3              | 22201   |85006        |Arizona|
+      | Honda        | Civic        | 75501   |32003         |Florida|
+      | Land Rover | Discovery Sport | 22033   |30002        |Georgia|
+      | Toyota     | Camry           | 22304   |63101        |Missouri|
 
 
 

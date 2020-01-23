@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="165eccde-32d3-4ed8-a7a6-7a3177b8431e" name="Default Changelist" comment="" />
+=======
+<<<<<<< HEAD
+    <list default="true" id="165eccde-32d3-4ed8-a7a6-7a3177b8431e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+=======
+    <list default="true" id="70c517bd-004b-4f73-8ac2-9c522f37daed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+    </list>
+>>>>>>> ucl-jenkins
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -10,6 +22,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -24,60 +37,164 @@
     <expand />
     <select />
   </component>
+=======
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FavoritesManager">
+<<<<<<< HEAD
     <favorites_list name="ucl_qa" />
+=======
+    <favorites_list name="carfaxUCL_cucumber" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2130">
               <caret line="159" column="28" selection-start-line="159" selection-start-column="28" selection-end-line="159" selection-end-column="28" />
+=======
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/MapAndDirectionsStepDef.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53">
+              <caret line="52" column="120" lean-forward="true" selection-start-line="52" selection-start-column="120" selection-end-line="52" selection-end-column="120" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/MainSignUp.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="156" column="82" selection-start-line="156" selection-start-column="82" selection-end-line="156" selection-end-column="82" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/FindDealer.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+>>>>>>> ucl-jenkins
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/UCLSignInStepDef.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="900">
               <caret line="70" column="63" selection-start-line="70" selection-start-column="63" selection-end-line="70" selection-end-column="63" />
+=======
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12661">
+              <caret line="851" column="63" lean-forward="true" selection-start-line="809" selection-start-column="8" selection-end-line="851" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/FollowBtn.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+>>>>>>> ucl-jenkins
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/UCLSignUpBtnStepDef.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
               <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+=======
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/MapAndDirectionsPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/runners/CukesRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> ucl-jenkins
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2415">
               <caret line="172" column="5" selection-start-line="172" selection-start-column="5" selection-end-line="172" selection-end-column="5" />
+=======
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/MainSignUp.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/saveSearchBtn.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+>>>>>>> ucl-jenkins
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/MapAndDirections.feature">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="315">
               <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+=======
+            <state relative-caret-position="60">
+              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="9" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+>>>>>>> ucl-jenkins
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/MapAndDirectionsStepDef.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1455">
@@ -85,24 +202,82 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/saveSearchBtnOnboarding.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="30" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/vdpSaveThisSearchPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="44" column="70" selection-start-line="44" selection-start-column="70" selection-end-line="44" selection-end-column="70" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+>>>>>>> ucl-jenkins
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/LeadFormStepDef.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
               <caret line="32" column="107" selection-start-line="32" selection-start-column="107" selection-end-line="32" selection-end-column="107" />
+=======
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/runners/CukesRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/UCLSignUpBtn.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/UCLSignUpBtnStepDef.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+>>>>>>> ucl-jenkins
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/MainSignUpBtnStepDef.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
               <caret line="40" column="63" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
+=======
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/configuration.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/UCLSignUpPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+>>>>>>> ucl-jenkins
             </state>
           </provider>
         </entry>
@@ -118,8 +293,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< HEAD
       <find>(//input[@name='zip'][@placeholder='Zip Code'])[3]</find>
       <find>(//input[@name='firstName'][@placeholder='First Name'])[2]</find>
+=======
+      <find>//a[@class='homepage-fad-link'][contains(text(),'Find a Dealer')]</find>
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,11 +307,34 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/runners/CukesRunner.java" />
         <option value="$PROJECT_DIR$/src/test/resources/com/carfax/features/saveSearchBtnOnboarding.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/com/carfax/features/MapAndDirections.feature" />
         <option value="$PROJECT_DIR$/configuration.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/UCLSignUpBtnStepDef.java" />
+=======
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/SendToMyPhone.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/ShareHeader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/NegativeScenLeadFormStepDef.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/FindDealerStepDef.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/MapAndDirectionsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/FindDealerPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/LeadFormPage.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/com/carfax/features/FollowBtn.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/com/carfax/features/saveSearchBtn.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/FollowBtnPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/MainSignUpPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/SendToMyPhonePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/ShareHeaderPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/UCLSignInPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/UCLSignUpPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/vdpSaveThisSearchPage.java" />
+>>>>>>> ucl-jenkins
         <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/FollowBtnStepDef.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/LeadFormStepDef.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/MainSignUpBtnStepDef.java" />
@@ -157,7 +359,48 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
+<<<<<<< HEAD
     <option name="height" value="820" />
+=======
+    <option name="height" value="822" />
+=======
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/ConfigurationReader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/Driver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/Hook.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/MainSignInPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/MainSignUpPage.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/regressionSuit.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/MainSignUpBtnStepDef.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/runners/CukesRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/Hooks.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/FindDealerPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/FindDealerStepDef.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/LeadFormPage.java" />
+        <option value="$PROJECT_DIR$/configuration.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/FollowBtnStepDef.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/FollowBtnPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/vdpSaveThisSearchPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/UCLSignUpBtnStepDef.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/UCLSignUpPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/test.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/com/carfax/features/FindDealer.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/com/carfax/features/FollowBtn.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/com/carfax/features/MainSignUp.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/com/carfax/features/saveSearchBtn.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/com/carfax/features/UCLSignUpBtn.feature" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="15" />
+    <option name="y" value="23" />
+    <option name="width" value="1424" />
+    <option name="height" value="825" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+>>>>>>> ucl-jenkins
   </component>
   <component name="ProjectId" id="1WUmqEgiaXEX7autjudNFfuyNKg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -166,15 +409,225 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope" />
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+=======
+=======
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+<<<<<<< HEAD
+              <item name="ucl_qa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ucl_qa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ucl_qa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ucl_qa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ucl_qa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ucl_qa" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="carfaxUCL_cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carfaxUCL_cucumber" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carfaxUCL_cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carfaxUCL_cucumber" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carfaxUCL_cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carfaxUCL_cucumber" type="462c0819:PsiDirectoryNode" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+<<<<<<< HEAD
+              <item name="ucl_qa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ucl_qa" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="carfaxUCL_cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carfaxUCL_cucumber" type="462c0819:PsiDirectoryNode" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+<<<<<<< HEAD
+              <item name="ucl_qa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ucl_qa" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="carfaxUCL_cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carfaxUCL_cucumber" type="462c0819:PsiDirectoryNode" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+<<<<<<< HEAD
+              <item name="ucl_qa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ucl_qa" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="carfaxUCL_cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carfaxUCL_cucumber" type="462c0819:PsiDirectoryNode" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="carfax_ucl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+<<<<<<< HEAD
+              <item name="ucl_qa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ucl_qa" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="carfaxUCL_cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carfaxUCL_cucumber" type="462c0819:PsiDirectoryNode" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="carfax_ucl" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+<<<<<<< HEAD
+              <item name="ucl_qa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ucl_qa" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="carfaxUCL_cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carfaxUCL_cucumber" type="462c0819:PsiDirectoryNode" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="carfax_ucl" type="462c0819:PsiDirectoryNode" />
+              <item name="runners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+<<<<<<< HEAD
+              <item name="ucl_qa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ucl_qa" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="carfaxUCL_cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carfaxUCL_cucumber" type="462c0819:PsiDirectoryNode" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="carfax_ucl" type="462c0819:PsiDirectoryNode" />
+              <item name="step_definitions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+<<<<<<< HEAD
+              <item name="ucl_qa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ucl_qa" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="carfaxUCL_cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carfaxUCL_cucumber" type="462c0819:PsiDirectoryNode" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="carfax_ucl" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+<<<<<<< HEAD
+              <item name="ucl_qa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ucl_qa" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="carfaxUCL_cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carfaxUCL_cucumber" type="462c0819:PsiDirectoryNode" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+<<<<<<< HEAD
+              <item name="ucl_qa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ucl_qa" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="carfaxUCL_cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carfaxUCL_cucumber" type="462c0819:PsiDirectoryNode" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+<<<<<<< HEAD
+              <item name="ucl_qa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ucl_qa" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="carfaxUCL_cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carfaxUCL_cucumber" type="462c0819:PsiDirectoryNode" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="carfax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+<<<<<<< HEAD
+              <item name="ucl_qa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ucl_qa" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="carfaxUCL_cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carfaxUCL_cucumber" type="462c0819:PsiDirectoryNode" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="carfax" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+            </path>
+<<<<<<< HEAD
+=======
+            <path>
+              <item name="carfaxUCL_cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carfaxUCL_cucumber" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+<<<<<<< HEAD
+>>>>>>> ucl-jenkins
     </panes>
   </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+=======
+      <pane id="Scope" />
+    </panes>
+  </component>
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -182,15 +635,27 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/com/carfax/features" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+<<<<<<< HEAD
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources/com/carfax/features" />
     </key>
+=======
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+=======
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+>>>>>>> ucl-jenkins
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -204,9 +669,15 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.CukesRunner (1)">
     <configuration name="CukesRunner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="carfax_qa" />
+=======
+  <component name="RunManager" selected="JUnit.CukesRunner">
+    <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="carfaxUCL_cucumber" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.carfax_ucl.runners.*" />
@@ -220,6 +691,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ucl_qa" />
       <extension name="coverage">
@@ -231,12 +703,9 @@
       <option name="PACKAGE_NAME" value="com.carfax_ucl.runners" />
       <option name="MAIN_CLASS_NAME" value="com.carfax_ucl.runners.CukesRunner" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test.basicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="carfax_qa" />
+=======
+    <configuration name="test.filteringCars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="carfaxUCL_cucumber" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.carfax_ucl.step_definitions.*" />
@@ -245,14 +714,45 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.carfax_ucl.step_definitions" />
       <option name="MAIN_CLASS_NAME" value="com.carfax_ucl.step_definitions.test" />
+      <option name="METHOD_NAME" value="filteringCars" />
+      <option name="TEST_OBJECT" value="method" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+<<<<<<< HEAD
+    <configuration name="test.basicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="carfax_qa" />
+=======
+    <configuration name="test.followBtnTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="carfaxUCL_cucumber" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.carfax_ucl.step_definitions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.carfax_ucl.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="com.carfax_ucl.step_definitions.test" />
+<<<<<<< HEAD
       <option name="METHOD_NAME" value="basicTest" />
+=======
+      <option name="METHOD_NAME" value="followBtnTest" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="test.leadFormTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="carfax_qa" />
+=======
+    <configuration name="test.leadFormTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="carfaxUCL_cucumber" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.carfax_ucl.step_definitions.*" />
@@ -267,8 +767,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="test.mapsAndDirections" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="carfax_qa" />
+=======
+    <configuration name="test.signInThroughSignUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="carfaxUCL_cucumber" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.carfax_ucl.step_definitions.*" />
@@ -277,7 +782,11 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.carfax_ucl.step_definitions" />
       <option name="MAIN_CLASS_NAME" value="com.carfax_ucl.step_definitions.test" />
+<<<<<<< HEAD
       <option name="METHOD_NAME" value="mapsAndDirections" />
+=======
+      <option name="METHOD_NAME" value="signInThroughSignUp" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -285,6 +794,7 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="JUnit.CukesRunner (1)" />
         <item itemvalue="JUnit.test.leadFormTest (1)" />
         <item itemvalue="JUnit.test.basicTest" />
@@ -305,11 +815,22 @@
       </list>
     </option>
   </component>
+=======
+        <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="JUnit.test.filteringCars" />
+        <item itemvalue="JUnit.test.signInThroughSignUp" />
+        <item itemvalue="JUnit.test.leadFormTest" />
+        <item itemvalue="JUnit.test.followBtnTest" />
+      </list>
+    </recent_temporary>
+  </component>
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="165eccde-32d3-4ed8-a7a6-7a3177b8431e" name="Default Changelist" comment="" />
       <created>1575580870692</created>
       <option name="number" value="Default" />
@@ -332,6 +853,7 @@
       <workItem from="1579010779341" duration="17660000" />
       <workItem from="1579096744468" duration="19601000" />
       <workItem from="1579183440108" duration="4747000" />
+<<<<<<< HEAD
       <workItem from="1579201137280" duration="1393000" />
       <workItem from="1579213071413" duration="1459000" />
       <workItem from="1579531345424" duration="811000" />
@@ -347,6 +869,53 @@
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
       <updated>1579212999454</updated>
+=======
+      <workItem from="1579201137280" duration="1737000" />
+=======
+      <changelist id="70c517bd-004b-4f73-8ac2-9c522f37daed" name="Default Changelist" comment="" />
+      <created>1571878638089</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571878638089</updated>
+      <workItem from="1571878639373" duration="1705000" />
+      <workItem from="1571921842413" duration="18935000" />
+      <workItem from="1572009590012" duration="7981000" />
+      <workItem from="1572027995976" duration="19242000" />
+      <workItem from="1572354955586" duration="6835000" />
+      <workItem from="1572366971894" duration="10195000" />
+      <workItem from="1572441218847" duration="7138000" />
+      <workItem from="1572484363025" duration="905000" />
+      <workItem from="1572528367050" duration="13511000" />
+      <workItem from="1572614834249" duration="9480000" />
+      <workItem from="1572877226504" duration="8282000" />
+      <workItem from="1572963948434" duration="12522000" />
+      <workItem from="1573050316721" duration="3849000" />
+      <workItem from="1573071661481" duration="3419000" />
+      <workItem from="1573137581392" duration="1313000" />
+      <workItem from="1573161596502" duration="2493000" />
+      <workItem from="1573225364514" duration="1096000" />
+      <workItem from="1573482163112" duration="6270000" />
+      <workItem from="1573566923400" duration="6021000" />
+      <workItem from="1573652177740" duration="1550000" />
+      <workItem from="1573659219101" duration="767000" />
+      <workItem from="1573662137237" duration="2678000" />
+      <workItem from="1573682246879" duration="2000" />
+      <workItem from="1573738156159" duration="6837000" />
+      <workItem from="1573824736281" duration="3360000" />
+      <workItem from="1574084097026" duration="775000" />
+      <workItem from="1574103138028" duration="2135000" />
+      <workItem from="1574170781740" duration="3688000" />
+      <workItem from="1574257341154" duration="2266000" />
+      <workItem from="1574343517291" duration="3608000" />
+      <workItem from="1574430213345" duration="4862000" />
+      <workItem from="1574775571516" duration="4399000" />
+      <workItem from="1574862689308" duration="15000" />
+      <workItem from="1575294127775" duration="1242000" />
+      <workItem from="1575400945492" duration="600000" />
+      <workItem from="1575479728748" duration="1010000" />
+      <workItem from="1575491673977" duration="543000" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+>>>>>>> ucl-jenkins
     </task>
     <task id="LOCAL-00002" summary="map and direction feature">
       <created>1579213662617</created>
@@ -366,10 +935,15 @@
     <servers />
   </component>
   <component name="TestHistory">
+<<<<<<< HEAD
     <history-entry file="CukesRunner_(1) - 2020.01.15 at 15h 54m 59s.xml">
       <configuration name="CukesRunner (1)" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CukesRunner_(1) - 2020.01.15 at 15h 56m 32s.xml">
+=======
+<<<<<<< HEAD
+    <history-entry file="CukesRunner_(1) - 2020.01.15 at 15h 38m 19s.xml">
+>>>>>>> ucl-jenkins
       <configuration name="CukesRunner (1)" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CukesRunner_(1) - 2020.01.15 at 15h 58m 40s.xml">
@@ -396,8 +970,12 @@
     <history-entry file="CukesRunner_(1) - 2020.01.21 at 11h 29m 04s.xml">
       <configuration name="CukesRunner (1)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CukesRunner_(1) - 2020.01.16 at 14h 25m 22s.xml">
+      <configuration name="CukesRunner (1)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="148152000" />
   </component>
   <component name="TodoView">
@@ -413,39 +991,131 @@
     <frame x="0" y="23" width="1440" height="822" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
+=======
+    <option name="totallyTimeSpent" value="132168000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="822" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
+>>>>>>> ucl-jenkins
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+=======
+    <history-entry file="test_filteringCars - 2019.11.26 at 09h 40m 21s.xml">
+      <configuration name="test.filteringCars" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CukesRunner - 2019.11.26 at 14h 41m 08s.xml">
+      <configuration name="CukesRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CukesRunner - 2019.12.02 at 08h 42m 55s.xml">
+      <configuration name="CukesRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CukesRunner - 2019.12.02 at 08h 43m 29s.xml">
+      <configuration name="CukesRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CukesRunner - 2019.12.02 at 08h 43m 51s.xml">
+      <configuration name="CukesRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CukesRunner - 2019.12.02 at 08h 44m 08s.xml">
+      <configuration name="CukesRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CukesRunner - 2019.12.02 at 08h 44m 33s.xml">
+      <configuration name="CukesRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CukesRunner - 2019.12.02 at 08h 44m 49s.xml">
+      <configuration name="CukesRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CukesRunner - 2019.12.02 at 08h 45m 01s.xml">
+      <configuration name="CukesRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CukesRunner - 2019.12.02 at 08h 54m 37s.xml">
+      <configuration name="CukesRunner" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="181529000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="15" y="23" width="1424" height="825" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496063" visible="true" weight="0.40303907" />
+      <window_info id="Structure" order="1" sideWeight="0.5053996" side_tool="true" weight="0.26435935" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
+<<<<<<< HEAD
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.3282967" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39972714" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40547946" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3178082" />
+=======
+      <window_info id="Favorites" order="6" sideWeight="0.503937" side_tool="true" weight="0.3089725" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30695772" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3983629" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+>>>>>>> ucl-jenkins
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32967034" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32692307" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33835617" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
+=======
+<<<<<<< HEAD
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32739726" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32831737" />
+=======
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3287858" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32742155" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+>>>>>>> ucl-jenkins
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
+<<<<<<< HEAD
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Maven" order="5" weight="0.3297568" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.3297568" />
+=======
+<<<<<<< HEAD
+      <window_info anchor="right" id="Database" order="4" weight="0.3297568" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.17453505" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+=======
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3298969" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+>>>>>>> ucl-jenkins
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -505,6 +1175,9 @@
     </state>
     <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825/806.-2137.3840.2137/-3034.-2137.3840.2137@0.23.1440.825" timestamp="1579213009176" />
   </component>
+=======
+<<<<<<< HEAD
+>>>>>>> ucl-jenkins
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="JUnit">
@@ -597,12 +1270,198 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/saveSearchBtnOnboarding.feature">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="206">
           <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/runners/CukesRunner.java">
+=======
+        <state relative-caret-position="57">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#945#2023#0" expanded="true" />
+            <element signature="e#2022#2023#0" expanded="true" />
+=======
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/carfaxUCL_cucumber$test_signInThroughSignUp.ic" NAME="test.signInThroughSignUp Coverage Results" MODIFIED="1572897299556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.carfax_ucl.step_definitions.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/carfaxUCL_cucumber$test_followBtnTest.ic" NAME="test.followBtnTest Coverage Results" MODIFIED="1572969598818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.carfax_ucl.step_definitions.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/json/JsonOutput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="254" selection-start-line="254" selection-end-line="254" />
+          <folding>
+            <element signature="e#9219#9220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/json/Json.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/remote/http/AbstractHttpCommandCodec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="238" selection-start-line="238" selection-end-line="238" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/reflect/Constructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6465">
+          <caret line="499" column="24" selection-start-line="499" selection-start-column="24" selection-end-line="499" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/ProcessHandleImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2250">
+          <caret line="190" column="30" selection-start-line="190" selection-start-column="30" selection-end-line="190" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3180">
+          <caret line="236" column="23" selection-start-line="236" selection-start-column="23" selection-end-line="236" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/net/SocketInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/connection/RealConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="58" column="57" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/connection/StreamAllocation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="24" column="149" selection-start-line="24" selection-start-column="149" selection-end-line="24" selection-end-column="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/connection/ConnectInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="99" selection-start-line="11" selection-start-column="99" selection-end-line="11" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/cache/CacheInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="99" selection-start-line="11" selection-start-column="99" selection-end-line="11" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/http/BridgeInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="99" selection-start-line="11" selection-start-column="99" selection-end-line="11" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/http/RetryAndFollowUpInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="24" column="99" selection-start-line="24" selection-start-column="99" selection-end-line="24" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/http/RealInterceptorChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="46" column="89" selection-start-line="46" selection-start-column="89" selection-end-line="46" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/RealCall.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/remote/internal/OkHttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/remote/HttpCommandExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="169" selection-start-line="169" selection-end-line="169" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/remote/service/DriverCommandExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/By.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="352" selection-start-line="352" selection-end-line="352" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/remote/RemoteWebDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="314" selection-start-line="314" selection-end-line="314" />
+          <folding>
+            <element signature="e#11510#11511#0" expanded="true" />
+            <element signature="e#15145#15146#0" expanded="true" />
+            <element signature="e#15189#15190#0" expanded="true" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59.jar!/org/openqa/selenium/safari/SafariDriver.class">
+>>>>>>> ucl-jenkins
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
@@ -616,11 +1475,59 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/FindDealer.feature">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/MainSignUp.feature">
       <provider selected="true" editor-type-id="text-editor" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="105" column="1" lean-forward="true" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+=======
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/support/pagefactory/DefaultElementLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/support/pagefactory/internal/LocatingElementHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/support/ui/ExpectedConditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="672" selection-start-line="672" selection-end-line="672" />
+          <folding>
+            <element signature="e#9967#9968#0" expanded="true" />
+            <element signature="e#10017#10018#0" expanded="true" />
+            <element signature="e#10296#10297#0" expanded="true" />
+            <element signature="e#10351#10352#0" expanded="true" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/BodyTypeOrPricePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+>>>>>>> ucl-jenkins
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/LeadForm.feature">
       <provider selected="true" editor-type-id="text-editor">
@@ -693,11 +1600,143 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/UCLSignUpBtnStepDef.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="435">
           <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+=======
+        <state relative-caret-position="214">
+          <caret line="270" column="71" lean-forward="true" selection-start-line="268" selection-start-column="8" selection-end-line="270" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+=======
+    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/support/ui/FluentWait.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="250" selection-start-line="250" selection-end-line="250" />
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/4.4.0/cucumber-core-4.4.0.jar!/cucumber/runtime/Timeout.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="127" selection-start-line="9" selection-start-column="127" selection-end-line="9" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/4.4.0/cucumber-core-4.4.0.jar!/cucumber/runtime/Utils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="174" selection-start-line="11" selection-start-column="174" selection-end-line="11" selection-end-column="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-java/4.4.0/cucumber-java-4.4.0.jar!/cucumber/runtime/java/JavaStepDefinition.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/4.4.0/cucumber-core-4.4.0.jar!/cucumber/runner/PickleStepDefinitionMatch.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="84" selection-start-line="13" selection-start-column="84" selection-end-line="13" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/4.4.0/cucumber-core-4.4.0.jar!/cucumber/runner/TestStep.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="133" selection-start-line="14" selection-start-column="133" selection-end-line="14" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/4.4.0/cucumber-core-4.4.0.jar!/cucumber/runner/PickleStepTestStep.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="133" selection-start-line="17" selection-start-column="133" selection-end-line="17" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/4.4.0/cucumber-core-4.4.0.jar!/cucumber/runner/TestCase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/4.4.0/cucumber-core-4.4.0.jar!/cucumber/runner/Runner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-junit/4.4.0/cucumber-junit-4.4.0.jar!/cucumber/runtime/junit/PickleRunners.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="63" column="77" selection-start-line="63" selection-start-column="77" selection-end-line="63" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-junit/4.4.0/cucumber-junit-4.4.0.jar!/cucumber/runtime/junit/FeatureRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="138" selection-start-line="23" selection-start-column="138" selection-end-line="23" selection-end-column="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="286" selection-start-line="286" selection-end-line="286" />
+          <folding>
+            <element signature="e#2922#2923#0" expanded="true" />
+            <element signature="e#2966#2967#0" expanded="true" />
+            <element signature="e#11040#11204#0" expanded="true" />
+            <element signature="e#11203#11204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/FindDealerStepDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> ucl-jenkins
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/FollowBtnStepDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/FollowBtnPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="33" column="70" selection-start-line="33" selection-start-column="70" selection-end-line="33" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5160">
+          <caret line="358" column="18" selection-start-line="358" selection-start-column="18" selection-end-line="358" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1574446520862" expanded="true" signature="6156:6890" ph="..." />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/MapAndDirections.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -707,8 +1746,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/MapAndDirectionsStepDef.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1455">
           <caret line="97" column="85" selection-start-line="97" selection-start-column="85" selection-end-line="97" selection-end-column="85" />
+=======
+        <state relative-caret-position="53">
+          <caret line="52" column="120" lean-forward="true" selection-start-line="52" selection-start-column="120" selection-end-line="52" selection-end-column="120" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/MainSignUp.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/FindDealer.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/FollowBtn.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/runners/CukesRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/configuration.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/saveSearchBtn.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="80">
+          <caret line="156" column="82" selection-start-line="156" selection-start-column="82" selection-end-line="156" selection-end-column="82" />
+>>>>>>> ucl-jenkins
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -731,8 +1827,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/utilities/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="2415">
           <caret line="172" column="5" selection-start-line="172" selection-start-column="5" selection-end-line="172" selection-end-column="5" />
+=======
+        <state relative-caret-position="255">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="735">
+          <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/vdpSaveThisSearchPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="44" column="70" selection-start-line="44" selection-start-column="70" selection-end-line="44" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/UCLSignUpBtn.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/UCLSignUpPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/UCLSignUpBtnStepDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+>>>>>>> ucl-jenkins
         </state>
       </provider>
     </entry>
@@ -787,7 +1923,15 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+<<<<<<< HEAD
           <last-edited>carfax_qa</last-edited>
+=======
+<<<<<<< HEAD
+          <last-edited>ucl_qa</last-edited>
+=======
+          <last-edited>carfaxUCL_cucumber</last-edited>
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
+>>>>>>> ucl-jenkins
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -811,9 +1955,12 @@
       </state>
     </states>
   </component>
+<<<<<<< HEAD
   <component name="mavenExecuteGoalHistory">
     <option value="$PROJECT_DIR$" />
     <option value="clean verify" />
     <option value="-T 4 surefire:test" />
   </component>
+=======
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
 </project>

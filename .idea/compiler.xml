@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD
         <module name="carfax_qa" />
         <module name="ucl_qa" />
+=======
+        <module name="carfaxUCL_cucumber" />
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
       </profile>
     </annotationProcessing>
   </component>

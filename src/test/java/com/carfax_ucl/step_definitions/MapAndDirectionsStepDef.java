@@ -28,6 +28,10 @@ public class MapAndDirectionsStepDef {
     public Faker faker=new Faker();
     public TestBase testBase=new TestBase();
 
+
+
+
+
     @When("I click on map&directions link from dealer info window")
     public void i_click_on_map_directions_link_from_dealer_info_window() {
 
@@ -49,9 +53,12 @@ public class MapAndDirectionsStepDef {
 
 
 
+
+
     @When("I fill out address , {string}, {string} to get direction")
     public void i_fill_out_address_to_get_direction(String state1, String zipcode) {
         testBase.waitFor(1);
+
         Set<String> mapWindow = driver.getWindowHandles();
         for(String map : mapWindow){
             if(driver.switchTo().window(map).getCurrentUrl().contains("map")) {
@@ -85,13 +92,21 @@ public class MapAndDirectionsStepDef {
 
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getMapAndDirections().zipCode)).click();
         basePage.getMapAndDirections().zipCode.sendKeys(zipcode);
+        basePage.getMapAndDirections().zipCode.click();
+        basePage.getMapAndDirections().zipCode.sendKeys("22201");
+
+        basePage.getMapAndDirections().zipCode.sendKeys(zipcode);
+
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getMapAndDirections().getDirections)).click();
 
         Assert.assertTrue(driver.findElement(By.cssSelector("div[jstcache='23']")).isDisplayed());
 
+
     }
+
     @Then("I see map&directions window")
     public void i_see_map_directions_window()  {
+
         jse.executeScript("window.scrollBy(0,-600)");
         wait.until(ExpectedConditions.visibilityOf(basePage.getMapAndDirections().mobileSign));
         wait.until(ExpectedConditions.visibilityOf(basePage.getSendToMyPhone().sendToMyPhoneHeader)).isDisplayed();
@@ -102,4 +117,10 @@ public class MapAndDirectionsStepDef {
 
     }
 
-}
+
+
+    }
+
+
+
+

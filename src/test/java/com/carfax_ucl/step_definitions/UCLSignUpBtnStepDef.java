@@ -36,9 +36,7 @@ public class UCLSignUpBtnStepDef {
         basePage.getUclSignUpPage().uclZipcode.sendKeys("22204");
     }
     @Then("I click on Create account button")
-    public void i_click_on_Create_account_button() throws InterruptedException {
-       // Thread.sleep(1000);
-
+    public void i_click_on_Create_account_button()  {
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getUclSignUpPage().uclCreateAccount)).click();
         //todo verifying results
         String actualResult=driver.findElement(By.xpath("//span[@class='cfx-modal-complete-title']")).getText();
@@ -49,7 +47,6 @@ public class UCLSignUpBtnStepDef {
         //todo logging out from account
         driver.findElement(By.xpath("//a[@id='header-logout']")).click();
         //todo clicking on 'Carfax' header-logo
-      //  wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.id("Page-1")))).click();
         driver.findElement(By.xpath("//a[@class='header-logo']")).click();
     }
 }

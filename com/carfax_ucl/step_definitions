@@ -3,20 +3,56 @@
     "line": 1,
     "elements": [
       {
+<<<<<<< HEAD
+        "start_timestamp": "2020-01-07T00:49:13.544Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4296638136,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+=======
         "start_timestamp": "2019-12-02T13:54:24.267Z",
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
         "line": 6,
         "name": "Create account through UCL page",
         "description": "",
         "id": "create-account;create-account-through-ucl-page",
+<<<<<<< HEAD
+        "after": [
+          {
+            "result": {
+              "duration": 174681623,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+=======
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 1227935880,
+              "status": "passed"
+            },
+            "line": 7,
+=======
               "duration": 6026872901,
               "status": "passed"
             },
             "line": 8,
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -25,10 +61,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 252649697,
+              "status": "passed"
+            },
+            "line": 8,
+=======
               "duration": 260181353,
               "status": "passed"
             },
             "line": 9,
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -37,10 +80,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 2700435054,
+              "status": "passed"
+            },
+            "line": 9,
+=======
               "duration": 1768724540,
               "status": "passed"
             },
             "line": 10,
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
             "name": "I click on Sign Up button from UCL",
             "match": {
               "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
@@ -49,10 +99,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 1530399162,
+              "status": "passed"
+            },
+            "line": 10,
+=======
               "duration": 1375386125,
               "status": "passed"
             },
             "line": 11,
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
             "name": "I fill out \"email\" , \"password\" , \"zipcode\" to create a new account",
             "match": {
               "arguments": [
@@ -75,10 +132,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 2723679083,
+              "status": "passed"
+            },
+            "line": 11,
+=======
               "duration": 2994867593,
               "status": "passed"
             },
             "line": 12,
+>>>>>>> e3f58060d95adcb7a8e687a3ba7fee7efe4c4746
             "name": "I click on Create account button",
             "match": {
               "location": "UCLSignUpBtnStepDef.i_click_on_Create_account_button()"

@@ -2,10 +2,12 @@ package com.carfax_ucl.step_definitions;
 
 import com.carfax_ucl.pages.BasePage;
 import com.carfax_ucl.utilities.Driver;
+import com.carfax_ucl.utilities.TestBase;
 import com.github.javafaker.Faker;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -24,9 +26,15 @@ public class MapAndDirectionsStepDef {
     public WebDriverWait wait=new WebDriverWait(Driver.get(),3);
     public JavascriptExecutor jse = (JavascriptExecutor)driver;
     public Faker faker=new Faker();
+    public TestBase testBase=new TestBase();
+
+
+
+
 
     @When("I click on map&directions link from dealer info window")
     public void i_click_on_map_directions_link_from_dealer_info_window() {
+
 
         Set<String> windows = driver.getWindowHandles();
         for(String window : windows){
@@ -37,15 +45,19 @@ public class MapAndDirectionsStepDef {
 
 
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
-        basePage.getMapAndDirections().mapAndDirectionVDP.click();
+
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getMapAndDirections().mapAndDirectionVDP)).click();
 
 
     }
 
 
 
+
+
     @When("I fill out address , {string}, {string} to get direction")
     public void i_fill_out_address_to_get_direction(String state1, String zipcode) {
+        testBase.waitFor(1);
 
         Set<String> mapWindow = driver.getWindowHandles();
         for(String map : mapWindow){
@@ -62,7 +74,7 @@ public class MapAndDirectionsStepDef {
 
         basePage.getMapAndDirections().locationSign.isDisplayed();
         basePage.getMapAndDirections().phoneNumberSign.isDisplayed();
-        basePage.getMapAndDirections().addressField.click();
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getMapAndDirections().addressField)).click();
         basePage.getMapAndDirections().addressField.sendKeys(address);
 
 
@@ -78,15 +90,23 @@ public class MapAndDirectionsStepDef {
         }
 
 
-        basePage.getMapAndDirections().zipCode.click();
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getMapAndDirections().zipCode)).click();
         basePage.getMapAndDirections().zipCode.sendKeys(zipcode);
+        basePage.getMapAndDirections().zipCode.click();
+        basePage.getMapAndDirections().zipCode.sendKeys("22201");
+
+        basePage.getMapAndDirections().zipCode.sendKeys(zipcode);
+
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getMapAndDirections().getDirections)).click();
 
         Assert.assertTrue(driver.findElement(By.cssSelector("div[jstcache='23']")).isDisplayed());
 
+
     }
+
     @Then("I see map&directions window")
     public void i_see_map_directions_window()  {
+
         jse.executeScript("window.scrollBy(0,-600)");
         wait.until(ExpectedConditions.visibilityOf(basePage.getMapAndDirections().mobileSign));
         wait.until(ExpectedConditions.visibilityOf(basePage.getSendToMyPhone().sendToMyPhoneHeader)).isDisplayed();
@@ -97,4 +117,10 @@ public class MapAndDirectionsStepDef {
 
     }
 
-}
+
+
+    }
+
+
+
+

@@ -3,6 +3,7 @@ package com.carfax_ucl.step_definitions;
 import com.carfax_ucl.pages.BasePage;
 import com.carfax_ucl.pages.MainSignUpPage;
 import com.carfax_ucl.utilities.Driver;
+import com.carfax_ucl.utilities.TestBase;
 import com.github.javafaker.Faker;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -14,7 +15,7 @@ public class MainSignUpBtnStepDef {
     public Faker faker=new Faker();
     public WebDriver driver= Driver.get();
     BasePage basePage=new BasePage();
-
+public TestBase testBase=new TestBase();
 
 
     @When("I click on Sign Up button")
@@ -37,9 +38,9 @@ public class MainSignUpBtnStepDef {
         basePage.getMainSignUpPage().password.sendKeys("Anna123333");
     }
     @Then("I click on Sign Up button to complete request")
-    public void i_click_on_Sign_Up_button_to_complete_request() throws InterruptedException {
+    public void i_click_on_Sign_Up_button_to_complete_request() {
         basePage.getMainSignUpPage().signUpBtn.click();
-        Thread.sleep(1000);
+        testBase.waitFor(1);
         String actualResult=driver.findElement(By.xpath("//h1[contains(@class,'sso-header')]")).getText();
         driver.navigate().back();
         String expectedMessage="Success! Please Sign In Below";

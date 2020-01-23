@@ -5,10 +5,7 @@ import com.carfax_ucl.pages.LeadFormPage;
 import com.github.javafaker.Faker;
 import org.junit.Assert;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -25,45 +22,28 @@ public  class TestBase {
 
 
 
+/**
+ *
+ * Using for checking or unchecking checkboxes
 
-    public void checkBoxSelection(String numberOfChecking){//1 2 3
-        numberOfChecking = numberOfChecking.replace(",", "");
-        Map<String,Object> numberofElement=new HashMap<>();
-        numberofElement.put("number",1);
-        numberofElement.put("number",2);
-        numberofElement.put("number",3);
-        numberofElement.put("number",4);
-        System.out.println(numberofElement);
-        if (numberOfChecking.equals("1")) {
-            driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[1]")).click();
-        } else if (numberOfChecking.equals("2")) {
-            driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[2]")).click();
-        } else if (numberOfChecking.equals("3")) {
-            driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[3]")).click();
-        } else if (numberOfChecking.equals("4")) {
-            driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[4]")).click();
-        } else if (numberOfChecking.equals("1234")) {
-            driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[1]")).click();
-            driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[2]")).click();
-            driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[3]")).click();
-            driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[4]")).click();
-        }else if(numberOfChecking.equals("12")){
-            driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[1]")).click();
-            driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[2]")).click();
-        }else if(numberOfChecking.equals("13")){
-            driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[1]")).click();
-            driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[3]")).click();
-        }else if(numberOfChecking.equals("14")) {
-            driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[1]")).click();
-            driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[4]")).click();
-        }else if(numberOfChecking.equals("14")) {
-            driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[1]")).click();
-            driver.findElement(By.xpath("(//span[@class='checkbox-list-item--fancyCbx'])[4]")).click();
+ */
+    public static void selectCheckBox(WebElement element, boolean check){
+        if(check){
+            if(!element.isSelected()){
+                element.click();
+            }
+        }else{
+            if(element.isSelected()){
+                element.click();
+            }
         }
     }
 
 
-
+    /**
+     * SendToMyPhone method
+     * @throws InterruptedException
+     */
 
     public void sendToMyPhone() throws InterruptedException {
 
@@ -89,6 +69,9 @@ public  class TestBase {
 
     }
 
+    /**
+     * shareHeader method
+     */
     public void shareHeader(){
 
 
@@ -115,5 +98,76 @@ wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//i[@cl
 
     }
 
+    /**
+     * Highllights an element by changing backrounds and border color
+     *
+     */
 
+    public  void highlight(WebElement element){
+        ((JavascriptExecutor)Driver.get()).executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');",element);
+        ((JavascriptExecutor)Driver.get()).executeScript("arguments[0].removeAttribute('style', 'background: yellow; border: 2px solid red;');",element);
+
+    }
+
+    /**
+     * Scrolls down to particular element using JavaScriptExecutor
+     * @param element
+     */
+
+    public  void scrollToElement(WebElement element){
+        ((JavascriptExecutor)Driver.get()).executeScript("arguments[0].scrollIntoView(true);",element);
+    }
+
+    /**
+     * Clicks on an element using JS
+     * @param element
+     */
+    public  void clickWithJS(WebElement element){
+        ((JavascriptExecutor)Driver.get()).executeScript("arguments[0].scrollIntoView(true);",element);
+        ((JavascriptExecutor)Driver.get()).executeScript("arguments[0].click();",element);
+    }
+
+
+    /**
+     * Waits for element to be not stale
+     * @param element
+     */
+    public void waitForStaleElement(WebElement element){
+        int x=0;
+        while (x<=15){
+            if(x==1)
+                try{
+                    element.isDisplayed();
+                    break;
+                }catch(StaleElementReferenceException st){
+                    x++;
+                    try{
+                        Thread.sleep(300);
+                    }catch (InterruptedException e){
+                        e.printStackTrace();
+                    }
+                }catch (WebDriverException we){
+                    x++;
+                    try {
+                        Thread.sleep(300);
+                    }catch (InterruptedException e){
+                        e.printStackTrace();
+                    }
+                }
+        }
+}
+
+    /**
+     * Perform a pause
+     * @param seconds
+     */
+    public void waitFor(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
+    }
 }

@@ -72,8 +72,7 @@ public  class TestBase {
         Set<String> windows = driver.getWindowHandles();
         for(String window : windows){
             if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
-                System.out.println(driver.getTitle());break;}
-        }
+                System.out.println(driver.getTitle());break;} }
 
 
 

@@ -167,7 +167,7 @@
     <option name="x" value="15" />
     <option name="y" value="23" />
     <option name="width" value="1424" />
-    <option name="height" value="825" />
+    <option name="height" value="822" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -550,7 +550,7 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/json/JsonOutput.java">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/json/JsonOutput.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="254" selection-start-line="254" selection-end-line="254" />
@@ -560,14 +560,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/json/Json.java">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/json/Json.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/remote/http/AbstractHttpCommandCodec.java">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/remote/http/AbstractHttpCommandCodec.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="238" selection-start-line="238" selection-end-line="238" />
@@ -619,91 +619,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/connection/RealConnection.class">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/connection/RealConnection.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="58" column="57" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/connection/StreamAllocation.class">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/connection/StreamAllocation.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="24" column="149" selection-start-line="24" selection-start-column="149" selection-end-line="24" selection-end-column="149" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/connection/ConnectInterceptor.class">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/connection/ConnectInterceptor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="11" column="99" selection-start-line="11" selection-start-column="99" selection-end-line="11" selection-end-column="99" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/cache/CacheInterceptor.class">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/cache/CacheInterceptor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="11" column="99" selection-start-line="11" selection-start-column="99" selection-end-line="11" selection-end-column="99" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/http/BridgeInterceptor.class">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/http/BridgeInterceptor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="11" column="99" selection-start-line="11" selection-start-column="99" selection-end-line="11" selection-end-column="99" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/http/RetryAndFollowUpInterceptor.class">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/http/RetryAndFollowUpInterceptor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="24" column="99" selection-start-line="24" selection-start-column="99" selection-end-line="24" selection-end-column="99" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/http/RealInterceptorChain.class">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/internal/http/RealInterceptorChain.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="46" column="89" selection-start-line="46" selection-start-column="89" selection-end-line="46" selection-end-column="89" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/RealCall.class">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/libs/okhttp-3.11.0.jar!/okhttp3/RealCall.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/remote/internal/OkHttpClient.java">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/remote/internal/OkHttpClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="110" selection-start-line="110" selection-end-line="110" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/remote/HttpCommandExecutor.java">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/remote/HttpCommandExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="169" selection-start-line="169" selection-end-line="169" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/remote/service/DriverCommandExecutor.java">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/remote/service/DriverCommandExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="82" selection-start-line="82" selection-end-line="82" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/By.java">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/By.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
           <caret line="352" selection-start-line="352" selection-end-line="352" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/remote/RemoteWebDriver.java">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/remote/RemoteWebDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="314" selection-start-line="314" selection-end-line="314" />
@@ -715,21 +715,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/support/pagefactory/DefaultElementLocator.java">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/support/pagefactory/DefaultElementLocator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="73" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/support/pagefactory/internal/LocatingElementHandler.java">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/support/pagefactory/internal/LocatingElementHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="50" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/support/ui/ExpectedConditions.java">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/support/ui/ExpectedConditions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="672" selection-start-line="672" selection-end-line="672" />
@@ -742,7 +742,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/support/ui/FluentWait.java">
+    <entry file="jar://$PROJECT_DIR$/../Documents/Selenium dependencies/libraries/selenium-java-3/client-combined-3.141.59-sources.jar!/org/openqa/selenium/support/ui/FluentWait.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="250" selection-start-line="250" selection-end-line="250" />

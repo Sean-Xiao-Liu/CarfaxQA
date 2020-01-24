@@ -51,6 +51,9 @@ public class UCLSignInPage {
     @FindBy(css = "a[id='header-logout']")
     public WebElement logout;
 
+    @FindBy(css = "span[class='form-title  show']")
+    public WebElement welcomeBackTitle;
+
 
 
 

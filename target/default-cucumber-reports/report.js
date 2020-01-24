@@ -1,19 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/com/carfax/features/MapAndDirections.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/com/carfax/features/UCLSignUpBtn.feature");
 formatter.feature({
-  "name": "Map and Directions page",
+  "name": "Create account",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "Map and Directions page from VDP",
+  "name": "Already exist credentials login trough sign Up page",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@m\u0026d-1"
-    },
-    {
-      "name": "@smoke"
+      "name": "@signUp"
     }
   ]
 });
@@ -26,28 +23,20 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "I fill out \"\u003cmake\u003e\" , \"\u003cmodel\u003e\" , \"\u003czipcode\u003e\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I click on next and show me results button",
+  "name": "I click on Sign Up button from UCL",
   "keyword": "When "
 });
 formatter.step({
-  "name": "I click on particular car that I want",
+  "name": "I fill out \"\u003cemail\u003e\" , \"\u003cpassword\u003e\" , \"\u003czipcode\u003e\" to create a new account",
   "keyword": "And "
 });
 formatter.step({
-  "name": "I click on map\u0026directions link from dealer info window",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I fill out address , \"\u003cstate\u003e\", \"\u003czip code\u003e\" to get direction",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I see map\u0026directions window",
+  "name": "I see regular sign in page",
   "keyword": "Then "
+});
+formatter.step({
+  "name": "I can fill out \"\u003cemail\u003e\" , \"\u003cpassword\u003e\" and log in to account",
+  "keyword": "And "
 });
 formatter.examples({
   "name": "",
@@ -56,61 +45,41 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "make",
-        "model",
         "zipcode",
-        "zip code",
-        "state"
+        "email",
+        "password"
       ]
     },
     {
       "cells": [
-        "Audi",
-        "Q3",
         "22201",
-        "85006",
-        "Arizona"
+        "beta1@gmail.com",
+        "Qwe123123"
       ]
     },
     {
       "cells": [
-        "Honda",
-        "Civic",
-        "75501",
-        "32003",
-        "Florida"
+        "20142",
+        "betasav2@gmail.com",
+        "Qwe123123"
       ]
     },
     {
       "cells": [
-        "Land Rover",
-        "Discovery Sport",
-        "22033",
-        "30002",
-        "Georgia"
-      ]
-    },
-    {
-      "cells": [
-        "Toyota",
-        "Camry",
         "22304",
-        "63101",
-        "Missouri"
+        "betasav1@gmail.com",
+        "Qwe123123"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Map and Directions page from VDP",
+  "name": "Already exist credentials login trough sign Up page",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@m\u0026d-1"
-    },
-    {
-      "name": "@smoke"
+      "name": "@signUp"
     }
   ]
 });
@@ -138,61 +107,41 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I fill out \"Audi\" , \"Q3\" , \"22201\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on next and show me results button",
+  "name": "I click on Sign Up button from UCL",
   "keyword": "When "
 });
 formatter.match({
-  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+  "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on particular car that I want",
+  "name": "I fill out \"beta1@gmail.com\" , \"Qwe123123\" , \"22201\" to create a new account",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+  "location": "UCLSignUpBtnStepDef.i_fill_out_to_create_a_new_account(String,String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on map\u0026directions link from dealer info window",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "MapAndDirectionsStepDef.i_click_on_map_directions_link_from_dealer_info_window()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I fill out address , \"Arizona\", \"85006\" to get direction",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "MapAndDirectionsStepDef.i_fill_out_address_to_get_direction(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I see map\u0026directions window",
+  "name": "I see regular sign in page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "MapAndDirectionsStepDef.i_see_map_directions_window()"
+  "location": "UCLSignUpBtnStepDef.i_see_regular_sign_in_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I can fill out \"beta1@gmail.com\" , \"Qwe123123\" and log in to account",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "UCLSignUpBtnStepDef.i_can_fill_out_and_log_in_to_account(String,String)"
 });
 formatter.result({
   "status": "passed"
@@ -201,15 +150,12 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Map and Directions page from VDP",
+  "name": "Already exist credentials login trough sign Up page",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@m\u0026d-1"
-    },
-    {
-      "name": "@smoke"
+      "name": "@signUp"
     }
   ]
 });
@@ -237,61 +183,41 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I fill out \"Honda\" , \"Civic\" , \"75501\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on next and show me results button",
+  "name": "I click on Sign Up button from UCL",
   "keyword": "When "
 });
 formatter.match({
-  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+  "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on particular car that I want",
+  "name": "I fill out \"betasav2@gmail.com\" , \"Qwe123123\" , \"20142\" to create a new account",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+  "location": "UCLSignUpBtnStepDef.i_fill_out_to_create_a_new_account(String,String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on map\u0026directions link from dealer info window",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "MapAndDirectionsStepDef.i_click_on_map_directions_link_from_dealer_info_window()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I fill out address , \"Florida\", \"32003\" to get direction",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "MapAndDirectionsStepDef.i_fill_out_address_to_get_direction(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I see map\u0026directions window",
+  "name": "I see regular sign in page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "MapAndDirectionsStepDef.i_see_map_directions_window()"
+  "location": "UCLSignUpBtnStepDef.i_see_regular_sign_in_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I can fill out \"betasav2@gmail.com\" , \"Qwe123123\" and log in to account",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "UCLSignUpBtnStepDef.i_can_fill_out_and_log_in_to_account(String,String)"
 });
 formatter.result({
   "status": "passed"
@@ -300,15 +226,12 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Map and Directions page from VDP",
+  "name": "Already exist credentials login trough sign Up page",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@m\u0026d-1"
-    },
-    {
-      "name": "@smoke"
+      "name": "@signUp"
     }
   ]
 });
@@ -336,160 +259,41 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I fill out \"Land Rover\" , \"Discovery Sport\" , \"22033\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on next and show me results button",
+  "name": "I click on Sign Up button from UCL",
   "keyword": "When "
 });
 formatter.match({
-  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+  "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on particular car that I want",
+  "name": "I fill out \"betasav1@gmail.com\" , \"Qwe123123\" , \"22304\" to create a new account",
   "keyword": "And "
 });
 formatter.match({
-  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+  "location": "UCLSignUpBtnStepDef.i_fill_out_to_create_a_new_account(String,String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on map\u0026directions link from dealer info window",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "MapAndDirectionsStepDef.i_click_on_map_directions_link_from_dealer_info_window()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I fill out address , \"Georgia\", \"30002\" to get direction",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "MapAndDirectionsStepDef.i_fill_out_address_to_get_direction(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I see map\u0026directions window",
+  "name": "I see regular sign in page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "MapAndDirectionsStepDef.i_see_map_directions_window()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Map and Directions page from VDP",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@m\u0026d-1"
-    },
-    {
-      "name": "@smoke"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am on main Carfax page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+  "location": "UCLSignUpBtnStepDef.i_see_regular_sign_in_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I navigate to Find a Used Car page",
+  "name": "I can fill out \"betasav1@gmail.com\" , \"Qwe123123\" and log in to account",
   "keyword": "And "
 });
 formatter.match({
-  "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I fill out \"Toyota\" , \"Camry\" , \"22304\" of the car that I want to search",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on next and show me results button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on particular car that I want",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on map\u0026directions link from dealer info window",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "MapAndDirectionsStepDef.i_click_on_map_directions_link_from_dealer_info_window()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I fill out address , \"Missouri\", \"63101\" to get direction",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "MapAndDirectionsStepDef.i_fill_out_address_to_get_direction(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I see map\u0026directions window",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MapAndDirectionsStepDef.i_see_map_directions_window()"
+  "location": "UCLSignUpBtnStepDef.i_can_fill_out_and_log_in_to_account(String,String)"
 });
 formatter.result({
   "status": "passed"

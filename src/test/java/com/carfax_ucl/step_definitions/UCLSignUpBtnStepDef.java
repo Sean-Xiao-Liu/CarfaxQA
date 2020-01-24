@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 public class UCLSignUpBtnStepDef {
     BasePage basePage=new BasePage();
-    public WebDriverWait wait=new WebDriverWait(Driver.get(),3);
+    public WebDriverWait wait=new WebDriverWait(Driver.get(),4);
     public Faker faker=new Faker();
     public WebDriver driver=Driver.get();
     TestBase testBase=new TestBase();
@@ -22,8 +22,8 @@ public class UCLSignUpBtnStepDef {
         testBase.waitFor(2);
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getUclSignUpPage().uclSignUpBtn)).click();
     }
-    @When("I fill out {string} , {string} , {string} to create a new account")
-    public void i_fill_out_to_create_a_new_account(String email, String password, String zipcode) {
+    @When("I fill out email , password , {string} to create a new account")
+    public void i_fill_out_email_password_to_create_a_new_account(String zipcode) {
         String emails = faker.name().name() + "@gmail.com";
         emails = emails.replace(" ", "");
         basePage.getUclSignUpPage().uclEmail.click();
@@ -35,7 +35,7 @@ public class UCLSignUpBtnStepDef {
         basePage.getUclSignUpPage().uclPassword.click();
         basePage.getUclSignUpPage().uclPassword.sendKeys("Ajskdsh1880");
         basePage.getUclSignUpPage().uclZipcode.click();
-        basePage.getUclSignUpPage().uclZipcode.sendKeys("22204");
+        basePage.getUclSignUpPage().uclZipcode.sendKeys(zipcode);
     }
     @Then("I click on Create account button")
     public void i_click_on_Create_account_button()  {
@@ -50,5 +50,44 @@ public class UCLSignUpBtnStepDef {
         driver.findElement(By.xpath("//a[@id='header-logout']")).click();
         //todo clicking on 'Carfax' header-logo
         driver.findElement(By.xpath("//a[@class='header-logo']")).click();
+    }
+
+
+    //TODO SCENARIO #2
+
+    @When("I fill out {string} , {string} , {string} to create a new account")
+    public void i_fill_out_to_create_a_new_account(String email, String password, String zipcode) {
+        basePage.getUclSignUpPage().uclEmail.click();
+        basePage.getUclSignUpPage().uclEmail.sendKeys(email);
+        basePage.getUclSignUpPage().uclPassword.click();
+        basePage.getUclSignUpPage().uclPassword.sendKeys(password);
+        basePage.getUclSignUpPage().uclZipcode.click();
+        basePage.getUclSignUpPage().uclZipcode.sendKeys(zipcode);
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getUclSignUpPage().uclCreateAccount)).click();
+
+
+    }
+
+    @Then("I see regular sign in page")
+    public void i_see_regular_sign_in_page() {
+Assert.assertTrue(basePage.getUclSignInPage().welcomeBackTitle.isDisplayed());
+
+    }
+
+    @Then("I can fill out {string} , {string} and log in to account")
+    public void i_can_fill_out_and_log_in_to_account(String email, String password) {
+        Assert.assertTrue(basePage.getUclSignInPage().forgotPassword.isDisplayed());
+
+        basePage.getUclSignInPage().email.click();
+        basePage.getUclSignInPage().email.sendKeys(email);
+        basePage.getUclSignInPage().password.click();
+        basePage.getUclSignInPage().password.sendKeys(password);
+
+
+        basePage.getUclSignInPage().signInBtn.click();
+        testBase.waitFor(3);
+        wait.until(ExpectedConditions.visibilityOf(basePage.getUclSignInPage().logout)).isDisplayed();
+        Assert.assertTrue(basePage.getUclSignInPage().logout.isDisplayed());
+
     }
 }

@@ -4,7 +4,7 @@
 
 
 
-   @m&d-1
+   @m&d-1 @smoke
   Scenario Outline: Map and Directions page from VDP
 
     Given I am on main Carfax page

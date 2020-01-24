@@ -2,6 +2,7 @@ package com.carfax_ucl.step_definitions;
 
 import com.carfax_ucl.pages.BasePage;
 import com.carfax_ucl.utilities.Driver;
+import com.carfax_ucl.utilities.TestBase;
 import com.github.javafaker.Faker;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -15,9 +16,10 @@ public class UCLSignUpBtnStepDef {
     public WebDriverWait wait=new WebDriverWait(Driver.get(),3);
     public Faker faker=new Faker();
     public WebDriver driver=Driver.get();
+    TestBase testBase=new TestBase();
     @When("I click on Sign Up button from UCL")
     public void i_click_on_Sign_Up_button_from_UCL() throws InterruptedException {
-        Thread.sleep(2000);
+        testBase.waitFor(2);
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getUclSignUpPage().uclSignUpBtn)).click();
     }
     @When("I fill out {string} , {string} , {string} to create a new account")

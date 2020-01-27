@@ -15,9 +15,9 @@ import org.junit.runner.RunWith;
                 "rerun:target.rerun.txt"},
         features = "src/test/resources/com/carfax/features",
         glue = {"com/carfax_ucl/step_definitions"},
-         tags = "@signUp" ,
+         tags = "@ldf1" ,
 
         dryRun = false
 )
-public class CukesRunner {
+public class RegressionRunner {
 }

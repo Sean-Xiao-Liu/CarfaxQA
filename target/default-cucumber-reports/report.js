@@ -1,16 +1,25 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/com/carfax/features/UCLSignUpBtn.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/com/carfax/features/LeadForm.feature");
 formatter.feature({
-  "name": "Create account",
+  "name": "Lead form on VDP",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "Already exist credentials login trough sign Up page",
+  "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@signUp"
+      "name": "@regression"
+    },
+    {
+      "name": "@ldf"
+    },
+    {
+      "name": "@smoke"
+    },
+    {
+      "name": "@ldf1"
     }
   ]
 });
@@ -23,20 +32,24 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "I click on Sign Up button from UCL",
+  "name": "I fill out \"\u003cmake\u003e\" , \"\u003cmodel\u003e\" , \"\u003czipcode\u003e\" of the car that I want to search",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "I click on next and show me results button",
   "keyword": "When "
 });
 formatter.step({
-  "name": "I fill out \"\u003cemail\u003e\" , \"\u003cpassword\u003e\" , \"\u003czipcode\u003e\" to create a new account",
+  "name": "I click on particular car that I want",
   "keyword": "And "
 });
 formatter.step({
-  "name": "I see regular sign in page",
+  "name": "I navigate to Lead Form and fill out First Name, Last Name, \"\u003czip code\u003e\" and Phone number",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "I click on Send Message to that dealer",
   "keyword": "Then "
-});
-formatter.step({
-  "name": "I can fill out \"\u003cemail\u003e\" , \"\u003cpassword\u003e\" and log in to account",
-  "keyword": "And "
 });
 formatter.examples({
   "name": "",
@@ -45,41 +58,62 @@ formatter.examples({
   "rows": [
     {
       "cells": [
+        "make",
+        "model",
         "zipcode",
-        "email",
-        "password"
+        "zip code"
       ]
     },
     {
       "cells": [
+        "Hyundai",
+        "Sonata",
         "22201",
-        "beta1@gmail.com",
-        "Qwe123123"
+        "22201"
       ]
     },
     {
       "cells": [
-        "20142",
-        "betasav2@gmail.com",
-        "Qwe123123"
+        "Honda",
+        "Civic",
+        "75501",
+        "22204"
       ]
     },
     {
       "cells": [
+        "Infiniti",
+        "Q50",
+        "22033",
+        "75501"
+      ]
+    },
+    {
+      "cells": [
+        "Toyota",
+        "Camry",
         "22304",
-        "betasav1@gmail.com",
-        "Qwe123123"
+        "20148"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Already exist credentials login trough sign Up page",
+  "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@signUp"
+      "name": "@regression"
+    },
+    {
+      "name": "@ldf"
+    },
+    {
+      "name": "@smoke"
+    },
+    {
+      "name": "@ldf1"
     }
   ]
 });
@@ -107,41 +141,51 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on Sign Up button from UCL",
+  "name": "I fill out \"Hyundai\" , \"Sonata\" , \"22201\" of the car that I want to search",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on next and show me results button",
   "keyword": "When "
 });
 formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
+  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I fill out \"beta1@gmail.com\" , \"Qwe123123\" , \"22201\" to create a new account",
+  "name": "I click on particular car that I want",
   "keyword": "And "
 });
 formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_fill_out_to_create_a_new_account(String,String,String)"
+  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I see regular sign in page",
+  "name": "I navigate to Lead Form and fill out First Name, Last Name, \"22201\" and Phone number",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on Send Message to that dealer",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_see_regular_sign_in_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I can fill out \"beta1@gmail.com\" , \"Qwe123123\" and log in to account",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_can_fill_out_and_log_in_to_account(String,String)"
+  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
 });
 formatter.result({
   "status": "passed"
@@ -150,12 +194,21 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Already exist credentials login trough sign Up page",
+  "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@signUp"
+      "name": "@regression"
+    },
+    {
+      "name": "@ldf"
+    },
+    {
+      "name": "@smoke"
+    },
+    {
+      "name": "@ldf1"
     }
   ]
 });
@@ -183,41 +236,51 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on Sign Up button from UCL",
+  "name": "I fill out \"Honda\" , \"Civic\" , \"75501\" of the car that I want to search",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on next and show me results button",
   "keyword": "When "
 });
 formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
+  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I fill out \"betasav2@gmail.com\" , \"Qwe123123\" , \"20142\" to create a new account",
+  "name": "I click on particular car that I want",
   "keyword": "And "
 });
 formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_fill_out_to_create_a_new_account(String,String,String)"
+  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I see regular sign in page",
+  "name": "I navigate to Lead Form and fill out First Name, Last Name, \"22204\" and Phone number",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on Send Message to that dealer",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_see_regular_sign_in_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I can fill out \"betasav2@gmail.com\" , \"Qwe123123\" and log in to account",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_can_fill_out_and_log_in_to_account(String,String)"
+  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
 });
 formatter.result({
   "status": "passed"
@@ -226,12 +289,21 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Already exist credentials login trough sign Up page",
+  "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@signUp"
+      "name": "@regression"
+    },
+    {
+      "name": "@ldf"
+    },
+    {
+      "name": "@smoke"
+    },
+    {
+      "name": "@ldf1"
     }
   ]
 });
@@ -259,41 +331,146 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on Sign Up button from UCL",
+  "name": "I fill out \"Infiniti\" , \"Q50\" , \"22033\" of the car that I want to search",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on next and show me results button",
   "keyword": "When "
 });
 formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
+  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I fill out \"betasav1@gmail.com\" , \"Qwe123123\" , \"22304\" to create a new account",
+  "name": "I click on particular car that I want",
   "keyword": "And "
 });
 formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_fill_out_to_create_a_new_account(String,String,String)"
+  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I see regular sign in page",
+  "name": "I navigate to Lead Form and fill out First Name, Last Name, \"75501\" and Phone number",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on Send Message to that dealer",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_see_regular_sign_in_page()"
+  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@regression"
+    },
+    {
+      "name": "@ldf"
+    },
+    {
+      "name": "@smoke"
+    },
+    {
+      "name": "@ldf1"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I am on main Carfax page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I can fill out \"betasav1@gmail.com\" , \"Qwe123123\" and log in to account",
+  "name": "I navigate to Find a Used Car page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "UCLSignUpBtnStepDef.i_can_fill_out_and_log_in_to_account(String,String)"
+  "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I fill out \"Toyota\" , \"Camry\" , \"22304\" of the car that I want to search",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on next and show me results button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on particular car that I want",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I navigate to Lead Form and fill out First Name, Last Name, \"20148\" and Phone number",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on Send Message to that dealer",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
 });
 formatter.result({
   "status": "passed"

@@ -13,7 +13,7 @@ Feature: Create account
     |22201  |
     |20142  |
 
-  @signUp
+  @signUp @smoke
     Scenario Outline: Already exist credentials login trough sign Up page
 
       Given I am on main Carfax page

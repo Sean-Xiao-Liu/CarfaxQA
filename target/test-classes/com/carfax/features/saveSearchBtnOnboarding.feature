@@ -35,7 +35,7 @@ Scenario Outline: Save Search button is not enable if you pick only Make
       |Audi    |75501       |
 
   @tc-3 @smoke @tc-4 @ff @save
-    Scenario Outline:
+    Scenario Outline: Save Search through Body type and Price range. Save Search button is not available
       Given I am on main Carfax page
       And I navigate to Find a Used Car page
       And I click on Body Type or Price filter

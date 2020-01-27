@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-01-24T18:20:04.856Z",
+        "start_timestamp": "2020-01-27T16:22:30.564Z",
         "before": [
           {
             "result": {
-              "duration": 4024393516,
+              "duration": 6151015462,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 27,
-        "name": "Already exist credentials login trough sign Up page",
+        "line": 17,
+        "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
         "description": "",
-        "id": "create-account;already-exist-credentials-login-trough-sign-up-page;;2",
+        "id": "lead-form-on-vdp;positive-testing-with-first-name--last-name---zip-code-and-phone-number-presented.-no-error-messages-showed;;2",
         "after": [
           {
             "result": {
-              "duration": 147944353,
+              "duration": 241427049,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 648647604,
+              "duration": 1007715653,
               "status": "passed"
             },
-            "line": 19,
+            "line": 6,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 1451581370,
+              "duration": 1772535769,
               "status": "passed"
             },
-            "line": 20,
+            "line": 7,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -59,89 +59,106 @@
           },
           {
             "result": {
-              "duration": 2739993085,
+              "duration": 4868179563,
               "status": "passed"
             },
-            "line": 21,
-            "name": "I click on Sign Up button from UCL",
-            "match": {
-              "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 777096077,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "I fill out \"beta1@gmail.com\" , \"Qwe123123\" , \"22201\" to create a new account",
+            "line": 8,
+            "name": "I fill out \"Hyundai\" , \"Sonata\" , \"22201\" of the car that I want to search",
             "match": {
               "arguments": [
                 {
-                  "val": "\"beta1@gmail.com\"",
+                  "val": "\"Hyundai\"",
                   "offset": 11
                 },
                 {
-                  "val": "\"Qwe123123\"",
-                  "offset": 31
+                  "val": "\"Sonata\"",
+                  "offset": 23
                 },
                 {
                   "val": "\"22201\"",
-                  "offset": 45
+                  "offset": 34
                 }
               ],
-              "location": "UCLSignUpBtnStepDef.i_fill_out_to_create_a_new_account(String,String,String)"
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 266816324,
+              "duration": 1845934203,
               "status": "passed"
             },
-            "line": 23,
-            "name": "I see regular sign in page",
+            "line": 9,
+            "name": "I click on next and show me results button",
             "match": {
-              "location": "UCLSignUpBtnStepDef.i_see_regular_sign_in_page()"
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 7198888922,
+              "duration": 690423437,
               "status": "passed"
             },
-            "line": 24,
-            "name": "I can fill out \"beta1@gmail.com\" , \"Qwe123123\" and log in to account",
+            "line": 10,
+            "name": "I click on particular car that I want",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7189356677,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I navigate to Lead Form and fill out First Name, Last Name, \"22201\" and Phone number",
             "match": {
               "arguments": [
                 {
-                  "val": "\"beta1@gmail.com\"",
-                  "offset": 15
-                },
-                {
-                  "val": "\"Qwe123123\"",
-                  "offset": 35
+                  "val": "\"22201\"",
+                  "offset": 60
                 }
               ],
-              "location": "UCLSignUpBtnStepDef.i_can_fill_out_and_log_in_to_account(String,String)"
+              "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 361489829,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on Send Message to that dealer",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@signUp"
+            "name": "@regression"
+          },
+          {
+            "name": "@ldf"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@ldf1"
           }
         ]
       },
       {
-        "start_timestamp": "2020-01-24T18:20:22.171Z",
+        "start_timestamp": "2020-01-27T16:22:54.946Z",
         "before": [
           {
             "result": {
-              "duration": 2535767424,
+              "duration": 3352888252,
               "status": "passed"
             },
             "match": {
@@ -149,14 +166,14 @@
             }
           }
         ],
-        "line": 28,
-        "name": "Already exist credentials login trough sign Up page",
+        "line": 18,
+        "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
         "description": "",
-        "id": "create-account;already-exist-credentials-login-trough-sign-up-page;;3",
+        "id": "lead-form-on-vdp;positive-testing-with-first-name--last-name---zip-code-and-phone-number-presented.-no-error-messages-showed;;3",
         "after": [
           {
             "result": {
-              "duration": 141736252,
+              "duration": 261530793,
               "status": "passed"
             },
             "match": {
@@ -169,10 +186,10 @@
         "steps": [
           {
             "result": {
-              "duration": 273186751,
+              "duration": 458570541,
               "status": "passed"
             },
-            "line": 19,
+            "line": 6,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -181,10 +198,10 @@
           },
           {
             "result": {
-              "duration": 1309759265,
+              "duration": 1788209856,
               "status": "passed"
             },
-            "line": 20,
+            "line": 7,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -193,89 +210,106 @@
           },
           {
             "result": {
-              "duration": 2505230723,
+              "duration": 4624319070,
               "status": "passed"
             },
-            "line": 21,
-            "name": "I click on Sign Up button from UCL",
+            "line": 8,
+            "name": "I fill out \"Honda\" , \"Civic\" , \"75501\" of the car that I want to search",
             "match": {
-              "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
+              "arguments": [
+                {
+                  "val": "\"Honda\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Civic\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"75501\"",
+                  "offset": 31
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1800887370,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on next and show me results button",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 781294432,
+              "duration": 843076265,
               "status": "passed"
             },
-            "line": 22,
-            "name": "I fill out \"betasav2@gmail.com\" , \"Qwe123123\" , \"20142\" to create a new account",
+            "line": 10,
+            "name": "I click on particular car that I want",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"betasav2@gmail.com\"",
-                  "offset": 11
-                },
-                {
-                  "val": "\"Qwe123123\"",
-                  "offset": 34
-                },
-                {
-                  "val": "\"20142\"",
-                  "offset": 48
-                }
-              ],
-              "location": "UCLSignUpBtnStepDef.i_fill_out_to_create_a_new_account(String,String,String)"
+              "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 254751257,
+              "duration": 6358937349,
               "status": "passed"
             },
-            "line": 23,
-            "name": "I see regular sign in page",
+            "line": 11,
+            "name": "I navigate to Lead Form and fill out First Name, Last Name, \"22204\" and Phone number",
             "match": {
-              "location": "UCLSignUpBtnStepDef.i_see_regular_sign_in_page()"
+              "arguments": [
+                {
+                  "val": "\"22204\"",
+                  "offset": 60
+                }
+              ],
+              "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 331821155,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on Send Message to that dealer",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3546039614,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "I can fill out \"betasav2@gmail.com\" , \"Qwe123123\" and log in to account",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"betasav2@gmail.com\"",
-                  "offset": 15
-                },
-                {
-                  "val": "\"Qwe123123\"",
-                  "offset": 38
-                }
-              ],
-              "location": "UCLSignUpBtnStepDef.i_can_fill_out_and_log_in_to_account(String,String)"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@signUp"
+            "name": "@regression"
+          },
+          {
+            "name": "@ldf"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@ldf1"
           }
         ]
       },
       {
-        "start_timestamp": "2020-01-24T18:20:33.524Z",
+        "start_timestamp": "2020-01-27T16:23:14.776Z",
         "before": [
           {
             "result": {
-              "duration": 2218375130,
+              "duration": 3001365345,
               "status": "passed"
             },
             "match": {
@@ -283,14 +317,14 @@
             }
           }
         ],
-        "line": 29,
-        "name": "Already exist credentials login trough sign Up page",
+        "line": 19,
+        "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
         "description": "",
-        "id": "create-account;already-exist-credentials-login-trough-sign-up-page;;4",
+        "id": "lead-form-on-vdp;positive-testing-with-first-name--last-name---zip-code-and-phone-number-presented.-no-error-messages-showed;;4",
         "after": [
           {
             "result": {
-              "duration": 147644613,
+              "duration": 260584883,
               "status": "passed"
             },
             "match": {
@@ -303,10 +337,10 @@
         "steps": [
           {
             "result": {
-              "duration": 163434513,
+              "duration": 146168506,
               "status": "passed"
             },
-            "line": 19,
+            "line": 6,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -315,10 +349,10 @@
           },
           {
             "result": {
-              "duration": 1355627948,
+              "duration": 1800053273,
               "status": "passed"
             },
-            "line": 20,
+            "line": 7,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -327,89 +361,257 @@
           },
           {
             "result": {
-              "duration": 2546820053,
+              "duration": 4690297738,
               "status": "passed"
             },
-            "line": 21,
-            "name": "I click on Sign Up button from UCL",
+            "line": 8,
+            "name": "I fill out \"Infiniti\" , \"Q50\" , \"22033\" of the car that I want to search",
             "match": {
-              "location": "UCLSignUpBtnStepDef.i_click_on_Sign_Up_button_from_UCL()"
+              "arguments": [
+                {
+                  "val": "\"Infiniti\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Q50\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"22033\"",
+                  "offset": 32
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1729388117,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on next and show me results button",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 736645349,
+              "duration": 508837415,
               "status": "passed"
             },
-            "line": 22,
-            "name": "I fill out \"betasav1@gmail.com\" , \"Qwe123123\" , \"22304\" to create a new account",
+            "line": 10,
+            "name": "I click on particular car that I want",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6165612164,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I navigate to Lead Form and fill out First Name, Last Name, \"75501\" and Phone number",
             "match": {
               "arguments": [
                 {
-                  "val": "\"betasav1@gmail.com\"",
+                  "val": "\"75501\"",
+                  "offset": 60
+                }
+              ],
+              "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 386189997,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on Send Message to that dealer",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@ldf"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@ldf1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-27T16:23:33.478Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3286054660,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
+        "description": "",
+        "id": "lead-form-on-vdp;positive-testing-with-first-name--last-name---zip-code-and-phone-number-presented.-no-error-messages-showed;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 256828149,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 263960532,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on main Carfax page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1583130080,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I navigate to Find a Used Car page",
+            "match": {
+              "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4890205415,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I fill out \"Toyota\" , \"Camry\" , \"22304\" of the car that I want to search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Toyota\"",
                   "offset": 11
                 },
                 {
-                  "val": "\"Qwe123123\"",
-                  "offset": 34
+                  "val": "\"Camry\"",
+                  "offset": 22
                 },
                 {
                   "val": "\"22304\"",
-                  "offset": 48
+                  "offset": 32
                 }
               ],
-              "location": "UCLSignUpBtnStepDef.i_fill_out_to_create_a_new_account(String,String,String)"
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 252574881,
+              "duration": 1703816754,
               "status": "passed"
             },
-            "line": 23,
-            "name": "I see regular sign in page",
+            "line": 9,
+            "name": "I click on next and show me results button",
             "match": {
-              "location": "UCLSignUpBtnStepDef.i_see_regular_sign_in_page()"
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 3544176046,
+              "duration": 481400781,
               "status": "passed"
             },
-            "line": 24,
-            "name": "I can fill out \"betasav1@gmail.com\" , \"Qwe123123\" and log in to account",
+            "line": 10,
+            "name": "I click on particular car that I want",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6351953138,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I navigate to Lead Form and fill out First Name, Last Name, \"20148\" and Phone number",
             "match": {
               "arguments": [
                 {
-                  "val": "\"betasav1@gmail.com\"",
-                  "offset": 15
-                },
-                {
-                  "val": "\"Qwe123123\"",
-                  "offset": 38
+                  "val": "\"20148\"",
+                  "offset": 60
                 }
               ],
-              "location": "UCLSignUpBtnStepDef.i_can_fill_out_and_log_in_to_account(String,String)"
+              "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 559583414,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on Send Message to that dealer",
+            "match": {
+              "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@signUp"
+            "name": "@regression"
+          },
+          {
+            "name": "@ldf"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@ldf1"
           }
         ]
       }
     ],
-    "name": "Create account",
+    "name": "Lead form on VDP",
     "description": "",
-    "id": "create-account",
+    "id": "lead-form-on-vdp",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/com/carfax/features/UCLSignUpBtn.feature",
+    "uri": "file:src/test/resources/com/carfax/features/LeadForm.feature",
     "tags": []
   }
 ]

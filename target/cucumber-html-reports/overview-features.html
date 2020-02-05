@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                28,
-                0,
-                0,
+                331,
+                1,
+                2,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 28) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 334) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                4,
-                0
+                50,
+                1
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 51) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   1,
-                   0
+                   7,
+                   1
                ],
                backgroundColor: [
                 "#00B000",
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 8) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -234,7 +234,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
               <td>1</td>
-            <td>04 Feb 2020, 14:56</td>
+            <td>05 Feb 2020, 10:23</td>
     </tr>
   </tbody>
 </table>
@@ -329,7 +329,109 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="report-feature_3847134239.html">Lead form on VDP</a></td>
+        <td class="tagname"><a href="report-feature_3332092689.html">Find Dealer</a></td>
+
+        <td      class="passed"    >4</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >2</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">7</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="7158557391">7.158</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_1_406313109.html">Create account through Follow button</a></td>
+
+        <td      class="passed"    >24</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">24</td>
+
+        <td  class="passed"    >4</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td class="duration" data-value="59376432222">59.376</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_2_3847134239.html">Lead form on VDP</a></td>
+
+        <td      class="passed"    >168</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">168</td>
+
+        <td  class="passed"    >24</td>
+        <td >0</td>
+        <td class="total">24</td>
+
+        <td class="duration" data-value="274666230930">4:34.666</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_3_2631992112.html">Create account</a></td>
+
+        <td      class="passed"    >4</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="4454722015">4.454</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_4_525676782.html">Map and Directions page</a></td>
+
+        <td      class="passed"    >32</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">32</td>
+
+        <td  class="passed"    >4</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td class="duration" data-value="60905110578">1:0.905</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_5_2989268763.html">Forgot Password and Create account trough Sign in feature</a></td>
+
+        <td      class="passed"    >14</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">14</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="17132825562">17.132</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_6_4021565413.html">Create account</a></td>
 
         <td      class="passed"    >28</td>
         <td >0</td>
@@ -338,11 +440,28 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">28</td>
 
-        <td  class="passed"    >4</td>
+        <td  class="passed"    >5</td>
         <td >0</td>
-        <td class="total">4</td>
+        <td class="total">5</td>
 
-        <td class="duration" data-value="51526010748">51.526</td>
+        <td class="duration" data-value="39260277084">39.260</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_7_2235904865.html">Create account through save this search</a></td>
+
+        <td      class="passed"    >57</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">57</td>
+
+        <td  class="passed"    >10</td>
+        <td >0</td>
+        <td class="total">10</td>
+
+        <td class="duration" data-value="86352054641">1:26.352</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
@@ -350,33 +469,33 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>28</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>28</td>
-
-      <td>4</td>
-      <td>0</td>
-      <td>4</td>
-
-      <td class="duration">51.526</td>
+      <td>331</td>
       <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>334</td>
+
+      <td>50</td>
+      <td>1</td>
+      <td>51</td>
+
+      <td class="duration">9:9.306</td>
+      <td>8</td>
     </tr>
     <tr>
       <td></td>
-            <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
+            <td>99.10%</td>
+      <td>0.30%</td>
+      <td>0.60%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>100.00%</td>
-      <td>0.00%</td>
+      <td>98.04%</td>
+      <td>1.96%</td>
       <td></td>
       <td></td>
-      <td>100.00%</td>
+      <td>87.50%</td>
     </tr>
   </tfoot>
 </table>

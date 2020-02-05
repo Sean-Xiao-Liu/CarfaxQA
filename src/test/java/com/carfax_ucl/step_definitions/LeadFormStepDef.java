@@ -18,7 +18,7 @@ public class LeadFormStepDef {
     public BasePage basePage=new BasePage();
 public WebDriver driver= Driver.get();
 public Faker faker=new Faker();
-    public WebDriverWait wait=new WebDriverWait(Driver.get(),4);
+    public WebDriverWait wait=new WebDriverWait(Driver.get(),3);
 public TestBase testBase=new TestBase();
 
     @When("I click on particular car that I want")
@@ -37,15 +37,18 @@ public TestBase testBase=new TestBase();
             if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
                 System.out.println(driver.getTitle());break;}
         }
+        wait.until(ExpectedConditions.urlContains("vehicle"));
+
         //todo scrolling down to element
         WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
         testBase.waitFor(2);
-wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
+
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
 
         basePage.getLeadFormPage().firstName.click();
-        basePage.getLeadFormPage().firstName.sendKeys("Test");
+        basePage.getLeadFormPage().firstName.sendKeys("test");
         basePage.getLeadFormPage().lastName.click();
         basePage.getLeadFormPage().lastName.sendKeys("test");
 
@@ -85,16 +88,17 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(Stri
             if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
                 System.out.println(driver.getTitle());break;}
         }
+    wait.until(ExpectedConditions.urlContains("vehicle"));
         //todo scrolling down to element
         WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
         //todo input for Lead Form
         //todo Positive scenario :
+    testBase.waitFor(2);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
-
         basePage.getLeadFormPage().firstName.click();
-        basePage.getLeadFormPage().firstName.sendKeys("Test");
+        basePage.getLeadFormPage().firstName.sendKeys("test");
         basePage.getLeadFormPage().lastName.click();
         basePage.getLeadFormPage().lastName.sendKeys("test");
 
@@ -135,6 +139,8 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(Stri
             if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
                 System.out.println(driver.getTitle());break;}
         }
+
+        wait.until(ExpectedConditions.urlContains("vehicle"));
         //todo scrolling down to element
         WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
@@ -178,6 +184,8 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
             if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
                 System.out.println(driver.getTitle());break;}
         }
+
+    wait.until(ExpectedConditions.urlContains("vehicle"));
         //todo scrolling down to element
         WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
@@ -185,7 +193,7 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
 
         basePage.getLeadFormPage().firstName.click();
-        basePage.getLeadFormPage().firstName.sendKeys("Test");
+        basePage.getLeadFormPage().firstName.sendKeys("test");
         System.out.println(basePage.getLeadFormPage().zipCode.getAttribute("value"));
 
         for(int i =0;i<6;i++){
@@ -218,6 +226,8 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
             if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
                 System.out.println(driver.getTitle());break;}
         }
+
+        wait.until(ExpectedConditions.urlContains("vehicle"));
         //todo scrolling down to element
         WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
@@ -258,7 +268,7 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
             if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
                 System.out.println(driver.getTitle());break;}
         }
-
+        wait.until(ExpectedConditions.urlContains("vehicle"));
 
         //todo scrolling down to element
         WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));

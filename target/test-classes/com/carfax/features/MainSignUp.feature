@@ -1,7 +1,7 @@
 Feature: Create account
 
 
-  @sign-1 @regression @smoke @ff
+  @sign-1 @regression @smoke @ff  @m&d-1
 
   Scenario: Create account through main Sign Up button
     Given I am on main Carfax page

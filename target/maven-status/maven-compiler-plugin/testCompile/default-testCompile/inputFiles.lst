@@ -18,10 +18,10 @@
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/LeadFormPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/BasePage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/FollowBtnStepDef.java
-/Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/runners/CukesRunner.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/MapAndDirectionsPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/UCLSignInPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.java
+/Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/runners/RegressionRunner.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/utilities/ConfigurationReader.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/UCLSignUpPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/FindDealerPage.java

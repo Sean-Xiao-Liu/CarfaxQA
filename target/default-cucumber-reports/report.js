@@ -16,10 +16,13 @@ formatter.scenarioOutline({
       "name": "@ldf"
     },
     {
+      "name": "@ldf1"
+    },
+    {
       "name": "@smoke"
     },
     {
-      "name": "@ldf1"
+      "name": "@lPN"
     }
   ]
 });
@@ -110,10 +113,13 @@ formatter.scenario({
       "name": "@ldf"
     },
     {
+      "name": "@ldf1"
+    },
+    {
       "name": "@smoke"
     },
     {
-      "name": "@ldf1"
+      "name": "@lPN"
     }
   ]
 });
@@ -205,10 +211,13 @@ formatter.scenario({
       "name": "@ldf"
     },
     {
+      "name": "@ldf1"
+    },
+    {
       "name": "@smoke"
     },
     {
-      "name": "@ldf1"
+      "name": "@lPN"
     }
   ]
 });
@@ -300,10 +309,13 @@ formatter.scenario({
       "name": "@ldf"
     },
     {
+      "name": "@ldf1"
+    },
+    {
       "name": "@smoke"
     },
     {
-      "name": "@ldf1"
+      "name": "@lPN"
     }
   ]
 });
@@ -395,10 +407,13 @@ formatter.scenario({
       "name": "@ldf"
     },
     {
+      "name": "@ldf1"
+    },
+    {
       "name": "@smoke"
     },
     {
-      "name": "@ldf1"
+      "name": "@lPN"
     }
   ]
 });

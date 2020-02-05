@@ -12,11 +12,11 @@ Feature: Create account through save this search
     Then I am able to fill out email , zip code and click on save This Search button
 
     Examples:
-      | make       | model           | zipcode |
-      | Subaru       |  Ascent             | 22201   |
-      | BMW        | 2 Series        | 75501   |
-      | Tesla | Model 3 | 22033   |
-      | Toyota     | Camry           | 22304   |
+      | make   | model    | zipcode |
+      | Subaru | Ascent   | 22201   |
+      | BMW    | 2 Series | 75501   |
+      | Tesla  | Model 3  | 22033   |
+      | Toyota | Camry    | 22304   |
 
 @regression   @tc-3 @smoke @ff
 
@@ -28,11 +28,11 @@ Scenario Outline: Save Search button is not enable if you pick only Make
       When I click on next and show me results button
       Then I can see that Save Search button is not able to click
 
-      Examples:
-      |make|zipcode|
-      |Subaru   |22201       |
-      |BMW    |22304       |
-      |Audi    |75501       |
+  Examples:
+    | make   | zipcode |
+    | Subaru | 22201   |
+    | BMW    | 22304   |
+    | Audi   | 75501   |
 
   @tc-3 @smoke @tc-4 @ff @save
     Scenario Outline: Save Search through Body type and Price range. Save Search button is not available
@@ -43,11 +43,11 @@ Scenario Outline: Save Search button is not enable if you pick only Make
       And I click on next and show me results button from Body type side
       Then I can see that Save Search button is not able to click
 
-      Examples:
-      |body type|price range|zipcode|
-      |Chassis        |Less than $5,000           |22204       |
-      |Minivan        |Less than $15,000           |75501       |
-      |Sedan        |Less than $5,000           |22304       |
+    Examples:
+      | body type | price range       | zipcode |
+      | Chassis   | Less than $5,000  | 22204   |
+      | Minivan   | Less than $15,000 | 75501   |
+      | Sedan     | Less than $5,000  | 22304   |
 
 
 

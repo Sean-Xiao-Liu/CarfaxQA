@@ -1,13 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-01-21T20:47:32.958Z",
+        "start_timestamp": "2020-02-04T19:55:23.462Z",
         "before": [
           {
             "result": {
-              "duration": 4390402109,
+              "duration": 3683722108,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 19,
-        "name": "Map and Directions page from VDP",
+        "line": 18,
+        "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
         "description": "",
-        "id": "map-and-directions-page;map-and-directions-page-from-vdp;;2",
+        "id": "lead-form-on-vdp;positive-testing-with-first-name--last-name---zip-code-and-phone-number-presented.-no-error-messages-showed;;2",
         "after": [
           {
             "result": {
-              "duration": 170291183,
+              "duration": 218006068,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 650199379,
+              "duration": 547100970,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 1789403107,
+              "duration": 1501345981,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -59,24 +59,24 @@
           },
           {
             "result": {
-              "duration": 4479859439,
+              "duration": 4602129795,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I fill out \"Audi\" , \"Q3\" , \"22201\" of the car that I want to search",
+            "line": 9,
+            "name": "I fill out \"Hyundai\" , \"Sonata\" , \"22201\" of the car that I want to search",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Audi\"",
+                  "val": "\"Hyundai\"",
                   "offset": 11
                 },
                 {
-                  "val": "\"Q3\"",
-                  "offset": 20
+                  "val": "\"Sonata\"",
+                  "offset": 23
                 },
                 {
                   "val": "\"22201\"",
-                  "offset": 27
+                  "offset": 34
                 }
               ],
               "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
@@ -85,10 +85,10 @@
           },
           {
             "result": {
-              "duration": 1181280734,
+              "duration": 1056731133,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "I click on next and show me results button",
             "match": {
               "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
@@ -97,10 +97,10 @@
           },
           {
             "result": {
-              "duration": 835627601,
+              "duration": 587812642,
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "I click on particular car that I want",
             "match": {
               "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
@@ -109,66 +109,59 @@
           },
           {
             "result": {
-              "duration": 3091702244,
+              "duration": 4793470255,
               "status": "passed"
             },
-            "line": 13,
-            "name": "I click on map\u0026directions link from dealer info window",
-            "match": {
-              "location": "MapAndDirectionsStepDef.i_click_on_map_directions_link_from_dealer_info_window()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4969448259,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I fill out address , \"Arizona\", \"85006\" to get direction",
+            "line": 12,
+            "name": "I navigate to Lead Form and fill out First Name, Last Name, \"22201\" and Phone number",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Arizona\"",
-                  "offset": 21
-                },
-                {
-                  "val": "\"85006\"",
-                  "offset": 32
+                  "val": "\"22201\"",
+                  "offset": 60
                 }
               ],
-              "location": "MapAndDirectionsStepDef.i_fill_out_address_to_get_direction(String,String)"
+              "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 224917913,
+              "duration": 259101454,
               "status": "passed"
             },
-            "line": 15,
-            "name": "I see map\u0026directions window",
+            "line": 13,
+            "name": "I click on Send Message to that dealer",
             "match": {
-              "location": "MapAndDirectionsStepDef.i_see_map_directions_window()"
+              "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@m\u0026d-1"
+            "name": "@regression"
+          },
+          {
+            "name": "@ldf"
+          },
+          {
+            "name": "@ldf1"
           },
           {
             "name": "@smoke"
+          },
+          {
+            "name": "@lPN"
           }
         ]
       },
       {
-        "start_timestamp": "2020-01-21T20:47:54.750Z",
+        "start_timestamp": "2020-02-04T19:55:40.719Z",
         "before": [
           {
             "result": {
-              "duration": 2200558834,
+              "duration": 3052771024,
               "status": "passed"
             },
             "match": {
@@ -176,14 +169,14 @@
             }
           }
         ],
-        "line": 20,
-        "name": "Map and Directions page from VDP",
+        "line": 19,
+        "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
         "description": "",
-        "id": "map-and-directions-page;map-and-directions-page-from-vdp;;3",
+        "id": "lead-form-on-vdp;positive-testing-with-first-name--last-name---zip-code-and-phone-number-presented.-no-error-messages-showed;;3",
         "after": [
           {
             "result": {
-              "duration": 227762431,
+              "duration": 232060346,
               "status": "passed"
             },
             "match": {
@@ -196,10 +189,10 @@
         "steps": [
           {
             "result": {
-              "duration": 126483660,
+              "duration": 290827652,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -208,10 +201,10 @@
           },
           {
             "result": {
-              "duration": 1011829607,
+              "duration": 1410669029,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -220,10 +213,10 @@
           },
           {
             "result": {
-              "duration": 4513431264,
+              "duration": 4497904542,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "I fill out \"Honda\" , \"Civic\" , \"75501\" of the car that I want to search",
             "match": {
               "arguments": [
@@ -246,10 +239,10 @@
           },
           {
             "result": {
-              "duration": 1148780426,
+              "duration": 1119613965,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "I click on next and show me results button",
             "match": {
               "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
@@ -258,10 +251,10 @@
           },
           {
             "result": {
-              "duration": 756404316,
+              "duration": 678582341,
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "I click on particular car that I want",
             "match": {
               "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
@@ -270,66 +263,59 @@
           },
           {
             "result": {
-              "duration": 1731321610,
+              "duration": 4534976713,
               "status": "passed"
             },
-            "line": 13,
-            "name": "I click on map\u0026directions link from dealer info window",
-            "match": {
-              "location": "MapAndDirectionsStepDef.i_click_on_map_directions_link_from_dealer_info_window()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3398674073,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I fill out address , \"Florida\", \"32003\" to get direction",
+            "line": 12,
+            "name": "I navigate to Lead Form and fill out First Name, Last Name, \"22204\" and Phone number",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Florida\"",
-                  "offset": 21
-                },
-                {
-                  "val": "\"32003\"",
-                  "offset": 32
+                  "val": "\"22204\"",
+                  "offset": 60
                 }
               ],
-              "location": "MapAndDirectionsStepDef.i_fill_out_address_to_get_direction(String,String)"
+              "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 172617399,
+              "duration": 274721755,
               "status": "passed"
             },
-            "line": 15,
-            "name": "I see map\u0026directions window",
+            "line": 13,
+            "name": "I click on Send Message to that dealer",
             "match": {
-              "location": "MapAndDirectionsStepDef.i_see_map_directions_window()"
+              "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@m\u0026d-1"
+            "name": "@regression"
+          },
+          {
+            "name": "@ldf"
+          },
+          {
+            "name": "@ldf1"
           },
           {
             "name": "@smoke"
+          },
+          {
+            "name": "@lPN"
           }
         ]
       },
       {
-        "start_timestamp": "2020-01-21T20:48:10.039Z",
+        "start_timestamp": "2020-02-04T19:55:56.812Z",
         "before": [
           {
             "result": {
-              "duration": 2360094783,
+              "duration": 2439031594,
               "status": "passed"
             },
             "match": {
@@ -337,14 +323,14 @@
             }
           }
         ],
-        "line": 21,
-        "name": "Map and Directions page from VDP",
+        "line": 20,
+        "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
         "description": "",
-        "id": "map-and-directions-page;map-and-directions-page-from-vdp;;4",
+        "id": "lead-form-on-vdp;positive-testing-with-first-name--last-name---zip-code-and-phone-number-presented.-no-error-messages-showed;;4",
         "after": [
           {
             "result": {
-              "duration": 211628731,
+              "duration": 305394035,
               "status": "passed"
             },
             "match": {
@@ -357,10 +343,10 @@
         "steps": [
           {
             "result": {
-              "duration": 89559395,
+              "duration": 118967361,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -369,10 +355,10 @@
           },
           {
             "result": {
-              "duration": 1375817505,
+              "duration": 1471710053,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -381,24 +367,24 @@
           },
           {
             "result": {
-              "duration": 4492604326,
+              "duration": 4526890581,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I fill out \"Land Rover\" , \"Discovery Sport\" , \"22033\" of the car that I want to search",
+            "line": 9,
+            "name": "I fill out \"Infiniti\" , \"Q50\" , \"22033\" of the car that I want to search",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Land Rover\"",
+                  "val": "\"Infiniti\"",
                   "offset": 11
                 },
                 {
-                  "val": "\"Discovery Sport\"",
-                  "offset": 26
+                  "val": "\"Q50\"",
+                  "offset": 24
                 },
                 {
                   "val": "\"22033\"",
-                  "offset": 46
+                  "offset": 32
                 }
               ],
               "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
@@ -407,10 +393,10 @@
           },
           {
             "result": {
-              "duration": 1030154227,
+              "duration": 1099394808,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "I click on next and show me results button",
             "match": {
               "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
@@ -419,10 +405,10 @@
           },
           {
             "result": {
-              "duration": 561493146,
+              "duration": 705809177,
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "I click on particular car that I want",
             "match": {
               "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
@@ -431,66 +417,59 @@
           },
           {
             "result": {
-              "duration": 1593020744,
+              "duration": 4468885979,
               "status": "passed"
             },
-            "line": 13,
-            "name": "I click on map\u0026directions link from dealer info window",
-            "match": {
-              "location": "MapAndDirectionsStepDef.i_click_on_map_directions_link_from_dealer_info_window()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3618188131,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I fill out address , \"Georgia\", \"30002\" to get direction",
+            "line": 12,
+            "name": "I navigate to Lead Form and fill out First Name, Last Name, \"75501\" and Phone number",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Georgia\"",
-                  "offset": 21
-                },
-                {
-                  "val": "\"30002\"",
-                  "offset": 32
+                  "val": "\"75501\"",
+                  "offset": 60
                 }
               ],
-              "location": "MapAndDirectionsStepDef.i_fill_out_address_to_get_direction(String,String)"
+              "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 228263225,
+              "duration": 286821761,
               "status": "passed"
             },
-            "line": 15,
-            "name": "I see map\u0026directions window",
+            "line": 13,
+            "name": "I click on Send Message to that dealer",
             "match": {
-              "location": "MapAndDirectionsStepDef.i_see_map_directions_window()"
+              "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@m\u0026d-1"
+            "name": "@regression"
+          },
+          {
+            "name": "@ldf"
+          },
+          {
+            "name": "@ldf1"
           },
           {
             "name": "@smoke"
+          },
+          {
+            "name": "@lPN"
           }
         ]
       },
       {
-        "start_timestamp": "2020-01-21T20:48:25.601Z",
+        "start_timestamp": "2020-02-04T19:56:12.236Z",
         "before": [
           {
             "result": {
-              "duration": 2242904646,
+              "duration": 2826580844,
               "status": "passed"
             },
             "match": {
@@ -498,14 +477,14 @@
             }
           }
         ],
-        "line": 22,
-        "name": "Map and Directions page from VDP",
+        "line": 21,
+        "name": "Positive testing with first name, last name , zip code and phone number presented. NO ERROR MESSAGES SHOWED",
         "description": "",
-        "id": "map-and-directions-page;map-and-directions-page-from-vdp;;5",
+        "id": "lead-form-on-vdp;positive-testing-with-first-name--last-name---zip-code-and-phone-number-presented.-no-error-messages-showed;;5",
         "after": [
           {
             "result": {
-              "duration": 202680803,
+              "duration": 217978213,
               "status": "passed"
             },
             "match": {
@@ -518,10 +497,10 @@
         "steps": [
           {
             "result": {
-              "duration": 68436277,
+              "duration": 108351411,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -530,10 +509,10 @@
           },
           {
             "result": {
-              "duration": 1482336482,
+              "duration": 1421941188,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -542,10 +521,10 @@
           },
           {
             "result": {
-              "duration": 4707571974,
+              "duration": 4698683491,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "I fill out \"Toyota\" , \"Camry\" , \"22304\" of the car that I want to search",
             "match": {
               "arguments": [
@@ -568,10 +547,10 @@
           },
           {
             "result": {
-              "duration": 1072474836,
+              "duration": 1070790212,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "I click on next and show me results button",
             "match": {
               "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
@@ -580,10 +559,10 @@
           },
           {
             "result": {
-              "duration": 549538769,
+              "duration": 564959401,
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "I click on particular car that I want",
             "match": {
               "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
@@ -592,66 +571,59 @@
           },
           {
             "result": {
-              "duration": 1720791214,
+              "duration": 4552244204,
               "status": "passed"
             },
-            "line": 13,
-            "name": "I click on map\u0026directions link from dealer info window",
-            "match": {
-              "location": "MapAndDirectionsStepDef.i_click_on_map_directions_link_from_dealer_info_window()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3737352074,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I fill out address , \"Missouri\", \"63101\" to get direction",
+            "line": 12,
+            "name": "I navigate to Lead Form and fill out First Name, Last Name, \"20148\" and Phone number",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Missouri\"",
-                  "offset": 21
-                },
-                {
-                  "val": "\"63101\"",
-                  "offset": 33
+                  "val": "\"20148\"",
+                  "offset": 60
                 }
               ],
-              "location": "MapAndDirectionsStepDef.i_fill_out_address_to_get_direction(String,String)"
+              "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_and_Phone_number(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 230517384,
+              "duration": 275572894,
               "status": "passed"
             },
-            "line": 15,
-            "name": "I see map\u0026directions window",
+            "line": 13,
+            "name": "I click on Send Message to that dealer",
             "match": {
-              "location": "MapAndDirectionsStepDef.i_see_map_directions_window()"
+              "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@m\u0026d-1"
+            "name": "@regression"
+          },
+          {
+            "name": "@ldf"
+          },
+          {
+            "name": "@ldf1"
           },
           {
             "name": "@smoke"
+          },
+          {
+            "name": "@lPN"
           }
         ]
       }
     ],
-    "name": "Map and Directions page",
+    "name": "Lead form on VDP",
     "description": "",
-    "id": "map-and-directions-page",
+    "id": "lead-form-on-vdp",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/com/carfax/features/MapAndDirections.feature",
+    "uri": "file:src/test/resources/com/carfax/features/LeadForm.feature",
     "tags": []
   }
 ]

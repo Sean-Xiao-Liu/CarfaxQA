@@ -8,7 +8,6 @@ com/carfax_ucl/step_definitions/MapAndDirectionsStepDef.class
 com/carfax_ucl/pages/SendToMyPhonePage.class
 com/carfax_ucl/pages/UCLSignUpPage.class
 com/carfax_ucl/pages/FollowBtnPage.class
-com/carfax_ucl/runners/CukesRunner.class
 com/carfax_ucl/pages/vdpSaveThisSearchPage.class
 com/carfax_ucl/utilities/TestBase.class
 com/carfax_ucl/pages/UCLSignInPage.class
@@ -22,6 +21,7 @@ com/carfax_ucl/step_definitions/SaveThisSearchStepDef.class
 com/carfax_ucl/pages/BodyTypeOrPricePage.class
 com/carfax_ucl/step_definitions/test.class
 com/carfax_ucl/utilities/ConfigurationReader.class
+com/carfax_ucl/runners/RegressionRunner.class
 com/carfax_ucl/pages/BasePage.class
 com/carfax_ucl/pages/FindDealerPage.class
 com/carfax_ucl/pages/MainSignInPage.class

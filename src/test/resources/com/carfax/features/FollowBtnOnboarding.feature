@@ -12,7 +12,7 @@ Feature: Create account through Follow button
     Examples:
       | make       | model           | zipcode |
       | Audi       | Q3              | 22201   |
-      | Honda        | Civic        | 75501   |
+      | Honda      | Civic           | 75501   |
       | Land Rover | Discovery Sport | 22033   |
       | Toyota     | Camry           | 22304   |
 

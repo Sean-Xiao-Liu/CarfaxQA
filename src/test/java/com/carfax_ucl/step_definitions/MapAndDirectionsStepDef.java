@@ -92,13 +92,9 @@ public class MapAndDirectionsStepDef {
 
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getMapAndDirections().zipCode)).click();
         basePage.getMapAndDirections().zipCode.sendKeys(zipcode);
-        basePage.getMapAndDirections().zipCode.click();
-        basePage.getMapAndDirections().zipCode.sendKeys("22201");
-
-        basePage.getMapAndDirections().zipCode.sendKeys(zipcode);
-
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getMapAndDirections().getDirections)).click();
 
+        testBase.waitFor(3);
         Assert.assertTrue(driver.findElement(By.cssSelector("div[jstcache='23']")).isDisplayed());
 
 

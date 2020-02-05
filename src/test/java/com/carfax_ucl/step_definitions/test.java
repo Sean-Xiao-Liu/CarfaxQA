@@ -545,14 +545,7 @@ if(!errorMessage.isEmpty()){
 
 
         wait.until(ExpectedConditions.elementToBeClickable(followBtnPage.showMeBtn)).click();
-//            WebElement length=driver.findElement(By.xpath("//div/div/ul/li/a[contains(@tabindex,'') and (contains(@aria-label,'Page'))]"));
-//
-//
-//            JavascriptExecutor jse = (JavascriptExecutor)driver;
-//            jse.executeScript("arguments[0].scrollIntoView();",length);
-//
-//            Assert.assertTrue( length.isDisplayed());
-        testBase.checkBoxSelection("123");
+
         int numberOfCar = 1;
         WebElement headerOfCar = driver.findElement(By.xpath("(//span[@class='srp-list-item-basic-info-model'])[" + numberOfCar + "]"));
         numberOfCar++;

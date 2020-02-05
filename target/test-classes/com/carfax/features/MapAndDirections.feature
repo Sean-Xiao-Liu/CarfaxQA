@@ -1,8 +1,10 @@
 
-Feature: Map and Directions page
+ Feature: Map and Directions page
 
 
-  @m&d-1 @smoke
+
+
+   @m&d-1 @smoke
   Scenario Outline: Map and Directions page from VDP
 
     Given I am on main Carfax page
@@ -14,12 +16,12 @@ Feature: Map and Directions page
     And I fill out address , "<state>", "<zip code>" to get direction
     Then I see map&directions window
 
-    Examples:
-      | make       | model           | zipcode |zip code|state|
-      | Audi       | Q3              | 22201   |85006        |Arizona|
-      | Honda        | Civic        | 75501   |32003         |Florida|
-      | Land Rover | Discovery Sport | 22033   |30002        |Georgia|
-      | Toyota     | Camry           | 22304   |63101        |Missouri|
+     Examples:
+       | make       | model           | zipcode | zip code | state    |
 
+       | Audi       | Q3              | 22201   | 85006    | Arizona  |
+       | Honda      | Civic           | 75501   | 32003    | Florida  |
+       | Land Rover | Discovery Sport | 22033   | 30002    | Georgia  |
+       | Toyota     | Camry           | 22304   | 63101    | Missouri |
 
 

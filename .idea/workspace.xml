@@ -3,67 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="165eccde-32d3-4ed8-a7a6-7a3177b8431e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/runners/RegressionRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/runners/RegressionRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/LeadFormStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/LeadFormStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/MapAndDirectionsStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/MapAndDirectionsStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/FollowBtnOnboarding.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/FollowBtnOnboarding.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/LeadForm.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/LeadForm.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/MainSignUp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/MainSignUp.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/MapAndDirections.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/MapAndDirections.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/UCLSignInBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/UCLSignInBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/UCLSignUpBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/UCLSignUpBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com/carfax/features/saveSearchBtnOnboarding.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/carfax/features/saveSearchBtnOnboarding.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/carfax_qa-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/css/cucumber.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/images/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/Chart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/jquery.tablesorter.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/js/moment.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-failures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-steps.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-tags.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_4081642702.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_4089311534.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/formatter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/jquery-1.8.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Map and Directions page.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Map and Directions page.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/FollowBtnOnboarding.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/FollowBtnOnboarding.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/LeadForm.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/LeadForm.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/MainSignUp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/MainSignUp.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/MapAndDirections.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/MapAndDirections.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/UCLSignInBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/UCLSignInBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/UCLSignUpBtn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/UCLSignUpBtn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax/features/saveSearchBtnOnboarding.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax/features/saveSearchBtnOnboarding.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/Hooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/LeadFormStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/LeadFormStepDef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/MapAndDirectionsStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/carfax_ucl/step_definitions/MapAndDirectionsStepDef.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -293,10 +232,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1356" />
-    <option name="y" value="-1210" />
-    <option name="width" value="1620" />
-    <option name="height" value="1100" />
+    <option name="x" value="-16" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="822" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -602,7 +541,7 @@
       <workItem from="1580478913508" duration="5836000" />
       <workItem from="1580499161151" duration="1682000" />
       <workItem from="1580691449721" duration="6148000" />
-      <workItem from="1580825496857" duration="9852000" />
+      <workItem from="1580825496857" duration="10324000" />
     </task>
     <servers />
   </component>
@@ -639,13 +578,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182125000" />
+    <option name="totallyTimeSpent" value="182597000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1356" y="-1210" width="1620" height="1100" extended-state="0" />
-    <editor active="true" />
+    <frame x="-16" y="23" width="1440" height="822" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28263626" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3190272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -654,7 +592,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29265872" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40355676" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3178082" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -662,7 +600,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32921812" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3042362" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3041096" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32734275" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -671,7 +609,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" weight="0.3297568" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.15462612" />
+      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.17453505" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>

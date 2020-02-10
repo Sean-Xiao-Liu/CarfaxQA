@@ -71,8 +71,7 @@ formatter.match({
   "location": "FindDealerStepDef.i_am_able_to_see_dealer_list()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class\u003d\u0027results-header-title\u0027]\"}\n  (Session info: chrome\u003d79.0.3945.130)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027A-XF4WBHV29\u0027, ip: \u0027fe80:0:0:0:1c06:ed29:72ac:25c5%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.2\u0027, java.version: \u002712.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/x_/jgrkcbmn19s...}, goog:chromeOptions: {debuggerAddress: localhost:58886}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 572cd6b079fd0664a2ca250514a3ea63\n*** Element info: {Using\u003dcss selector, value\u003ddiv[class\u003d\u0027results-header-title\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)\n\tat com.carfax_ucl.step_definitions.FindDealerStepDef.i_am_able_to_see_dealer_list(FindDealerStepDef.java:56)\n\tat ✽.I am able to see dealer list(file:src/test/resources/com/carfax/features/FindDealer.feature:13)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "I click on any dealer page that I want",
@@ -82,7 +81,7 @@ formatter.match({
   "location": "FindDealerStepDef.i_click_on_any_dealer_page_that_I_want()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "I able to see cars from specific dealer",
@@ -92,9 +91,8 @@ formatter.match({
   "location": "FindDealerStepDef.i_able_to_see_cars_from_specific_dealer()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png");
 formatter.after({
   "status": "passed"
 });
@@ -1373,7 +1371,8 @@ formatter.match({
   "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on MAC (36897eb8-972d-0b4b-94fe-c1a87b00041f)] -\u003e xpath: //div[2]/div/div[1]/div/span[2]/i] (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027A-XF4WBHV29\u0027, ip: \u0027fe80:0:0:0:1c06:ed29:72ac:25c5%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.2\u0027, java.version: \u002712.0.1\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 42999, moz:profile: /var/folders/x_/jgrkcbmn19s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.2.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 36897eb8-972d-0b4b-94fe-c1a87b00041f\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat com.carfax_ucl.step_definitions.LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(LeadFormStepDef.java:99)\n\tat ✽.I navigate to Lead Form and fill out First Name, Last Name, \"75501\" , email(file:src/test/resources/com/carfax/features/LeadForm.feature:31)\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I click on Send Message to that dealer",
@@ -1383,8 +1382,9 @@ formatter.match({
   "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded0.png");
 formatter.after({
   "status": "passed"
 });
@@ -1468,7 +1468,8 @@ formatter.match({
   "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on MAC (2e34a631-05a7-7249-9aca-c485ee1f7c11)] -\u003e xpath: //div[2]/div/div[1]/div/span[2]/i] (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027A-XF4WBHV29\u0027, ip: \u0027fe80:0:0:0:1c06:ed29:72ac:25c5%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.2\u0027, java.version: \u002712.0.1\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 43029, moz:profile: /var/folders/x_/jgrkcbmn19s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.2.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 2e34a631-05a7-7249-9aca-c485ee1f7c11\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat com.carfax_ucl.step_definitions.LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(LeadFormStepDef.java:99)\n\tat ✽.I navigate to Lead Form and fill out First Name, Last Name, \"20148\" , email(file:src/test/resources/com/carfax/features/LeadForm.feature:31)\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I click on Send Message to that dealer",
@@ -1478,8 +1479,9 @@ formatter.match({
   "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded1.png");
 formatter.after({
   "status": "passed"
 });
@@ -1646,7 +1648,8 @@ formatter.match({
   "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_cleaning_zipcode_which_is_by_default_already_filled_out()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on MAC (e3085617-10ba-a240-bbb5-e3594262865a)] -\u003e xpath: //div[2]/div/div[1]/div/span[2]/i] (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027A-XF4WBHV29\u0027, ip: \u0027fe80:0:0:0:1c06:ed29:72ac:25c5%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.2\u0027, java.version: \u002712.0.1\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 43058, moz:profile: /var/folders/x_/jgrkcbmn19s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.2.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: e3085617-10ba-a240-bbb5-e3594262865a\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat com.carfax_ucl.step_definitions.LeadFormStepDef.i_navigate_to_Lead_Form_and_cleaning_zipcode_which_is_by_default_already_filled_out(LeadFormStepDef.java:148)\n\tat ✽.I navigate to Lead Form and cleaning zipcode which is by default already filled out(file:src/test/resources/com/carfax/features/LeadForm.feature:51)\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I click on Send Message to that dealer and should see error messages are displayed",
@@ -1656,8 +1659,9 @@ formatter.match({
   "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_error_messages_are_displayed()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded2.png");
 formatter.after({
   "status": "passed"
 });
@@ -1738,7 +1742,8 @@ formatter.match({
   "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_cleaning_zipcode_which_is_by_default_already_filled_out()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on MAC (2389306d-ae52-8f45-8d5b-cf8d835e4dbc)] -\u003e xpath: //div[2]/div/div[1]/div/span[2]/i] (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027A-XF4WBHV29\u0027, ip: \u0027fe80:0:0:0:1c06:ed29:72ac:25c5%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.2\u0027, java.version: \u002712.0.1\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 43090, moz:profile: /var/folders/x_/jgrkcbmn19s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.2.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 2389306d-ae52-8f45-8d5b-cf8d835e4dbc\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat com.carfax_ucl.step_definitions.LeadFormStepDef.i_navigate_to_Lead_Form_and_cleaning_zipcode_which_is_by_default_already_filled_out(LeadFormStepDef.java:148)\n\tat ✽.I navigate to Lead Form and cleaning zipcode which is by default already filled out(file:src/test/resources/com/carfax/features/LeadForm.feature:51)\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I click on Send Message to that dealer and should see error messages are displayed",
@@ -1748,8 +1753,9 @@ formatter.match({
   "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_error_messages_are_displayed()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded3.png");
 formatter.after({
   "status": "passed"
 });
@@ -1830,7 +1836,8 @@ formatter.match({
   "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_cleaning_zipcode_which_is_by_default_already_filled_out()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on MAC (d692fb79-2c10-0645-9871-df664872b2da)] -\u003e xpath: //div[2]/div/div[1]/div/span[2]/i] (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027A-XF4WBHV29\u0027, ip: \u0027fe80:0:0:0:1c06:ed29:72ac:25c5%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.2\u0027, java.version: \u002712.0.1\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 43116, moz:profile: /var/folders/x_/jgrkcbmn19s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.2.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: d692fb79-2c10-0645-9871-df664872b2da\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat com.carfax_ucl.step_definitions.LeadFormStepDef.i_navigate_to_Lead_Form_and_cleaning_zipcode_which_is_by_default_already_filled_out(LeadFormStepDef.java:148)\n\tat ✽.I navigate to Lead Form and cleaning zipcode which is by default already filled out(file:src/test/resources/com/carfax/features/LeadForm.feature:51)\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I click on Send Message to that dealer and should see error messages are displayed",
@@ -1840,8 +1847,9 @@ formatter.match({
   "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_error_messages_are_displayed()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded4.png");
 formatter.after({
   "status": "passed"
 });
@@ -2301,7 +2309,8 @@ formatter.match({
   "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on MAC (12f7d624-7518-a345-bc15-780c98a71db3)] -\u003e xpath: //div[2]/div/div[1]/div/span[2]/i] (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027A-XF4WBHV29\u0027, ip: \u0027fe80:0:0:0:1c06:ed29:72ac:25c5%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.2\u0027, java.version: \u002712.0.1\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 43238, moz:profile: /var/folders/x_/jgrkcbmn19s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.2.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 12f7d624-7518-a345-bc15-780c98a71db3\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat com.carfax_ucl.step_definitions.LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(LeadFormStepDef.java:193)\n\tat ✽.I navigate to Lead Form and fill out First Name,  \"20142\" and Phone number(file:src/test/resources/com/carfax/features/LeadForm.feature:71)\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I click on Send Message to that dealer and should see Last Name error message are displayed",
@@ -2311,8 +2320,9 @@ formatter.match({
   "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Last_Name_error_message_are_displayed()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded5.png");
 formatter.after({
   "status": "passed"
 });
@@ -2396,7 +2406,8 @@ formatter.match({
   "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on MAC (49465a1b-8009-9443-8c44-791c835c55fe)] -\u003e xpath: //div[2]/div/div[1]/div/span[2]/i] (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027A-XF4WBHV29\u0027, ip: \u0027fe80:0:0:0:1c06:ed29:72ac:25c5%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.2\u0027, java.version: \u002712.0.1\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 43272, moz:profile: /var/folders/x_/jgrkcbmn19s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.2.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 49465a1b-8009-9443-8c44-791c835c55fe\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat com.carfax_ucl.step_definitions.LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(LeadFormStepDef.java:193)\n\tat ✽.I navigate to Lead Form and fill out First Name,  \"22304\" and Phone number(file:src/test/resources/com/carfax/features/LeadForm.feature:71)\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I click on Send Message to that dealer and should see Last Name error message are displayed",
@@ -2406,8 +2417,9 @@ formatter.match({
   "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Last_Name_error_message_are_displayed()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded6.png");
 formatter.after({
   "status": "passed"
 });
@@ -2579,7 +2591,8 @@ formatter.match({
   "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_Last_Name_and_Phone_number(String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on MAC (081d2a09-11e5-d24e-95d9-c5d99254a12c)] -\u003e xpath: //div[2]/div/div[1]/div/span[2]/i] (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027A-XF4WBHV29\u0027, ip: \u0027fe80:0:0:0:1c06:ed29:72ac:25c5%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.2\u0027, java.version: \u002712.0.1\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 43299, moz:profile: /var/folders/x_/jgrkcbmn19s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.2.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 081d2a09-11e5-d24e-95d9-c5d99254a12c\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat com.carfax_ucl.step_definitions.LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_Last_Name_and_Phone_number(LeadFormStepDef.java:235)\n\tat ✽.I navigate to Lead Form and fill out Last Name,  \"22304\" and Phone number(file:src/test/resources/com/carfax/features/LeadForm.feature:91)\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I click on Send Message to that dealer and should see First Name error message are displayed",
@@ -2589,8 +2602,9 @@ formatter.match({
   "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_First_Name_error_message_are_displayed()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded7.png");
 formatter.after({
   "status": "passed"
 });
@@ -2855,7 +2869,8 @@ formatter.match({
   "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_Last_Name_and_Phone_number(String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on MAC (0aaa06e5-0f85-904d-b584-9ea11b87f4b1)] -\u003e xpath: //div[2]/div/div[1]/div/span[2]/i] (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027A-XF4WBHV29\u0027, ip: \u0027fe80:0:0:0:1c06:ed29:72ac:25c5%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.2\u0027, java.version: \u002712.0.1\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 43388, moz:profile: /var/folders/x_/jgrkcbmn19s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.2.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 0aaa06e5-0f85-904d-b584-9ea11b87f4b1\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat com.carfax_ucl.step_definitions.LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_Last_Name_and_Phone_number(LeadFormStepDef.java:235)\n\tat ✽.I navigate to Lead Form and fill out Last Name,  \"75501\" and Phone number(file:src/test/resources/com/carfax/features/LeadForm.feature:91)\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I click on Send Message to that dealer and should see First Name error message are displayed",
@@ -2865,8 +2880,9 @@ formatter.match({
   "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_First_Name_error_message_are_displayed()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded8.png");
 formatter.after({
   "status": "passed"
 });
@@ -3033,7 +3049,8 @@ formatter.match({
   "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_name_and_Phone_number()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on MAC (d79b5b66-7005-ff42-a55e-fb4b399dcbd8)] -\u003e xpath: //div[2]/div/div[1]/div/span[2]/i] (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027A-XF4WBHV29\u0027, ip: \u0027fe80:0:0:0:1c06:ed29:72ac:25c5%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.2\u0027, java.version: \u002712.0.1\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 43414, moz:profile: /var/folders/x_/jgrkcbmn19s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.2.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: d79b5b66-7005-ff42-a55e-fb4b399dcbd8\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat com.carfax_ucl.step_definitions.LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_name_and_Phone_number(LeadFormStepDef.java:278)\n\tat ✽.I navigate to Lead Form and fill out First Name,  Last name and Phone number(file:src/test/resources/com/carfax/features/LeadForm.feature:112)\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I click on Send Message to that dealer and should see Zip code error message are displayed",
@@ -3043,8 +3060,9 @@ formatter.match({
   "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Zip_code_error_message_are_displayed()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded9.png");
 formatter.after({
   "status": "passed"
 });
@@ -3309,7 +3327,8 @@ formatter.match({
   "location": "LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_name_and_Phone_number()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on MAC (dcf9009f-3cd4-d142-96e6-db754f0a70cb)] -\u003e xpath: //div[2]/div/div[1]/div/span[2]/i] (tried for 3 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027A-XF4WBHV29\u0027, ip: \u0027fe80:0:0:0:1c06:ed29:72ac:25c5%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.2\u0027, java.version: \u002712.0.1\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 43494, moz:profile: /var/folders/x_/jgrkcbmn19s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.2.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: dcf9009f-3cd4-d142-96e6-db754f0a70cb\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat com.carfax_ucl.step_definitions.LeadFormStepDef.i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_name_and_Phone_number(LeadFormStepDef.java:278)\n\tat ✽.I navigate to Lead Form and fill out First Name,  Last name and Phone number(file:src/test/resources/com/carfax/features/LeadForm.feature:112)\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I click on Send Message to that dealer and should see Zip code error message are displayed",
@@ -3319,8 +3338,9 @@ formatter.match({
   "location": "LeadFormStepDef.i_click_on_Send_Message_to_that_dealer_and_should_see_Zip_code_error_message_are_displayed()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded10.png");
 formatter.after({
   "status": "passed"
 });
@@ -3674,7 +3694,8 @@ formatter.match({
   "location": "MapAndDirectionsStepDef.i_click_on_map_directions_link_from_dealer_info_window()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id\u003d\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[2]/div/div/div[1]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027A-XF4WBHV29\u0027, ip: \u0027fe80:0:0:0:1c06:ed29:72ac:25c5%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.2\u0027, java.version: \u002712.0.1\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 43576, moz:profile: /var/folders/x_/jgrkcbmn19s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.2.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 74065332-318c-fd43-91b7-039f50ef3398\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[2]/div/div/div[1]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat com.carfax_ucl.step_definitions.MapAndDirectionsStepDef.i_click_on_map_directions_link_from_dealer_info_window(MapAndDirectionsStepDef.java:44)\n\tat ✽.I click on map\u0026directions link from dealer info window(file:src/test/resources/com/carfax/features/MapAndDirections.feature:15)\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "I fill out address , \"Florida\", \"32003\" to get direction",
@@ -3684,7 +3705,7 @@ formatter.match({
   "location": "MapAndDirectionsStepDef.i_fill_out_address_to_get_direction(String,String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I see map\u0026directions window",
@@ -3694,8 +3715,9 @@ formatter.match({
   "location": "MapAndDirectionsStepDef.i_see_map_directions_window()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded11.png");
 formatter.after({
   "status": "passed"
 });

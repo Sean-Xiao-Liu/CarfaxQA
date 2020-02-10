@@ -53,7 +53,7 @@ public class FindDealerStepDef {
     }
     @Given("I am able to see dealer list")
     public void i_am_able_to_see_dealer_list() {
-        basePage.getFindDealerPage().DealerHeaderTitle.isDisplayed();
+        wait.until(ExpectedConditions.visibilityOf(basePage.getFindDealerPage().DealerHeaderTitle)).isDisplayed();
     }
 
 

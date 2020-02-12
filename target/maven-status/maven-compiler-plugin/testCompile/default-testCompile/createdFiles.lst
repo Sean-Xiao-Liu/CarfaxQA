@@ -6,6 +6,7 @@ com/carfax_ucl/utilities/Driver.class
 com/carfax_ucl/pages/LeadFormPage.class
 com/carfax_ucl/step_definitions/MapAndDirectionsStepDef.class
 com/carfax_ucl/pages/SendToMyPhonePage.class
+com/carfax_ucl/step_definitions/FooterLinksMoreCarfaxStepDef.class
 com/carfax_ucl/pages/UCLSignUpPage.class
 com/carfax_ucl/pages/FollowBtnPage.class
 com/carfax_ucl/pages/vdpSaveThisSearchPage.class

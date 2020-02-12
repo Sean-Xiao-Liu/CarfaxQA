@@ -17,90 +17,108 @@ public class BasePage {
     private ShareHeaderPage shareHeader;
     private MapAndDirectionsPage mapAndDirectionsPage;
     private BodyTypeOrPricePage bodyTypeOrPricePage;
-
+    private FiltersSRPPage filtersSRPPage;
+    private FooterLinksPage footerLinksPage;
 
     public FindDealerPage getFindDealerPage() {
-        if(findDealerPage ==null){
+        if (findDealerPage == null) {
             findDealerPage = new FindDealerPage();
         }
         return findDealerPage;
     }
 
     public FollowBtnPage getFollowBtnPage() {
-        if(followBtnPage ==null){
+        if (followBtnPage == null) {
             followBtnPage = new FollowBtnPage();
         }
         return followBtnPage;
     }
 
     public LeadFormPage getLeadFormPage() {
-        if(leadFormPage ==null){
+        if (leadFormPage == null) {
             leadFormPage = new LeadFormPage();
         }
         return leadFormPage;
     }
 
     public MainSignUpPage getMainSignUpPage() {
-        if(mainSignUpPage ==null){
+        if (mainSignUpPage == null) {
             mainSignUpPage = new MainSignUpPage();
         }
         return mainSignUpPage;
     }
 
     public MainSignInPage getMainSignInPage() {
-        if(mainSignInPage ==null){
+        if (mainSignInPage == null) {
             mainSignInPage = new MainSignInPage();
         }
         return mainSignInPage;
     }
 
     public UCLSignInPage getUclSignInPage() {
-        if(uclSignInPage ==null){
+        if (uclSignInPage == null) {
             uclSignInPage = new UCLSignInPage();
         }
         return uclSignInPage;
     }
 
     public UCLSignUpPage getUclSignUpPage() {
-        if(uclSignUpPage ==null){
+        if (uclSignUpPage == null) {
             uclSignUpPage = new UCLSignUpPage();
         }
         return uclSignUpPage;
     }
 
     public vdpSaveThisSearchPage getVdp() {
-        if(vdp ==null){
+        if (vdp == null) {
             vdp = new vdpSaveThisSearchPage();
         }
         return vdp;
     }
 
-    public SendToMyPhonePage getSendToMyPhone(){
-        if(sendToMyPhone==null){
-            sendToMyPhone=new SendToMyPhonePage();
+    public SendToMyPhonePage getSendToMyPhone() {
+        if (sendToMyPhone == null) {
+            sendToMyPhone = new SendToMyPhonePage();
         }
         return sendToMyPhone;
     }
 
-    public ShareHeaderPage getShareHeader(){
-        if (shareHeader==null) {
-            shareHeader=new ShareHeaderPage();
+    public ShareHeaderPage getShareHeader() {
+        if (shareHeader == null) {
+            shareHeader = new ShareHeaderPage();
         }
         return shareHeader;
     }
 
-    public MapAndDirectionsPage getMapAndDirections(){
-        if(mapAndDirectionsPage==null){
-            mapAndDirectionsPage=new MapAndDirectionsPage();
+    public MapAndDirectionsPage getMapAndDirections() {
+        if (mapAndDirectionsPage == null) {
+            mapAndDirectionsPage = new MapAndDirectionsPage();
         }
         return mapAndDirectionsPage;
     }
 
-    public BodyTypeOrPricePage getBodyTypeOrPricePage(){
-        if (bodyTypeOrPricePage==null){
-            bodyTypeOrPricePage=new BodyTypeOrPricePage();
+    public BodyTypeOrPricePage getBodyTypeOrPricePage() {
+        if (bodyTypeOrPricePage == null) {
+            bodyTypeOrPricePage = new BodyTypeOrPricePage();
         }
         return bodyTypeOrPricePage;
     }
+
+    public FiltersSRPPage getFiltersSRPPage() {
+    if(filtersSRPPage==null) {
+        filtersSRPPage=new FiltersSRPPage();
+    }
+    return filtersSRPPage;
+}
+public FooterLinksPage getFooterLinksPage(){
+
+        if(footerLinksPage==null){
+            footerLinksPage=new FooterLinksPage();
+    }
+
+        return footerLinksPage;
+}
+
+
 
 }

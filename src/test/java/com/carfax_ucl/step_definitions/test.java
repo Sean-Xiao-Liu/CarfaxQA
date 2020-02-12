@@ -25,7 +25,8 @@ public class test extends TestBase {
     public  WebDriver driver= Driver.get();
     public Actions actions=new Actions(driver);
     public  Faker faker=new Faker();
-    public TestBase  testBase=new TestBase();
+    TestBase  testBase=new TestBase();
+
 
 
     @Before
@@ -848,4 +849,107 @@ String state1="Arizona";
 
 
     }
+
+    @Test
+    public void CheckboxTest() throws InterruptedException {
+        BasePage basePage=new BasePage();
+
+        String model="A3";
+        String make="Audi";
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().findAUsedCarBtn)).click();
+        //for(int i=1;i<2;i++) {
+        Thread.sleep(2000);
+
+        //todo Clicking to choose a make
+        List <WebElement> makes =driver.findElements(By.xpath("//select[@name='make']/optgroup[@label='Popular Makes']/option"));
+        for(WebElement temp :makes){
+            if(temp.getText().trim().equals(make)){
+                temp.click();
+                break;
+            }
+
+        }
+        //todo clicking to choose a make
+        Thread.sleep(1000);
+        //wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//select[@name='model']/optgroup[@label='Current Models']"))));
+        List <WebElement> models =driver.findElements(By.xpath("//select[@name='model']/optgroup[@label='Current Models']/option"));
+        System.out.println("models = " + models.size());
+        for(WebElement temp :models){
+            if(temp.getText().trim().equals(model)){
+                temp.click();
+                break;
+            }
+
+        }
+//todo clicking on zipcode
+        basePage.getFollowBtnPage().zipCodeMainPage.click();
+        basePage.getFollowBtnPage().zipCodeMainPage.sendKeys("22204");
+        ///todo clicking onn Next button
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().submitBtn)).click();
+
+//todo clicking on 'Show me Result' button
+        wait.until(ExpectedConditions.textMatches((By.xpath("//span[@class='totalRecordsText']")), Pattern.compile("[1-9]")));
+//        //todo clicking on 'Show me  Results'
+        basePage.getFollowBtnPage().showMeBtn.click();
+
+
+       // List<WebElement> filters=driver.findElements(By.xpath("//span[contains(@id,'pillarsFilter_')]"));
+
+
+//todo selecting 4 pillars filters
+        testBase.waitFor(2);
+        testBase.selectCheckBox(basePage.getFiltersSRPPage().FourPillars.get(1),true);
+        testBase.selectCheckBox(basePage.getFiltersSRPPage().FourPillars.get(2),true);
+
+        //todo clicking on Min Year Selector to get DropDown
+      //  basePage.getFiltersSRPPage().minYearSelect.click();
+
+        //todo get Min Year dropdown
+List<WebElement> listForMinYear=driver.findElements(By.xpath("//option[contains(@id,'minYear_')]"));
+        wait.until(ExpectedConditions.visibilityOf(listForMinYear.get(3))).click();
+testBase.waitFor(3);
+        //todo clicking on max year dropdown
+      //  basePage.getFiltersSRPPage().maxYearSelect.click();
+
+//todo get Max Year DropDown
+        List<WebElement> listForMaxYear=driver.findElements(By.xpath("//option[contains(@id,'maxYear_')]"));
+        wait.until(ExpectedConditions.elementToBeClickable(listForMaxYear.get(1))).click();
+
+
+        //todo picking a color
+testBase.scrollToElement(driver.findElement(By.cssSelector("div[class='srp-filter--header row']")));
+List<WebElement> colors=driver.findElements(By.xpath("//span[contains(@id,'colorsFilter_')]"));
+       colors.get(2).click();
+
+       //todo clicking on trim level
+basePage.getFiltersSRPPage().trimLevel.get(1).click();
+wait.until(ExpectedConditions.urlContains("Premium"));
+
+
+//todo clicking on body type
+        basePage.getFiltersSRPPage().bodyTypeHeader.click();
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFiltersSRPPage().bodyTypeDropDown.get(1))).click();
+
+//todo clicking on interior color
+
+        basePage.getFiltersSRPPage().interiorColor.click();
+        testBase.waitFor(1);
+     basePage.getFiltersSRPPage().interioColorDropDown.get(1).click();
+
+
+     //todo go back to verify a header of the car
+
+        testBase.scrollToElement(driver.findElement(By.xpath("//div[@class='results-header-title']")));
+        Assert.assertTrue(driver.getCurrentUrl().contains("Premium"));
+
+
+
+
+
+
+    }
+
+
+
+
 }

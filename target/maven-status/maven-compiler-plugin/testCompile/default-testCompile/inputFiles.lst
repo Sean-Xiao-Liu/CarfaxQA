@@ -6,12 +6,14 @@
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/MainSignInPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/utilities/TestBase.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/MainSignUpPage.java
+/Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/FooterLinksPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/utilities/Driver.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/LeadFormStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/ShareHeaderPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/UCLSignInStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/SendToMyPhonePage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/BodyTypeOrPricePage.java
+/Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/FooterLinksMoreCarfaxStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/MainSignUpBtnStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/vdpSaveThisSearchPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/MapAndDirectionsStepDef.java
@@ -19,9 +21,12 @@
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/BasePage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/FollowBtnStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/MapAndDirectionsPage.java
+/Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/FiltersSRPPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/UCLSignInPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/runners/RegressionRunner.java
+/Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/FiltersSRPStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/utilities/ConfigurationReader.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/UCLSignUpPage.java
+/Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/FooterLinksFreeServicesStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/FindDealerPage.java

@@ -4,6 +4,8 @@ com/carfax_ucl/step_definitions/UCLSignUpBtnStepDef.class
 com/carfax_ucl/pages/MainSignUpPage.class
 com/carfax_ucl/utilities/Driver.class
 com/carfax_ucl/pages/LeadFormPage.class
+com/carfax_ucl/pages/FooterLinksPage.class
+com/carfax_ucl/pages/FiltersSRPPage.class
 com/carfax_ucl/step_definitions/MapAndDirectionsStepDef.class
 com/carfax_ucl/pages/SendToMyPhonePage.class
 com/carfax_ucl/step_definitions/FooterLinksMoreCarfaxStepDef.class
@@ -16,6 +18,7 @@ com/carfax_ucl/pages/ShareHeaderPage.class
 com/carfax_ucl/step_definitions/Hooks.class
 com/carfax_ucl/step_definitions/FindDealerStepDef.class
 com/carfax_ucl/step_definitions/MainSignUpBtnStepDef.class
+com/carfax_ucl/step_definitions/FiltersSRPStepDef.class
 com/carfax_ucl/pages/MapAndDirectionsPage.class
 com/carfax_ucl/step_definitions/FollowBtnStepDef.class
 com/carfax_ucl/step_definitions/SaveThisSearchStepDef.class
@@ -23,6 +26,8 @@ com/carfax_ucl/pages/BodyTypeOrPricePage.class
 com/carfax_ucl/step_definitions/test.class
 com/carfax_ucl/utilities/ConfigurationReader.class
 com/carfax_ucl/runners/RegressionRunner.class
+com/carfax_ucl/step_definitions/ICRStepDef.class
 com/carfax_ucl/pages/BasePage.class
 com/carfax_ucl/pages/FindDealerPage.class
+com/carfax_ucl/step_definitions/FooterLinksFreeServicesStepDef.class
 com/carfax_ucl/pages/MainSignInPage.class

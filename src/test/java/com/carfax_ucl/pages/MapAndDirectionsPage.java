@@ -11,7 +11,8 @@ public class MapAndDirectionsPage {
         PageFactory.initElements(Driver.get(),this);
     }
 
-    @FindBy(css = "a#_automation_test_map_and_directions")
+    //@FindBy(css = "a#_automation_test_map_and_directions")
+    @FindBy(css = "a#dealer-info__directions-link")
     public WebElement mapAndDirectionVDP;
 
     @FindBy(css = "span.dealer-directions-info-title")
@@ -20,7 +21,7 @@ public class MapAndDirectionsPage {
     @FindBy(xpath = "//i[@class='fa fa-phone']")
     public WebElement phoneNumberSign;
 
-    @FindBy(xpath = "//i[@class='fa fa-map-marker']")
+    @FindBy(css = "i[class='fa fa-map-marker']")
     public WebElement locationSign;
 
     @FindBy(css = "input[name='address']")

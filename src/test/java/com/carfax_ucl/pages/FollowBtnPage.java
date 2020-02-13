@@ -4,7 +4,11 @@ import com.carfax_ucl.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-public class FollowBtnPage extends MainSignUpPage {
+
+
+
+
+public class FollowBtnPage  {
     public FollowBtnPage(){
         PageFactory.initElements(Driver.get(),this);
     }
@@ -24,7 +28,8 @@ public class FollowBtnPage extends MainSignUpPage {
     public WebElement FollowBtn;
     @FindBy(css = "button[type='submit'][value='Send']")
     public WebElement startFollowingBtn;
-    @FindBy(xpath = "(//input[@name='zip'][@placeholder='Zip Code'])[2]")
+    @FindBy(xpath = "(//input[@name='zip'][@placeholder='Zip Code'])[1]")
+    //@FindBy(xpath = "(//input[@name='zip'][@placeholder='Zip Code'])[2]")
     public WebElement zipCode;
     @FindBy(xpath = "//input[@name='email'][contains(@placeholder,'Email Address')]")
     public WebElement email;

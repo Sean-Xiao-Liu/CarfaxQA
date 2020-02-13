@@ -40,7 +40,9 @@ public TestBase testBase=new TestBase();
         wait.until(ExpectedConditions.urlContains("vehicle"));
 
         //todo scrolling down to element
-        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+        WebElement length=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+
+        //driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
         testBase.waitFor(2);
@@ -90,7 +92,10 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(Stri
         }
     wait.until(ExpectedConditions.urlContains("vehicle"));
         //todo scrolling down to element
-        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+        WebElement length=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+
+    //driver.findElement(By.xpath("/html/body/div[3]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+                //driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
         //todo input for Lead Form
@@ -142,7 +147,9 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(Stri
 
         wait.until(ExpectedConditions.urlContains("vehicle"));
         //todo scrolling down to element
-        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+        WebElement length=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+
+        //driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
@@ -187,7 +194,9 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
 
     wait.until(ExpectedConditions.urlContains("vehicle"));
         //todo scrolling down to element
-        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+        WebElement length=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+
+    //driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
@@ -229,7 +238,9 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
 
         wait.until(ExpectedConditions.urlContains("vehicle"));
         //todo scrolling down to element
-        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+        WebElement length=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+
+        //driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
@@ -271,7 +282,8 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
         wait.until(ExpectedConditions.urlContains("vehicle"));
 
         //todo scrolling down to element
-        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+        WebElement length=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
+
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
 

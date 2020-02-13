@@ -104,6 +104,6 @@ public class FooterLinksFreeServicesStepDef {
                 System.out.println(driver.getTitle());break;}
         }
         Assert.assertTrue(driver.getCurrentUrl().contains("sample-carfax-report"));
-        Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(),'View Sample CARFAX Reports')]")).getText().contains("Vehicle Recall Check"));
+        Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(),'View Sample CARFAX Reports')]")).getText().contains("View Sample CARFAX Reports"));
     }
 }

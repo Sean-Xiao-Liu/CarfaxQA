@@ -17,6 +17,9 @@ public class FindDealerPage {
     public WebElement selectMakeBtn;
     @FindBy(css = "input[name='zip'][placeholder='Zip Code']")
     public WebElement zipcode;
+
+    @FindBy(css = "select[name='radius']")
+    public WebElement radius;
     @FindBy(css = "span[class='checkbox-list-item--fancyCbx']")
     public WebElement certifiedPreOwnedVehicles;
     @FindBy(css = "button[type='submit'][id='fadSubmit']")

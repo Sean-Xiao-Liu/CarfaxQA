@@ -2,7 +2,7 @@ Feature: Testing a check boxes on SPR and verifying car title
 
 
 
-  @filters
+  @filters @smoke
   Scenario Outline: Filters on SRP
     Given I am on main Carfax page
     And I navigate to Find a Used Car page

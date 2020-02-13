@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-02-12T20:27:29.662Z",
+        "start_timestamp": "2020-02-13T20:27:45.979Z",
         "before": [
           {
             "result": {
-              "duration": 3308318584,
+              "duration": 3922824249,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "About Carfax footer link",
+        "line": 15,
+        "name": "Create account through Save This Search option",
         "description": "",
-        "id": ":-footer-link-for-more-carfax-links;about-carfax-footer-link",
+        "id": "icr-on-vdp;create-account-through-save-this-search-option;;2",
         "after": [
           {
             "result": {
-              "duration": 189478460,
+              "duration": 228578205,
               "status": "passed"
             },
             "match": {
@@ -31,11 +31,11 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 771022557,
+              "duration": 950432615,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 1579146281,
+              "duration": 1443533137,
               "status": "passed"
             },
             "line": 6,
@@ -59,53 +59,79 @@
           },
           {
             "result": {
-              "duration": 2270539466,
+              "duration": 4679633973,
               "status": "passed"
             },
             "line": 7,
-            "name": "I scroll down to footer links",
+            "name": "I fill out \"Subaru\" , \"Ascent\" , \"22201\" of the car that I want to search",
             "match": {
-              "location": "FooterLinksFreeServicesStepDef.i_scroll_down_to_footer_links()"
+              "arguments": [
+                {
+                  "val": "\"Subaru\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Ascent\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"22201\"",
+                  "offset": 33
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 293069501,
+              "duration": 1020595960,
               "status": "passed"
             },
             "line": 8,
-            "name": "I click on About CARFAX link",
+            "name": "I click on next and show me results button",
             "match": {
-              "location": "FooterLinksMoreCarfaxStepDef.i_click_on_About_CARFAX_link()"
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2599770702,
+              "duration": 749047107,
               "status": "passed"
             },
             "line": 9,
-            "name": "It navigates me to the About CARFAX page",
+            "name": "I click on particular car that I want",
             "match": {
-              "location": "FooterLinksMoreCarfaxStepDef.it_navigates_me_to_the_About_CARFAX_page()"
+              "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7106789636,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on View Free Carfax Report",
+            "match": {
+              "location": "ICRStepDef.i_click_on_View_Free_Carfax_Report()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@morecarfax"
+            "name": "@icr"
           }
         ]
       },
       {
-        "start_timestamp": "2020-02-12T20:27:40.691Z",
+        "start_timestamp": "2020-02-13T20:28:06.138Z",
         "before": [
           {
             "result": {
-              "duration": 2476313773,
+              "duration": 2805917766,
               "status": "passed"
             },
             "match": {
@@ -113,14 +139,14 @@
             }
           }
         ],
-        "line": 12,
-        "name": "Blog footer link",
+        "line": 16,
+        "name": "Create account through Save This Search option",
         "description": "",
-        "id": ":-footer-link-for-more-carfax-links;blog-footer-link",
+        "id": "icr-on-vdp;create-account-through-save-this-search-option;;3",
         "after": [
           {
             "result": {
-              "duration": 191512010,
+              "duration": 238675948,
               "status": "passed"
             },
             "match": {
@@ -129,14 +155,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 484711278,
+              "duration": 271830390,
               "status": "passed"
             },
-            "line": 13,
+            "line": 5,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -145,10 +171,10 @@
           },
           {
             "result": {
-              "duration": 1448286057,
+              "duration": 1208359233,
               "status": "passed"
             },
-            "line": 14,
+            "line": 6,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -157,53 +183,79 @@
           },
           {
             "result": {
-              "duration": 2092915920,
+              "duration": 4346266677,
               "status": "passed"
             },
-            "line": 15,
-            "name": "I scroll down to footer links",
+            "line": 7,
+            "name": "I fill out \"BMW\" , \"2 Series\" , \"75501\" of the car that I want to search",
             "match": {
-              "location": "FooterLinksFreeServicesStepDef.i_scroll_down_to_footer_links()"
+              "arguments": [
+                {
+                  "val": "\"BMW\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"2 Series\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"75501\"",
+                  "offset": 32
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 227923425,
+              "duration": 1105054944,
               "status": "passed"
             },
-            "line": 16,
-            "name": "I click on Blog link",
+            "line": 8,
+            "name": "I click on next and show me results button",
             "match": {
-              "location": "FooterLinksMoreCarfaxStepDef.i_click_on_Blog_link()"
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2854931303,
+              "duration": 681803813,
               "status": "passed"
             },
-            "line": 17,
-            "name": "It navigates me to the Automotive News and Advice page",
+            "line": 9,
+            "name": "I click on particular car that I want",
             "match": {
-              "location": "FooterLinksMoreCarfaxStepDef.it_navigates_me_to_the_Automotive_News_and_Advice_page()"
+              "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7055973167,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on View Free Carfax Report",
+            "match": {
+              "location": "ICRStepDef.i_click_on_View_Free_Carfax_Report()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@morecarfax"
+            "name": "@icr"
           }
         ]
       },
       {
-        "start_timestamp": "2020-02-12T20:27:50.468Z",
+        "start_timestamp": "2020-02-13T20:28:23.860Z",
         "before": [
           {
             "result": {
-              "duration": 2292986031,
+              "duration": 2549911038,
               "status": "passed"
             },
             "match": {
@@ -211,14 +263,14 @@
             }
           }
         ],
-        "line": 20,
-        "name": "Press Room footer link",
+        "line": 17,
+        "name": "Create account through Save This Search option",
         "description": "",
-        "id": ":-footer-link-for-more-carfax-links;press-room-footer-link",
+        "id": "icr-on-vdp;create-account-through-save-this-search-option;;4",
         "after": [
           {
             "result": {
-              "duration": 193891978,
+              "duration": 262528872,
               "status": "passed"
             },
             "match": {
@@ -227,14 +279,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 141147342,
+              "duration": 228028134,
               "status": "passed"
             },
-            "line": 21,
+            "line": 5,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -243,10 +295,10 @@
           },
           {
             "result": {
-              "duration": 1230943742,
+              "duration": 1388864386,
               "status": "passed"
             },
-            "line": 22,
+            "line": 6,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -255,53 +307,79 @@
           },
           {
             "result": {
-              "duration": 2092338723,
+              "duration": 4644172578,
               "status": "passed"
             },
-            "line": 23,
-            "name": "I scroll down to footer links",
+            "line": 7,
+            "name": "I fill out \"Tesla\" , \"Model 3\" , \"22033\" of the car that I want to search",
             "match": {
-              "location": "FooterLinksFreeServicesStepDef.i_scroll_down_to_footer_links()"
+              "arguments": [
+                {
+                  "val": "\"Tesla\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Model 3\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"22033\"",
+                  "offset": 33
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 154401162,
+              "duration": 893873207,
               "status": "passed"
             },
-            "line": 24,
-            "name": "I click on Press Room link",
+            "line": 8,
+            "name": "I click on next and show me results button",
             "match": {
-              "location": "FooterLinksMoreCarfaxStepDef.i_click_on_Press_Room_link()"
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2829974409,
+              "duration": 546436571,
               "status": "passed"
             },
-            "line": 25,
-            "name": "It navigates me to the Press page from more Carfax",
+            "line": 9,
+            "name": "I click on particular car that I want",
             "match": {
-              "location": "FooterLinksMoreCarfaxStepDef.it_navigates_me_to_the_Press_page_from_more_Carfax()"
+              "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7117081789,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on View Free Carfax Report",
+            "match": {
+              "location": "ICRStepDef.i_click_on_View_Free_Carfax_Report()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@morecarfax"
+            "name": "@icr"
           }
         ]
       },
       {
-        "start_timestamp": "2020-02-12T20:27:59.405Z",
+        "start_timestamp": "2020-02-13T20:28:41.497Z",
         "before": [
           {
             "result": {
-              "duration": 2249940413,
+              "duration": 2590357131,
               "status": "passed"
             },
             "match": {
@@ -309,14 +387,14 @@
             }
           }
         ],
-        "line": 29,
-        "name": "Carfax for Dealers footer link",
+        "line": 18,
+        "name": "Create account through Save This Search option",
         "description": "",
-        "id": ":-footer-link-for-more-carfax-links;carfax-for-dealers-footer-link",
+        "id": "icr-on-vdp;create-account-through-save-this-search-option;;5",
         "after": [
           {
             "result": {
-              "duration": 163719276,
+              "duration": 297568073,
               "status": "passed"
             },
             "match": {
@@ -325,14 +403,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 149960103,
+              "duration": 213187099,
               "status": "passed"
             },
-            "line": 30,
+            "line": 5,
             "name": "I am on main Carfax page",
             "match": {
               "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
@@ -341,10 +419,10 @@
           },
           {
             "result": {
-              "duration": 1253998370,
+              "duration": 1202876897,
               "status": "passed"
             },
-            "line": 31,
+            "line": 6,
             "name": "I navigate to Find a Used Car page",
             "match": {
               "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
@@ -353,249 +431,79 @@
           },
           {
             "result": {
-              "duration": 2101973422,
+              "duration": 4697790174,
               "status": "passed"
             },
-            "line": 32,
-            "name": "I scroll down to footer links",
+            "line": 7,
+            "name": "I fill out \"Toyota\" , \"Camry\" , \"22304\" of the car that I want to search",
             "match": {
-              "location": "FooterLinksFreeServicesStepDef.i_scroll_down_to_footer_links()"
+              "arguments": [
+                {
+                  "val": "\"Toyota\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Camry\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"22304\"",
+                  "offset": 32
+                }
+              ],
+              "location": "SaveThisSearchStepDef.i_fill_out_of_the_car_that_I_want_to_search(String,String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 160126163,
+              "duration": 1084087072,
               "status": "passed"
             },
-            "line": 33,
-            "name": "I click on Carfax for Dealers link",
+            "line": 8,
+            "name": "I click on next and show me results button",
             "match": {
-              "location": "FooterLinksMoreCarfaxStepDef.i_click_on_Carfax_for_Dealers_link()"
+              "location": "SaveThisSearchStepDef.i_click_on_next_and_show_me_results_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1668078845,
+              "duration": 774187841,
               "status": "passed"
             },
-            "line": 34,
-            "name": "It navigates me to the Carfax for Dealers page",
+            "line": 9,
+            "name": "I click on particular car that I want",
             "match": {
-              "location": "FooterLinksMoreCarfaxStepDef.it_navigates_me_to_the_Carfax_for_Dealers_page()"
+              "location": "LeadFormStepDef.i_click_on_particular_car_that_I_want()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7138624031,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on View Free Carfax Report",
+            "match": {
+              "location": "ICRStepDef.i_click_on_View_Free_Carfax_Report()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@morecarfax"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-02-12T20:28:07.154Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2340633448,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 37,
-        "name": "CARFAX Banking \u0026 Insurance Group footer link",
-        "description": "",
-        "id": ":-footer-link-for-more-carfax-links;carfax-banking-\u0026-insurance-group-footer-link",
-        "after": [
-          {
-            "result": {
-              "duration": 137062380,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 119019814,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "I am on main Carfax page",
-            "match": {
-              "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1291922178,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "I navigate to Find a Used Car page",
-            "match": {
-              "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2097640485,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "I scroll down to footer links",
-            "match": {
-              "location": "FooterLinksFreeServicesStepDef.i_scroll_down_to_footer_links()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 169297403,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "I click on CARFAX Banking \u0026 Insurance Group link",
-            "match": {
-              "location": "FooterLinksMoreCarfaxStepDef.i_click_on_CARFAX_Banking_Insurance_Group_link()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 737513653,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "It navigates me to the CARFAX Banking \u0026 Insurance Group page",
-            "match": {
-              "location": "FooterLinksMoreCarfaxStepDef.it_navigates_me_to_the_CARFAX_Banking_Insurance_Group_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@morecarfax"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-02-12T20:28:14.048Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2132386214,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 46,
-        "name": "Careers footer link",
-        "description": "",
-        "id": ":-footer-link-for-more-carfax-links;careers-footer-link",
-        "after": [
-          {
-            "result": {
-              "duration": 201646359,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 119361711,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "I am on main Carfax page",
-            "match": {
-              "location": "SaveThisSearchStepDef.i_am_on_main_Carfax_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1361612994,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "I navigate to Find a Used Car page",
-            "match": {
-              "location": "SaveThisSearchStepDef.i_navigate_to_Find_a_Used_Car_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2105650509,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "I scroll down to footer links",
-            "match": {
-              "location": "FooterLinksFreeServicesStepDef.i_scroll_down_to_footer_links()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 163578767,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "I click on Careers link",
-            "match": {
-              "location": "FooterLinksMoreCarfaxStepDef.i_click_on_Careers_link()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1824443470,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "It navigates me to the Careers page",
-            "match": {
-              "location": "FooterLinksMoreCarfaxStepDef.it_navigates_me_to_the_Careers_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@morecarfax"
+            "name": "@icr"
           }
         ]
       }
     ],
-    "name": ": Footer link for More Carfax links",
+    "name": "ICR on VDP",
     "description": "",
-    "id": ":-footer-link-for-more-carfax-links",
+    "id": "icr-on-vdp",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/com/carfax/features/FooterLinksMoreCarfax.feature",
+    "uri": "file:src/test/resources/com/carfax/features/ICR.feature",
     "tags": []
   }
 ]

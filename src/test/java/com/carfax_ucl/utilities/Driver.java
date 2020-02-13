@@ -14,8 +14,13 @@ import org.openqa.selenium.safari.SafariDriver;
 
 
 public class Driver {
+
+
     public Driver(){
     }
+
+
+
     private static WebDriver driver;
 
 

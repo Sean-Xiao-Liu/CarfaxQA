@@ -7,7 +7,6 @@ import com.github.javafaker.Faker;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -41,7 +40,8 @@ public class MapAndDirectionsStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
                 System.out.println(driver.getTitle());break;}
         }
-        WebElement length=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[2]/div/div/div[1]"));
+        WebElement length=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[2]/div/div/div[1]/h2"));
+                //driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[2]/div/div/div[1]"));
 
 
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
@@ -57,15 +57,16 @@ public class MapAndDirectionsStepDef {
 
     @When("I fill out address , {string}, {string} to get direction")
     public void i_fill_out_address_to_get_direction(String state1, String zipcode) {
-        testBase.waitFor(1);
+        testBase.waitFor(2);
 
         Set<String> mapWindow = driver.getWindowHandles();
         for(String map : mapWindow){
             if(driver.switchTo().window(map).getCurrentUrl().contains("map")) {
                 System.out.println(driver.getTitle());break;}
         }
-
-        WebElement searchForm=driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/div[4]/div[1]/div/div/div/div/span"));
+testBase.waitFor(1);
+        WebElement searchForm=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/div[4]/div[1]/div/div/div/div/span"));
+                //driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/div[4]/div[1]/div/div/div/div/span"));
         jse.executeScript("arguments[0].scrollIntoView(true);",searchForm);
 
 

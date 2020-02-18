@@ -46,6 +46,8 @@ public class MapAndDirectionsStepDef {
 
         jse.executeScript("arguments[0].scrollIntoView(true);",length);
 
+
+        testBase.waitFor(1);
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getMapAndDirections().mapAndDirectionVDP)).click();
 
 

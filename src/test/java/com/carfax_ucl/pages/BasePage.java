@@ -19,6 +19,9 @@ public class BasePage {
     private BodyTypeOrPricePage bodyTypeOrPricePage;
     private FiltersSRPPage filtersSRPPage;
     private FooterLinksPage footerLinksPage;
+    private DealerWebsitePage dealerWebsitePage;
+
+    private CheckAvailabilityLinksPage checkAvailabilityLinks;
 
     public FindDealerPage getFindDealerPage() {
         if (findDealerPage == null) {
@@ -119,6 +122,20 @@ public FooterLinksPage getFooterLinksPage(){
         return footerLinksPage;
 }
 
+    public CheckAvailabilityLinksPage getCheckAvailabilityLinks(){
 
+        if(checkAvailabilityLinks==null){
+            checkAvailabilityLinks=new CheckAvailabilityLinksPage();
+        }
 
+        return checkAvailabilityLinks;
+    }
+    public DealerWebsitePage getDealerWebsitePage(){
+
+        if(dealerWebsitePage==null){
+            dealerWebsitePage=new DealerWebsitePage();
+        }
+
+        return dealerWebsitePage;
+    }
 }

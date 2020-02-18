@@ -48,6 +48,7 @@ public class FooterLinksFreeServicesStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("Service")) {
                 System.out.println(driver.getTitle());break;}
         }
+        wait.until(ExpectedConditions.urlContains("Service"));
         Assert.assertTrue(driver.getCurrentUrl().contains("Service"));
 
     }
@@ -67,6 +68,9 @@ public class FooterLinksFreeServicesStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("resources")) {
                 System.out.println(driver.getTitle());break;}
         }
+
+        wait.until(ExpectedConditions.urlContains("resources"));
+
         Assert.assertTrue(driver.getCurrentUrl().contains("resources"));
         Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(),'Press')]")).getText().contains("Press"));
 
@@ -86,6 +90,9 @@ public class FooterLinksFreeServicesStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("recall")) {
                 System.out.println(driver.getTitle());break;}
         }
+
+        wait.until(ExpectedConditions.urlContains("recall"));
+
         Assert.assertTrue(driver.getCurrentUrl().contains("recall"));
         Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(),'Vehicle Recall Check')]")).getText().contains("Vehicle Recall Check"));
     }
@@ -103,6 +110,8 @@ public class FooterLinksFreeServicesStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("sample-carfax-report")) {
                 System.out.println(driver.getTitle());break;}
         }
+        wait.until(ExpectedConditions.urlContains("sample-carfax-report"));
+
         Assert.assertTrue(driver.getCurrentUrl().contains("sample-carfax-report"));
         Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(),'View Sample CARFAX Reports')]")).getText().contains("View Sample CARFAX Reports"));
     }

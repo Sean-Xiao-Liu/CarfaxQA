@@ -8,6 +8,7 @@ import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.Set;
@@ -27,10 +28,15 @@ public class FooterLinksMoreCarfaxStepDef {
     public void it_navigates_me_to_the_About_CARFAX_page() {
         Set<String> windows = driver.getWindowHandles();
         for(String window : windows){
-            if(driver.switchTo().window(window).getCurrentUrl().contains("about")) {
+            if(driver.switchTo().window(window).getCurrentUrl().contains("company")) {
                 System.out.println(driver.getTitle());break;}
         }
-        Assert.assertTrue(driver.getCurrentUrl().contains("about"));
+
+        testBase.waitFor(1);
+
+        wait.until(ExpectedConditions.urlContains("company"));
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("company"));
         Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(),'About CARFAX')]")).getText().contains("About CARFAX"));
     }
 
@@ -46,6 +52,9 @@ public class FooterLinksMoreCarfaxStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("blog")) {
                 System.out.println(driver.getTitle());break;}
         }
+        testBase.waitFor(1);
+        wait.until(ExpectedConditions.urlContains("blog"));
+
         Assert.assertTrue(driver.getCurrentUrl().contains("blog"));
         Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(),'Automotive News and Advice')]")).getText().contains("Automotive News and Advice"));
     }
@@ -62,6 +71,9 @@ public class FooterLinksMoreCarfaxStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("press")) {
                 System.out.println(driver.getTitle());break;}
         }
+        testBase.waitFor(1);
+        wait.until(ExpectedConditions.urlContains("press"));
+
         Assert.assertTrue(driver.getCurrentUrl().contains("press"));
         Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(),'Press')]")).getText().contains("Press"));
 
@@ -81,13 +93,17 @@ public class FooterLinksMoreCarfaxStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("landingPage")) {
                 System.out.println(driver.getTitle());break;}
         }
+        testBase.waitFor(1);
+
+        wait.until(ExpectedConditions.urlContains("landingPage"));
+
         Assert.assertTrue(driver.getCurrentUrl().contains("landingPage"));
     }
 
     @When("I click on CARFAX Banking & Insurance Group link")
     public void i_click_on_CARFAX_Banking_Insurance_Group_link() {
 
-        basePage.getFooterLinksPage().carfaxBanking.click();
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getFooterLinksPage().carfaxBanking)).click();
 
     }
 
@@ -98,11 +114,15 @@ public class FooterLinksMoreCarfaxStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("bank")) {
                 System.out.println(driver.getTitle());break;}
         }
+        testBase.waitFor(1);
+        wait.until(ExpectedConditions.urlContains("bank"));
+
         Assert.assertTrue(driver.getCurrentUrl().contains("bank"));
     }
 
     @When("I click on Careers link")
     public void i_click_on_Careers_link() {
+
         basePage.getFooterLinksPage().careers.click();
     }
 
@@ -113,6 +133,10 @@ public class FooterLinksMoreCarfaxStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("careers")) {
                 System.out.println(driver.getTitle());break;}
         }
+
+        testBase.waitFor(1);
+        wait.until(ExpectedConditions.urlContains("careers"));
+
         Assert.assertTrue(driver.getCurrentUrl().contains("careers"));
     }
 }

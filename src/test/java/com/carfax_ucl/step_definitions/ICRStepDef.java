@@ -42,6 +42,10 @@ wait.until(ExpectedConditions.urlContains("vehicle"));
             if(driver.switchTo().window(window).getCurrentUrl().contains("VehicleHistory")) {
                 System.out.println(driver.getTitle());break;}
         }
+
+        testBase.waitFor(1);
+        wait.until(ExpectedConditions.urlContains("VehicleHistory"));
+
         Assert.assertTrue(driver.getCurrentUrl().contains("VehicleHistory"));
 
 

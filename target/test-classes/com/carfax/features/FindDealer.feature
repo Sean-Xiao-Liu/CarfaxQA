@@ -4,7 +4,7 @@ Feature: Find Dealer
 
 
 
- @tc-2  @ff @dealer
+ @tc-2  @ff @dealer @smoke
  Scenario Outline: Find dealer through UCL
     Given I am on main Carfax page
     And I navigate to Find a Used Car page

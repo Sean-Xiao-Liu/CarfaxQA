@@ -1,6 +1,6 @@
 Feature: Lead From links
 
-  @leadLinks
+  @leadLinks @smoke
   Scenario Outline: Privacy Policy link on Lead From
     Given I am on main Carfax page
     And I navigate to Find a Used Car page
@@ -15,7 +15,7 @@ Feature: Lead From links
       | Honda    | Civic  | 75501   |
 
 
-  @leadLinks
+  @leadLinks @smoke
   Scenario Outline: Terms of Use on Lead Form
     Given I am on main Carfax page
     And I navigate to Find a Used Car page

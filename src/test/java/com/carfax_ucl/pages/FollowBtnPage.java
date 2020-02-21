@@ -33,7 +33,9 @@ public class FollowBtnPage  {
     public WebElement zipCode;
     @FindBy(xpath = "//input[@name='email'][contains(@placeholder,'Email Address')]")
     public WebElement email;
-    @FindBy(css = "input[name='password'][class='ui-input row input-splitModal']")
+  // @FindBy(css = "input[name='password'][class='ui-input send-password input-splitModal']")
+   @FindBy(css = "input[name='password'][class='ui-input row input-splitModal']")
+    //@FindBy(css = "input[name='password'][class='ui-input row input-splitModal ui-input_state_invalid is-invalid-input']")
     public WebElement password;
     @FindBy(xpath = "//button[contains(text(),'Save Password')]")
     public WebElement savePasswordBtn;

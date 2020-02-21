@@ -36,8 +36,7 @@ public class DealerWebsiteStepDef {
         }
         wait.until(ExpectedConditions.urlContains("vehicle"));
 
-        WebElement length=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[2]/div/div/div[1]/h2"));
-        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        jse.executeScript("arguments[0].scrollIntoView(true);",basePage.getDealerWebsitePage().dealerInfo);
 
       wait.until(ExpectedConditions.visibilityOf(basePage.getDealerWebsitePage().dealerName)).isDisplayed();
 

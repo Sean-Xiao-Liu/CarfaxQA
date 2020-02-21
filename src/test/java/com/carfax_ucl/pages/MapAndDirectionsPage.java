@@ -11,8 +11,9 @@ public class MapAndDirectionsPage {
         PageFactory.initElements(Driver.get(),this);
     }
 
-    //@FindBy(css = "a#_automation_test_map_and_directions")
-    @FindBy(css = "a#dealer-info__directions-link")
+   // @FindBy(css = "a#_automation_test_map_and_directions")
+    //@FindBy(xpath = "//a[@id='dealer-info__directions-link']")
+    @FindBy(xpath = "//span[contains(text(),'Driving Directions')]")
     public WebElement mapAndDirectionVDP;
 
     @FindBy(css = "span.dealer-directions-info-title")

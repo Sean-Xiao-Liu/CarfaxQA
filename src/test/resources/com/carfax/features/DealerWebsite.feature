@@ -4,7 +4,7 @@ Feature: Dealer Info
 
 
 
-@dWeb
+@dWeb @smoke
   Scenario Outline: Dealer Website through Dealer Info
 
     Given I am on main Carfax page

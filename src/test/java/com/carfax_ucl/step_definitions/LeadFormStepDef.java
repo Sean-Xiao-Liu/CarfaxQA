@@ -40,11 +40,9 @@ public TestBase testBase=new TestBase();
         wait.until(ExpectedConditions.urlContains("vehicle"));
 
         //todo scrolling down to element
-        WebElement length=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
 
-        //driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
-        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        jse.executeScript("arguments[0].scrollIntoView(true);",basePage.getLeadFormPage().checkAvailability);
         testBase.waitFor(2);
 
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
@@ -92,12 +90,9 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(Stri
         }
     wait.until(ExpectedConditions.urlContains("vehicle"));
         //todo scrolling down to element
-        WebElement length=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
 
-    //driver.findElement(By.xpath("/html/body/div[3]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
-                //driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
-        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        jse.executeScript("arguments[0].scrollIntoView(true);",basePage.getLeadFormPage().checkAvailability);
         //todo input for Lead Form
         //todo Positive scenario :
     testBase.waitFor(2);
@@ -133,6 +128,7 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(Stri
 
             Assert.assertEquals(driver.findElement(By.xpath("(//span[contains(text(),'Your message was sent!')])[2]")).getText()
                     , "Your message was sent!");
+            wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//a[contains(text(),'View Dealer Inventory')])[2]"))));
       Assert.assertTrue(driver.findElement(By.xpath("(//a[contains(text(),'View Dealer Inventory')])[2]")).isDisplayed());
     }
 //TODO SCENARIO #3
@@ -147,11 +143,9 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(Stri
 
         wait.until(ExpectedConditions.urlContains("vehicle"));
         //todo scrolling down to element
-        WebElement length=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
 
-        //driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
-        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        jse.executeScript("arguments[0].scrollIntoView(true);",basePage.getLeadFormPage().checkAvailability);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
 
         for(int i =0;i<6;i++){
@@ -194,11 +188,9 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
 
     wait.until(ExpectedConditions.urlContains("vehicle"));
         //todo scrolling down to element
-        WebElement length=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
 
-    //driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
-        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        jse.executeScript("arguments[0].scrollIntoView(true);",basePage.getLeadFormPage().checkAvailability);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
 
         basePage.getLeadFormPage().firstName.click();
@@ -238,11 +230,9 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
 
         wait.until(ExpectedConditions.urlContains("vehicle"));
         //todo scrolling down to element
-        WebElement length=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
 
-        //driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
         JavascriptExecutor jse = (JavascriptExecutor)driver;
-        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        jse.executeScript("arguments[0].scrollIntoView(true);",basePage.getLeadFormPage().checkAvailability);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
 
         basePage.getLeadFormPage().lastName.click();
@@ -282,10 +272,9 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
         wait.until(ExpectedConditions.urlContains("vehicle"));
 
         //todo scrolling down to element
-        WebElement length=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[1]/div[2]/div/div[1]/div/span[1]"));
 
         JavascriptExecutor jse = (JavascriptExecutor)driver;
-        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        jse.executeScript("arguments[0].scrollIntoView(true);",basePage.getLeadFormPage().checkAvailability);
 
 wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]/div/div[1]/div/span[2]/i"))));
         basePage.getLeadFormPage().firstName.click();

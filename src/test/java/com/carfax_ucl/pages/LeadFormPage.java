@@ -30,4 +30,7 @@ public class LeadFormPage {
     public WebElement sendMessage;
     @FindBy (xpath = "(//textarea[@name='note'][@class='ui-input form-control input-sm dealer-contact-note'])[2]")
     public WebElement noteField;
+
+    @FindBy(xpath = "(//span[@class='dealer-contact-title'])[2]")
+    public WebElement checkAvailability;
 }

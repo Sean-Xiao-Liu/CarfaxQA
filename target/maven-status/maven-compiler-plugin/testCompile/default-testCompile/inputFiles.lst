@@ -1,5 +1,7 @@
+/Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/DealerWebsiteStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/UCLSignUpBtnStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/Hooks.java
+/Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/CheckAvailabilityLinksPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/FollowBtnPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/FindDealerStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/test.java
@@ -9,6 +11,7 @@
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/FooterLinksPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/utilities/Driver.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/LeadFormStepDef.java
+/Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/CheckAvailabilityLinksStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/ShareHeaderPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/UCLSignInStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/SendToMyPhonePage.java
@@ -22,6 +25,7 @@
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/FollowBtnStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/MapAndDirectionsPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/FiltersSRPPage.java
+/Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/DealerWebsitePage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/UCLSignInPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/SaveThisSearchStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/runners/RegressionRunner.java

@@ -67,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/DMSRP.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="105">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -171,9 +171,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/runners/RegressionRunner.java" />
         <option value="$PROJECT_DIR$/configuration.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/BasePage.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/com/carfax/features/DMSRP.feature" />
         <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/pages/DMSRPPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/carfax_ucl/step_definitions/DMSRPStepDef.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/com/carfax/features/DMSRP.feature" />
       </list>
     </option>
   </component>
@@ -524,14 +524,11 @@
       <workItem from="1582120356012" duration="7288000" />
       <workItem from="1582208204450" duration="16952000" />
       <workItem from="1582316268146" duration="2030000" />
-      <workItem from="1582552908357" duration="11569000" />
+      <workItem from="1582552908357" duration="12178000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RegressionRunner - 2020.02.24 at 15h 44m 41s.xml">
-      <configuration name="RegressionRunner" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RegressionRunner - 2020.02.24 at 16h 14m 33s.xml">
       <configuration name="RegressionRunner" configurationId="JUnit" />
     </history-entry>
@@ -559,15 +556,17 @@
     <history-entry file="RegressionRunner - 2020.02.24 at 16h 30m 34s.xml">
       <configuration name="RegressionRunner" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RegressionRunner - 2020.02.24 at 16h 36m 09s.xml">
+      <configuration name="RegressionRunner" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285281000" />
+    <option name="totallyTimeSpent" value="285890000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33261803" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33261803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -576,15 +575,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.62106705" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.62106705" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31600547" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32921812" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32831737" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3009576" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3009576" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32692307" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1042,8 +1041,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/com/carfax/features/DMSRP.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="105">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
         </state>
       </provider>
     </entry>

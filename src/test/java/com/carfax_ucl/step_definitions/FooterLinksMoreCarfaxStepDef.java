@@ -22,6 +22,7 @@ public class FooterLinksMoreCarfaxStepDef {
     @When("I click on About CARFAX link")
     public void i_click_on_About_CARFAX_link() {
         basePage.getFooterLinksPage().aboutCarfax.click();
+        testBase.waitFor(1);
     }
 
     @Then("It navigates me to the About CARFAX page")
@@ -32,9 +33,9 @@ public class FooterLinksMoreCarfaxStepDef {
                 System.out.println(driver.getTitle());break;}
         }
 
-        testBase.waitFor(1);
+        testBase.waitFor(2);
 
-        wait.until(ExpectedConditions.urlContains("company"));
+        wait.until(ExpectedConditions.urlContains("about"));
 
         Assert.assertTrue(driver.getCurrentUrl().contains("company"));
         Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(),'About CARFAX')]")).getText().contains("About CARFAX"));
@@ -52,7 +53,7 @@ public class FooterLinksMoreCarfaxStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("blog")) {
                 System.out.println(driver.getTitle());break;}
         }
-        testBase.waitFor(1);
+        testBase.waitFor(2);
         wait.until(ExpectedConditions.urlContains("blog"));
 
         Assert.assertTrue(driver.getCurrentUrl().contains("blog"));
@@ -61,7 +62,9 @@ public class FooterLinksMoreCarfaxStepDef {
 
     @When("I click on Press Room link")
     public void i_click_on_Press_Room_link() {
+
         basePage.getFooterLinksPage().pressRoom.click();
+        testBase.waitFor(1);
     }
 
     @Then("It navigates me to the Press page from more Carfax")
@@ -82,7 +85,7 @@ public class FooterLinksMoreCarfaxStepDef {
     @When("I click on Carfax for Dealers link")
     public void i_click_on_Carfax_for_Dealers_link() {
         basePage.getFooterLinksPage().carfaxForDealers.click();
-
+        testBase.waitFor(1);
 
     }
 
@@ -93,7 +96,7 @@ public class FooterLinksMoreCarfaxStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("landingPage")) {
                 System.out.println(driver.getTitle());break;}
         }
-        testBase.waitFor(1);
+        testBase.waitFor(2);
 
         wait.until(ExpectedConditions.urlContains("landingPage"));
 
@@ -104,7 +107,7 @@ public class FooterLinksMoreCarfaxStepDef {
     public void i_click_on_CARFAX_Banking_Insurance_Group_link() {
 
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getFooterLinksPage().carfaxBanking)).click();
-
+        testBase.waitFor(1);
     }
 
     @Then("It navigates me to the CARFAX Banking & Insurance Group page")
@@ -114,7 +117,7 @@ public class FooterLinksMoreCarfaxStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("bank")) {
                 System.out.println(driver.getTitle());break;}
         }
-        testBase.waitFor(1);
+        testBase.waitFor(2);
         wait.until(ExpectedConditions.urlContains("bank"));
 
         Assert.assertTrue(driver.getCurrentUrl().contains("bank"));

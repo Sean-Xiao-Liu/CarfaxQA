@@ -19,7 +19,7 @@ public class FooterLinksFreeServicesStepDef {
     TestBase testBase=new TestBase();
     BasePage basePage=new BasePage();
 
-    public WebDriverWait wait = new WebDriverWait(Driver.get(), 3);
+    public WebDriverWait wait = new WebDriverWait(Driver.get(), 2);
     public WebDriver driver = Driver.get();
 
     @Given("I scroll down to footer links")
@@ -48,6 +48,7 @@ public class FooterLinksFreeServicesStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("Service")) {
                 System.out.println(driver.getTitle());break;}
         }
+        testBase.waitFor(2);
         wait.until(ExpectedConditions.urlContains("Service"));
         Assert.assertTrue(driver.getCurrentUrl().contains("Service"));
 
@@ -68,7 +69,7 @@ public class FooterLinksFreeServicesStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("resources")) {
                 System.out.println(driver.getTitle());break;}
         }
-
+testBase.waitFor(2);
         wait.until(ExpectedConditions.urlContains("resources"));
 
         Assert.assertTrue(driver.getCurrentUrl().contains("resources"));
@@ -80,6 +81,7 @@ public class FooterLinksFreeServicesStepDef {
     public void i_click_on_Recalls_link() {
 
     basePage.getFooterLinksPage().recalls.click();
+    testBase.waitFor(1);
 
     }
 
@@ -91,6 +93,7 @@ public class FooterLinksFreeServicesStepDef {
                 System.out.println(driver.getTitle());break;}
         }
 
+        testBase.waitFor(2);
         wait.until(ExpectedConditions.urlContains("recall"));
 
         Assert.assertTrue(driver.getCurrentUrl().contains("recall"));
@@ -101,6 +104,7 @@ public class FooterLinksFreeServicesStepDef {
     public void i_click_on_Sample_Report_link() {
 
         basePage.getFooterLinksPage().sampleReports.click();
+        testBase.waitFor(1);
     }
 
     @Then("It navigates me to the View Sample CARFAX Reports page")
@@ -110,6 +114,7 @@ public class FooterLinksFreeServicesStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("sample-carfax-report")) {
                 System.out.println(driver.getTitle());break;}
         }
+
         wait.until(ExpectedConditions.urlContains("sample-carfax-report"));
 
         Assert.assertTrue(driver.getCurrentUrl().contains("sample-carfax-report"));

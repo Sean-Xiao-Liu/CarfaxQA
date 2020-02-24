@@ -40,14 +40,14 @@ public class MapAndDirectionsStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("vehicle")) {
                 System.out.println(driver.getTitle());break;}
         }
-        WebElement length=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/section[3]/div/div[2]/div[2]/div/div/div[1]/h2"));
-                //driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[2]/div/div/div[1]"));
 
 
-        jse.executeScript("arguments[0].scrollIntoView(true);",length);
+        jse.executeScript("arguments[0].scrollIntoView(true);",
+                //driver.findElement(By.xpath("/html/body/div[3]/div/div[1]/div[2]/div[1]/section[3]/div/div[2]/div[2]/div/div/div[1]/h2")));
+                basePage.getDealerWebsitePage().dealerInfo);
 
 
-        testBase.waitFor(1);
+        testBase.waitFor(2);
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getMapAndDirections().mapAndDirectionVDP)).click();
 
 
@@ -67,8 +67,9 @@ public class MapAndDirectionsStepDef {
                 System.out.println(driver.getTitle());break;}
         }
 testBase.waitFor(1);
-        WebElement searchForm=driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/div[4]/div[1]/div/div/div/div/span"));
-                //driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/div[4]/div[1]/div/div/div/div/span"));
+        WebElement searchForm=
+                driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[1]/div/div/div[4]/div[1]/div/div/div/div/span"));
+              //  driver.findElement(By.xpath("//*[@id=\"react-app\"]/div/div[1]/div[2]/div[1]/div[4]/div[1]/div/div/div/div/span"));
         jse.executeScript("arguments[0].scrollIntoView(true);",searchForm);
 
 

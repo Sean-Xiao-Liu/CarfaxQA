@@ -34,7 +34,7 @@ public class FindDealerStepDef {
 
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector("select[class='search-make']")))).click();
         List <WebElement> makes =driver.findElements(By.xpath("//optgroup[@label='Popular Makes']/option"));
-
+testBase.waitFor(1);
         for(WebElement temp :makes){
             if(temp.getText().trim().equals(make)){
                 temp.click();
@@ -56,6 +56,7 @@ public class FindDealerStepDef {
 
             wait.until(ExpectedConditions.elementToBeClickable(basePage.getFindDealerPage().zipcode)).click();
         basePage.getFindDealerPage().zipcode.sendKeys(zipcode);
+        testBase.waitFor(1);
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getFindDealerPage().showMeBtn)).click();
 
 
@@ -63,7 +64,8 @@ public class FindDealerStepDef {
     @Given("I am able to see dealer list")
     public void i_am_able_to_see_dealer_list() {
         testBase.waitFor(2);
-        wait.until(ExpectedConditions.visibilityOf(basePage.getFindDealerPage().DealerHeaderTitle)).isDisplayed();
+        wait.until(ExpectedConditions.visibilityOf(basePage.getFindDealerPage().DealerHeaderTitle));
+                Assert.assertTrue(basePage.getFindDealerPage().DealerHeaderTitle.isDisplayed());
     }
 
 

@@ -4,7 +4,7 @@ Feature: Dealer Info
 
 
 
-@dWeb
+@dWeb @smoke
   Scenario Outline: Dealer Website through Dealer Info
 
     Given I am on main Carfax page
@@ -18,5 +18,5 @@ Feature: Dealer Info
     Examples:
       | make     | model  | zipcode |
       | Kia  | Cadenza | 22201   |
-      | Subaru    | Ascent  | 75501   |
+      | Honda    | Civic  | 75501   |
 

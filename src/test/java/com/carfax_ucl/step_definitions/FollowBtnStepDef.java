@@ -50,12 +50,12 @@ public class FollowBtnStepDef {
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getFollowBtnPage().zipCode)).click();
         basePage.getFollowBtnPage().zipCode.sendKeys("22204");
         basePage.getFollowBtnPage().startFollowingBtn.click();
-        testBase.waitFor(1);
+      testBase.waitFor(1);
         basePage.getFollowBtnPage().password.click();
         basePage.getFollowBtnPage().password.sendKeys("hdjfdsA1155");
         basePage.getFollowBtnPage().savePasswordBtn.click();
 testBase.waitFor(1);
-        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//a[@class='signout show'][@id='header-logout']")))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector("a#header-logout")))).click();
     }
 
 

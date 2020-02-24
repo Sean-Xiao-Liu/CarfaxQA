@@ -17,7 +17,7 @@ public class ICRStepDef {
     TestBase testBase=new TestBase();
     BasePage basePage=new BasePage();
 
-    public WebDriverWait wait = new WebDriverWait(Driver.get(), 1);
+    public WebDriverWait wait = new WebDriverWait(Driver.get(), 2);
     public WebDriver driver = Driver.get();
 
 
@@ -33,10 +33,10 @@ public class ICRStepDef {
         }
 testBase.waitFor(3);
 wait.until(ExpectedConditions.urlContains("vehicle"));
-        testBase.scrollToElement(driver.findElement(By.cssSelector("h4[class='carfax-snapshot-box__title']")));
+        testBase.scrollToElement(driver.findElement(By.cssSelector("div[class='carfax-snapshot-box']")));
         WebElement icr=driver.findElement(By.cssSelector("a[class='carfax-snapshot-box__button button large']"));
         icr.click();
-
+testBase.waitFor(2);
         Set<String> wind = driver.getWindowHandles();
         for(String window : wind){
             if(driver.switchTo().window(window).getCurrentUrl().contains("VehicleHistory")) {

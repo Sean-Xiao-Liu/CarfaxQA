@@ -5,6 +5,7 @@ com/carfax_ucl/pages/FiltersSRPPage.class
 com/carfax_ucl/step_definitions/MapAndDirectionsStepDef.class
 com/carfax_ucl/pages/SendToMyPhonePage.class
 com/carfax_ucl/pages/vdpSaveThisSearchPage.class
+com/carfax_ucl/pages/DMSRPPage.class
 com/carfax_ucl/pages/ShareHeaderPage.class
 com/carfax_ucl/step_definitions/FindDealerStepDef.class
 com/carfax_ucl/step_definitions/FiltersSRPStepDef.class

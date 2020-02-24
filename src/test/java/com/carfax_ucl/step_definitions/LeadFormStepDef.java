@@ -129,6 +129,7 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_Last_Name_email(Stri
             Assert.assertEquals(driver.findElement(By.xpath("(//span[contains(text(),'Your message was sent!')])[2]")).getText()
                     , "Your message was sent!");
             wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//a[contains(text(),'View Dealer Inventory')])[2]"))));
+             testBase.waitFor(1);
       Assert.assertTrue(driver.findElement(By.xpath("(//a[contains(text(),'View Dealer Inventory')])[2]")).isDisplayed());
     }
 //TODO SCENARIO #3

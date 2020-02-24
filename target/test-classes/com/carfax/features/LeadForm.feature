@@ -15,7 +15,7 @@ Feature: Lead form on VDP
 
    Examples:
      | make     | model  | zipcode | zip code |
-     | Hyundai  | Sonata | 22201   | 22201    |
+     | Jeep  | Cherokee | 22201   | 22201    |
      | Honda    | Civic  | 75501   | 22204    |
      | Infiniti | Q50    | 22033   | 75501    |
      | Toyota   | Camry  | 22304   | 20148    |
@@ -34,7 +34,7 @@ Feature: Lead form on VDP
 
    Examples:
      | make     | model  | zipcode | zip code |
-     | Hyundai  | Sonata | 22201   | 22201    |
+     | Jeep  | Cherokee | 22201   | 22201    |
      | Honda    | Civic  | 75501   | 22204    |
      | Infiniti | Q50    | 22033   | 75501    |
      | Toyota   | Camry  | 22304   | 20148    |

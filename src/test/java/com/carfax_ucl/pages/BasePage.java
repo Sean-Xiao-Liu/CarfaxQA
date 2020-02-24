@@ -20,6 +20,7 @@ public class BasePage {
     private FiltersSRPPage filtersSRPPage;
     private FooterLinksPage footerLinksPage;
     private DealerWebsitePage dealerWebsitePage;
+    private DMSRPPage dmsrpPage;
 
     private CheckAvailabilityLinksPage checkAvailabilityLinks;
 
@@ -137,5 +138,14 @@ public FooterLinksPage getFooterLinksPage(){
         }
 
         return dealerWebsitePage;
+    }
+
+    public DMSRPPage getDmsrpPage(){
+
+        if(dmsrpPage==null){
+            dmsrpPage=new DMSRPPage();
+        }
+
+        return dmsrpPage;
     }
 }

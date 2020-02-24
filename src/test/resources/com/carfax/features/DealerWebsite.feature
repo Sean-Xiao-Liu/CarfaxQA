@@ -18,5 +18,5 @@ Feature: Dealer Info
     Examples:
       | make     | model  | zipcode |
       | Kia  | Cadenza | 22201   |
-      | Subaru    | Ascent  | 75501   |
+      | Honda    | Civic  | 75501   |
 

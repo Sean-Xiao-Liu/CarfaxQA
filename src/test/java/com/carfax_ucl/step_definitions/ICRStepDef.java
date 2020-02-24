@@ -36,14 +36,14 @@ wait.until(ExpectedConditions.urlContains("vehicle"));
         testBase.scrollToElement(driver.findElement(By.cssSelector("div[class='carfax-snapshot-box']")));
         WebElement icr=driver.findElement(By.cssSelector("a[class='carfax-snapshot-box__button button large']"));
         icr.click();
-
+testBase.waitFor(2);
         Set<String> wind = driver.getWindowHandles();
         for(String window : wind){
             if(driver.switchTo().window(window).getCurrentUrl().contains("VehicleHistory")) {
                 System.out.println(driver.getTitle());break;}
         }
 
-        testBase.waitFor(2);
+        testBase.waitFor(1);
         wait.until(ExpectedConditions.urlContains("VehicleHistory"));
 
         Assert.assertTrue(driver.getCurrentUrl().contains("VehicleHistory"));

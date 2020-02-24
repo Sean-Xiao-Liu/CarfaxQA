@@ -32,6 +32,7 @@
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/FiltersSRPStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/utilities/ConfigurationReader.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/UCLSignUpPage.java
+/Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/DMSRPPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/FooterLinksFreeServicesStepDef.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/pages/FindDealerPage.java
 /Users/annachernyshova/carfax_ucl_qa/src/test/java/com/carfax_ucl/step_definitions/ICRStepDef.java

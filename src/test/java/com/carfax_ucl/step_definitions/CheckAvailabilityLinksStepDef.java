@@ -54,6 +54,7 @@ public class CheckAvailabilityLinksStepDef {
         }
 
 testBase.waitFor(1);
+        //todo verifying that url contains privacy statement and compare it with actual result
         Assert.assertTrue(wait.until(ExpectedConditions.urlContains("privacy-statement")));
         Assert.assertEquals(basePage.getCheckAvailabilityLinks().title.getText(),"CARFAX Privacy Statement");
     }
@@ -85,6 +86,7 @@ testBase.waitFor(1);
         }
 
         testBase.waitFor(1);
+        //todo verifying that url contains terms-of-use and compare it with actual result
 
         Assert.assertTrue(wait.until(ExpectedConditions.urlContains("terms-of-use")));
         Assert.assertEquals(basePage.getCheckAvailabilityLinks().title.getText(),"Terms of Use");

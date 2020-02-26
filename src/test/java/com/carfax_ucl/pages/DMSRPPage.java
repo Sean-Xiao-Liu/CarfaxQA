@@ -54,6 +54,9 @@ public class DMSRPPage {
     @FindBy(css = "div.ratings-and-reviews-summary")
     public WebElement ratingsTable;
 
+    @FindBy(css = "ul.srp-list-item-pillars-list")
+    public WebElement fourPillars;
+
 
 
 }

@@ -96,6 +96,7 @@ testBase.waitFor(2);
         testBase.waitFor(2);
         wait.until(ExpectedConditions.urlContains("recall"));
 
+        //todo verifying that url contains recall and comper it with actual result
         Assert.assertTrue(driver.getCurrentUrl().contains("recall"));
         Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(),'Vehicle Recall Check')]")).getText().contains("Vehicle Recall Check"));
     }
@@ -116,7 +117,7 @@ testBase.waitFor(2);
         }
 
         wait.until(ExpectedConditions.urlContains("sample-carfax-report"));
-
+        //todo verifying that url contains sample carfax report  and comper it with actual result
         Assert.assertTrue(driver.getCurrentUrl().contains("sample-carfax-report"));
         Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(),'View Sample CARFAX Reports')]")).getText().contains("View Sample CARFAX Reports"));
     }

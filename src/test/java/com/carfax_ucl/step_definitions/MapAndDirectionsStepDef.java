@@ -99,6 +99,8 @@ testBase.waitFor(1);
         wait.until(ExpectedConditions.elementToBeClickable(basePage.getMapAndDirections().getDirections)).click();
 
         testBase.waitFor(3);
+
+        //todo verify that element is displayed
         Assert.assertTrue(driver.findElement(By.cssSelector("div[jstcache='23']")).isDisplayed());
 
 
@@ -110,8 +112,12 @@ testBase.waitFor(1);
         jse.executeScript("window.scrollBy(0,-600)");
         wait.until(ExpectedConditions.visibilityOf(basePage.getMapAndDirections().mobileSign));
         wait.until(ExpectedConditions.visibilityOf(basePage.getSendToMyPhone().sendToMyPhoneHeader)).isDisplayed();
+        //todo verify that element is displayed
+
         Assert.assertTrue(basePage.getFindDealerPage().dealerLocation.isDisplayed());
         Assert.assertTrue(basePage.getFindDealerPage().dealerName.isDisplayed());
+        //todo verify that url contains map
+
         Assert.assertTrue(driver.getCurrentUrl().contains("map"));
 
 

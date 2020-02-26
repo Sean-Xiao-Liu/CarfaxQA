@@ -36,7 +36,7 @@ public class FooterLinksMoreCarfaxStepDef {
         testBase.waitFor(2);
 
         wait.until(ExpectedConditions.urlContains("about"));
-
+        //todo verifying that url contains company and compare it with actual result
         Assert.assertTrue(driver.getCurrentUrl().contains("company"));
         Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(),'About CARFAX')]")).getText().contains("About CARFAX"));
     }
@@ -55,6 +55,7 @@ public class FooterLinksMoreCarfaxStepDef {
         }
         testBase.waitFor(2);
         wait.until(ExpectedConditions.urlContains("blog"));
+        //todo verifying that url contains blog and compare it with actual result
 
         Assert.assertTrue(driver.getCurrentUrl().contains("blog"));
         Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(),'Automotive News and Advice')]")).getText().contains("Automotive News and Advice"));
@@ -76,6 +77,7 @@ public class FooterLinksMoreCarfaxStepDef {
         }
         testBase.waitFor(1);
         wait.until(ExpectedConditions.urlContains("press"));
+        //todo verifying that url contains press and compare it with actual result
 
         Assert.assertTrue(driver.getCurrentUrl().contains("press"));
         Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(),'Press')]")).getText().contains("Press"));
@@ -99,6 +101,7 @@ public class FooterLinksMoreCarfaxStepDef {
         testBase.waitFor(2);
 
         wait.until(ExpectedConditions.urlContains("landingPage"));
+        //todo verifying that url contains landingPage and compare it with actual result
 
         Assert.assertTrue(driver.getCurrentUrl().contains("landingPage"));
     }
@@ -119,6 +122,7 @@ public class FooterLinksMoreCarfaxStepDef {
         }
         testBase.waitFor(2);
         wait.until(ExpectedConditions.urlContains("bank"));
+        //todo verifying that url contains bank and compare it with actual result
 
         Assert.assertTrue(driver.getCurrentUrl().contains("bank"));
     }
@@ -139,6 +143,7 @@ public class FooterLinksMoreCarfaxStepDef {
 
         testBase.waitFor(1);
         wait.until(ExpectedConditions.urlContains("careers"));
+        //todo verifying that url contains careers and compare it with actual result
 
         Assert.assertTrue(driver.getCurrentUrl().contains("careers"));
     }

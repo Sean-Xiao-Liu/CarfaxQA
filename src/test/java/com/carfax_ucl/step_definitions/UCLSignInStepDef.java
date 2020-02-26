@@ -73,7 +73,7 @@ BasePage basePage=new BasePage();
         basePage.getUclSignInPage().EnterEmail.sendKeys(email);
         basePage.getUclSignInPage().resetPassword.click();
         testBase.waitFor(5);
-
+//todo verify that element is displayed
         Assert.assertEquals(driver.findElement(By.xpath("//span[@class='form-transaction-msg error']")).getText(),"Oops! We couldn't find that e-mail.");
     }
 

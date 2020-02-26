@@ -54,25 +54,44 @@ public class DMSRPStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("Dealer-")) {
                 System.out.println(driver.getTitle());break;}
         }
-
+//todo verifying that elements are displayed on the page
         Assert.assertTrue(basePage.getDmsrpPage().salesTable.isDisplayed());
 
         Assert.assertTrue(basePage.getDmsrpPage().serviceTable.isDisplayed());
 
         Assert.assertTrue(basePage.getDmsrpPage().titleHeader.isDisplayed());
 
+        Assert.assertTrue(basePage.getDmsrpPage().fourPillars.isDisplayed());
 
-        wait.until(ExpectedConditions.elementToBeClickable(basePage.getDmsrpPage().service)).click();
         testBase.waitFor(1);
-       Assert.assertTrue( basePage.getDmsrpPage().dealerTitle.isDisplayed());
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getDmsrpPage().service)).click();
+        testBase.waitFor(2);
+        //todo verifying that dealer title is Displayed
+        wait.until(ExpectedConditions.visibilityOf(basePage.getDmsrpPage().dealerTitle));
+        Assert.assertTrue( basePage.getDmsrpPage().dealerTitle.isDisplayed());
 
-       wait.until(ExpectedConditions.elementToBeClickable(basePage.getDmsrpPage().ratingsReviews)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(basePage.getDmsrpPage().ratingsReviews)).click();
 
-       testBase.waitFor(2);
-      Assert.assertTrue( basePage.getDmsrpPage().allReviews.isDisplayed());
-      Assert.assertTrue(basePage.getDmsrpPage().salesReviewsOnly.isDisplayed());
-      Assert.assertTrue(basePage.getDmsrpPage().serviceReviewsOnly.isDisplayed());
-      Assert.assertTrue(basePage.getDmsrpPage().ratingsTable.isDisplayed());
+        testBase.waitFor(2);
+        //todo veryfing that all review is displayed
+        wait.until(ExpectedConditions.visibilityOf(basePage.getDmsrpPage().allReviews));
+        Assert.assertTrue( basePage.getDmsrpPage().allReviews.isDisplayed());
+
+        //todo verifying that sales review only  is displayed
+
+        wait.until(ExpectedConditions.visibilityOf(basePage.getDmsrpPage().salesReviewsOnly));
+        Assert.assertTrue(basePage.getDmsrpPage().salesReviewsOnly.isDisplayed());
+
+        //todo verifying that service review only is Displayed
+
+        wait.until(ExpectedConditions.visibilityOf(basePage.getDmsrpPage().serviceReviewsOnly));
+        Assert.assertTrue(basePage.getDmsrpPage().serviceReviewsOnly.isDisplayed());
+
+
+        //todo verify that rating table is Displayed
+
+        wait.until(ExpectedConditions.visibilityOf(basePage.getDmsrpPage().ratingsTable));
+        Assert.assertTrue(basePage.getDmsrpPage().ratingsTable.isDisplayed());
 
     }
 }

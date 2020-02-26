@@ -70,6 +70,8 @@ public class UCLSignUpBtnStepDef {
 
     @Then("I see regular sign in page")
     public void i_see_regular_sign_in_page() {
+
+        //todo verify that welcome back title is displayed
 Assert.assertTrue(basePage.getUclSignInPage().welcomeBackTitle.isDisplayed());
 
     }
@@ -87,6 +89,8 @@ Assert.assertTrue(basePage.getUclSignInPage().welcomeBackTitle.isDisplayed());
         basePage.getUclSignInPage().signInBtn.click();
         testBase.waitFor(3);
         wait.until(ExpectedConditions.visibilityOf(basePage.getUclSignInPage().logout)).isDisplayed();
+
+        //todo verify that logout element is displayed
         Assert.assertTrue(basePage.getUclSignInPage().logout.isDisplayed());
 
     }

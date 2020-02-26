@@ -26,6 +26,9 @@ BasePage basePage=new BasePage();
 
     @When("I choose pillars, {string},{string} and trim")
     public void i_choose_pillars_and(String minYear, String maxYear) {
+
+
+
         //todo selecting 4 pillars filters
 
         testBase.waitFor(2);

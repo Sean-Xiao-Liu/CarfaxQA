@@ -54,7 +54,7 @@ public class DMSRPStepDef {
             if(driver.switchTo().window(window).getCurrentUrl().contains("Dealer-")) {
                 System.out.println(driver.getTitle());break;}
         }
-
+//todo verifying that elements are displayed on the page
         Assert.assertTrue(basePage.getDmsrpPage().salesTable.isDisplayed());
 
         Assert.assertTrue(basePage.getDmsrpPage().serviceTable.isDisplayed());

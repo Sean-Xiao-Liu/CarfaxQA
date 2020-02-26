@@ -45,6 +45,7 @@ testBase.waitFor(2);
 
         testBase.waitFor(1);
         wait.until(ExpectedConditions.urlContains("VehicleHistory"));
+        //todo verifying that url contains Vehicle History and compare it with actual result
 
         Assert.assertTrue(driver.getCurrentUrl().contains("VehicleHistory"));
 

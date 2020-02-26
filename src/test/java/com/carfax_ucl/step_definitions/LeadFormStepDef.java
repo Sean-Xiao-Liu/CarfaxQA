@@ -214,7 +214,7 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
     @Then("I click on Send Message to that dealer and should see Last Name error message are displayed")
     public void i_click_on_Send_Message_to_that_dealer_and_should_see_Last_Name_error_message_are_displayed() {
         basePage.getLeadFormPage().sendMessage.click();
-
+//todo verify that error message is displayed
         Assert.assertTrue(driver.findElement(By.xpath("//li[contains(text(),'Last name is required!')]")).isDisplayed());
     }
 
@@ -257,6 +257,7 @@ public void i_navigate_to_Lead_Form_and_fill_out_First_Name_and_Phone_number(Str
     @Then("I click on Send Message to that dealer and should see First Name error message are displayed")
     public void i_click_on_Send_Message_to_that_dealer_and_should_see_First_Name_error_message_are_displayed() {
         basePage.getLeadFormPage().sendMessage.click();
+//todo verify that error message is displayed
 
         Assert.assertTrue(driver.findElement(By.xpath("//li[contains(text(),'First name is required!')]")).isDisplayed());
     }
@@ -298,6 +299,7 @@ wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[2]
     public void i_click_on_Send_Message_to_that_dealer_and_should_see_Zip_code_error_message_are_displayed() {
         basePage.getLeadFormPage().sendMessage.click();
         System.out.println(driver.findElement(By.cssSelector("span.checkbox-list-item--text")).getAttribute("value"));
+//todo verify that error message is displayed
 
         Assert.assertTrue(driver.findElement(By.xpath("//li[contains(text(),'Zip is required!')]")).isDisplayed());
     }
